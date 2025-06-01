@@ -1,0 +1,84 @@
+{
+  "courseInfo": {
+    "id": 11,
+    "title": "Basic Web Development Tools",
+    "description": "This course covers essential web development tools that enhance productivity and streamline the development process. It includes an introduction to code editors, browser developer tools, task runners, and version control systems.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+  "id": 1,
+  "title": "Fejlesztői környezet és kód szerkesztők",
+  "content": "A fejlesztői környezet (IDE) és a kódszerkesztők alapvető eszközök a webfejlesztők számára.\n\n---\n\n## Kód szerkesztők\n\n- Egyszerűbb eszközök, például Visual Studio Code, Sublime Text, Atom.\n- Szintaxiskiemelés, automatikus kiegészítés, beépülő modulok támogatása.\n\n## Fejlesztői környezetek (IDE)\n\n- Komplett eszközkészletek, például WebStorm, Visual Studio.\n- Hibakeresés, verziókezelés, tesztelés egy helyen.\n\n---\n\n## Összefoglalás\n\n- Megfelelő eszköz kiválasztása segíti a hatékony munkát.\n",
+  "keyPoints": [
+    "Kódszerkesztők: Visual Studio Code, Sublime Text, Atom.",
+    "Fejlesztői környezetek (IDE): WebStorm, Visual Studio.",
+    "Szintaxiskiemelés és automatikus kód-kiegészítés alapfunkciók.",
+    "IDE-k további fejlesztői eszközöket is biztosítanak.",
+    "Eszközválasztás a projekt és egyéni igények szerint."
+  ]
+},
+{
+  "id": 2,
+  "title": "Verziókezelés alapjai: Git és GitHub",
+  "content": "A verziókezelés lehetővé teszi a kód változásainak nyomon követését és együttműködést más fejlesztőkkel.\n\n---\n\n## Git\n\n- Parancssoros eszköz a kódverziók kezelésére.\n- Lehetővé teszi a verziók mentését, visszaállítását, ágak létrehozását.\n\n## GitHub\n\n- Webalapú platform Git tárhelyhez.\n- Közös munkát és kód megosztást segíti.\n\n---\n\n## Összefoglalás\n\n- Git és GitHub alapvető eszközök a modern fejlesztésben.\n",
+  "keyPoints": [
+    "Git: verziókezelő eszköz a kód nyomon követésére.",
+    "GitHub: online platform Git projektek tárolására és megosztására.",
+    "Verziókezeléssel könnyebb a hibák kezelése és az együttműködés.",
+    "Ágkezeléssel párhuzamos fejlesztések támogatása.",
+    "Commit, push, pull a leggyakoribb Git műveletek."
+  ]
+},
+{
+  "id": 3,
+  "title": "Böngésző fejlesztői eszközök (Developer Tools)",
+  "content": "A böngészők beépített fejlesztői eszközei segítik a hibakeresést, stílusok módosítását és teljesítmény elemzését.\n\n---\n\n## Főbb funkciók\n\n- HTML és CSS elem vizsgálata.\n- JavaScript konzol hibák megjelenítése.\n- Hálózati forgalom elemzése.\n- Oldal betöltési idő és teljesítmény mérés.\n\n## Népszerű böngészők\n\n- Chrome DevTools\n- Firefox Developer Tools\n- Safari Web Inspector\n\n---\n\n## Összefoglalás\n\n- Böngésző eszközök nélkülözhetetlenek a hatékony webfejlesztéshez.\n",
+  "keyPoints": [
+    "HTML és CSS hibák gyors vizsgálata és javítása.",
+    "JavaScript hibák és konzolüzenetek megjelenítése.",
+    "Hálózati kérések és válaszok elemzése.",
+    "Teljesítmény mérése és optimalizálási lehetőségek.",
+    "Chrome, Firefox és Safari fejlesztői eszközök használata."
+  ]
+},
+{
+  "id": 4,
+  "title": "Csomagkezelők és modulok: npm és Yarn",
+  "content": "A csomagkezelők megkönnyítik a külső könyvtárak és modulok telepítését, frissítését és kezelését.\n\n---\n\n## npm\n\n- Node.js alapértelmezett csomagkezelője.\n- Széleskörű modulkönyvtárat biztosít.\n\n## Yarn\n\n- Gyorsabb alternatíva npm helyett.\n- Stabilabb telepítési folyamat és jobb cache kezelés.\n\n---\n\n## Összefoglalás\n\n- Csomagkezelők nélkülözhetetlenek modern JavaScript fejlesztésben.\n",
+  "keyPoints": [
+    "npm és Yarn csomagkezelők a JavaScript modulok kezelésére.",
+    "Könnyítik a könyvtárak telepítését és verziókezelését.",
+    "Yarn gyorsabb és megbízhatóbb telepítést kínál.",
+    "Csomagkezelők használatával könnyű a függőségek kezelése.",
+    "Alapvető ismeretek minden webfejlesztő számára."
+  ]
+},
+{
+  "id": 5,
+  "title": "Automatikus build eszközök: Webpack, Gulp, és mások",
+  "content": "A build eszközök segítenek a kód automatizált feldolgozásában, optimalizálásában és összeállításában.\n\n---\n\n## Webpack\n\n- Modulcsomagoló, amely kezeli a JavaScript, CSS és egyéb erőforrásokat.\n- Lehetővé teszi a kód darabolását (code splitting).\n\n## Gulp\n\n- Feladatfuttató eszköz, amely fájlokat dolgoz fel (pl. minifikálás, átkonvertálás).\n\n---\n\n## Összefoglalás\n\n- Build eszközök javítják a fejlesztési folyamat hatékonyságát és az oldal teljesítményét.\n",
+  "keyPoints": [
+    "Webpack: modulcsomagoló eszköz modern webprojektekhez.",
+    "Gulp: automatizált feladatok futtatására szolgáló eszköz.",
+    "Segítenek a kód optimalizálásában és szervezésében.",
+    "Build folyamatok javítják a weboldal teljesítményét.",
+    "Alapvető eszközök a nagyobb projektek kezeléséhez."
+  ]
+},
+{
+  "id": 6,
+  "title": "Verziókövetés és hibakezelés: Debugging és tesztelés eszközei",
+  "content": "A hatékony hibakeresés és tesztelés elengedhetetlen része a webfejlesztésnek.\n\n---\n\n## Debugging\n\n- Böngésző fejlesztői eszközök használata.\n- Logolás, breakpointok beállítása.\n\n## Tesztelés\n\n- Egységtesztek (unit tests) pl. Jest, Mocha.\n- Integrációs és end-to-end tesztek (Cypress, Selenium).\n\n---\n\n## Összefoglalás\n\n- Hibakeresés és tesztelés segít megelőzni a hibákat és növeli a kód minőségét.\n",
+  "keyPoints": [
+    "Debugging böngésző fejlesztői eszközökkel.",
+    "Logolás és breakpointok használata a hibák megtalálásához.",
+    "Egységtesztek a kód helyes működésének ellenőrzésére.",
+    "Integrációs és end-to-end tesztek a teljes alkalmazás tesztelésére.",
+    "Tesztelés és debugging nélkülözhetetlen a stabil webalkalmazásokhoz."
+  ]
+}
+
+  ]}

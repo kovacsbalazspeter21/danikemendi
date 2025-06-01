@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Bevezetés a Webfejlesztésbe",
+    "file": "./train/start.json"
+  },
+  {
+    "id": 2,
+    "title": "Basic HTML5",
+    "file": "./train/basichtml5.json"
+  },
+  {
+    "id": 3,
+    "title": "Basic CSS3",
+    "file": "./train/basiccss3.json"
+  },
+  {
+    "id": 4,
+    "title": "Basic JavaScript",
+    "file": "./train/basicjs.json"
+  },
+  {
+    "id": 5,
+    "title": "Basic Web Design",
+    "file": "./train/basicwebdesign.json"
+  },
+  {
+    "id": 6,
+    "title": "Basic Responsive Design",
+    "file": "./train/basicresponsivedesign.json"
+  },
+  {
+    "id": 7,
+    "title": "Basic Web Accessibility",
+    "file": "./api/train/basicwebaccessibility.json"
+  },
+  {
+    "id": 8,
+    "title": "Basic SEO",
+    "file": "./train/basicseo.json"
+  },
+  {
+    "id": 9,
+    "title": "Basic Web Performance",
+    "file": "./train/basicwebperformance.json"
+  },
+  {
+    "id": 10,
+    "title": "Basic Web Security",
+    "file": "./train/basicwebsecurity.json"
+  },
+  {
+    "id": 11,
+    "title": "Basic Web Development Tools",
+    "file": "./train/basicwebdevelopmenttools.json"
+  },
+  {
+    "id": 12,
+    "title": "Basic Version Control with Git",
+    "file": "./train/basicversioncontrolwithgit.json"
+  },
+  {
+    "id": 13,
+    "title": "Basic Command Line Usage",
+    "file": "./train/basiccommandlineusage.json"
+  },
+  {
+    "id": 14,
+    "title": "Basic Web Hosting",
+    "file": "./train/basicwebhosting.json"
+  },
+  {
+    "id": 15,
+    "title": "Basic Content Management Systems",
+    "file": "./train/basiccontentmanagementsystems.json"
+  },
+  {
+    "id": 16,
+    "title": "Basic Web Analytics",
+    "file": "./train/basicwebanalytics.json"
+  }
+]

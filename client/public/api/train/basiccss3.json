@@ -1,0 +1,698 @@
+{
+  "courseInfo": {
+    "id": 3,
+    "title": "CSS3 Alapok",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+      "id": 1,
+      "title": "Mi a CSS?",
+      "content": "A **CSS** (Cascading Style Sheets) a weboldalak megjelenésének formázására szolgáló stíluslap nyelv. A CSS elválasztja a tartalmat (HTML) a megjelenéstől, így könnyebb karbantartani és módosítani a weboldal designját.\n\n**CSS előnyei:**\n• Elválasztja a tartalmat a megjelenéstől\n• Egy CSS fájl több HTML oldalhoz használható\n• Gyorsabb betöltés és könnyebb karbantartás\n• Responsive design lehetőségek\n• Animációk és átmenetek\n\nA CSS3 a legújabb verzió, amely számos új funkcióval bővült: gradientek, árnyékok, animációk, flexbox, grid layout.",
+      "image": "/images/css-intro.jpg",
+      "codeExample": "/* CSS alapok - külső stíluslap */\nbody {\n    font-family: 'Arial', sans-serif;\n    background-color: #f4f4f4;\n    margin: 0;\n    padding: 20px;\n    line-height: 1.6;\n}\n\nh1 {\n    color: #333;\n    text-align: center;\n    font-size: 2.5em;\n    margin-bottom: 30px;\n    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);\n}\n\np {\n    color: #666;\n    font-size: 16px;\n    margin-bottom: 15px;\n    text-align: justify;\n}",
+      "keyPoints": [
+        "CSS = Cascading Style Sheets",
+        "Elválasztja a tartalmat a megjelenéstől",
+        "CSS3 modern funkciókkal bővült"
+      ],
+      "cssTypes": [
+        {
+          "type": "Inline CSS",
+          "description": "Közvetlenül a HTML elemben",
+          "example": "<p style=\"color: red;\">Szöveg</p>"
+        },
+        {
+          "type": "Internal CSS",
+          "description": "A HTML head részében",
+          "example": "<style>p { color: red; }</style>"
+        },
+        {
+          "type": "External CSS",
+          "description": "Külön CSS fájlban",
+          "example": "<link rel=\"stylesheet\" href=\"style.css\">"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "CSS Szelektorok",
+      "content": "A CSS szelektorok segítségével célozhatod meg a HTML elemeket, amelyeket formázni szeretnél. Különböző típusú szelektorok léteznek, mindegyik más-más módon választja ki az elemeket.\n\n**Szelektor típusok:**\n• **Elem szelektor**: HTML tag neve (h1, p, div)\n• **Osztály szelektor**: .osztálynév\n• **ID szelektor**: #azonosító\n• **Attribútum szelektor**: [attribútum]\n• **Pszeudo szelektorok**: :hover, :focus, :first-child\n\nA szelektorok kombinálhatók összetettebb kiválasztásokhoz.",
+      "image": "/images/css-selectors.jpg",
+      "codeExample": "/* Elem szelektor - minden h1 elemre */\nh1 {\n    color: #2c3e50;\n    font-weight: bold;\n}\n\n/* Osztály szelektor - .highlight osztályú elemekre */\n.highlight {\n    background-color: #f1c40f;\n    padding: 10px;\n    border-radius: 5px;\n}\n\n/* ID szelektor - #header azonosítójú elemre */\n#header {\n    background-color: #34495e;\n    color: white;\n    padding: 20px;\n}\n\n/* Összetett szelektor - .container-ben lévő p elemekre */\n.container p {\n    margin-bottom: 15px;\n    text-indent: 20px;\n}\n\n/* Pszeudo szelektor - hover effekt */\na:hover {\n    color: #e74c3c;\n    text-decoration: underline;\n    transition: color 0.3s ease;\n}\n\n/* Attribútum szelektor */\ninput[type=\"text\"] {\n    border: 2px solid #3498db;\n    padding: 8px;\n}",
+      "keyPoints": [
+        "Szelektorok határozzák meg, melyik elemeket formázzuk",
+        "Elem, osztály, ID és pszeudo szelektorok",
+        "Kombinálhatók összetett kiválasztásokhoz"
+      ],
+      "selectorSpecificity": [
+        {
+          "selector": "Inline style",
+          "specificity": 1000,
+          "example": "style=\"color: red;\""
+        },
+        {
+          "selector": "ID",
+          "specificity": 100,
+          "example": "#header"
+        },
+        {
+          "selector": "Class",
+          "specificity": 10,
+          "example": ".highlight"
+        },
+        {
+          "selector": "Element",
+          "specificity": 1,
+          "example": "h1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "CSS Box Model",
+      "content": "A CSS Box Model minden HTML elem alapvető működését írja le. Minden elem egy dobozként viselkedik, amely négy részből áll: tartalom, padding, border és margin.\n\n**Box Model részei:**\n• **Content** - A tényleges tartalom (szöveg, kép)\n• **Padding** - Belső margó (tartalom és keret között)\n• **Border** - Keret az elem körül\n• **Margin** - Külső margó (elem és környezet között)\n\nA `box-sizing` tulajdonsággal befolyásolhatjuk, hogyan számítódik az elem teljes mérete.",
+      "image": "/images/box-model.jpg",
+      "codeExample": "/* Hagyományos box model */\n.traditional-box {\n    width: 200px;\n    height: 100px;\n    padding: 20px;        /* Belső margó */\n    border: 5px solid #3498db;  /* Keret */\n    margin: 15px;         /* Külső margó */\n    background-color: #ecf0f1;\n    \n    /* Teljes szélesség: 200 + 20*2 + 5*2 + 15*2 = 280px */\n}\n\n/* Modern box-sizing */\n.modern-box {\n    box-sizing: border-box;  /* Padding és border bele van számítva */\n    width: 200px;            /* Teljes szélesség 200px marad */\n    height: 100px;\n    padding: 20px;\n    border: 5px solid #e74c3c;\n    margin: 15px;\n    background-color: #fadbd8;\n}\n\n/* Univerzális box-sizing (ajánlott) */\n* {\n    box-sizing: border-box;\n}\n\n/* Különböző border stílusok */\n.border-examples {\n    border: 2px solid #2ecc71;     /* Folytonos vonal */\n    /* border: 2px dashed #f39c12;  Szaggatott vonal */\n    /* border: 2px dotted #9b59b6;  Pontozott vonal */\n    border-radius: 10px;           /* Lekerekített sarkok */\n}",
+      "keyPoints": [
+        "Minden elem egy doboz: content, padding, border, margin",
+        "box-sizing: border-box ajánlott modern fejlesztéshez",
+        "Margin collapse jelenség figyelembevétele"
+      ],
+      "boxModelCalculation": {
+        "traditionalBox": {
+          "width": "200px",
+          "padding": "20px * 2 = 40px",
+          "border": "5px * 2 = 10px",
+          "totalWidth": "200 + 40 + 10 = 250px"
+        },
+        "borderBox": {
+          "width": "200px",
+          "padding": "20px * 2 = 40px",
+          "border": "5px * 2 = 10px",
+          "totalWidth": "200px (padding és border benne van)"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "CSS Layout - Flexbox",
+      "content": "A Flexbox (Flexible Box Layout) egy modern CSS layout módszer, amely egyszerűvé teszi az elemek elrendezését és igazítását. Ideális egydimenziós layoutokhoz (sor vagy oszlop).\n\n**Flexbox előnyei:**\n• Egyszerű vertikális és horizontális középre igazítás\n• Rugalmas elem méretek\n• Egyenlő magasságú oszlopok\n• Responsive design támogatás\n\nA flexbox egy konténer (flex container) és elemek (flex items) kapcsolatán alapul.",
+      "image": "/images/flexbox-layout.jpg",
+      "codeExample": "/* Flex container alapbeállítások */\n.flex-container {\n    display: flex;\n    flex-direction: row;        /* row | column | row-reverse | column-reverse */\n    justify-content: center;    /* flex-start | center | flex-end | space-between | space-around */\n    align-items: center;        /* flex-start | center | flex-end | stretch | baseline */\n    flex-wrap: wrap;           /* nowrap | wrap | wrap-reverse */\n    gap: 20px;                 /* Elemek közötti távolság */\n    \n    height: 400px;\n    background-color: #ecf0f1;\n    padding: 20px;\n}\n\n/* Flex items tulajdonságai */\n.flex-item {\n    flex: 1;                   /* flex-grow: 1, flex-shrink: 1, flex-basis: 0% */\n    /* flex: 0 1 200px;        Nem nő, zsugorodhat, alap szélesség 200px */\n    \n    background-color: #3498db;\n    color: white;\n    padding: 20px;\n    text-align: center;\n    border-radius: 8px;\n}\n\n/* Specifikus flex item beállítások */\n.flex-item:nth-child(2) {\n    flex-grow: 2;              /* Ez az elem kétszer akkora lesz */\n}\n\n.flex-item:last-child {\n    align-self: flex-end;      /* Egyedi igazítás */\n}\n\n/* Responsive flexbox */\n@media (max-width: 768px) {\n    .flex-container {\n        flex-direction: column;\n        align-items: stretch;\n    }\n}",
+      "keyPoints": [
+        "Flexbox egydimenziós layout rendszer",
+        "justify-content: főtengely, align-items: kereszttengely",
+        "flex tulajdonság: grow, shrink, basis"
+      ],
+      "flexProperties": {
+        "container": [
+          "display: flex",
+          "flex-direction",
+          "justify-content",
+          "align-items",
+          "flex-wrap",
+          "gap"
+        ],
+        "items": [
+          "flex-grow",
+          "flex-shrink",
+          "flex-basis",
+          "flex (shorthand)",
+          "align-self",
+          "order"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "CSS Grid Layout",
+      "content": "A CSS Grid Layout egy kétdimenziós layout rendszer, amely lehetővé teszi komplex rácsok létrehozását sorok és oszlopok segítségével. Ideális teljes oldal layoutokhoz.\n\n**Grid előnyei:**\n• Kétdimenziós layout (sorok ÉS oszlopok)\n• Precíz pozicionálás\n• Átfedő elemek támogatása\n• Responsive grid területek\n\nA Grid és Flexbox gyakran együtt használhatók: Grid a fő layout-hoz, Flexbox a komponensek belső elrendezéséhez.",
+      "image": "/images/css-grid.jpg",
+      "codeExample": "/* Grid container alapbeállítások */\n.grid-container {\n    display: grid;\n    grid-template-columns: 1fr 2fr 1fr;    /* 3 oszlop: 1:2:1 arányban */\n    grid-template-rows: auto 1fr auto;      /* 3 sor: auto, rugalmas, auto */\n    grid-gap: 20px;                         /* Rés a cellák között */\n    \n    height: 100vh;\n    padding: 20px;\n    background-color: #f8f9fa;\n}\n\n/* Grid területek definiálása */\n.grid-layout {\n    display: grid;\n    grid-template-areas: \n        \"header header header\"\n        \"sidebar main aside\"\n        \"footer footer footer\";\n    grid-template-columns: 200px 1fr 150px;\n    grid-template-rows: 80px 1fr 60px;\n    gap: 15px;\n    min-height: 100vh;\n}\n\n/* Grid elemek pozicionálása */\n.header {\n    grid-area: header;\n    background-color: #2c3e50;\n    color: white;\n    display: flex;\n    align-items: center;\n    padding: 0 20px;\n}\n\n.sidebar {\n    grid-area: sidebar;\n    background-color: #34495e;\n    color: white;\n    padding: 20px;\n}\n\n.main-content {\n    grid-area: main;\n    background-color: white;\n    padding: 30px;\n    border-radius: 8px;\n    box-shadow: 0 2px 10px rgba(0,0,0,0.1);\n}\n\n.aside {\n    grid-area: aside;\n    background-color: #ecf0f1;\n    padding: 20px;\n}\n\n.footer {\n    grid-area: footer;\n    background-color: #95a5a6;\n    color: white;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n/* Responsive grid */\n@media (max-width: 768px) {\n    .grid-layout {\n        grid-template-areas:\n            \"header\"\n            \"main\"\n            \"sidebar\"\n            \"aside\"\n            \"footer\";\n        grid-template-columns: 1fr;\n        grid-template-rows: auto;\n    }\n}",
+      "keyPoints": [
+        "Grid kétdimenziós layout rendszer",
+        "Precíz sor és oszlop definiálás",
+        "Grid területek és rácsok használata"
+      ]
+    },
+    {
+  "id": 6,
+  "title": "Színek és háttér (color, background)",
+  "content": "A CSS lehetővé teszi a szövegek, elemek és hátterek színének testreszabását, így vizuálisan kifejező, jól olvasható és esztétikus felületeket hozhatunk létre.\n\n**Színformátumok:**\n• Színnevek: pl. `red`, `blue`, `green`\n• Hexadecimális értékek: pl. `#ff0000`, `#00ff00`\n• RGB: `rgb(255, 0, 0)`\n• RGBA (átlátszósággal): `rgba(0, 0, 0, 0.5)`\n• HSL: `hsl(120, 100%, 50%)`\n• HSLA: `hsla(240, 100%, 50%, 0.3)`\n\n**Gyakran használt CSS tulajdonságok színezéshez:**\n• `color`: a szöveg színe\n• `background-color`: háttérszín beállítása\n• `background-image`: háttérkép beállítása\n• `background-repeat`: ismétlődés szabályozása\n• `background-position`: háttérkép elhelyezkedése\n• `background-size`: háttérkép méretezése\n• `background`: shorthand, mindezt egy sorban\n\n**Tippek:**\n• Használj kontrasztos színeket a jó olvashatóság érdekében.\n• A `background` shorthand sokkal átláthatóbb lehet komplex hátterek esetén.\n• A `linear-gradient` vagy `radial-gradient` segítségével színátmenetes háttereket is létrehozhatsz.",
+  "image": "/images/css-colors-background.jpg",
+  "codeExample": "body {\n  background-color: #f2f2f2;\n  color: #333;\n}\n\nh1 {\n  background: linear-gradient(to right, #00c6ff, #0072ff);\n  color: white;\n  padding: 1rem;\n}\n\nsection {\n  background-image: url('background.jpg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}",
+  "keyPoints": [
+    "Színek megadásához többféle formátumot használhatunk (név, hex, rgb, hsl).",
+    "`color`: a szöveg színét határozza meg.",
+    "`background-color`: háttérszín beállítása.",
+    "`background-image`: háttérkép megadása URL segítségével.",
+    "A `background` rövidítés kombinálja a háttér tulajdonságokat egy sorban.",
+    "Gradientekkel látványos színátmeneteket készíthetünk."
+  ],
+  "htmlStructure": {
+    "color": "Szöveg színe",
+    "background-color": "Háttér színe",
+    "background-image": "Háttérkép URL",
+    "background-position": "Háttérkép elhelyezkedése",
+    "background-size": "Háttérkép méretezése",
+    "background": "Minden háttértulajdonság shorthand-ben"
+  }
+},
+{
+  "id": 7,
+  "title": "Betűtípusok és szövegformázás (font, text)",
+  "content": "A CSS lehetővé teszi a szövegek megjelenésének teljes testreszabását: a betűtípustól a méreten és a stíluson át a sorközökig. A jól megválasztott tipográfia javítja az olvashatóságot és a felhasználói élményt.\n\n**Betűtípus beállítása:**\n• `font-family`: elsődleges, majd alternatív betűtípusok megadása pl. `Arial, Helvetica, sans-serif`\n• `font-size`: betűméret (px, em, rem, %, stb.)\n• `font-weight`: betű vastagsága (pl. `normal`, `bold`, `100-900`)\n• `font-style`: dőlt (`italic`) vagy normál\n• `font-variant`: kis kapitális (`small-caps`)\n• `line-height`: sorköz\n\n**Szövegformázás:**\n• `text-align`: igazítás (balra, jobbra, középre, sorkizárt)\n• `text-decoration`: aláhúzás, áthúzás, stb.\n• `text-transform`: kisbetűs, nagybetűs, kezdőbetű nagy\n• `letter-spacing`: betűköz\n• `word-spacing`: szóköz\n• `white-space`: szóközök és sortörések kezelése\n• `text-shadow`: szöveg árnyék\n\n**Fontok betöltése:**\n• Web-safe fontok: alapértelmezett rendszertípusok\n• Google Fonts: importálható fontok `<link>` vagy `@import` segítségével\n\n**Tipp:**\nMindig adj meg több betűtípust font-family esetén (fallback mechanizmus), és használj reszponzív mértékegységeket, például `rem` vagy `em` a jobb skálázhatóság érdekében.",
+  "image": "/images/css-font-text.jpg",
+  "codeExample": "body {\n  font-family: 'Roboto', Arial, sans-serif;\n  font-size: 16px;\n  line-height: 1.6;\n  color: #333;\n  text-align: justify;\n}\n\nh1 {\n  font-size: 2.5rem;\n  font-weight: bold;\n  text-transform: uppercase;\n  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);\n}\n\np {\n  letter-spacing: 0.5px;\n  word-spacing: 1px;\n}",
+  "keyPoints": [
+    "`font-family`: megadja a betűtípusok listáját, fallback-kel.",
+    "`font-size`: betűméret állítása relatív vagy fix értékekkel.",
+    "`text-align`: szöveg igazítása balra, jobbra, középre stb.",
+    "`line-height`: sorköz meghatározása, olvashatóság javítása.",
+    "`text-transform`: betűk nagybetűssé vagy kisbetűssé alakítása.",
+    "`text-shadow`: látványos szövegárnyék hozzáadása."
+  ],
+  "htmlStructure": {
+    "font-family": "Betűtípusok sorrendje (pl. Arial, sans-serif)",
+    "font-size": "Betűk mérete (px, em, rem, stb.)",
+    "font-weight": "Betűk vastagsága (pl. normal, bold, 700)",
+    "text-align": "Szöveg igazítás (left, center, right, justify)",
+    "text-decoration": "Aláhúzás, áthúzás, stb.",
+    "text-transform": "Betűk átalakítása (uppercase, lowercase, capitalize)"
+  }
+},
+{
+  "id": 8,
+  "title": "Keretek (border), margók és padding (margin, padding)",
+  "content": "A CSS egyik alapköve az elemeken belüli és kívüli térközök kezelése, illetve a keretek (határolók) megadása. Ezekkel szabályozhatjuk, hogyan helyezkednek el egymáshoz képest az elemek.\n\n**1. Border – keret:**\n• `border`: minden oldali keret egyszerre\n• `border-width`, `border-style`, `border-color`\n• Oldalanként: `border-top`, `border-right`, `border-bottom`, `border-left`\n• `border-radius`: lekerekített sarkok\n\n**Példa:**\n```css\ndiv {\n  border: 2px solid #333;\n  border-radius: 8px;\n}\n```\n\n**2. Padding – belső térköz:**\n• A tartalom és a keret közötti tér\n• Pl.: `padding: 20px;`, vagy oldalanként: `padding-top`, `padding-left`, stb.\n\n**3. Margin – külső térköz:**\n• Az elem és más elemek közti távolság\n• Pl.: `margin: 10px;`, vagy oldalanként: `margin-bottom`, stb.\n\n**4. Összevonások (shorthand):**\n```css\npadding: 10px 20px 15px 5px; /* top right bottom left */\nmargin: 0 auto; /* középre igazítás */\n```\n\n**5. Box Model ismétlésként:**\nAz elem végleges mérete:\n**content + padding + border + margin**\n\n**Hasznos trükkök:**\n• `margin: 0 auto` – elem vízszintes középre helyezése (ha fix szélesség van)\n• `padding: 1em` – reszponzívabb, betűmérethez igazodó térköz\n• `box-sizing: border-box;` – a `width` és `height` az összes tartalomra vonatkozik (padding és border is)\n\n**Tipp:** Mindig ellenőrizd devtools-szal a boxmodellt! Akár a `outline` használatával is tesztelheted keret nélkül.",
+  "image": "/images/css-box-padding-margin.jpg",
+  "codeExample": "div.box {\n  width: 300px;\n  padding: 20px;\n  margin: 40px auto;\n  border: 3px solid #444;\n  border-radius: 10px;\n  background-color: #f9f9f9;\n  box-sizing: border-box;\n}",
+  "keyPoints": [
+    "`border`: megadja az elem körüli keretet.",
+    "`padding`: a tartalom és a keret közti tér.",
+    "`margin`: az elem és más elemek közötti tér.",
+    "`box-sizing`: hatással van arra, hogy a padding és border hogyan számít bele a méretbe.",
+    "Oldalanként külön is szabályozható minden érték.",
+    "A `border-radius` lekerekíti a keretek sarkait."
+  ],
+  "htmlStructure": {
+    "border": "Keret (vastagság, stílus, szín)",
+    "padding": "Belső tér az elem tartalma és kerete között",
+    "margin": "Külső tér az elem és más elemek között",
+    "box-sizing": "Határozza meg, hogy a méretek hogyan számítódnak (border-box vagy content-box)"
+  }
+},
+{
+  "id": 9,
+  "title": "Háttérképek és színek (background, color, gradient stb.)",
+  "content": "A CSS lehetővé teszi elemek háttér- és szövegszínének testreszabását. Ezeket nemcsak esztétikai célokra használjuk, hanem a felhasználói élmény és a vizuális hierarchia erősítésére is.\n\n**1. Színek megadása:**\n• Nevek: `red`, `blue`, `green`\n• Hexadecimális: `#ff0000`, `#00ff00`\n• RGB: `rgb(255, 0, 0)`\n• RGBA: `rgba(0, 0, 0, 0.5)` (átlátszóság)\n• HSL: `hsl(120, 100%, 50%)`\n\n**2. Szövegszín:**\n```css\ndiv {\n  color: #333;\n}\n```\n\n**3. Háttérszín:**\n```css\ndiv {\n  background-color: lightgray;\n}\n```\n\n**4. Háttérkép (background-image):**\n```css\ndiv {\n  background-image: url('kep.jpg');\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n}\n```\n\n**5. Áttetsző háttér:**\n```css\ndiv {\n  background-color: rgba(255, 255, 255, 0.8);\n}\n```\n\n**6. Gradiens (átmenetes szín):**\n```css\ndiv {\n  background: linear-gradient(to right, #ff0000, #0000ff);\n}\n```\nTípusok:\n• `linear-gradient`\n• `radial-gradient`\n• `conic-gradient`\n\n**7. Több háttérréteg:**\n```css\ndiv {\n  background: url('pattern.png'), linear-gradient(#eee, #ccc);\n}\n```\n\n**Hasznos tulajdonságok:**\n• `background-attachment: fixed;` – görgetéskor a háttér helyben marad\n• `background-position`, `background-size`, `background-repeat`\n• `background-blend-mode`: több réteg keverése (pl. `multiply`, `overlay`)\n\n**Tipp:** Világos szöveg sötét háttéren (vagy fordítva) segíti az olvashatóságot!",
+  "image": "/images/css-background-color-gradient.jpg",
+  "codeExample": "div.hero {\n  color: white;\n  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');\n  background-size: cover;\n  background-position: center;\n  padding: 60px;\n  text-align: center;\n}",
+  "keyPoints": [
+    "Színek megadhatók névvel, hex, rgb, rgba, hsl formátumban.",
+    "A `color` a szövegszínt, a `background-color` a háttér színt szabályozza.",
+    "Háttérkép használata: `background-image` + `background-size`, `position`, `repeat`.",
+    "Gradiensek vizuálisan érdekes átmenetes háttereket hoznak létre.",
+    "`background-blend-mode` használható több háttérréteg kombinálásához.",
+    "`rgba()` és `background`-átlátszóság segíthet olvashatóság és stílus érdekében."
+  ],
+  "htmlStructure": {
+    "background-color": "Háttérszín megadása",
+    "background-image": "Kép beállítása háttérként",
+    "color": "Szöveg színe",
+    "background-size": "Méret beállítása (cover, contain)",
+    "background-position": "Kép pozicionálása",
+    "background-repeat": "Kép ismétlése vagy nem",
+    "linear-gradient": "Átmenetes színek beállítása"
+  }
+},
+{
+  "id": 10,
+  "title": "Állapotfüggő stílusok – :hover, :focus, :active, :visited",
+  "content": "A CSS lehetővé teszi, hogy különböző felhasználói interakciók során más stílusokat alkalmazzunk egy elemre. Ezek az állapotfüggő pszeudo-osztályok segítenek a visszajelzésben, az élmény javításában és a használhatóság növelésében.\n\n**1. `:hover`** – amikor az egérmutató az elem fölé kerül.\n```css\na:hover {\n  color: red;\n  text-decoration: underline;\n}\n```\nHasznos példák: gombok, linkek, kártyák kiemelése.\n\n**2. `:focus`** – amikor egy mező aktívvá válik (pl. rá van kattintva vagy tabbal elértük).\n```css\ninput:focus {\n  border: 2px solid dodgerblue;\n  outline: none;\n}\n```\nHozzájárul az űrlapok hozzáférhetőségéhez és használhatóságához.\n\n**3. `:active`** – amikor éppen kattintás alatt van az elem.\n```css\nbutton:active {\n  transform: scale(0.98);\n  background-color: #ddd;\n}\n```\nGyakran használják vizuális visszajelzésként.\n\n**4. `:visited`** – korábban már meglátogatott link stílusa.\n```css\na:visited {\n  color: purple;\n}\n```\nFontos megjegyzés: Biztonsági okokból korlátozott, hogy mit lehet megváltoztatni (csak szín, háttérszín, stb.).\n\n**5. Kombinációk és sorrend:**\nA linkállapotok sorrendje fontos (LVHA):\n```css\na:link { color: blue; }\na:visited { color: purple; }\na:hover { color: red; }\na:active { color: orange; }\n```\n\n**6. Animáció és átmenetek ezekre az állapotokra:**\n```css\na {\n  transition: color 0.3s;\n}\na:hover {\n  color: crimson;\n}\n```\n\n**Tipp:**\n• Az interaktív elemek állapotai hozzájárulnak a felhasználói élményhez.\n• Mobilbarát használatnál érdemes nem csak `:hover`-re támaszkodni.",
+  "image": "/images/css-state-selectors.jpg",
+  "codeExample": "button {\n  background-color: #444;\n  color: white;\n  border: none;\n  padding: 10px 20px;\n  cursor: pointer;\n  transition: background-color 0.3s, transform 0.1s;\n}\n\nbutton:hover {\n  background-color: #666;\n}\n\nbutton:active {\n  transform: scale(0.97);\n}",
+  "keyPoints": [
+    "`:hover` – elem fölé viszik az egeret",
+    "`:focus` – input fókuszban van (pl. tab, kattintás)",
+    "`:active` – kattintás vagy érintés pillanatában",
+    "`:visited` – meglátogatott linkek",
+    "Fontos a sorrend: `link → visited → hover → active`",
+    "Használj `transition`-öket a sima animációkhoz"
+  ],
+  "htmlStructure": {
+    "hover": "Stílus az egérrel való rámutatáskor",
+    "focus": "Stílus amikor elem fókuszban van",
+    "active": "Stílus kattintáskor",
+    "visited": "Stílus meglátogatott linkekre",
+    "transition": "Átmenetes stílusváltások ezekhez"
+  }
+},
+{
+  "id": 11,
+  "title": "Méretezés – width, height, min/max",
+  "content": "A méretezés kulcsszerepet játszik a layout kialakításában. A CSS lehetőséget ad arra, hogy a szélességet és magasságot pontosan vagy rugalmasan adjuk meg, a különféle képernyőméretekhez alkalmazkodva.\n\n**1. Alapvető méretezés (width, height):**\n```css\ndiv {\n  width: 300px;\n  height: 150px;\n}\n```\n• A megadott érték lehet: `px`, `%`, `em`, `rem`, `vw`, `vh` stb.\n• `%` az adott szülőelemhez képest méretez.\n\n**2. Minimum és maximum méretek (min-width, max-width, min-height, max-height):**\n```css\n.container {\n  min-width: 300px;\n  max-width: 90%;\n  min-height: 200px;\n  max-height: 600px;\n}\n```\n• Ez segít a reszponzív kialakításban: megakadályozza, hogy egy elem túl kicsire vagy túl nagyra nyúljon.\n\n**3. Viewport egységek:**\n```css\n.fullscreen {\n  width: 100vw;\n  height: 100vh;\n}\n```\n• `vw`: viewport szélességének 1%-a\n• `vh`: viewport magasságának 1%-a\n\n**4. Automatikus méretezés:**\n```css\nimg {\n  width: auto;\n  height: auto;\n}\n```\n• Az `auto` érték lehetővé teszi, hogy az elem saját tartalmához igazodjon.\n\n**5. Tartalomhoz igazodó méret:**\n```css\n.inline-block {\n  display: inline-block;\n  width: fit-content;\n  height: fit-content;\n}\n```\n• A `fit-content` modern lehetőség dinamikus méretezéshez.\n\n**6. Példák kombinált használatra:**\n```css\n.card {\n  width: 100%;\n  max-width: 600px;\n  min-height: 300px;\n}\n```\n• Ideális mobilbarát tartalmakhoz.\n\n**7. Box-sizing hatása:**\n```css\n* {\n  box-sizing: border-box;\n}\n```\n• Ez biztosítja, hogy a padding és border is beleszámítson a szélességbe/magasságba.\n\n**Tippek:**\n- Ne használj csak fix `px` értékeket reszponzív layoutnál.\n- Használj `min/max-width`-et kártyák, szövegblokkok limitálására.\n- Teszteld különféle eszközméreteken a viselkedést.",
+  "image": "/images/css-sizing.jpg",
+  "codeExample": ".card {\n  width: 90%;\n  max-width: 800px;\n  min-height: 200px;\n  padding: 20px;\n  box-sizing: border-box;\n}",
+  "keyPoints": [
+    "A `width` és `height` határozza meg az alapméretet",
+    "A `min/max` segít a reszponzív viselkedés szabályozásában",
+    "Viewport egységek: `vw`, `vh` dinamikus elrendezéshez",
+    "A `box-sizing: border-box` ajánlott minden projektnél",
+    "A `fit-content` és `auto` hasznos dinamikus méretekhez"
+  ],
+  "htmlStructure": {
+    "width": "Szélesség meghatározása fix, százalékos vagy dinamikus módon",
+    "height": "Magasság megadása különböző egységekkel",
+    "minMax": "Minimum és maximum méretek használata a stabilitás érdekében",
+    "responsive": "Viewport-alapú méretezés (vw, vh), és tartalomhoz igazodás (auto, fit-content)"
+  }
+},
+{
+  "id": 12,
+  "title": "Pozícionálás – relative, absolute, fixed, sticky",
+  "content": "A pozícionálás (position) lehetővé teszi az elemek helyének precíz szabályozását a dokumentumban. Négy fő értéket különböztetünk meg, amelyek mindegyike más viselkedést biztosít.\n\n**1. Alapértelmezett pozíció (`static`):**\n• Az elemek egymás után helyezkednek el, nincs pozicionálási eltolás.\n\n**2. `relative` pozíció:**\n```css\ndiv {\n  position: relative;\n  top: 10px;\n  left: 20px;\n}\n```\n• Az elem az eredeti helyén marad, de eltolódik a megadott irányba.\n• A relatív elemek szülőként működnek az `absolute` gyermekeik számára.\n\n**3. `absolute` pozíció:**\n```css\n.child {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n```\n• Az elem a legközelebbi `relative`, `absolute`, vagy `fixed` pozíciójú ős szerint pozicionálódik.\n• Ha nincs ilyen ős, a `body`-hoz képest pozicionál.\n\n**4. `fixed` pozíció:**\n```css\n.header {\n  position: fixed;\n  top: 0;\n  width: 100%;\n}\n```\n• Az elem a viewporthoz viszonyítva rögzül – nem mozdul el görgetéskor sem.\n• Hasznos fix menük, gombok, értesítések elhelyezéséhez.\n\n**5. `sticky` pozíció:**\n```css\n.sticky-header {\n  position: sticky;\n  top: 0;\n}\n```\n• Az elem `relative`, amíg el nem éri a megadott eltolást (pl. `top: 0`), utána „odaragad”.\n• Nagyon hasznos szekció-fejlécekhez, navigációhoz.\n\n**6. `z-index`:**\n```css\n.box {\n  position: absolute;\n  z-index: 10;\n}\n```\n• Meghatározza az elem rétegsorrendjét (ki kerül előre, ki hátra).\n\n**Gyakorlati példa:**\n```css\n.container {\n  position: relative;\n}\n.overlay {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  z-index: 100;\n}\n```\n\n**Megjegyzések:**\n- A `position`-nel való munka alapja a DOM-hierarchia megértése.\n- A `sticky` működéséhez a szülőelem nem lehet túl rövid magasságú.\n- Az `absolute` és `fixed` elemek kiveszik magukat a normál dokumentumáramlásból.",
+  "image": "/images/css-positioning.jpg",
+  "codeExample": ".box {\n  position: absolute;\n  top: 20px;\n  left: 30px;\n  z-index: 5;\n}",
+  "keyPoints": [
+    "A `relative` a saját helyéhez képest tol el elemeket.",
+    "Az `absolute` a legközelebbi pozícionált ős alapján helyezkedik el.",
+    "`fixed` a képernyőhöz rögzíti az elemet (pl. fix menük).",
+    "`sticky` az oldalon belül „odaragadhat” a megadott pozícióhoz.",
+    "`z-index` szabályozza a rétegsorrendet."
+  ],
+  "htmlStructure": {
+    "position": "Az elem típusának meghatározása a dokumentumon belül",
+    "topBottomLeftRight": "A pontos helymeghatározás koordinátái",
+    "zIndex": "A vizuális rétegsorrend beállítása"
+  }
+},
+{
+  "id": 13,
+  "title": "Display és Visibility",
+  "content": "A `display` és `visibility` CSS tulajdonságok segítségével szabályozhatjuk, hogyan jelenjen meg vagy tűnjön el egy HTML elem a dokumentumban. Bár hasonlónak tűnhetnek, funkciójuk és hatásuk eltérő.\n\n**1. `display` – Megjelenítési mód meghatározása:**\nA `display` határozza meg, hogyan viselkedik egy elem vizuálisan és strukturálisan a dokumentumáramlásban.\n\n**Gyakori `display` értékek:**\n- `block`: Az elem új sort kezd, teljes szélességet elfoglal (pl. `<div>`, `<p>`).\n- `inline`: Az elem a sorban marad, csak a szükséges helyet foglalja el (pl. `<span>`, `<a>`).\n- `inline-block`: Kombinálja az inline és block tulajdonságokat.\n- `none`: Az elem nem jelenik meg, teljesen eltűnik a dokumentumból.\n- `flex`: Flexbox layoutot aktivál a szülőelemben.\n- `grid`: Grid layoutot aktivál a szülőelemben.\n- `table`, `table-row`, `table-cell`: Táblázatszerű viselkedés imitálása.\n\n**Példa:**\n```css\n.hidden-block {\n  display: none;\n}\n.nav {\n  display: flex;\n  justify-content: space-between;\n}\n```\n\n**2. `visibility` – Láthatóság szabályozása:**\nEz a tulajdonság meghatározza, hogy egy elem látható-e vagy sem, anélkül hogy a helyfoglalása változna.\n\n- `visible` (alapértelmezett): Az elem látszik.\n- `hidden`: Az elem nem látható, de a helyét megtartja.\n- `collapse`: Táblázat sorainál használatos, összeomlik a sor, nem hagy üres helyet.\n\n**Példa:**\n```css\n.invisible-text {\n  visibility: hidden;\n}\n```\n\n**Különbség `display: none` és `visibility: hidden` között:**\n- `display: none`: Az elem teljesen eltűnik, a helyét sem tartja meg.\n- `visibility: hidden`: Az elem nem látszik, de továbbra is foglal helyet a layoutban.\n\n**3. Gyakorlati példák:**\n- Menü gomb elrejtése mobilon: `display: none`.\n- Tooltip vagy üzenet elrejtése, miközben a layout nem ugrik meg: `visibility: hidden`.\n\n**4. Dinamikus használat (JavaScript):**\n```js\ndocument.getElementById(\"box\").style.display = \"none\";\n```\n\n**5. Átmeneti effektekhez:**\n- `opacity: 0` vagy `visibility: hidden` gyakran használatos animációval kombinálva.\n- A `display: none` nem animálható, mert azonnali.\n\n**Megjegyzés:**\n- A `display` kulcsszerepet játszik a layout kialakításában.\n- A `visibility` inkább állapotváltáshoz (pl. tooltip, dropdown menük) praktikus.\n",
+  "image": "/images/css-display-visibility.jpg",
+  "codeExample": ".alert {\n  display: none;\n}\n.tooltip {\n  visibility: hidden;\n}",
+  "keyPoints": [
+    "`display: none` teljesen eltünteti az elemet a DOM-ból vizuálisan.",
+    "`visibility: hidden` csak a láthatóságot kapcsolja ki, a hely megmarad.",
+    "A `display` szabályozza az elem típusát (block, inline, flex, stb.).",
+    "Dinamikusan jól kombinálható JavaScripttel UI kezeléshez.",
+    "A `visibility` ideális animációs trükkökhöz és kis interakciókhoz."
+  ],
+  "htmlStructure": {
+    "display": "Az elem viselkedését és elhelyezkedését szabályozza",
+    "visibility": "A megjelenés vizuális állapotát kezeli anélkül, hogy hatna a dokumentumfolyamra"
+  }
+},
+{
+  "id": 14,
+  "title": "Átlátszóság és opacity",
+  "content": "Az átlátszóság és az opacity tulajdonságok segítségével szabályozhatjuk, hogy egy elem mennyire legyen átlátszó vagy áttetsző a weboldalon. Ezek a tulajdonságok fontos szerepet játszanak a modern webdesignban, különösen animációk, hover effektek és vizuális hierarchia kialakításakor.\n\n**1. opacity – Átlátszóság mértéke:**\nAz `opacity` CSS tulajdonság egy számértéket vár 0 és 1 között, ahol:\n- `0`: teljesen átlátszó (láthatatlan)\n- `1`: teljesen átlátszatlan\n- Értékek között: részben áttetsző\n\n**Példa:**\n```css\n.transparent-box {\n  opacity: 0.5;\n}\n```\nEz az elem 50%-os átlátszóságú lesz.\n\n**2. Átlátszóság hatása a gyerek elemekre:**\nAz `opacity` a beállított elemre és annak összes leszármazottjára hat, tehát az egész elem tartalma átlátszó lesz.\n\n**3. RGBA és HSLA színek:**\nAz átlátszóságot a színek alfa-csatornájával is szabályozhatjuk (nem az egész elem átlátszóságát, csak a háttér vagy szín átlátszóságát):\n- `rgba(255, 0, 0, 0.5)` – félig átlátszó piros\n- `hsla(120, 100%, 50%, 0.3)` – félig átlátszó zöld\n\n**4. Különbség az `opacity` és a `visibility` vagy `display` tulajdonságok között:**\n- `opacity: 0` az elem továbbra is látható a DOM-ban, foglal helyet és interaktív lehet (kivéve, ha `pointer-events: none` is van).\n- `visibility: hidden` elrejti az elemet, de megtartja a helyét.\n- `display: none` teljesen eltünteti az elemet a dokumentumból.\n\n**5. Dinamikus vezérlés (JavaScript):**\n```js\ndocument.getElementById('box').style.opacity = '0.3';\n```\n\n**6. Használat animációkban:**\nAz `opacity` tulajdonság jól animálható CSS átmenetekkel és kulcskockákkal (`@keyframes`).\n\n**7. Példák:**\n- Fade-in/fade-out effektek\n- Hover átlátszóság változtatás\n- Árnyékok és kiemelések létrehozása\n\n**Fontos megjegyzések:**\n- Az `opacity` hatással van az egész elemre, nem csak a háttérre vagy szövegre.\n- Ha csak a háttér szín átlátszóságát akarjuk szabályozni, használjuk az `rgba` vagy `hsla` színformátumokat.\n",
+  "image": "/images/css-opacity.png",
+  "codeExample": ".faded {\n  opacity: 0.4;\n}\n.highlight {\n  background-color: rgba(255, 255, 0, 0.3);\n}",
+  "keyPoints": [
+    "Az opacity értéke 0 (átlátszó) és 1 (teljesen látható) között van.",
+    "Az opacity a teljes elemet és annak gyermekeit átlátszóvá teszi.",
+    "RGBA és HSLA színekkel az átlátszóság csak a színt érinti, nem az egész elemet.",
+    "opacity jól használható animációkhoz és hover effektekhez.",
+    "Az opacity nem távolítja el az elemet a layoutból vagy a DOM-ból."
+  ],
+  "htmlStructure": {
+    "opacity": "Az elem átlátszóságának beállítása 0 és 1 között.",
+    "rgba/hsla": "Színek átlátszóságának beállítása alfa csatornával."
+  }
+},
+{
+  "id": 15,
+  "title": "Árnyékok: box-shadow, text-shadow",
+  "content": "Az árnyékok alkalmazása fontos eszköz a webdesignban, hogy mélységet, térhatást és vizuális hangsúlyt adjunk az elemeknek. Két fő CSS tulajdonság segít ebben: a `box-shadow` az elemek dobozára, míg a `text-shadow` a szövegre alkalmazható.\n\n**1. box-shadow – dobozárnyék:**\nEz a tulajdonság lehetővé teszi, hogy árnyékot adjunk egy elem köré. Szintaxisa:\n\n```css\nbox-shadow: offset-x offset-y blur-radius spread-radius color inset;\n```\n\n- `offset-x` (kötelező): vízszintes eltolás, pozitív érték jobbra tolja az árnyékot, negatív balra.\n- `offset-y` (kötelező): függőleges eltolás, pozitív lefelé tolja, negatív felfelé.\n- `blur-radius` (opcionális): az árnyék elmosódottságának mértéke, minél nagyobb, annál lágyabb az árnyék.\n- `spread-radius` (opcionális): az árnyék méretének növelése vagy csökkentése.\n- `color` (opcionális): az árnyék színe.\n- `inset` (opcionális): az árnyékot az elem belsejébe helyezi.\n\n**Példa:**\n```css\n.card {\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);\n}\n```\nEz egy lágy, sötét árnyékot ad az elemnek, 5 pixel jobbra és lefelé tolva.\n\n**2. text-shadow – szövegárnyék:**\nEz a tulajdonság lehetővé teszi, hogy árnyékot adjunk a szöveghez. Szintaxisa hasonló:\n\n```css\ntext-shadow: offset-x offset-y blur-radius color;\n```\n\n- `offset-x`: vízszintes eltolás\n- `offset-y`: függőleges eltolás\n- `blur-radius`: elmosódottság\n- `color`: árnyék színe\n\n**Példa:**\n```css\nh1 {\n  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);\n}\n```\nEz a szöveg mögött halvány, enyhén elmosódott árnyékot hoz létre.\n\n**3. Több árnyék egy elemhez:**\nMindkét tulajdonságnál több árnyék is megadható vesszővel elválasztva:\n\n```css\nbox-shadow: 2px 2px 3px #333, -2px -2px 3px #999;\n```\n\n**4. Gyakori felhasználási területek:**\n- Kiugró gombok és panelek\n- Szövegek kiemelése\n- Mélység érzékeltetése UI elemeknél\n\n**5. Teljesítmény:**\nAz árnyékok használata CPU-t igényelhet, főleg sok elem vagy nagy elmosódás esetén. Használjuk mérsékelten komplex oldalaknál.\n\n**6. Böngészőtámogatás:**\nMindkét tulajdonság széles körben támogatott modern böngészőkben.\n\n---\n\n**Összefoglaló:**\nAz árnyékok hatékony eszközök a vizuális design fokozására. A `box-shadow` elsősorban dobozokra, míg a `text-shadow` a szövegekre használatos, és mindkettő széleskörűen testreszabható.\n",
+  "image": "/images/css-shadows.png",
+  "codeExample": ".box {\n  width: 200px;\n  height: 100px;\n  background-color: #f0f0f0;\n  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);\n}\n\n.title {\n  font-size: 2em;\n  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);\n}",
+  "keyPoints": [
+    "box-shadow: árnyék dobozokhoz, vízszintes és függőleges eltolással, elmosódással, méretváltoztatással és színnel.",
+    "text-shadow: árnyék szöveghez, hasonló paraméterekkel.",
+    "Több árnyék is megadható vesszővel elválasztva.",
+    "Az árnyékok növelik a vizuális mélységet és kiemelést.",
+    "Érdemes mértékkel használni teljesítmény miatt."
+  ],
+  "htmlStructure": {
+    "box-shadow": "Dooboz árnyék CSS szintaxisa: offset-x offset-y blur-radius spread-radius color inset",
+    "text-shadow": "Szöveg árnyék CSS szintaxisa: offset-x offset-y blur-radius color"
+  }
+},
+{
+  "id": 16,
+  "title": "Átmenetek (CSS transitions)",
+  "content": "A CSS átmenetek segítségével sima, animált váltásokat hozhatunk létre az elemek stílusváltozásai között, például amikor egy elem hover állapotba kerül vagy egy osztály módosul. Ezáltal a felhasználói élmény sokkal gördülékenyebb és dinamikusabb lesz.\n\n**1. Alap szintaxis:**\n```css\ntransition: property duration timing-function delay;\n```\n- `property`: az a CSS tulajdonság, amelyen az átmenetet alkalmazzuk (pl. color, background-color, width, height, transform, stb.). Lehet `all` is, ami minden változásra alkalmazza az átmenetet.\n- `duration`: az átmenet időtartama (pl. 0.3s, 500ms).\n- `timing-function`: az átmenet sebességének görbéje, pl. `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out`, vagy egyéni `cubic-bezier`.\n- `delay`: az átmenet késleltetése az indításhoz képest.\n\n**2. Példa:**\n```css\n.button {\n  background-color: #3498db;\n  color: white;\n  transition: background-color 0.3s ease, color 0.3s ease;\n}\n.button:hover {\n  background-color: #2980b9;\n  color: #f1c40f;\n}\n```\nEbben a példában a gomb háttér- és szövegszíne lágyan változik, amikor fölé visszük az egeret.\n\n**3. Több tulajdonság átmenete:**\nEgyszerre több tulajdonságon is lehet átmenetet definiálni, vesszővel elválasztva.\n\n**4. Rövidítések:**\nA `transition` egy rövidített tulajdonság, helyettesíti az alábbiakat:\n- `transition-property`\n- `transition-duration`\n- `transition-timing-function`\n- `transition-delay`\n\n**5. Praktikus tippek:**\n- Csak azokat a tulajdonságokat animáljuk, amik valóban változnak.\n- Ne használjunk túl hosszú időt, mert lassúvá teszi a felhasználói interakciót.\n- Kombináljuk más CSS animációkkal, ha szükséges.\n\n**6. Böngészőtámogatás:**\nA CSS átmeneteket minden modern böngésző támogatja.\n\n---\n\n**Összefoglaló:**\nA CSS átmenetek egyszerű és hatékony eszközök a stílusváltozások animálására, melyekkel interaktív és vizuálisan kellemes felületeket készíthetünk.",
+  "image": "/images/css-transitions.png",
+  "codeExample": ".box {\n  width: 150px;\n  height: 150px;\n  background-color: #e74c3c;\n  transition: background-color 0.5s ease, transform 0.3s ease;\n}\n.box:hover {\n  background-color: #c0392b;\n  transform: scale(1.1);\n}",
+  "keyPoints": [
+    "transition property: melyik CSS tulajdonságot animáljuk",
+    "duration: az animáció időtartama",
+    "timing-function: az animáció sebességgörbéje",
+    "delay: az animáció késleltetése",
+    "több tulajdonság átmenete is megadható",
+    "egyszerű, hatékony módja a stílusváltozások animálásának"
+  ],
+  "htmlStructure": {
+    "transition": "transition: property duration timing-function delay;",
+    "hover példa": ":hover állapotban megváltozó stílus, amit animál a transition"
+  }
+},
+{
+  "id": 17,
+  "title": "Animációk (keyframes, animation)",
+  "content": "A CSS animációk segítségével összetett, többszörös stílusváltozásokat hozhatunk létre időben, melyek simán és automatikusan lefutnak, például mozgatás, átméretezés vagy színváltás esetén.\n\n**1. @keyframes szabály:**\nEz határozza meg az animáció kulcskockáit (keyframes), azaz a stílusok változását az animáció különböző pontjain.\n\nPélda:\n```css\n@keyframes slide {\n  0% { transform: translateX(0); }\n  50% { transform: translateX(100px); }\n  100% { transform: translateX(0); }\n}\n```\nEz az animáció az elemet balról jobbra mozgatja, majd vissza.\n\n**2. animation tulajdonság:**\nEzzel kapcsoljuk az animációt egy elemhez, megadva több paramétert:\n- `animation-name`: az @keyframes neve\n- `animation-duration`: az animáció időtartama (pl. 2s)\n- `animation-timing-function`: az időzítés görbéje (pl. ease, linear)\n- `animation-delay`: késleltetés az animáció indításáig\n- `animation-iteration-count`: hányszor ismétlődjön (pl. infinite)\n- `animation-direction`: irány (pl. normal, alternate)\n- `animation-fill-mode`: az animáció után maradó stílus\n\nPélda:\n```css\n.box {\n  animation-name: slide;\n  animation-duration: 3s;\n  animation-iteration-count: infinite;\n  animation-timing-function: ease-in-out;\n}\n```\n\n**3. Rövidített szintaxis:**\nAz `animation` rövidítve is megadható:\n```css\nanimation: slide 3s ease-in-out infinite;\n```\n\n**4. Több animáció:**\nEgyszerre több animációt is megadhatunk, vesszővel elválasztva.\n\n**5. Használat:**\nAnimációk használhatók gombok, menük, figyelemfelkeltő elemek dinamikusabbá tételére, vagy akár komplex animált háttér létrehozására.\n\n**6. Böngészőtámogatás:**\nA modern böngészők teljes körű támogatást nyújtanak a CSS animációkhoz.\n\n---\n\n**Összefoglaló:**\nA CSS animációk lehetővé teszik, hogy egyszerű stílusváltások helyett bonyolultabb, több lépésből álló, sima mozgásokat és vizuális hatásokat készítsünk natív CSS segítségével.",
+  "image": "/images/css-keyframes-animation.png",
+  "codeExample": "@keyframes pulse {\n  0% { transform: scale(1); opacity: 1; }\n  50% { transform: scale(1.1); opacity: 0.7; }\n  100% { transform: scale(1); opacity: 1; }\n}\n\n.button {\n  animation: pulse 2s infinite ease-in-out;\n  background-color: #3498db;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n}\n.button:hover {\n  animation-play-state: paused;\n}",
+  "keyPoints": [
+    "@keyframes: az animáció kulcskockáit definiálja",
+    "animation-name: az animáció neve, amit az @keyframes-hez kötünk",
+    "animation-duration: az animáció időtartama",
+    "animation-iteration-count: ismétlések száma vagy infinite",
+    "animation-timing-function: az animáció sebességének görbéje",
+    "animation-direction: irány (pl. normal, reverse, alternate)",
+    "animation-fill-mode: az animáció után maradó stílus",
+    "animation-delay: késleltetés az animáció indulásáig",
+    "rövidített animation tulajdonság használata",
+    "több animáció is alkalmazható egyszerre"
+  ],
+  "htmlStructure": {
+    "@keyframes": "@keyframes animáció_név { kulcskockák }",
+    "animation": "animation: név időtartam görbe ismétlésszám késleltetés irány kitöltés;"
+  }
+},
+{
+  "id": 18,
+  "title": "Pszeudoosztályok (:hover, :focus, :nth-child)",
+  "content": "A pszeudoosztályok speciális állapotokat vagy elemeket jelölnek CSS-ben, amelyek nem közvetlenül a HTML elemekre, hanem azok bizonyos helyzeteire vagy állapotaira vonatkoznak.\n\n**1. :hover**\nAz elemre mutató egér kurzor hatására lép életbe. Gyakran használjuk gombok, linkek kiemelésére, vagy dinamikus vizuális effektusokra.\n\nPélda:\n```css\na:hover {\n  color: red;\n  text-decoration: underline;\n}\n```\n\n**2. :focus**\nAz elem fókuszba kerülésekor (pl. beviteli mező, gomb kattintás vagy TAB billentyűvel történő fókuszálás). Fontos a hozzáférhetőség (accessibility) miatt.\n\nPélda:\n```css\ninput:focus {\n  border-color: blue;\n  outline: 2px solid lightblue;\n}\n```\n\n**3. :nth-child(n)**\nAz elem szülőjén belüli n-edik gyermekét célozza meg. Használható szabályos minták, sorozatok formázására.\n\nPélda:\n```css\nli:nth-child(odd) {\n  background-color: #f0f0f0;\n}\nli:nth-child(3) {\n  font-weight: bold;\n}\n```\n\nTovábbi példák az :nth-child-hoz:\n- `nth-child(2n)` – minden páros gyermek\n- `nth-child(3n+1)` – minden harmadik gyermek, kezdve az elsővel\n\n**4. Egyéb hasznos pszeudoosztályok:**\n- :first-child – az első gyermek\n- :last-child – az utolsó gyermek\n- :not(selector) – a selectorral nem egyező elemek\n\n**5. Pszeudoosztályok és hozzáférhetőség:**\nA :focus pszeudoosztály segíti a billentyűzettel való navigációt, fontos, hogy ne távolítsuk el a fókusz láthatóságát.\n\n**6. Használati tippek:**\n- :hover ne legyen az egyetlen módja interakciónak, mindig legyen alternatíva billentyűzethez\n- :nth-child segítségével hatékonyan készíthetünk sávos táblázatokat vagy listákat\n\n---\n\n**Összefoglaló:**\nA pszeudoosztályok segítségével egyszerűen kezelhetjük az elemek különböző állapotait, és dinamikusabb, felhasználóbarátabb megjelenést érhetünk el CSS-ben.",
+  "image": "/images/css-pseudo-classes.png",
+  "codeExample": "a:hover {\n  color: orange;\n  text-decoration: underline;\n}\n\ninput:focus {\n  border: 2px solid #007BFF;\n  outline: none;\n}\n\nli:nth-child(odd) {\n  background-color: #f9f9f9;\n}\n\nli:nth-child(even) {\n  background-color: #e9e9e9;\n}",
+  "keyPoints": [
+    ":hover az egér fölé vitt elemre alkalmazható stílus",
+    ":focus az elem fókuszba kerülésekor aktiválódik",
+    ":nth-child segítségével az elemek pozíciója alapján célozhatunk",
+    ":first-child, :last-child, :not pszeudoosztályok hasznosak komplexebb szelektorokhoz",
+    "Fontos a fókusz stílus megtartása az akadálymentesség miatt",
+    "A pszeudoosztályok növelik a weboldal interaktivitását és vizuális élményét"
+  ],
+  "htmlStructure": {
+    ":hover": "selector:hover { styles }",
+    ":focus": "selector:focus { styles }",
+    ":nth-child": "selector:nth-child(n) { styles }"
+  }
+},
+{
+  "id": 19,
+  "title": "Pszeudo-elemek (::before, ::after)",
+  "content": "A pszeudo-elemek speciális CSS szelektorok, amelyek lehetővé teszik, hogy virtuális, nem létező elemeket helyezzünk el egy HTML elem előtt vagy után. Ezek nem módosítják a HTML-t, hanem csak a megjelenítést befolyásolják.\n\n**::before**\nEz a pszeudo-elem egy virtuális tartalmat szúr be az elem tartalma elé.\n\n**::after**\nEz a pszeudo-elem egy virtuális tartalmat szúr be az elem tartalma mögé.\n\nMindkettő használatához kötelező a `content` tulajdonság megadása, amely meghatározza, mit helyezünk el (pl. szöveg, üres string, unicode karakter).\n\n---\n\n**Példa:**\n```css\n.button::before {\n  content: \"▶\";\n  margin-right: 5px;\n  color: green;\n}\n\n.card::after {\n  content: \"*\";\n  color: red;\n  font-weight: bold;\n}\n```\n\nHTML:\n```html\n<button class=\"button\">Indítás</button>\n<div class=\"card\">Fontos üzenet</div>\n```\n\n**Használati tippek:**\n- Dekoratív elemekhez, ikonokhoz, extra jelölésekhez ideális\n- Ne használjuk fontos tartalomhoz, mert a képernyőolvasók nem feltétlen olvassák fel\n- Gyakori a listajelek testreszabására vagy vizuális effektek készítésére\n\n**További tippek:**\n- Stílusozhatjuk színt, méretet, pozíciót, animációt\n- Gyakran kombinálják `position: absolute`-tal a pontos elhelyezésért\n\n---\n\n**Összefoglaló:**\nA pszeudo-elemek lehetővé teszik, hogy vizuálisan bővítsük az elemeket, anélkül, hogy a HTML szerkezetét módosítanánk, így tisztább és rugalmasabb kódot írhatunk.",
+  "image": "/images/css-pseudo-elements.png",
+  "codeExample": ".btn::before {\n  content: \"🔥\";\n  margin-right: 8px;\n}\n\np.note::after {\n  content: \"⚠️\";\n  color: orange;\n  margin-left: 6px;\n}\n",
+  "keyPoints": [
+    "::before és ::after virtuális elemek beszúrására szolgálnak",
+    "A content tulajdonság használata kötelező",
+    "Használhatók dekorációra és vizuális elemekre anélkül, hogy módosítanánk a HTML-t",
+    "Nem helyettesítik a valódi tartalmat, figyeljünk az akadálymentességre",
+    "Kombinálhatók pozícionálással, animációval és más CSS tulajdonságokkal"
+  ],
+  "htmlStructure": {
+    "::before": "selector::before { content: \"...\"; /* stílusok */ }",
+    "::after": "selector::after { content: \"...\"; /* stílusok */ }"
+  }
+},
+{
+  "id": 20,
+  "title": "Z-index és rétegkezelés",
+  "content": "A z-index CSS tulajdonság segítségével szabályozhatjuk az elemek egymásra helyeződésének sorrendjét, azaz melyik elem legyen \"elöl\" vagy \"hátul\" a képernyőn.\n\n**Fontos tudnivalók:**\n- Csak olyan elemekre hat, amelyek pozícionáltak (position: relative, absolute, fixed, sticky).\n- Minél nagyobb az elem z-index értéke, annál feljebb van a rétegben.\n- Alapértelmezés szerint minden elemnek z-index: auto értéke van, ami a dokumentum forrás szerinti sorrendet jelenti.\n\n---\n\n**Rétegkezelés működése:**\n- Az elemek alapértelmezett réteghelyzete az oldalon a HTML kód sorrendjét követi.\n- Ha egy elem pozícionált, és kap z-index értéket, új réteg kontextust hoz létre.\n- Egy magasabb z-indexű elem kitakarhat egy alacsonyabbat, ha azok átfedik egymást.\n\n---\n\n**Példa:**\n```css\n.box1 {\n  position: relative;\n  z-index: 10;\n  background-color: red;\n  width: 100px;\n  height: 100px;\n}\n.box2 {\n  position: relative;\n  z-index: 5;\n  background-color: blue;\n  width: 100px;\n  height: 100px;\n  margin-top: -50px;\n}\n```\n\nHTML:\n```html\n<div class=\"box1\"></div>\n<div class=\"box2\"></div>\n```\nEbben az esetben a piros doboz lesz felül, mert magasabb a z-index értéke.\n\n---\n\n**Gyakori hibák és tippek:**\n- Ne használj túl magas z-index értékeket, mert nehéz lesz átlátni a rétegek sorrendjét.\n- Figyelj, hogy csak pozícionált elemekre hat.\n- Az egymásba ágyazott elemek saját réteg kontextust hoznak létre, ami befolyásolhatja a z-index működését.\n\n---\n\n**Összefoglalás:**\nA z-index a CSS-ben a rétegkezelést szabályozza, amivel megadhatjuk, hogy az egymással átfedésben lévő elemek közül melyik jelenjen meg \"elöl\". Fontos, hogy csak pozícionált elemek esetén működik, és érdemes odafigyelni a réteg kontextusokra a bonyolultabb elrendezéseknél.",
+  "image": "/images/css-z-index.png",
+  "codeExample": ".box1 {\n  position: relative;\n  z-index: 10;\n  background-color: red;\n  width: 100px;\n  height: 100px;\n}\n.box2 {\n  position: relative;\n  z-index: 5;\n  background-color: blue;\n  width: 100px;\n  height: 100px;\n  margin-top: -50px;\n}\n",
+  "keyPoints": [
+    "A z-index csak pozícionált elemekre hat",
+    "Nagyobb z-index értékű elem kerül felülre",
+    "Alapértelmezett z-index érték auto (a dokumentum forrás szerinti sorrend)",
+    "Az egymásba ágyazott elemek saját réteg kontextust hozhatnak létre",
+    "Túl magas vagy rendszertelen z-index értékek nehezítik a karbantartást"
+  ],
+  "htmlStructure": {
+    "css": "selector { position: relative|absolute|fixed|sticky; z-index: szám; }"
+  }
+},
+{
+  "id": 21,
+  "title": "Media query-k – reszponzivitás alapjai",
+  "content": "A media query-k a CSS egyik kulcsfontosságú eszközei, amelyek segítségével különböző stílusokat alkalmazhatunk a felhasználó eszközének jellemzői alapján, így biztosítva a reszponzív, azaz alkalmazkodó weboldalakat.\n\n**Mi az a media query?**\nA media query egy feltételrendszer, ami meghatározza, hogy mikor alkalmazzon egy adott CSS szabályt a böngésző. Leggyakrabban az eszköz szélességét, magasságát, felbontását, orientációját vizsgáljuk.\n\n---\n\n**Alapvető szintaxis:**\n```css\n@media (feltétel) {\n  /* CSS szabályok ide */\n}\n```\n\nPéldául:\n```css\n@media (max-width: 768px) {\n  body {\n    background-color: lightblue;\n  }\n}\n```\nEz a szabály akkor lép életbe, ha a képernyő szélessége legfeljebb 768 pixel.\n\n---\n\n**Gyakran használt media feature-ök:**\n- width, min-width, max-width\n- height, min-height, max-height\n- orientation (portrait vagy landscape)\n- resolution (képernyő felbontása)\n- aspect-ratio\n\n---\n\n**Példa a reszponzív weboldal készítésére:**\n```css\nbody {\n  font-size: 16px;\n}\n\n@media (max-width: 600px) {\n  body {\n    font-size: 14px;\n  }\n}\n```\nItt a betűméret kisebb lesz kisebb képernyőn, így jobban olvasható marad.\n\n---\n\n**Több feltétel együttes használata:**\n```css\n@media (min-width: 600px) and (max-width: 1024px) {\n  /* szabályok */\n}\n```\nEz a szabály csak akkor lép életbe, ha a képernyő szélessége 600 és 1024 pixel között van.\n\n---\n\n**Mobile-first szemlélet:**\nA media query-k gyakran úgy vannak megírva, hogy először a mobilra optimalizált alapstílusokat adjuk meg, majd nagyobb képernyők esetén változtatunk rajta.\n\n---\n\n**Összefoglalás:**\nA media query-k segítségével hatékonyan alakíthatjuk ki a reszponzív weboldalakat, amelyek különböző eszközökön optimálisan jelennek meg. Fontos a megfelelő breakpontok (képernyőszélességek) meghatározása a felhasználói élmény maximalizálására.",
+  "image": "/images/css-media-queries.png",
+  "codeExample": "@media (max-width: 768px) {\n  body {\n    background-color: lightblue;\n  }\n}\n\n@media (min-width: 769px) {\n  body {\n    background-color: white;\n  }\n}",
+  "keyPoints": [
+    "A media query-k segítségével különböző CSS szabályokat alkalmazhatunk különböző eszközökön",
+    "Leggyakrabban a képernyő szélességét használjuk a feltételek megadására",
+    "Támogatják a mobil-first fejlesztési szemléletet",
+    "Több feltétel együttes használata AND és OR logikával lehetséges",
+    "Fontos jól megválasztani a breakpontokat a reszponzív dizájn érdekében"
+  ],
+  "htmlStructure": {
+    "css": "@media (feltétel) { /* CSS szabályok */ }"
+  }
+},
+{
+  "id": 22,
+  "title": "CSS változók (Custom Properties)",
+  "content": "A CSS változók (más néven Custom Properties) lehetővé teszik, hogy újrahasznosítható értékeket definiáljunk és használjunk CSS-ben, így könnyebb és átláthatóbb lesz a stíluslap karbantartása.\n\n**Mi az a CSS változó?**\nEgy olyan egyedi névvel ellátott érték, amelyet később bárhol felhasználhatunk a CSS-ben.\n\n---\n\n**Változó deklarálása:**\nA változókat a CSS-ben a `--` előtaggal definiáljuk egy elemhez tartozó stílusban, általában a `:root` pszeudo-osztályban, ami a dokumentum gyökéreleme, így globálisan elérhetőek lesznek.\n\n```css\n:root {\n  --alapszin: #3498db;\n  --szoveg-meret: 16px;\n  --kulonleges-padding: 10px 20px;\n}\n```\n\n**Változó használata:**\nA változók értékét a `var()` függvénnyel lehet hivatkozni.\n\n```css\nbody {\n  background-color: var(--alapszin);\n  font-size: var(--szoveg-meret);\n  padding: var(--kulonleges-padding);\n}\n```\n\n---\n\n**Előnyök:**\n- Könnyű stílusok egységesítése és módosítása\n- Kódszépség és átláthatóság\n- Dinamikus értékek kezelése, pl. témák váltása\n\n---\n\n**Változók lokális használata:**\nNem csak globálisan lehet változókat definiálni, hanem egy adott elemhez is, amely akkor csak az adott elemhez és leszármazottaihoz lesz elérhető.\n\n```css\n.kartya {\n  --kartya-szin: #f39c12;\n  background-color: var(--kartya-szin);\n}\n```\n\n---\n\n**Alapértelmezett érték megadása:**\nA `var()` használatakor megadhatunk alapértelmezett értéket is, ha a változó nincs definiálva:\n\n```css\ncolor: var(--nemletezo-valtozo, black);\n```\n\n---\n\n**Kompatibilitás:**\nA modern böngészők mind támogatják a CSS változókat (Chrome, Firefox, Safari, Edge), de régebbi böngészőkben nem működnek.\n\n---\n\n**Összefoglalás:**\nA CSS változók nagy segítséget jelentenek a karbantartható, könnyen módosítható és skálázható CSS kód írásában, különösen nagyobb projektek esetén.",
+  "image": "/images/css-custom-properties.png",
+  "codeExample": ":root {\n  --primary-color: #007bff;\n  --font-size-base: 16px;\n}\n\nh1 {\n  color: var(--primary-color);\n  font-size: calc(var(--font-size-base) * 2);\n}\n\np {\n  color: var(--primary-color);\n  font-size: var(--font-size-base);\n}",
+  "keyPoints": [
+    "CSS változókat -- előtaggal definiálunk a :root vagy más elemeken",
+    "A változók értékét var() függvénnyel használjuk fel",
+    "Lehetővé teszi az egységes stílusok és témák könnyű kezelését",
+    "Lokális és globális változók definiálhatók",
+    "Alapértelmezett érték adható a var() függvényben"
+  ],
+  "htmlStructure": {
+    ":root": "--valtozo-neve: ertek;",
+    "hasznalat": "property: var(--valtozo-neve);"
+  }
+},
+{
+  "id": 23,
+  "title": "Egyedi betűk (Google Fonts, @font-face)",
+  "content": "Az egyedi betűtípusok használata fontos része a modern webdesignnak, hiszen segít a weboldalak egyedi megjelenésének kialakításában és a márka arculatának erősítésében.\n\n**1. Google Fonts használata**\n\nA Google Fonts egy ingyenes, online betűtípus-könyvtár, amely könnyen integrálható a weboldalakba.\n\n---\n\n**Google Fonts integrálása:**\n\n- Válassz betűtípust a https://fonts.google.com/ oldalon.\n- Másold ki a HTML `<link>` elemet, amit a `<head>` szekcióba kell helyezni.\n\n```html\n<head>\n  <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">\n</head>\n```\n\n- Használd a betűtípust CSS-ben:\n\n```css\nbody {\n  font-family: 'Roboto', sans-serif;\n}\n```\n\n---\n\n**2. @font-face használata saját betűtípushoz**\n\nHa saját betűtípust szeretnél használni, vagy nem szeretnél külső szolgáltatásra támaszkodni, akkor az `@font-face` szabály segítségével importálhatod a betűtípust.\n\n---\n\n**@font-face szintaxisa:**\n\n```css\n@font-face {\n  font-family: 'MyCustomFont';\n  src: url('fonts/MyCustomFont.woff2') format('woff2'),\n       url('fonts/MyCustomFont.woff') format('woff');\n  font-weight: normal;\n  font-style: normal;\n}\n```\n\n- A `src` mezőben meg kell adni a betűtípus fájl elérési útját és formátumát.\n- Több formátumot is megadhatunk a böngészők kompatibilitása miatt.\n\n---\n\n**Használat a CSS-ben:**\n\n```css\nbody {\n  font-family: 'MyCustomFont', Arial, sans-serif;\n}\n```\n\n---\n\n**3. Tippek és jó gyakorlatok:**\n\n- Mindig adj meg tartalék betűtípusokat (pl. `sans-serif`, `serif`).\n- Optimalizáld a betűtípus-fájlokat a gyorsabb betöltés érdekében.\n- Használj csak a szükséges karakterkészletet (latin, cirill, stb.) a betűtípusoknál.\n- Figyelj a licencfeltételekre, ha külső betűtípust használsz.\n\n---\n\n**4. Kompatibilitás:**\n\nA Google Fonts minden modern böngészőben működik, az `@font-face` pedig a legtöbb modern böngészőben támogatott, de régebbi böngészőknél érdemes több formátumot megadni.\n\n---\n\n**Összefoglalás:**\nAz egyedi betűk használata megkülönbözteti weboldalad, és a Google Fonts vagy az `@font-face` használatával könnyen beillesztheted a kívánt betűtípusokat.",
+  "image": "/images/css-custom-fonts.png",
+  "codeExample": "<head>\n  <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap\" rel=\"stylesheet\">\n</head>\n\n<style>\n  body {\n    font-family: 'Open Sans', sans-serif;\n  }\n\n  @font-face {\n    font-family: 'MyFont';\n    src: url('/fonts/MyFont.woff2') format('woff2'),\n         url('/fonts/MyFont.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n  }\n\n  h1 {\n    font-family: 'MyFont', serif;\n  }\n</style>",
+  "keyPoints": [
+    "Google Fonts segítségével gyorsan és ingyenesen használhatók egyedi betűtípusok",
+    "@font-face szabály lehetővé teszi saját betűtípusok betöltését",
+    "Több betűtípus formátum megadása a kompatibilitás miatt",
+    "Mindig adj meg tartalék betűtípusokat",
+    "Optimalizáld a betűtípus fájlokat a gyorsabb oldalbetöltéshez"
+  ],
+  "htmlStructure": {
+    "google_fonts_link": "<link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">",
+    "@font-face": "@font-face { font-family: 'MyFont'; src: url('MyFont.woff2') format('woff2'); }",
+    "usage": "font-family: 'MyFont', sans-serif;"
+  }
+},
+{
+  "id": 24,
+  "title": "CSS specifikusság és öröklés",
+  "content": "A CSS specifikusság és öröklés alapvető fogalmak a stílusok alkalmazásában és felülírásában.\n\n---\n\n## 1. CSS specifikusság (specificity)\n\nA specifikusság határozza meg, hogy ha több szabály ugyanarra a HTML elemre vonatkozik, melyik szabály kerül alkalmazásra.\n\n### Specifikussági pontszámok (fontossági sorrend):\n\n- Inline stílusok (pl. `style=\"...\"`) — a legerősebb, **1000 pont**\n- ID szelektorok (`#id`) — **100 pont**\n- Osztályok (`.class`), attribútum szelektorok (`[type=\"text\"]`) és pszeudo-osztályok (`:hover`) — **10 pont**\n- Elem (tag) szelektorok (`div`, `p`) és pszeudo-elemek (`::before`) — **1 pont**\n\n### Példa:\n\n```css\n/* Specifikusság: 001 */\np { color: black; }\n\n/* Specifikusság: 010 */\n.intro { color: red; }\n\n/* Specifikusság: 100 */\n#main { color: blue; }\n\n/* Inline stílus: 1000 */\n<div id=\"main\" class=\"intro\" style=\"color: green;\">Szöveg</div>\n```\n\nEbben az esetben a szöveg zöld lesz, mert az inline stílus a legerősebb.\n\n---\n\n## 2. Szabályok összevetése és öröklődés\n\n### Hogyan dönt a böngésző?\n\nHa két szabály ütközik, akkor a magasabb specifikusságú szabály kerül alkalmazásra. Ha specifikusságuk azonos, akkor a későbbi (később megírt) szabály lesz érvényes.\n\n### Fontos (important) jelzés\n\nA `!important` kulcsszó felülírja a specifikusságot, és mindig előnyt élvez:\n\n```css\np { color: blue !important; }\np.intro { color: red; }\n```\nEbben a példában a `p` elem kék lesz, még akkor is, ha az `intro` osztály hozzá van rendelve.\n\n---\n\n## 3. Öröklődés (inheritance)\n\nNem minden CSS tulajdonság öröklődik automatikusan a gyerek elemekre. Például a `color`, `font-family` öröklődik, de a `margin`, `padding`, `border` nem.\n\n### Példa:\n\n```css\ndiv {\n  color: blue; /* öröklődik */\n  margin: 10px; /* nem öröklődik */\n}\n```\nA div gyermek elemeinek szövege kék lesz, de a margója nem öröklődik rá.\n\n### Az `inherit` kulcsszó\n\nKézzel is örökölhetjük a tulajdonságokat:\n\n```css\np {\n  color: inherit; /* az aktuális szülő színét veszi fel */\n}\n```\n\n---\n\n## 4. Összefoglalás\n\n- A specifikusság határozza meg, melyik CSS szabály érvényesül.\n- Inline stílusok a legerősebbek, aztán ID-k, osztályok és végül elem szelektorok.\n- `!important` minden szabályt felülír.\n- Csak bizonyos tulajdonságok öröklődnek automatikusan.\n- Az `inherit` kulcsszóval manuálisan örökölhetünk tulajdonságokat.\n\n---\n\n## 5. Hasznos eszközök\n\n- Böngészők fejlesztői eszközei (pl. Chrome DevTools) segítségével könnyen megnézheted, melyik szabály alkalmazódik egy elemre és a specifikusságot.\n\n---\n\n### Példa kód:\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>CSS Specifikusság és Öröklés</title>\n  <style>\n    p { color: black; } /* 1 pont */\n    .highlight { color: red; } /* 10 pont */\n    #special { color: blue; } /* 100 pont */\n    p.special { color: green !important; } /* !important felülír mindent */\n  </style>\n</head>\n<body>\n  <p id=\"special\">Ez a szöveg kék lesz.</p>\n  <p class=\"highlight\">Ez a szöveg piros lesz.</p>\n  <p class=\"special\">Ez a szöveg zöld lesz, mert !important.</p>\n</body>\n</html>\n```\n",
+  "keyPoints": [
+    "A specifikusság határozza meg, melyik CSS szabály érvényesül, ha több ütközik.",
+    "Inline stílusok a legerősebbek, az ID-k erősebbek, mint osztályok, amik erősebbek, mint elemek.",
+    "`!important` minden szabályt felülír.",
+    "Nem minden CSS tulajdonság öröklődik automatikusan, csak pl. a `color` és `font-family`.",
+    "Az `inherit` kulcsszóval manuálisan lehet örökölni tulajdonságokat."
+  ]
+},
+{
+  "id": 25,
+  "title": "Reset és normalize",
+  "content": "A webfejlesztés egyik alapvető kihívása, hogy a különböző böngészők alapértelmezett stílusai eltérőek lehetnek, ami megnehezíti az egységes megjelenés kialakítását. Ezért használjuk a CSS reset vagy a normalize technikákat, amelyek célja a böngészők közti stílusbeli eltérések minimalizálása.\n\n---\n\n## 1. Mi a CSS Reset?\n\nA CSS Reset egy olyan stíluslap, amely minden HTML elem alapértelmezett stílusát eltávolítja vagy nullázza. Így a böngészők közti különbségek megszűnnek, és tiszta, egységes alapot kapunk a fejlesztéshez.\n\n### Előnyei:\n\n- Teljes kontrollt biztosít a megjelenés felett.\n- Megszünteti a böngészők alapértelmezett margóit, paddingjait, betűméreteit és egyéb stílusait.\n- Különösen hasznos, ha nulláról szeretnénk építeni az oldal kinézetét.\n\n### Hátrányai:\n\n- Minden stílust újra kell definiálni, mert eltűnnek a böngészők alapértelmezett, hasznos beállításai is.\n- Több időt igényel a fejlesztés elején.\n\n### Példa (Eric Meyer Reset CSS részlet):\n\n```css\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n```\n\n---\n\n## 2. Mi a Normalize CSS?\n\nA Normalize CSS egy alternatív megoldás, amely nem nullázza le teljesen az alapértelmezett stílusokat, hanem inkább kiegyenlíti a böngészők közti különbségeket úgy, hogy megőrzi a hasznos alapértelmezett megjelenéseket.\n\n### Előnyei:\n\n- Megőrzi a böngészők által használt natív stílusokat, például a gombok, formák és más elemek kinézetét.\n- Minimalizálja a böngészők közötti eltéréseket.\n- Gyorsabb fejlesztési időt tesz lehetővé.\n- Széles körben támogatott és karbantartott.\n\n### Használat CDN-ről:\n\n```html\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css\" />\n```\n\n---\n\n## 3. Reset és Normalize CSS összehasonlítása\n\n| Jellemző               | CSS Reset                    | Normalize CSS                       |\n|------------------------|-----------------------------|-----------------------------------|\n| Alapértelmezett stílusok | Teljesen eltávolítja az összeset | Egységesíti, de megőrzi a hasznosakat |\n| Megközelítés           | „Letisztít, nulláz”          | „Harmonizál, kiegyenlít”          |\n| Milyen elemeket érint   | Minden HTML elem             | HTML elemek és HTML5 új elemek     |\n| Fejlesztés kezdeti fázisa | Több munkát igényel, minden újra definiálandó | Kisebb plusz munkát igényel          |\n| Használati terület      | Teljes kontroll és egyedi stílus | Gyors indulás és egységes alap     |\n\n---\n\n## 4. Mikor melyiket érdemes használni?\n\n### Reset CSS akkor ajánlott, ha:\n\n- Teljesen egyedi, a nulláról felépített dizájnt készítesz.\n- Teljes kontrollt szeretnél az összes HTML elem stílusa felett.\n- Nincs igény a böngészők alapértelmezett megjelenésének megtartására.\n\n### Normalize CSS akkor jó választás, ha:\n\n- Szeretnéd megőrizni a böngészők által előre beállított, hasznos stílusokat.\n- Gyorsan szeretnél indulni, és a legtöbb böngészőben egységes megjelenést biztosítani.\n- Nem akarsz mindent nulláról definiálni.\n\n---\n\n## 5. Gyakorlati példa\n\n### Reset CSS használata:\n\n```html\n<head>\n  <style>\n    /* Eric Meyer Reset példa */\n    /* ...ide jön a reset CSS kódja... */\n  </style>\n  <style>\n    /* Saját stílusok innen kezdődnek */\n    body {\n      font-family: Arial, sans-serif;\n      padding: 20px;\n    }\n  </style>\n</head>\n```\n\n### Normalize CSS használata:\n\n```html\n<head>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css\" />\n  <style>\n    body {\n      font-family: Arial, sans-serif;\n      padding: 20px;\n    }\n  </style>\n</head>\n```\n\n---\n\n## Összefoglalás\n\nA Reset CSS teljesen eltávolítja az összes böngészői alapértelmezést, ezért nagyon alaposan kell újradefiniálni a stílusokat. A Normalize CSS megőrzi a böngészők hasznos alapstílusait, miközben egységesíti a megjelenést. Mindkettő célja, hogy a weboldal minden böngészőben hasonlóan jelenjen meg, de eltérő megközelítéssel. A választás a projekt jellegétől és a fejlesztői preferenciáktól függ.",
+  "keyPoints": [
+    "A CSS Reset teljesen eltávolítja a böngészők alapértelmezett stílusait, míg a Normalize CSS kiegyenlíti és megőrzi azokat.",
+    "A Reset nagyobb kontrollt biztosít, de több munkát igényel a stílusok újradefiniálása miatt.",
+    "A Normalize gyorsabb fejlesztést tesz lehetővé, miközben egységes megjelenést biztosít.",
+    "A Reset akkor jó, ha teljesen egyedi kinézetet akarsz nulláról építeni.",
+    "A Normalize akkor ideális, ha meg akarod őrizni a böngésző alapértelmezett hasznos stílusait."
+  ]
+},
+{
+  "id": 26,
+  "title": "CSS Mobilbarát tervezés (responsive UX tippek)",
+  "content": "A mobilbarát weboldalak tervezése ma már alapkövetelmény, hiszen a felhasználók nagy része okostelefonról vagy tabletről böngészi az internetet. A reszponzív tervezés célja, hogy a weboldal minden eszközön, különböző képernyőméreteken és felbontásokon jól használható és esztétikus legyen.\n\n---\n\n## 1. Mi az a reszponzív tervezés?\n\nA reszponzív design (responsive design) olyan technikák összessége, amelyek lehetővé teszik, hogy a weboldal megjelenése automatikusan alkalmazkodjon a különböző képernyőméretekhez.\n\n### Alapelvek:\n- Rugalmas rácsok és elrendezések (flexbox, grid)\n- Rugalmas képek és médiaelemek\n- Media query-k alkalmazása a különböző eszközméretekhez\n\n---\n\n## 2. CSS technikák mobilbarát tervezéshez\n\n### Rugalmas (fluid) layout használata\n\nHasználj százalék alapú szélességeket vagy CSS Grid/Flexbox-ot, hogy az elrendezés a képernyő méretéhez igazodjon.\n\n```css\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px;\n}\n.item {\n  flex: 1 1 200px; /* rugalmas szélesség minimum 200px */\n}\n```\n\n### Media query-k alkalmazása\n\nMedia query-kkel eltérő stílusokat adhatsz meg különböző képernyőszélességekhez.\n\n```css\n/* Mobil eszközök (max 600px) */\n@media (max-width: 600px) {\n  .menu {\n    display: none; /* elrejthetjük a nagy menüt mobilon */\n  }\n  .mobile-menu {\n    display: block;\n  }\n}\n```\n\n### Rugalmas képek és médiaelemek\n\nA képek ne legyenek fix szélességűek, hanem igazodjanak a tartóelemhez.\n\n```css\nimg {\n  max-width: 100%;\n  height: auto;\n}\n```\n\n### Tipográfia mobilra\n\nHasználj relatív egységeket (pl. rem, em) a betűméretekhez, és a media query-kben igazítsd a méreteket a jobb olvashatóságért.\n\n```css\nbody {\n  font-size: 1rem;\n}\n@media (max-width: 400px) {\n  body {\n    font-size: 0.9rem;\n  }\n}\n```\n\n---\n\n## 3. UX tippek mobilra\n\n- **Egyszerű és átlátható navigáció:** Kis képernyőn használj hamburger menüt vagy letisztult navigációs elemeket.\n- **Gombok és interaktív elemek mérete:** Legalább 44x44 pixelesek legyenek, hogy könnyen érinthetőek legyenek.\n- **Kerüld a túl sok tartalmat:** Mobilon legyen rövidebb és tömörebb a tartalom.\n- **Gyors betöltési idő:** Optimalizáld a képeket és minimalizáld a CSS/JS fájlokat.\n- **Elégséges kontraszt:** Az olvashatóság érdekében használj jó kontrasztú színeket.\n\n---\n\n## 4. Példa kód mobilbarát elrendezésre\n\n```html\n<div class=\"container\">\n  <div class=\"item\">Tartalom 1</div>\n  <div class=\"item\">Tartalom 2</div>\n  <div class=\"item\">Tartalom 3</div>\n</div>\n\n<style>\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 15px;\n}\n.item {\n  flex: 1 1 300px;\n  background-color: #f0f0f0;\n  padding: 20px;\n  box-sizing: border-box;\n}\n\n@media (max-width: 600px) {\n  .container {\n    flex-direction: column;\n  }\n  .item {\n    flex: 1 1 100%;\n  }\n}\n</style>\n```\n\n---\n\n## 5. Hasznos eszközök és források\n\n- [Chrome DevTools Device Mode](https://developer.chrome.com/docs/devtools/device-mode/)\n- [Can I Use](https://caniuse.com/) – böngésző támogatás ellenőrzése\n- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)\n\n---\n\n## Összefoglalás\n\nA mobilbarát tervezés a reszponzív CSS használatán alapul, amely rugalmas elrendezésekkel, média lekérdezésekkel és mobilra optimalizált UX elemekkel biztosítja, hogy az oldal minden eszközön jól használható legyen. A jó UX növeli a felhasználói elégedettséget és az oldal hatékonyságát.",
+  "keyPoints": [
+    "A reszponzív design biztosítja, hogy a weboldal minden képernyőméreten jól nézzen ki és működjön.",
+    "Rugalmas elrendezésekhez használj flexboxot vagy gridet százalékos szélességekkel.",
+    "Media query-k segítségével adhatsz különböző stílusokat eltérő eszközökre.",
+    "Képeket rugalmasan méretezz, hogy alkalmazkodjanak a konténerhez.",
+    "Mobil UX tippek: egyszerű navigáció, könnyen kezelhető gombok, gyors betöltés és jó kontraszt."
+  ]
+},
+{
+  "id": 27,
+  "title": "CSS ikonok és SVG kezelése; Sötét/Világos mód",
+  "content": "A modern webdesignban az ikonok és SVG-k használata alapvető, hiszen ezek teszik vizuálisan vonzóvá és felhasználóbaráttá az oldalakat. Emellett egyre fontosabbá válik a sötét és világos mód támogatása, hogy a felhasználók igényeihez igazodjunk.\n\n---\n\n## 1. CSS ikonok használata\n\n### Ikonok beillesztése\n\nIkonokat használhatunk webfontként (pl. Font Awesome), vagy inline SVG-ként.\n\n- **Webfont:** könnyű használni, CSS-sel színezhető és méretezhető.\n- **Inline SVG:** nagyobb rugalmasság, animálható, egyedi színezés.\n\n### Példa Font Awesome ikon használatára:\n\n```html\n<i class=\"fas fa-home\"></i>\n<style>\n  i {\n    color: #333;\n    font-size: 24px;\n  }\n</style>\n```\n\n---\n\n## 2. SVG-k kezelése CSS-sel\n\nAz inline SVG-k közvetlenül CSS-sel stílusozhatók:\n\n```html\n<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle class=\"my-circle\" cx=\"50\" cy=\"50\" r=\"40\" />\n</svg>\n<style>\n  .my-circle {\n    fill: #007BFF;\n  }\n</style>\n```\n\nAz SVG színét vagy más tulajdonságait dinamikusan változtathatod CSS változókkal vagy JavaScript-tel.\n\n---\n\n## 3. Sötét és világos mód támogatása\n\nA `prefers-color-scheme` media query segítségével érzékelheted, hogy a felhasználó melyik módot preferálja.\n\n### Példa:\n\n```css\nbody {\n  background-color: white;\n  color: black;\n}\n\n@media (prefers-color-scheme: dark) {\n  body {\n    background-color: #121212;\n    color: #f0f0f0;\n  }\n  /* Ikonok színe sötét módhoz */\n  i, svg {\n    fill: #f0f0f0;\n    color: #f0f0f0;\n  }\n}\n```\n\n### Sötét mód ikoncserék\n\nHa eltérő SVG ikonokat szeretnél világos és sötét módhoz, használhatsz CSS-t vagy JavaScriptet az ikonok váltására.\n\n---\n\n## 4. Tippek és trükkök\n\n- Használj CSS változókat a színek egyszerű cseréjéhez mindkét módhoz.\n- Inline SVG-k segítségével könnyen animálhatod az ikonokat.\n- Teszteld a sötét és világos módot több eszközön és böngészőben.\n\n---\n\n## 5. Példa teljes HTML és CSS kóddal\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n<meta charset=\"UTF-8\">\n<title>Ikonok és Sötét/Világos mód</title>\n<style>\n  :root {\n    --bg-color: white;\n    --text-color: black;\n    --icon-color: #333;\n  }\n  @media (prefers-color-scheme: dark) {\n    :root {\n      --bg-color: #121212;\n      --text-color: #f0f0f0;\n      --icon-color: #f0f0f0;\n    }\n  }\n  body {\n    background-color: var(--bg-color);\n    color: var(--text-color);\n    font-family: Arial, sans-serif;\n    padding: 20px;\n  }\n  i, svg {\n    color: var(--icon-color);\n    fill: var(--icon-color);\n    font-size: 48px;\n  }\n</style>\n</head>\n<body>\n  <h1>CSS ikonok és Sötét/Világos mód példa</h1>\n  <i class=\"fas fa-star\">★</i>\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"48\" height=\"48\">\n    <circle cx=\"12\" cy=\"12\" r=\"10\" class=\"circle\" />\n  </svg>\n</body>\n</html>\n```\n\n---\n\n## Összefoglalás\n\n- Ikonokat használhatsz webfontként vagy inline SVG-ként.\n- CSS-sel könnyen színezheted és animálhatod az SVG-ket.\n- A `prefers-color-scheme` media query segítségével támogatod a sötét és világos módot.\n- CSS változók és media query-k kombinálásával rugalmas, karbantartható megoldást készíthetsz.",
+  "keyPoints": [
+    "Ikonok használhatók webfontként (pl. Font Awesome) vagy inline SVG-ként.",
+    "Inline SVG-k közvetlenül CSS-sel stílusozhatók és animálhatók.",
+    "A prefers-color-scheme media query érzékeli a felhasználó sötét vagy világos mód preferenciáját.",
+    "CSS változókkal könnyű a színek kezelése mindkét módhoz.",
+    "Sötét módhoz gyakran megváltoztatjuk az ikonok színét vagy cseréljük az SVG-ket."
+  ]
+},
+{
+  "id": 28,
+  "title": "Nyomtatásbarát CSS (print styles)",
+  "content": "A weboldalak nyomtatásra való felkészítése fontos, hogy a kinyomtatott tartalom jól olvasható és rendezetten jelenjen meg.\n\n---\n\n## 1. Mi az a nyomtatásbarát CSS?\n\nA nyomtatásbarát CSS (print styles) külön CSS szabályok gyűjteménye, amelyek csak nyomtatáskor lépnek érvénybe.\n\n## 2. Media query használata\n\nA `@media print` segítségével megadhatjuk, milyen stílusok legyenek érvényesek nyomtatáskor.\n\n```css\n@media print {\n  body {\n    font-size: 12pt;\n    color: black;\n    background: white;\n  }\n  nav, footer, .no-print {\n    display: none; /* Nem jelenik meg nyomtatáskor */\n  }\n}\n```\n\n---\n\n## 3. Gyakori beállítások nyomtatáshoz\n\n- Háttérszínek és képek eltávolítása a jobb olvashatóságért.\n- Oldaltörések beállítása (`page-break-before`, `page-break-after`).\n- Navigációs elemek, reklámok, gombok eltüntetése.\n- Szövegméret és betűtípus optimalizálása.\n\n---\n\n## 4. Példa nyomtatásbarát CSS-re\n\n```css\n@media print {\n  body {\n    background: none !important;\n    color: #000;\n    font-size: 12pt;\n  }\n  header, nav, footer, .no-print {\n    display: none !important;\n  }\n  a::after {\n    content: \" (\" attr(href) \")\"; /* Linkek URL-je megjelenik nyomtatáskor */\n    color: #0000EE;\n  }\n  img {\n    max-width: 100%;\n    height: auto;\n  }\n  h1, h2, h3 {\n    page-break-after: avoid;\n  }\n}\n```\n\n---\n\n## 5. Tippek\n\n- Teszteld a nyomtatási nézetet különböző böngészőkben.\n- Gondoskodj róla, hogy a lényeges tartalom mindig jól látható legyen.\n- Használj egyszerű, kontrasztos színeket.\n\n---\n\n## 6. Példa HTML és CSS\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n<meta charset=\"UTF-8\">\n<title>Nyomtatásbarát CSS példa</title>\n<style>\n  body {\n    font-family: Arial, sans-serif;\n    background-color: #f0f0f0;\n    color: #333;\n    padding: 20px;\n  }\n  nav, footer {\n    background: #ccc;\n    padding: 10px;\n  }\n  @media print {\n    body {\n      background: none !important;\n      color: black;\n      font-size: 12pt;\n    }\n    nav, footer {\n      display: none !important;\n    }\n    a::after {\n      content: \" (\" attr(href) \")\";\n      color: #0000EE;\n    }\n  }\n</style>\n</head>\n<body>\n  <header>\n    <h1>Nyomtatásbarát CSS példa</h1>\n  </header>\n  <nav>Menü</nav>\n  <main>\n    <p>Ez egy példa szöveg a nyomtatásbarát CSS használatára.</p>\n    <p>Weboldal link: <a href=\"https://example.com\">example.com</a></p>\n  </main>\n  <footer>Oldal lábléc</footer>\n</body>\n</html>\n```\n\n---\n\n## Összefoglalás\n\n- A `@media print` segítségével külön CSS szabályokat adhatsz meg nyomtatáshoz.\n- Általában eltüntetjük a navigációt, reklámokat, és optimalizáljuk a szövegméretet.\n- A linkek URL-je megjelenítése segíti az olvasót nyomtatott formában.\n- Teszteld a nyomtatást több böngészőben, hogy minden jól jelenjen meg.",
+  "keyPoints": [
+    "A `@media print` használatával definiálhatók nyomtatásra szánt CSS szabályok.",
+    "Általában eltávolítjuk a navigációt, láblécet és egyéb nem kívánt elemeket nyomtatáskor.",
+    "Linkek URL-je megjeleníthető nyomtatott formában az `a::after` segítségével.",
+    "Fontos a háttér eltávolítása és a jól olvasható szöveg biztosítása nyomtatáskor.",
+    "Teszteld a nyomtatási nézetet több böngészőben a kompatibilitás érdekében."
+  ]
+},
+{
+  "id": 29,
+  "title": "CSS a komponensalapú fejlesztésben (pl. moduláris CSS)",
+  "content": "A komponensalapú fejlesztés során a weboldalak felépítése kisebb, újrahasználható részekre (komponensekre) épül. Ez megkönnyíti a kód karbantartását és bővítését.\n\n---\n\n## 1. Mi az a moduláris CSS?\n\nA moduláris CSS egy olyan megközelítés, amely során a stílusokat komponensekhez kötjük, így elkerülhető a globális stílusütközés és javul a kód olvashatósága.\n\n---\n\n## 2. Komponensalapú CSS előnyei\n\n- **Izoláció:** A komponensek stílusai nem hatnak ki más elemekre.\n- **Újrahasználhatóság:** Egy komponens többször is használható különböző helyeken.\n- **Karbantarthatóság:** Könnyebb módosítani egy-egy részt anélkül, hogy a teljes oldal stílusa megsérülne.\n\n---\n\n## 3. Megközelítések és eszközök\n\n### a) CSS modulok (CSS Modules)\n\n- Automatikusan helyi scope-ot adnak a CSS osztályoknak.\n- Példa React környezetben:\n\n```jsx\nimport styles from './Button.module.css';\n\nfunction Button() {\n  return <button className={styles.primary}>Kattints rám</button>;\n}\n```\n\n---\n\n### b) BEM (Block Element Modifier) metodológia\n\n- Egy elnevezési szabvány, amely segít elkerülni az ütközéseket.\n- Példa:\n\n```css\n.button { /* Block */ }\n.button__icon { /* Element */ }\n.button--primary { /* Modifier */ }\n```\n\n---\n\n### c) Styled Components / CSS-in-JS\n\n- JavaScript alapú megközelítés, ahol a stílusok komponens szinten definiálhatók.\n\n```jsx\nimport styled from 'styled-components';\n\nconst Button = styled.button`\n  background-color: blue;\n  color: white;\n  padding: 10px;\n`;\n\nfunction App() {\n  return <Button>Kattints rám</Button>;\n}\n```\n\n---\n\n## 4. Tippek komponensalapú CSS-hez\n\n- Használj egyértelmű és következetes elnevezéseket.\n- Kerüld a globális stílusokat, ha komponenseket használsz.\n- Gondolj a komponensek újrahasználhatóságára és testreszabhatóságára.\n\n---\n\n## 5. Összefoglalás\n\n- A moduláris CSS a komponensek izolált stílusát jelenti.\n- Számos módszer és eszköz létezik a komponensalapú CSS megvalósítására.\n- Segít elkerülni a CSS ütközéseket és javítja a kód karbantarthatóságát.\n\n---\n\n### Példa BEM osztályokra:\n\n```html\n<button class=\"button button--primary\">\n  <span class=\"button__icon\">👍</span>\n  Kattints rám\n</button>\n```\n\n---\n\n### Példa CSS modulokra (Button.module.css):\n\n```css\n.primary {\n  background-color: blue;\n  color: white;\n  padding: 10px;\n  border: none;\n  border-radius: 4px;\n}\n```\n\n---\n\nHa szeretnéd, küldhetem a következő leckét vagy bármi mást is!",
+  "keyPoints": [
+    "A komponensalapú CSS moduláris, izolált stílusokat jelent.",
+    "CSS Modules automatikusan helyi scope-ot adnak az osztályoknak.",
+    "BEM egy elnevezési konvenció az ütközések elkerülésére.",
+    "Styled Components és CSS-in-JS megoldások integrálják a stílusokat a komponensekbe.",
+    "Következetes elnevezés és globális stílusok kerülése ajánlott."
+  ]
+},
+{
+  "id": 30,
+  "title": "SCSS/SASS alapok",
+  "content": "A SCSS (Sassy CSS) és a SASS egy CSS előfeldolgozó nyelv, amely kibővíti a CSS lehetőségeit változókkal, beágyazott szabályokkal, mixinekkel, függvényekkel és egyéb fejlett funkciókkal.\n\n---\n\n## 1. Mi az a SASS/SCSS?\n\n- **SASS:** Eredetileg indentált szintaxissal, nem használt kapcsos zárójeleket.\n- **SCSS:** A SASS újabb szintaxisa, amely a CSS-hez nagyon hasonló, így könnyebb áttérni rá.\n\nPélda SCSS szintaxisra:\n\n```scss\n$primary-color: #3498db;\n\n.button {\n  background-color: $primary-color;\n  color: white;\n  padding: 10px 15px;\n  border-radius: 5px;\n\n  &:hover {\n    background-color: darken($primary-color, 10%);\n  }\n}\n```\n\n---\n\n## 2. Főbb funkciók\n\n### Változók\n\n- Változókat használhatsz színekhez, méretekhez, stb.\n\n```scss\n$font-stack: Helvetica, sans-serif;\n$primary-color: #333;\n```\n\n### Belső (beágyazott) szabályok\n\n- A CSS szelektorok egymásba ágyazhatók, így áttekinthetőbb a kód.\n\n```scss\nnav {\n  ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n  }\n  li { display: inline-block; }\n}\n```\n\n### Mixinek\n\n- Újrahasználható kódrészletek paraméterekkel.\n\n```scss\n@mixin border-radius($radius) {\n  -webkit-border-radius: $radius;\n  -moz-border-radius: $radius;\n  border-radius: $radius;\n}\n\n.box { @include border-radius(10px); }\n```\n\n### Függvények\n\n- Beépített és saját függvények a stílusok dinamikus kezelésére.\n\n```scss\ncolor: lighten($primary-color, 20%);\n```\n\n### Import\n\n- Más SCSS fájlokat lehet importálni.\n\n```scss\n@import 'variables';\n```\n\n---\n\n## 3. Miért érdemes SCSS-t használni?\n\n- Kód újrahasználhatóság\n- Könnyebb karbantartás\n- Dinamikus stílusok létrehozása\n- Nagy projektekhez ideális\n\n---\n\n## 4. Összefoglalás\n\n- A SCSS a CSS kibővített, hatékonyabb változata.\n- Változókat, beágyazott szabályokat, mixineket és függvényeket használ.\n- Segít átláthatóbbá és modulárisabbá tenni a CSS kódot.\n\n---\n\n### Példa SCSS fájl (styles.scss):\n\n```scss\n$primary-color: #3498db;\n\nbody {\n  font-family: Arial, sans-serif;\n  color: $primary-color;\n}\n\n.button {\n  padding: 10px 20px;\n  background-color: $primary-color;\n  border: none;\n  border-radius: 5px;\n\n  &:hover {\n    background-color: darken($primary-color, 15%);\n  }\n}\n```\n\n---\n\nHa szeretnéd, folytathatjuk a következő leckével!",
+  "keyPoints": [
+    "SCSS egy CSS előfeldolgozó, amely kibővíti a CSS-t változókkal, mixinekkel, beágyazott szabályokkal.",
+    "Lehetővé teszi a moduláris és könnyen karbantartható stílusok írását.",
+    "Változókkal és mixinekkel újrahasználható kódot készíthetünk.",
+    "Beágyazott szabályokkal átláthatóbb lesz a CSS kód.",
+    "Használata segít nagy projektek esetén a hatékonyabb fejlesztésben."
+  ]
+},
+{
+  "id": 31,
+  "title": "CSS Grid haladó technikák",
+  "content": "A CSS Grid egy rendkívül erőteljes layout rendszer, amely segítségével komplex és rugalmas grid-alapú elrendezéseket hozhatunk létre.\n\n---\n\n## 1. Grid területek (Grid Areas)\n\nA grid területek segítségével könnyen elnevezhetjük és elrendezhetjük a grid elemeit.\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  grid-template-rows: auto auto;\n  grid-template-areas:\n    \"header header header\"\n    \"sidebar content ads\";\n}\n\n.header { grid-area: header; }\n.sidebar { grid-area: sidebar; }\n.content { grid-area: content; }\n.ads { grid-area: ads; }\n```\n\n---\n\n## 2. Grid Template Functions\n\n- **repeat()**: Ismétlődő oszlopokat/ sorokat hozhatunk létre.\n- **minmax()**: Megadhatunk minimum és maximum méretet.\n- **auto-fill** és **auto-fit**: Dinamikusan kitöltik a helyet.\n\nPélda:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));\n  grid-gap: 10px;\n}\n```\n\n---\n\n## 3. Grid item helyezése\n\nAz elemek helyét explicit módon is meghatározhatjuk:\n\n```css\n.item1 {\n  grid-column-start: 1;\n  grid-column-end: 3;\n  grid-row-start: 1;\n  grid-row-end: 2;\n}\n```\n\nVagy rövidebb formában:\n\n```css\n.item1 {\n  grid-column: 1 / 3;\n  grid-row: 1 / 2;\n}\n```\n\n---\n\n## 4. Align és Justify\n\n- **align-items, align-self**: függőleges igazítás\n- **justify-items, justify-self**: vízszintes igazítás\n- Példa:\n\n```css\n.container {\n  align-items: center;\n  justify-items: stretch;\n}\n```\n\n---\n\n## 5. Implicit grid\n\nHa több elem kerül a gridbe, mint ahány sor/oszlop van definiálva, a böngésző implicit sorokat/oszlopokat hoz létre.\n\n```css\n.container {\n  grid-auto-rows: 100px;\n  grid-auto-columns: 100px;\n}\n```\n\n---\n\n## 6. Fr egység (Fractional unit)\n\nA `fr` egység a rendelkezésre álló hely egy részét jelenti.\n\n---\n\n## 7. Példa - komplex layout\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: 1fr 3fr 1fr;\n  grid-template-rows: 100px auto 50px;\n  grid-template-areas:\n    \"header header header\"\n    \"sidebar content ads\"\n    \"footer footer footer\";\n  grid-gap: 10px;\n}\n\n.header { grid-area: header; background: lightblue; }\n.sidebar { grid-area: sidebar; background: lightgray; }\n.content { grid-area: content; background: white; }\n.ads { grid-area: ads; background: lightyellow; }\n.footer { grid-area: footer; background: lightcoral; }\n```\n\n---\n\n## 8. Hasznos tippek\n\n- Használj grid-template-areas-t az áttekinthetőség miatt.\n- Kombináld a flexbox-szal rugalmasabb elrendezésekhez.\n- Figyelj a reszponzivitásra media querykkel.\n\n---\n\nHa szeretnéd, mehet a következő lecke is!",
+  "keyPoints": [
+    "A CSS Grid lehetővé teszi összetett rács alapú elrendezések létrehozását.",
+    "Grid területek (grid areas) segítségével könnyen elnevezhetők a rács részei.",
+    "Használhatók grid template függvények, mint repeat(), minmax(), auto-fill és auto-fit.",
+    "Az elemek helye explicit módon megadható grid-column és grid-row segítségével.",
+    "Az align és justify tulajdonságokkal szabályozható az elemek igazítása.",
+    "Implicit grid segítségével automatikusan jönnek létre új sorok/oszlopok, ha szükséges.",
+    "A fr egység a rendelkezésre álló hely arányos részét jelenti.",
+    "Hasznos a grid és flexbox kombinációja a rugalmas designhoz."
+  ]
+},
+{
+  "id": 32,
+  "title": "Flexbox haladó technikák",
+  "content": "A Flexbox egy rugalmas és hatékony elrendezési modell, amely megkönnyíti az elemek sorba vagy oszlopba rendezését különböző eszközökön.\n\n---\n\n## 1. Részletes flex tulajdonságok\n\n- **flex-grow**: Megadja, hogy az elem milyen arányban nőjön a rendelkezésre álló helyből.\n- **flex-shrink**: Meghatározza, hogy az elem mennyire zsugorodhat össze, ha kevés hely van.\n- **flex-basis**: Alapméret meghatározása, mielőtt a növekedés vagy zsugorodás érvényesül.\n\nPélda:\n\n```css\n.item {\n  flex-grow: 2;\n  flex-shrink: 1;\n  flex-basis: 150px;\n}\n```\n\n---\n\n## 2. Flex shorthand tulajdonság\n\nA `flex` rövidítéssel egyszerre állítható be a fenti három tulajdonság.\n\n```css\n.item {\n  flex: 2 1 150px; /* grow shrink basis */\n}\n```\n\n---\n\n## 3. Rendelkezésre álló hely kezelése\n\n- **flex-wrap**: Megadhatjuk, hogy a flex sorok vagy oszlopok törjenek-e több sorba vagy oszlopba, ha kevés a hely.\n- **flex-flow**: Kombinált rövidítés a `flex-direction` és `flex-wrap` tulajdonságokra.\n\n---\n\n## 4. Igazítások finomhangolása\n\n- **align-content**: Több sor esetén szabályozza a sorok közötti térközt.\n- **align-self**: Egyedi elem függőleges igazítása, felülírva az `align-items` értékét.\n\n---\n\n## 5. Order tulajdonság\n\nAz elemek megjelenési sorrendjét változtathatjuk anélkül, hogy a HTML-t módosítanánk.\n\n```css\n.item1 { order: 2; }\n.item2 { order: 1; }\n```\n\n---\n\n## 6. Példa: komplex flexbox elrendezés\n\n```css\n.container {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-items: center;\n  align-content: flex-start;\n}\n\n.item {\n  flex: 1 1 200px;\n  order: 0;\n}\n```\n\n---\n\n## 7. Hasznos tippek\n\n- Használd a `flex` shorthand-ot a gyorsabb kódhoz.\n- Kombináld a `flex-wrap`-et és `flex-flow`-t a rugalmas elrendezésekhez.\n- Az `order` segítségével változtathatod az elemek sorrendjét megjelenítéskor.\n\n---\n\nHa készen vagy, mehet a következő lecke is!",
+  "keyPoints": [
+    "A flex-grow, flex-shrink és flex-basis szabályozzák az elemek méretének változását.",
+    "A flex rövidítés segítségével egyszerre állítható be a három fő tulajdonság.",
+    "A flex-wrap segítségével engedélyezhető a több soros vagy oszlopos elrendezés.",
+    "Az align-content és align-self finomhangolja az igazítást.",
+    "Az order tulajdonság megváltoztatja az elemek megjelenési sorrendjét.",
+    "Kombinálva a tulajdonságokat komplex és rugalmas elrendezéseket hozhatunk létre."
+  ]
+},
+{
+  "id": 33,
+  "title": "Hasábok és többoszlopos elrendezés (columns)",
+  "content": "A többoszlopos elrendezés lehetővé teszi a szöveg vagy egyéb tartalom oszlopokra bontását, hasonlóan egy újság vagy magazin elrendezéséhez.\n\n---\n\n## 1. Többoszlopos tulajdonságok alapjai\n\n- **column-count**: Megadja, hogy hány oszlopba törjön a tartalom.\n- **column-width**: Meghatározza az oszlopok kívánt szélességét.\n- **columns**: Rövidítés a `column-width` és `column-count` együttes beállítására.\n- **column-gap**: Az oszlopok közötti térköz (gutter).\n- **column-rule**: Az oszlopok közötti elválasztó vonal stílusa.\n\n---\n\n## 2. Példa többoszlopos elrendezésre\n\n```css\n.article {\n  column-count: 3;\n  column-gap: 20px;\n  column-rule: 1px solid #ccc;\n}\n```\n\n---\n\n## 3. Automatikus oszlopszélesség\n\nHa inkább az oszlopszélességet szabályoznád, használhatod a `column-width`-et:\n\n```css\n.article {\n  column-width: 200px;\n  column-gap: 15px;\n}\n```\n\nA böngésző ennek alapján annyi oszlopot hoz létre, ami elfér a rendelkezésre álló helyen.\n\n---\n\n## 4. Többoszlopos tartalom tördelése\n\n- Az oszlopok között a tartalom automatikusan folyik tovább.\n- Lehetőség van a `break-before`, `break-after` és `break-inside` CSS szabályokkal töréspontok kezelésére.\n\n---\n\n## 5. Elválasztó vonal testreszabása\n\nA `column-rule` részletesebb beállításai:\n\n- `column-rule-width`: vastagság\n- `column-rule-style`: pl. solid, dashed\n- `column-rule-color`: szín\n\n---\n\n## 6. Példa komplett stílus\n\n```css\n.newsletter {\n  columns: 2 250px;\n  column-gap: 25px;\n  column-rule: 2px dotted #888;\n}\n```\n\n---\n\n## 7. Böngésző támogatás\n\n- A legtöbb modern böngésző támogatja a többoszlopos elrendezést, de a régebbiekben előfordulhatnak eltérések.\n\n---\n\n## 8. Hasznos tippek\n\n- Használd a `columns` rövidítést egyszerűbb kódért.\n- Teszteld különböző képernyőméreteken a reszponzív megjelenés miatt.\n- Kombináld a többoszlopos elrendezést más layout technikákkal, mint Flexbox vagy Grid, ha szükséges.\n\n---\n\nHa készen állsz, folytathatjuk a következő leckével!",
+  "keyPoints": [
+    "A column-count megadja az oszlopok számát.",
+    "A column-width az oszlopszélességet határozza meg, automatikus oszlopszám mellett.",
+    "A column-gap szabályozza az oszlopok közötti távolságot.",
+    "A column-rule segítségével elválasztó vonalat lehet megjeleníteni az oszlopok között.",
+    "A többoszlopos elrendezésben a tartalom automatikusan folyik egyik oszlopból a másikba.",
+    "Töréspontok kezelése a break-before, break-after és break-inside segítségével.",
+    "Fontos a böngészőkompatibilitás tesztelése."
+  ]
+},
+{
+  "id": 34,
+  "title": "CSS egységek (px, %, rem, em, vh, vw)",
+  "content": "A CSS-ben különböző mértékegységeket használunk a méretek meghatározására, mint például szélesség, magasság, betűméret, margó vagy padding.\n\n---\n\n## 1. Abszolút egységek\n\n- **px (pixel)**: Fix méret, a képernyő pixeleiben mérve. Jó kis képernyőn, de nem reszponzív.\n\n## 2. Relatív egységek\n\n- **% (százalék)**: Az adott elem szülőjéhez viszonyított arány.\n- **em**: Az elem aktuális betűméretéhez viszonyított méret. Például 2em = kétszer akkora, mint az aktuális betűméret.\n- **rem**: A gyökérelem (`html`) betűméretéhez viszonyított méret, független az aktuális elem betűméretétől.\n\n## 3. Nézetablak egységek (viewport units)\n\n- **vw (viewport width)**: Az aktuális nézetablak szélességének 1%-a.\n- **vh (viewport height)**: Az aktuális nézetablak magasságának 1%-a.\n\n---\n\n## 4. Példák\n\n```css\n.container {\n  width: 80%;       /* szülő 80%-a */\n  font-size: 1.2rem; /* a gyökérelem betűméretének 120%-a */\n}\n\nh1 {\n  font-size: 2em;    /* a szülő betűméretének kétszerese */\n}\n\n.box {\n  width: 50vw;       /* a nézetablak szélességének fele */\n  height: 30vh;      /* a nézetablak magasságának 30%-a */\n  padding: 10px;     /* fix 10 pixel */\n}\n```\n\n---\n\n## 5. Mikor melyiket használjuk?\n\n- Fix, pontos méretekhez használj `px`-t.\n- Reszponzív, rugalmas méretezéshez `%`, `em` és `rem` ideális.\n- Teljes képernyős vagy dinamikus magasság/szélesség esetén `vh` és `vw` kiváló.\n\n---\n\n## 6. Összefoglalás\n\n- **px**: fix, pontos méret.\n- **%**: szülőhöz viszonyított arány.\n- **em**: az aktuális elem betűméretéhez viszonyít.\n- **rem**: a gyökérelem betűméretéhez viszonyít.\n- **vw/vh**: viewport szélességéhez/magasságához viszonyít.\n\n---\n\nHasználd ezeket okosan a rugalmas, jól használható weboldalak kialakításához!",
+  "keyPoints": [
+    "A px fix méretet jelent, pixelben mérve.",
+    "A % a szülő elemhez viszonyított arányt ad meg.",
+    "Az em az aktuális elem betűméretéhez viszonyít, rem a gyökérelemhez.",
+    "A vw és vh a nézetablak szélességének és magasságának 1%-át jelenti.",
+    "A megfelelő egység kiválasztása segíti a reszponzív és rugalmas design kialakítását."
+  ]
+},
+{
+  "id": 35,
+  "title": "Interaktív UI elemek CSS-sel (tooltip, accordion)",
+  "content": "Ebben a leckében két gyakori interaktív UI elemet mutatunk be, amelyeket tisztán CSS segítségével is megvalósíthatunk: a tooltip-et és az accordion-t.\n\n---\n\n## 1. Tooltip készítése CSS-sel\n\nA tooltip egy kis felugró ablak, amely akkor jelenik meg, amikor az egér a célzott elem fölé kerül.\n\n### Egyszerű példa:\n\n```html\n<button class=\"tooltip\">Információ\n  <span class=\"tooltip-text\">Ez egy tooltip szöveg</span>\n</button>\n```\n\n```css\n.tooltip {\n  position: relative;\n  cursor: pointer;\n}\n\n.tooltip-text {\n  visibility: hidden;\n  width: 140px;\n  background-color: black;\n  color: #fff;\n  text-align: center;\n  border-radius: 5px;\n  padding: 5px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  margin-left: -70px;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltip:hover .tooltip-text {\n  visibility: visible;\n  opacity: 1;\n}\n```\n\n---\n\n## 2. Accordion (összecsukható tartalom) CSS-sel\n\nAz accordion lehetővé teszi a tartalom paneljeinek kibontását vagy összecsukását, helytakarékos és felhasználóbarát megoldás.\n\n### Egyszerű accordion példa:\n\n```html\n<div class=\"accordion\">\n  <input type=\"checkbox\" id=\"section1\" hidden>\n  <label for=\"section1\" class=\"accordion-label\">Fejléc 1</label>\n  <div class=\"accordion-content\">\n    <p>Itt van az 1. szakasz tartalma.</p>\n  </div>\n</div>\n\n<div class=\"accordion\">\n  <input type=\"checkbox\" id=\"section2\" hidden>\n  <label for=\"section2\" class=\"accordion-label\">Fejléc 2</label>\n  <div class=\"accordion-content\">\n    <p>Itt van a 2. szakasz tartalma.</p>\n  </div>\n</div>\n```\n\n```css\n.accordion-label {\n  display: block;\n  background-color: #007BFF;\n  color: white;\n  padding: 10px;\n  cursor: pointer;\n  user-select: none;\n  border-radius: 5px;\n  margin-bottom: 5px;\n}\n\n.accordion-content {\n  max-height: 0;\n  overflow: hidden;\n  transition: max-height 0.3s ease;\n  background-color: #f1f1f1;\n  padding: 0 10px;\n  border-radius: 0 0 5px 5px;\n}\n\ninput[type=\"checkbox\"]:checked + .accordion-label + .accordion-content {\n  max-height: 200px; /* vagy auto, de max-height a jobb megoldás animációhoz */\n  padding: 10px;\n}\n```\n\n---\n\n## 3. Összefoglalás\n\n- A tooltip segít információkat megjeleníteni egy elem fölött anélkül, hogy a felület zsúfolt lenne.\n- Az accordion helytakarékos, összecsukható tartalmi panel, amelyet könnyű megvalósítani CSS-sel.\n- Mindkét elem dinamikus és interaktív hatást kelt, anélkül, hogy JavaScriptet kellene használni.\n\n---\n\n## 4. Tippek\n\n- A tooltip legyen jól olvasható, és ne takarja el a fontos elemeket.\n- Az accordion panel méretét igény szerint állítsd be.\n- Mobilon érdemes nagyobb, könnyen kattintható területeket biztosítani.\n\n---\n\n### Példa kódok együtt:\n\n```html\n<button class=\"tooltip\">Info\n  <span class=\"tooltip-text\">Tooltip szöveg</span>\n</button>\n\n<div class=\"accordion\">\n  <input type=\"checkbox\" id=\"acc1\" hidden>\n  <label for=\"acc1\" class=\"accordion-label\">Részletek</label>\n  <div class=\"accordion-content\">\n    <p>Ez az összecsukható tartalom.</p>\n  </div>\n</div>\n```",
+  "keyPoints": [
+    "Tooltip egy kis információs buborék, ami megjelenik hover esetén.",
+    "CSS-sel is készíthetünk interaktív elemeket, mint az accordion.",
+    "Az accordion segítségével helytakarékos, összecsukható tartalmakat jeleníthetünk meg.",
+    "CSS animációkkal sima átmeneteket biztosíthatunk az elemek megjelenítésére.",
+    "JavaScript nélkül is készíthetünk alap interakciókat CSS segítségével."
+  ]
+},
+{
+  "id": 36,
+  "title": "Formok stílusozása (input, select, checkbox)",
+  "content": "A form elemek stílusozása fontos része a webdesignnak, hogy a felhasználói élmény kellemes és egységes legyen.\n\n---\n\n## 1. Alapvető input mezők stílusozása\n\nAz `input` elemek, például szövegmezők, e-mail, jelszó mezők alapvetően megjeleníthetők egyedi stílusokkal.\n\n```css\ninput[type=\"text\"], input[type=\"email\"], input[type=\"password\"] {\n  padding: 8px 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  font-size: 16px;\n  transition: border-color 0.3s;\n}\n\ninput[type=\"text\"]:focus, input[type=\"email\"]:focus, input[type=\"password\"]:focus {\n  border-color: #007BFF;\n  outline: none;\n}\n```\n\n---\n\n## 2. Select (legördülő) elemek stílusozása\n\nA `select` elemek böngészőfüggőek, de néhány alapvető stílus megadható rájuk.\n\n```css\nselect {\n  padding: 8px 12px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  background-color: white;\n  font-size: 16px;\n  appearance: none; /* alapértelmezett stílus eltávolítása */\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  background-image: url('data:image/svg+xml;utf8,<svg fill=\"%23007BFF\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 10l5 5 5-5z\"/></svg>');\n  background-repeat: no-repeat;\n  background-position: right 10px center;\n  background-size: 16px 16px;\n}\n\nselect:focus {\n  border-color: #007BFF;\n  outline: none;\n}\n```\n\n---\n\n## 3. Checkbox stílusozása\n\nAlap checkbox elemeket általában nehéz szépen formázni, ezért gyakran egyedi megoldást alkalmaznak.\n\n### Egyszerű megoldás alap checkboxhoz:\n\n```css\ninput[type=\"checkbox\"] {\n  width: 18px;\n  height: 18px;\n  cursor: pointer;\n}\n```\n\n### Egyedi checkbox megjelenítés (rejtett checkbox és label használata):\n\n```html\n<label class=\"custom-checkbox\">\n  <input type=\"checkbox\">\n  <span class=\"checkmark\"></span>\n  Elfogadom a feltételeket\n</label>\n```\n\n```css\n.custom-checkbox {\n  display: inline-flex;\n  align-items: center;\n  cursor: pointer;\n  user-select: none;\n  position: relative;\n  padding-left: 30px;\n  font-size: 16px;\n}\n\n.custom-checkbox input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n  height: 0;\n  width: 0;\n}\n\n.checkmark {\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 20px;\n  width: 20px;\n  background-color: #eee;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n}\n\n.custom-checkbox input:checked ~ .checkmark {\n  background-color: #007BFF;\n  border-color: #007BFF;\n}\n\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n\n.custom-checkbox input:checked ~ .checkmark:after {\n  display: block;\n  left: 6px;\n  top: 2px;\n  width: 6px;\n  height: 12px;\n  border: solid white;\n  border-width: 0 2px 2px 0;\n  transform: rotate(45deg);\n}\n```\n\n---\n\n## 4. Összefoglalás\n\n- Form elemek stílusozása növeli a használhatóságot és az esztétikát.\n- A `select` és `checkbox` elemek esetén speciális megoldásokra lehet szükség a böngészői eltérések miatt.\n- Egyedi checkbox és rádió gombok készíthetők rejtett input és label párosításával.\n\n---\n\n### Példa egy egyszerű formra:\n\n```html\n<form>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n\n  <label for=\"color\">Szín választás:</label>\n  <select id=\"color\" name=\"color\">\n    <option value=\"red\">Piros</option>\n    <option value=\"green\">Zöld</option>\n    <option value=\"blue\">Kék</option>\n  </select>\n\n  <label class=\"custom-checkbox\">\n    <input type=\"checkbox\" required>\n    <span class=\"checkmark\"></span>\n    Elfogadom a feltételeket\n  </label>\n\n  <button type=\"submit\">Küldés</button>\n</form>\n```",
+  "keyPoints": [
+    "Az input mezők és select elemek alapstílusai könnyen testreszabhatók.",
+    "A select elemeknél érdemes eltávolítani az alapértelmezett megjelenést (`appearance: none`).",
+    "Checkbox esetén gyakori a rejtett input és egyedi megjelenésű label használata.",
+    "Az egyedi checkbox vizuális állapota CSS pszeudo-elemekkel szabályozható.",
+    "Stílusozással növelhető a formok használhatósága és esztétikája."
+  ]
+},
+{
+  "id": 37,
+  "title": "Böngészőtámogatás és fallback CSS",
+  "content": "A weboldalak megjelenése és működése eltérhet a különböző böngészőkben, ezért fontos megérteni a böngészőtámogatás és a fallback (visszaesési) technikák lényegét.\n\n---\n\n## 1. Mi az a böngészőtámogatás?\n\nA böngészőtámogatás azt jelenti, hogy a CSS és HTML megoldásaink minél több böngészőben és verzióban működjenek megfelelően, és a felhasználók egységes élményt kapjanak.\n\n---\n\n## 2. Mi az a fallback CSS?\n\nFallback CSS akkor hasznos, ha egy adott tulajdonságot vagy funkciót nem támogat egy böngésző. Ilyenkor alternatív stílusokat adunk meg, hogy az oldal ne törjön meg, és minél jobban hasonló megjelenést kapjunk.\n\n---\n\n## 3. Fallback példák\n\n### 3.1 Szín fallback több szín esetén\n\n```css\n/* Modern böngészők rgba színt támogatnak */\nbackground-color: rgba(0, 0, 0, 0.5);\n\n/* Régebbi böngészőknek hex szín fallback */\nbackground-color: #000000;\n```\n\n### 3.2 Flexbox fallback\n\n```css\n/* Alapértelmezett blokk elem fallbackként */\ndisplay: block;\n\n/* Modern böngészőkben flexbox */\ndisplay: flex;\n```\n\n### 3.3 CSS Grid fallback\n\n```css\n/* Egyszerűbb float alapú elrendezés */\n.float-container {\n  overflow: hidden;\n}\n.float-item {\n  float: left;\n  width: 50%;\n}\n\n/* Modern böngészőkben grid */\n.grid-container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}\n```\n\n---\n\n## 4. Böngészőtámogatás ellenőrzése\n\n- Használj online eszközöket, mint a [Can I use](https://caniuse.com), hogy megnézd, mely CSS tulajdonságok támogatottak a célzott böngészőkben.\n- Teszteld a weboldalt különböző böngészőkben és eszközökön.\n\n---\n\n## 5. Modern CSS és prefixek\n\nRégebbi böngészők miatt néha szükség van vendor prefixek használatára:\n\n```css\n-webkit-transition: all 0.3s ease;\n-moz-transition: all 0.3s ease;\ntransition: all 0.3s ease;\n```\n\nDe a legtöbb mai böngésző már nem igényli ezt.\n\n---\n\n## 6. @supports szabály\n\nEz a szabály lehetővé teszi, hogy csak akkor alkalmazzunk bizonyos stílusokat, ha a böngésző támogatja azokat.\n\n```css\n@supports (display: grid) {\n  .container {\n    display: grid;\n  }\n}\n```\n\n---\n\n## 7. Összefoglalás\n\n- Mindig érdemes fallback megoldásokat alkalmazni, hogy minél több böngészőben jól működjön az oldal.\n- Használd a @supports szabályt a modern CSS funkciók biztonságos használatához.\n- Tesztelj sokféle böngészőn, és használj böngészőtámogatást vizsgáló eszközöket.\n\n---\n\n### Példa kód:\n\n```css\n/* Fallback szín */\nbackground-color: #333;\nbackground-color: rgba(0, 0, 0, 0.7);\n\n/* Flexbox fallback */\ndisplay: block;\ndisplay: flex;\n\n/* Modern grid csak ha támogatott */\n@supports (display: grid) {\n  .layout {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n  }\n}\n```\n",
+  "keyPoints": [
+    "Böngészőtámogatás biztosítja, hogy a weboldal minél több böngészőben működjön.",
+    "Fallback CSS alternatív stílusokat ad a nem támogatott funkciók helyett.",
+    "Vendor prefixek régebbi böngészők miatt néha szükségesek, de ma már ritkák.",
+    "@supports szabállyal ellenőrizhetjük a CSS támogatást.",
+    "Fontos a különböző böngészők és eszközök tesztelése."
+  ]
+},
+{
+  "id": 38,
+  "title": "CSS hibakeresés és DevTools használat",
+  "content": "A CSS hibakeresés alapvető része a hatékony webfejlesztésnek. A böngészők fejlesztői eszközei (DevTools) segítenek megérteni, hogyan alkalmazódnak a stílusok, és gyorsan megtalálni a problémákat.\n\n---\n\n## 1. Böngésző fejlesztői eszközök megnyitása\n\n- Chrome, Edge, Firefox: jobb klikk egy elemre → \"Inspect\" (Elem vizsgálata)\n- Billentyűparancs: `Ctrl+Shift+I` (Windows/Linux), `Cmd+Option+I` (Mac)\n\n---\n\n## 2. A Styles panel használata\n\n- Itt látod az aktuális elemhez rendelt CSS szabályokat.\n- Láthatod, melyik szabály felülírja a másikat (áthúzva jelenik meg a felülírt szabály).\n- Szerkesztheted is a CSS-t valós időben, így gyorsan kipróbálhatod a változtatásokat.\n\n---\n\n## 3. Box Model megértése\n\n- A DevTools megmutatja az elem dobozmodelljét: margin, border, padding és content.\n- Ez segít pontosan látni, hogyan befolyásolják ezek az értékek az elem méretét és elhelyezkedését.\n\n---\n\n## 4. Layout hibák keresése\n\n- Nézd meg, hogy az elemek helyesen vannak-e pozícionálva.\n- Ellenőrizd a `display`, `position`, `float`, és `flex` beállításokat.\n\n---\n\n## 5. Média lekérdezések és reszponzivitás\n\n- A DevTools-ban mobilnézetet is választhatsz (Device Toolbar), hogy teszteld az oldal különböző képernyőméreteken.\n\n---\n\n## 6. Console használata hibákhoz\n\n- Bár CSS hibák nem mindig jelennek meg a konzolon, bizonyos hibák (pl. hibás szintaxis) felhívhatják a figyelmet.\n\n---\n\n## 7. Hasznos tippek\n\n- Használd a szűrőket a Styles panelen, hogy csak bizonyos tulajdonságokat láss.\n- Keresd meg az adott elemet a HTML fastruktúrában.\n- Kapcsold ki vagy kapcsold be a CSS szabályokat, hogy lásd, milyen hatással vannak.\n\n---\n\n### Példa: Élő CSS szerkesztés\n\n1. Nyisd meg a DevTools-t egy weboldalon.\n2. Kattints az \"Elements\" fülre.\n3. Válassz ki egy elemet.\n4. A \"Styles\" panelen szerkeszd a CSS szabályokat.\n5. Azonnal láthatod a változásokat a böngészőben.\n\n---\n\n## Összefoglalás\n\n- A böngészők DevTools eszközei nélkülözhetetlenek a CSS hibakereséshez.\n- Valós idejű szerkesztéssel gyorsan kipróbálhatod a megoldásokat.\n- Érdemes megtanulni a box model, layout és reszponzivitás eszközeit használni.\n\n---\n\nHa szeretnéd, segítek a következő leckével is!",
+  "keyPoints": [
+    "A DevTools segítségével valós időben láthatod és szerkesztheted a CSS-t.",
+    "A Styles panel mutatja a CSS szabályokat és azok prioritását.",
+    "A box model megértése segít az elemek pontos elhelyezésében.",
+    "A Device Toolbar használatával tesztelheted az oldal reszponzivitását.",
+    "A konzol nem mutat mindig CSS hibát, de más hibákra felhívhatja a figyelmet."
+  ]
+},
+{
+  "id": 39,
+  "title": "CSS és JavaScript kapcsolata (class váltás, inline style)",
+  "content": "A CSS és JavaScript gyakran együtt dolgozik, hogy dinamikusan változtassuk az oldalak megjelenését és viselkedését.\n\n---\n\n## 1. Osztályok (class) kezelése JavaScript-tel\n\nJavaScript segítségével dinamikusan hozzáadhatunk, eltávolíthatunk vagy válthatunk CSS osztályokat egy HTML elemhez, ezzel megváltoztatva annak stílusát.\n\n### Alap műveletek:\n\n- `element.classList.add('class-name')` – osztály hozzáadása\n- `element.classList.remove('class-name')` – osztály eltávolítása\n- `element.classList.toggle('class-name')` – osztály kapcsolgatása (ha van, eltávolítja, ha nincs, hozzáadja)\n- `element.classList.contains('class-name')` – ellenőrzés, hogy az elem tartalmazza-e az adott osztályt\n\n### Példa:\n\n```html\n<button id=\"toggleBtn\">Kapcsold át a színt</button>\n<div id=\"box\" class=\"blue-box\">Színes doboz</div>\n\n<style>\n  .blue-box { background-color: blue; color: white; padding: 20px; }\n  .red-box { background-color: red; }\n</style>\n\n<script>\n  const btn = document.getElementById('toggleBtn');\n  const box = document.getElementById('box');\n\n  btn.addEventListener('click', () => {\n    box.classList.toggle('red-box');\n  });\n</script>\n```\n\nEbben a példában a gombnyomás hatására a doboz kék és piros között vált.\n\n---\n\n## 2. Inline stílusok módosítása JavaScript-tel\n\nKözvetlenül is módosíthatjuk egy elem CSS tulajdonságait az `element.style` objektum segítségével.\n\n### Példa:\n\n```js\nconst box = document.getElementById('box');\nbox.style.backgroundColor = 'green';\nbox.style.fontSize = '20px';\n```\n\nEz közvetlenül a HTML elem `style` attribútumát változtatja meg.\n\n---\n\n## 3. Mikor érdemes melyiket használni?\n\n- **Class váltás:** ha több tulajdonságot szeretnél egyszerre változtatni, vagy a stílusokat CSS-ben szeretnéd kezelni, könnyebb karbantartani.\n- **Inline style:** ha dinamikusan, egyedi értékeket kell állítani, például animáció során, vagy ha csak egy-két tulajdonságot változtatsz.\n\n---\n\n## 4. Fontos megjegyzések\n\n- Inline stílus felülírja a CSS szabályokat.\n- Több osztály is lehet egy elemen egyszerre, JavaScript segítségével egyszerűen kezelhetőek.\n\n---\n\n### Összefoglaló\n\n- JavaScript segítségével dinamikusan változtathatod a megjelenést class váltással vagy inline stílus módosítással.\n- A `classList` API a legjobb mód az osztályok kezelésére.\n- Inline stílust akkor használj, ha egyedi, dinamikus értékekre van szükség.\n\n---\n\n### Példa kód komplett HTML-ben:\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n<meta charset=\"UTF-8\">\n<title>CSS és JavaScript kapcsolata</title>\n<style>\n  .blue-box {\n    background-color: blue;\n    color: white;\n    padding: 20px;\n  }\n  .red-box {\n    background-color: red;\n  }\n</style>\n</head>\n<body>\n\n<button id=\"toggleBtn\">Kapcsold át a színt</button>\n<div id=\"box\" class=\"blue-box\">Színes doboz</div>\n\n<script>\n  const btn = document.getElementById('toggleBtn');\n  const box = document.getElementById('box');\n\n  btn.addEventListener('click', () => {\n    box.classList.toggle('red-box');\n    // inline stílus példa\n    if (box.style.fontSize === '20px') {\n      box.style.fontSize = '16px';\n    } else {\n      box.style.fontSize = '20px';\n    }\n  });\n</script>\n\n</body>\n</html>\n```\n",
+  "keyPoints": [
+    "JavaScript segítségével dinamikusan módosítható a CSS egy elemhez rendelt osztálya.",
+    "A classList API-val egyszerűen lehet osztályokat hozzáadni, eltávolítani vagy váltani.",
+    "Inline stílusok közvetlenül az elem style attribútumán keresztül módosíthatók.",
+    "Class váltás ajánlott, ha több stílust kell egyszerre kezelni, inline stílust ha egyedi, dinamikus értékek kellenek.",
+    "Inline stílus felülírja a külső CSS szabályokat."
+  ]
+}
+
+
+  ]}

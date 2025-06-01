@@ -1,0 +1,132 @@
+{
+  "courseInfo": {
+    "id": 12,
+    "title": "Basic Version Control with Git",
+    "description": "This course introduces the basics of version control using Git, including how to track changes, collaborate with others, and manage code versions effectively.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+     {
+    "id": 1,
+    "title": "Mi az a verziókezelés?",
+    "content": "A verziókezelés egy olyan rendszer, amely lehetővé teszi a forráskód és egyéb fájlok változásainak nyomon követését.\n\n---\n\n## Miért fontos?\n\n- Biztonsági mentést készít a munkádról.\n- Több fejlesztő egyszerre dolgozhat egy projekten.\n- Könnyen visszaállítható korábbi állapot.\n\n---\n\n## Verziókezelő rendszerek\n\n- Lokális verziókezelők (pl. RCS)\n- Elosztott verziókezelők (pl. Git)\n\n---\n\n## Összefoglalás\n\n- Verziókezelés nélkülözhetetlen a hatékony fejlesztéshez.",
+    "keyPoints": [
+      "A verziókezelés a fájlok változásait kezeli.",
+      "Biztonságot és együttműködést biztosít.",
+      "Git az egyik legnépszerűbb verziókezelő.",
+      "Lehetővé teszi korábbi verziók visszaállítását.",
+      "Alapvető készség minden fejlesztőnek."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Git alapjai és telepítése",
+    "content": "A Git egy elosztott verziókezelő rendszer.\n\n---\n\n## Telepítés\n\n- Windows, macOS és Linux rendszerekre elérhető.\n- Telepíthető a https://git-scm.com oldalról.\n\n## Első lépések\n\n- `git init`: új Git repository létrehozása.\n- `git config`: alapbeállítások, pl. felhasználónév, email.\n\n---\n\n## Összefoglalás\n\n- Git telepítése és konfigurálása az első lépés a verziókezeléshez.",
+    "keyPoints": [
+      "Git elosztott verziókezelő rendszer.",
+      "Telepítés Windows, macOS, Linux alatt.",
+      "`git init` új repository létrehozásához.",
+      "`git config` a felhasználói beállításokhoz.",
+      "Első lépések a Git használatában."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Git repository és alapfogalmak",
+    "content": "A Git repository tartalmazza a projekt verziótörténetét.\n\n---\n\n## Fontos fogalmak\n\n- Commit: egy állapot mentése a projektben.\n- Branch: ág, ahol külön fejlesztések zajlanak.\n- Merge: ágak összeolvasztása.\n- Remote: távoli tárhely, pl. GitHub.\n\n---\n\n## Összefoglalás\n\n- Ezek az alapfogalmak segítik a Git megértését és használatát.",
+    "keyPoints": [
+      "Commit a projekt állapotának mentése.",
+      "Branch külön fejlesztési ág.",
+      "Merge ágak egyesítése.",
+      "Remote távoli repository.",
+      "Alapfogalmak nélkül nehéz Git-et használni."
+    ]
+  },
+   {
+    "id": 4,
+    "title": "Commit és állapotkezelés",
+    "content": "A commit a verziókezelés alapegysége.\n\n---\n\n## Fájlok állapota\n\n- Untracked: új fájl, nincs verzióban.\n- Staged: következő commitba kerülő fájl.\n- Committed: mentett állapot.\n\n## Parancsok\n\n- `git add <fájl>`: fájl hozzáadása a staging területhez.\n- `git commit -m \"üzenet\"`: változtatások mentése.\n- `git status`: állapot lekérdezése.\n\n---\n\n## Összefoglalás\n\n- Commitokkal követjük a változásokat, staging area segít a verziókezelésben.",
+    "keyPoints": [
+      "Untracked, staged és committed állapotok.",
+      "`git add` fájl hozzáadása a staginghez.",
+      "`git commit` változtatások mentése.",
+      "`git status` állapot ellenőrzése.",
+      "Commitokkal dolgozzuk fel a változásokat."
+    ]
+  },
+   {
+    "id": 5,
+    "title": "Ágak kezelése Git-ben (Branches)",
+    "content": "Az ágak lehetővé teszik a párhuzamos fejlesztést.\n\n---\n\n## Fontos parancsok\n\n- `git branch`: ágak listázása.\n- `git branch <név>`: új ág létrehozása.\n- `git checkout <ág>`: átváltás másik ágra.\n- `git merge <ág>`: ág összeolvasztása.\n\n---\n\n## Összefoglalás\n\n- Az ágak használata biztonságos fejlesztést tesz lehetővé.",
+    "keyPoints": [
+      "Ágak párhuzamos fejlesztéshez.",
+      "`git branch` ágak kezelése.",
+      "`git checkout` átváltás ágra.",
+      "`git merge` ágak összeolvasztása.",
+      "Ágak használata a biztonságos munkához."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Távoli repository-k kezelése: GitHub és mások",
+    "content": "A távoli repository-k segítségével másokkal is megoszthatjuk a kódot.\n\n---\n\n## Alapfogalmak\n\n- Remote: távoli repository.\n- `git clone`: távoli repository letöltése.\n- `git push`: helyi változások feltöltése.\n- `git pull`: távoli változások letöltése.\n\n---\n\n## Összefoglalás\n\n- A távoli repository-k elengedhetetlenek az együttműködéshez.",
+    "keyPoints": [
+      "Remote repository a kód megosztásához.",
+      "`git clone` projekt klónozása.",
+      "`git push` változások feltöltése.",
+      "`git pull` változások letöltése.",
+      "Távoli tárhelyek, mint GitHub, GitLab, Bitbucket."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Git konfliktusok kezelése",
+    "content": "Konfliktus akkor lép fel, amikor két változtatás ütközik.\n\n---\n\n## Konfliktusok jelei\n\n- Git figyelmeztet, ha nem tudja automatikusan összeolvasztani az ágakat.\n- A konfliktusos fájlok szerkesztésével kell megoldani.\n\n## Konfliktus feloldása\n\n- Nyisd meg a fájlt, keresd meg a konfliktusjelölőket (<<<<<<<, =======, >>>>>>>).\n- Dönts el, melyik változatot tartod meg vagy kombináld őket.\n- Mentsd el és commitold a változtatást.\n\n---\n\n## Összefoglalás\n\n- Konfliktusok megértése és kezelése fontos része a csapatmunkának.",
+    "keyPoints": [
+      "Konfliktus akkor keletkezik, ha változások ütköznek.",
+      "Git jelzi, ha összeolvasztási probléma van.",
+      "Fájlokon belüli konfliktusjelölők segítenek a megoldásban.",
+      "Konfliktus feloldása manuális beavatkozást igényel.",
+      "Megfelelő kezelés nélkül a kód nem lesz használható."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Git tag-ek és verziók kezelése",
+    "content": "A tag-ek segítségével fontos verziókat jelölhetünk meg.\n\n---\n\n## Tag-ek használata\n\n- `git tag`: meglévő tagek listázása.\n- `git tag <név>`: új tag létrehozása.\n- Verziók kiadása és megjelölése.\n\n---\n\n## Összefoglalás\n\n- Tag-ekkel könnyen kezelhető a verziókövetés a kiadások során.",
+    "keyPoints": [
+      "Tag-ek megjelölnek fontos verziókat.",
+      "`git tag` parancsok tag-ek kezelésére.",
+      "Verziók kiadása egyszerűbb tag-ekkel.",
+      "Segít a projekt verzióinak rendszerezésében.",
+      "Használatos release-ek és milestone-ok jelölésére."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Git parancsok gyakorlati tippek",
+    "content": "Néhány hasznos Git parancs és tipp a mindennapi használathoz.\n\n---\n\n## Tippek\n\n- `git log --oneline`: rövid commit lista.\n- `git diff`: változások megtekintése.\n- `git reset` visszavonja a változtatásokat.\n- `git stash`: ideiglenes mentés munkafolyamatból.\n\n---\n\n## Összefoglalás\n\n- Ezek a parancsok megkönnyítik a verziókezelést és hibajavítást.",
+    "keyPoints": [
+      "`git log --oneline` rövid commit lista.",
+      "`git diff` változások megtekintése.",
+      "`git reset` változtatások visszavonása.",
+      "`git stash` ideiglenes változtatás mentése.",
+      "Hasznos parancsok a hatékony munkához."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Alapvető Git workflow és legjobb gyakorlatok",
+    "content": "Hogyan használjuk a Git-et hatékonyan napi munkánk során?\n\n---\n\n## Workflow ajánlás\n\n1. Új ág létrehozása a fejlesztéshez.\n2. Rendszeres commitok készítése.\n3. Tesztelés és review.\n4. Merge master/main ágba.\n5. Push a távoli repository-ba.\n\n## Legjobb gyakorlatok\n\n- Érthető commit üzenetek.\n- Kis, fókuszált commitok.\n- Konfliktusok gyors kezelése.\n\n---\n\n## Összefoglalás\n\n- Jó workflow segíti a hatékony, átlátható fejlesztést.",
+    "keyPoints": [
+      "Új ág létrehozása minden fejlesztéshez.",
+      "Gyakori, világos commitok.",
+      "Minden változás tesztelése merge előtt.",
+      "Merge és push a központi repository-ba.",
+      "Legjobb gyakorlatok segítik a csapatmunkát."
+    ]
+  }
+
+  ]}

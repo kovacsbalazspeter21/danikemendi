@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Basic HTML5 Teszt",
+    "questions": [
+      {
+        "question": "Mi a helyes HTML5 doctype deklaráció?",
+        "options": [
+          "<!DOCTYPE html>",
+          "<DOCTYPE html>",
+          "<html5>",
+          "<!HTML5>"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Melyik HTML elem használható címsor létrehozására?",
+        "options": [
+          "<head>",
+          "<h1>",
+          "<title>",
+          "<meta>"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Melyik elem felelős egy bekezdésért?",
+        "options": [
+          "<div>",
+          "<section>",
+          "<p>",
+          "<span>"
+        ],
+        "answer": 2
+      }
+    ]
+  }
+]

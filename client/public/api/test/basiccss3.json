@@ -1,0 +1,48 @@
+[
+  {
+    "id": 2,
+    "title": "Basic CSS3 Teszt",
+    "questions": [
+      {
+        "question": "Hogyan importálsz egy külső CSS fájlt HTML-be?",
+        "options": [
+          "<link rel=\"stylesheet\" href=\"style.css\">",
+          "<style src=\"style.css\">",
+          "<css href=\"style.css\">",
+          "<import css=\"style.css\">"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Melyik a helyes CSS szintaxis egy elem színének pirosra állításához?",
+        "options": [
+          "color = red;",
+          "color: red;",
+          "text-color: red;",
+          "font-color: red;"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Melyik CSS property-vel állíthatod be egy elem háttérszínét?",
+        "options": [
+          "background-color",
+          "color-background",
+          "bgcolor",
+          "backgroundstyle"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Melyik választás adja meg a betűméretet 20 pixelesre?",
+        "options": [
+          "font-size: 20px;",
+          "text-size: 20px;",
+          "font: 20px;",
+          "size: 20px;"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+]

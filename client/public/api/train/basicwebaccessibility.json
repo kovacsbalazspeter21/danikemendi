@@ -1,0 +1,84 @@
+{
+  "courseInfo": {
+    "id": 7,
+    "title": "Basic Web Accessibility",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+  "id": 1,
+  "title": "Mi a webes akadálymentesség (Accessibility)?",
+  "content": "A webes akadálymentesség (accessibility) azt jelenti, hogy a weboldalak és alkalmazások mindenki számára használhatóak legyenek, függetlenül a felhasználó képességeitől vagy eszközeitől.\n\n---\n\n## Miért fontos az akadálymentesség?\n\n- Több ember számára elérhetővé teszi a tartalmakat, beleértve a fogyatékkal élőket is.\n- Javítja az általános felhasználói élményt.\n- Bizonyos országokban jogi követelmény is lehet.\n- SEO szempontból is előnyös.\n\n---\n\n## Kiknek szól az akadálymentes web?\n\n- Mozgáskorlátozottaknak (pl. nem tudják használni az egeret)\n- Látássérülteknek (képernyőolvasó használók)\n- Hallássérülteknek\n- Kognitív nehézségekkel élőknek\n- Időseknek\n- Mindenkinek, aki különböző eszközöket vagy böngészőket használ\n\n---\n\n## Összefoglalás\n\n- Az accessibility biztosítja, hogy a web mindenki számára elérhető legyen.\n- Fontos a társadalmi felelősségvállalás és a jogi megfelelés miatt.\n- Egyszerű tervezési döntésekkel nagy változást lehet elérni.\n",
+  "keyPoints": [
+    "Az akadálymentesség mindenki számára használhatóvá teszi a webet.",
+    "Fogyatékkal élők és különböző eszközöket használók is profitálnak belőle.",
+    "Jogilag is fontos sok helyen a hozzáférhetőség biztosítása.",
+    "Javítja a felhasználói élményt és SEO-t.",
+    "Egyszerű lépésekkel sokat lehet tenni érte."
+  ]
+},
+{
+  "id": 2,
+  "title": "Az akadálymentesség alapelvei (WCAG rövid ismertető)",
+  "content": "A webes akadálymentesség alapelveit a WCAG (Web Content Accessibility Guidelines) határozza meg, melyet az W3C dolgozott ki.\n\n---\n\n## A WCAG 4 alapelve\n\n1. **Észlelhetőség (Perceivable):** Minden tartalom és információ érzékelhető legyen (pl. alternatív szöveg képekhez).\n\n2. **Működtethetőség (Operable):** A weboldal kezelhető legyen billentyűzettel és más eszközökkel.\n\n3. **Érthetőség (Understandable):** A tartalom és a kezelőfelület legyen könnyen érthető.\n\n4. **Robosztusság (Robust):** A tartalom kompatibilis legyen különböző böngészőkkel és segédeszközökkel.\n\n---\n\n## Hogyan segít a WCAG?\n\n- Egyértelmű irányelveket ad a fejlesztőknek és designereknek.\n- Segít mérni és tesztelni az akadálymentességet.\n- Világszerte elismert szabvány.\n\n---\n\n## Összefoglalás\n\n- A WCAG négy alapelve segíti, hogy a web mindenki számára hozzáférhető legyen.\n- Ezekre az alapelvekre épülnek az akadálymentességi szabályok és technikák.\n- Célszerű ezeket követni a webfejlesztés során.\n",
+  "keyPoints": [
+    "A WCAG a web akadálymentesség nemzetközi irányelve.",
+    "4 alapelv: Észlelhetőség, Működtethetőség, Érthetőség, Robosztusság.",
+    "Segít a fejlesztőknek és tesztelőknek egyaránt.",
+    "Fontos a szabványok követése a hozzáférhetőséghez.",
+    "Alapelvek mentén épülnek az akadálymentességi technikák."
+  ]
+},
+{
+  "id": 3,
+  "title": "Színkontraszt és olvashatóság javítása",
+  "content": "A megfelelő színkontraszt biztosítja, hogy a szöveg és egyéb fontos elemek jól láthatók legyenek minden felhasználó számára, különösen a látáskorlátozottak számára.\n\n---\n\n## Miért fontos a színkontraszt?\n\n- Csökkenti a szem megerőltetését.\n- Segíti az idősebb és gyengénlátó felhasználókat.\n\n---\n\n## Színkontraszt szabványok\n\n- WCAG ajánlás: minimum 4.5:1 kontraszt a szöveg és háttér között.\n- Nagyobb szöveg esetén (pl. címek) elég 3:1 is.\n\n---\n\n## Tippek a kontraszt javítására\n\n- Használjunk kontraszt ellenőrző eszközöket (pl. WebAIM Contrast Checker).\n- Kerüljük a hasonló árnyalatú színeket egymás mellett.\n- Gondoljunk a színtévesztőkre is: ne csak a színt használjuk információ közvetítésére.\n\n---\n\n## Példa\n\n```css\nbody {\n  color: #222222;\n  background-color: #ffffff;\n}\n```\n\n---\n\n## Összefoglalás\n\n- A jó kontraszt alapfeltétele az olvashatóságnak.\n- Kövessük a WCAG irányelveket a színek kiválasztásánál.\n- Használjunk kontraszt elemző eszközöket a teszteléshez.\n",
+  "keyPoints": [
+    "Megfelelő kontraszt szükséges az olvashatósághoz.",
+    "WCAG szabványokat érdemes követni (4.5:1 vagy 3:1).",
+    "Használjunk kontraszt ellenőrző eszközöket.",
+    "Kerüljük a hasonló árnyalatú színeket egymás mellett.",
+    "A szín mellett ne csak a színt használjuk információ közvetítésére."
+  ]
+},
+{
+  "id": 4,
+  "title": "Billentyűzetes navigáció támogatása",
+  "content": "Sok felhasználó a billentyűzet segítségével böngészi a weboldalakat, ezért fontos, hogy az oldal teljes navigációja elérhető legyen billentyűzetről is.\n\n---\n\n## Miért fontos?\n\n- Mozgáskorlátozott felhasználók gyakran nem használhatnak egeret.\n- A billentyűzetes navigáció segíti a gyorsabb és hatékonyabb használatot.\n\n---\n\n## Alapvető szabályok\n\n- Biztosítsunk logikus tab sorrendet az elemek között.\n- A fókusz legyen jól látható (pl. keret, színváltozás).\n- Használjunk HTML elemeket megfelelően (pl. `<button>`, `<a>`).\n\n---\n\n## Példa\n\n```css\nbutton:focus, a:focus {\n  outline: 3px solid #005fcc;\n  outline-offset: 2px;\n}\n```\n\n---\n\n## Összefoglalás\n\n- Támogassuk a teljes oldal billentyűzetes használatát.\n- Gondoskodjunk jól látható fókuszállapotról.\n- Teszteljük az oldalt csak billentyűzettel is.\n",
+  "keyPoints": [
+    "Billentyűzetről is teljes navigáció legyen elérhető.",
+    "Logikus tab sorrend a fontos elemek között.",
+    "Fókusz állapot legyen jól látható minden fókuszálható elemnél.",
+    "Használjunk szemantikus HTML elemeket.",
+    "Teszteljük az oldalt kizárólag billentyűzet használatával."
+  ]
+},
+{
+  "id": 5,
+  "title": "ARIA szerepek és attribútumok alapjai",
+  "content": "Az ARIA (Accessible Rich Internet Applications) egy szabvány, amely segíti a dinamikus tartalmak és összetett UI elemek akadálymentesítését.\n\n---\n\n## Mi az ARIA?\n\n- Kiegészíti a HTML-t speciális attribútumokkal.\n- Segíti a képernyőolvasókat, hogy jobban értelmezzék az oldalt.\n\n---\n\n## Alapvető ARIA szerepek\n\n- `role=\"button\"`: gomb szerep jelölése nem gomb elemnek.\n- `role=\"navigation\"`: navigációs terület.\n- `role=\"main\"`: fő tartalom terület.\n\n---\n\n## Gyakori ARIA attribútumok\n\n- `aria-label`: egy elem leírása.\n- `aria-hidden`: megjelöli, hogy az elem látható-e a segédeszközök számára.\n\n---\n\n## Példa\n\n```html\n<div role=\"button\" aria-label=\"Zárja be az ablakot\" tabindex=\"0\"></div>\n```\n\n---\n\n## Összefoglalás\n\n- Az ARIA bővíti a HTML akadálymentességét.\n- Használjuk szerepeket és attribútumokat, hogy a képernyőolvasók pontosabb információt kapjanak.\n- Ne használjunk ARIA-t, ha van natív HTML elem, amely megteszi ugyanazt.\n",
+  "keyPoints": [
+    "ARIA segít akadálymentesíteni dinamikus és összetett elemeket.",
+    "Szerepek (role) és attribútumok (aria-*) használata fontos.",
+    "Például role=\"button\", aria-label, aria-hidden.",
+    "Lehetőleg natív HTML elemeket használjunk először.",
+    "ARIA-val javíthatjuk a képernyőolvasók élményét."
+  ]
+},
+{
+  "id": 6,
+  "title": "Képek, űrlapok és multimédia akadálymentesítése",
+  "content": "Az akadálymentes weboldalak minden vizuális és interaktív eleme hozzáférhető minden felhasználó számára, beleértve a képeket, űrlapokat és multimédiát.\n\n---\n\n## Képek akadálymentesítése\n\n- Használjunk megfelelő alternatív szövegeket (`alt` attribútum).\n- Dekoratív képeknél használjunk üres `alt=\"\"` attribútumot.\n\n---\n\n## Űrlapok akadálymentesítése\n\n- Címkézzük fel az űrlap elemeket `<label>` segítségével.\n- Biztosítsunk érthető hibajelzéseket.\n- Használjuk az `aria-describedby` attribútumot szükség esetén.\n\n---\n\n## Multimédia akadálymentesítése\n\n- Biztosítsunk feliratokat videókhoz.\n- Hanganyagokhoz adjunk leírásokat vagy átiratot.\n- Gondoskodjunk vezérlők billentyűzetről történő eléréséről.\n\n---\n\n## Összefoglalás\n\n- Mindig adjunk értelmes alternatívákat a vizuális és hang alapú tartalmakhoz.\n- Űrlapokat használhatónak és érthetőnek kell tervezni.\n- A multimédia tartalmakat is akadálymentessé kell tenni.\n",
+  "keyPoints": [
+    "Képekhez mindig adjunk értelmes alt szöveget vagy üres alt-ot dekoratív képeknél.",
+    "Űrlapok legyenek megfelelően címkézettek és könnyen használhatók.",
+    "Multimédiákhoz biztosítsunk feliratokat és átiratokat.",
+    "Biztosítsuk a vezérlők elérését billentyűzetről is.",
+    "Az akadálymentes tartalom minden felhasználónak elérhető kell legyen.",
+    "Az akadálymentesítés növeli a felhasználói élményt és a weboldal elérhetőségét."
+  ]
+}
+
+  ]}

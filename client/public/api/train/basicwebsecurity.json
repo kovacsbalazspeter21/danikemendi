@@ -1,0 +1,84 @@
+{
+  "courseInfo": {
+    "id": 10,
+    "title": "Basic Web Security",
+    "description": "This course covers the fundamental principles of web security, including common vulnerabilities, secure coding practices, and how to protect web applications from attacks.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+  "id": 1,
+  "title": "Alapvető webbiztonság: Miért fontos?",
+  "content": "A webbiztonság célja, hogy megvédje a weboldalakat és felhasználóikat a különböző támadásoktól és adatlopástól.\n\n---\n\n## Miért fontos?\n\n- Megvédi az érzékeny adatokat (például jelszavakat, személyes információkat).\n- Növeli a felhasználói bizalmat.\n- Megakadályozza a szolgáltatásmegtagadásos (DDoS) támadásokat és adatlopást.\n\n---\n\n## Összefoglalás\n\n- A webbiztonság alapvető a megbízható és biztonságos weboldalakhoz.\n",
+  "keyPoints": [
+    "A webbiztonság védi a weboldalakat és felhasználókat.",
+    "Fontos az adatvédelem és a szolgáltatásbiztonság.",
+    "Növeli a felhasználói bizalmat és az oldal hitelességét.",
+    "Megakadályozza a különféle támadásokat.",
+    "Minden fejlesztőnek ismernie kell az alapokat."
+  ]
+},
+{
+  "id": 2,
+  "title": "HTTPS és SSL/TLS alapok",
+  "content": "A HTTPS a biztonságos webes kommunikációt biztosítja az SSL/TLS protokoll segítségével.\n\n---\n\n## Mi a HTTPS?\n\n- Titkosítja az adatokat a böngésző és a szerver között.\n- Megakadályozza az adatok lehallgatását és módosítását.\n\n## SSL/TLS\n\n- SSL régi, TLS az újabb, biztonságosabb protokoll.\n- Hitelesítési és titkosítási szolgáltatásokat nyújt.\n\n---\n\n## Összefoglalás\n\n- HTTPS használata ma alapvető elvárás minden weboldalon.\n",
+  "keyPoints": [
+    "HTTPS titkosítja az adatforgalmat a weboldal és a felhasználó között.",
+    "SSL és TLS biztosítják ezt a titkosítást.",
+    "Megakadályozzák az adatok lehallgatását és manipulálását.",
+    "HTTPS javítja a weboldal hitelességét és biztonságát.",
+    "Minden weboldalnak érdemes HTTPS-t használni."
+  ]
+},
+{
+  "id": 3,
+  "title": "Cross-Site Scripting (XSS) támadások és védekezés",
+  "content": "Az XSS egy gyakori webes támadás, amely során rosszindulatú kódot injektálnak egy weboldalra, hogy felhasználók böngészőjében fusson.\n\n---\n\n## Mit okozhat?\n\n- Adatok ellopása (például cookie-k).\n- Felhasználói munkamenet megsértése.\n\n## Védekezés\n\n- Input validáció és szűrés minden felhasználói adatnál.\n- Output encoding (HTML, JavaScript).\n- Használj Content Security Policy-t (CSP).\n\n---\n\n## Összefoglalás\n\n- Az XSS támadások ellen védekezni kell megfelelő kódolással és biztonsági beállításokkal.\n",
+  "keyPoints": [
+    "XSS támadás rosszindulatú kód futtatását jelenti a böngészőben.",
+    "Adatlopást és munkamenet eltérítést okozhat.",
+    "Minden felhasználói inputot szűrni és validálni kell.",
+    "Output kódolással megakadályozható a támadás.",
+    "Content Security Policy segít a védekezésben."
+  ]
+},
+{
+  "id": 4,
+  "title": "Cross-Site Request Forgery (CSRF) támadások és védekezés",
+  "content": "A CSRF támadás során a támadó rosszindulatú kérést küld egy megbízó felhasználó nevében.\n\n---\n\n## Mit okozhat?\n\n- Jogosulatlan műveletek végrehajtása a felhasználó nevében.\n\n## Védekezés\n\n- Használj CSRF tokeneket űrlapoknál.\n- Ellenőrizd a kérés forrását.\n- Állíts be megfelelő CORS szabályokat.\n\n---\n\n## Összefoglalás\n\n- CSRF ellen védelmet kell beépíteni, hogy megakadályozzuk a jogosulatlan műveleteket.\n",
+  "keyPoints": [
+    "CSRF támadás a felhasználó nevében történő jogosulatlan kérés.",
+    "Káros műveleteket eredményezhet az oldaladon.",
+    "CSRF tokenek használata alapvető védekezési mód.",
+    "Kérés forrásának ellenőrzése segít a védelemben.",
+    "CORS megfelelő beállítása növeli a biztonságot."
+  ]
+},
+{
+  "id": 5,
+  "title": "Jelszókezelés és hitelesítés alapok",
+  "content": "A biztonságos jelszókezelés és hitelesítés elengedhetetlen a weboldalak védelméhez.\n\n---\n\n## Jó gyakorlatok\n\n- Soha ne tárolj jelszót egyszerű szövegként.\n- Használj erős, sózott hash algoritmusokat (pl. bcrypt).\n- Támogasd a kétfaktoros hitelesítést (2FA).\n- Biztosíts jelszó visszaállítási lehetőséget biztonságosan.\n\n---\n\n## Összefoglalás\n\n- Erős jelszókezeléssel és hitelesítéssel csökkenthetjük a jogosulatlan hozzáférést.\n",
+  "keyPoints": [
+    "Jelszavakat mindig sózva és hash-elve tárolj.",
+    "Kerüld a jelszavak sima szövegként való tárolását.",
+    "Kétfaktoros hitelesítés növeli a biztonságot.",
+    "Biztonságos jelszó visszaállítási folyamatot alkalmazz.",
+    "Erős jelszókezelés csökkenti a támadási felületet."
+  ]
+},
+{
+  "id": 6,
+  "title": "Webalkalmazások biztonsági fejlesztési alapelvei",
+  "content": "A biztonságos webfejlesztés alapelvei segítenek megelőzni a gyakori sebezhetőségeket.\n\n---\n\n## Alapelvek\n\n- Mindig validáld és szűrd az összes bemeneti adatot.\n- Használj biztonságos fejlesztési keretrendszereket.\n- Tartsd naprakészen a függőségeket és könyvtárakat.\n- Minimalizáld az érzékeny adatokhoz való hozzáférést.\n- Alkalmazz rendszeres biztonsági teszteket és auditokat.\n\n---\n\n## Összefoglalás\n\n- A biztonságos fejlesztés folyamatos odafigyelést és szabályokat igényel.\n",
+  "keyPoints": [
+    "Validáld és szűrd az összes bemeneti adatot.",
+    "Használj biztonságos és naprakész fejlesztési eszközöket.",
+    "Minimalizáld az érzékeny adatok hozzáférését.",
+    "Végezz rendszeres biztonsági teszteket és auditokat.",
+    "Biztonságos fejlesztés folyamatos odafigyelést igényel."
+  ]
+}
+
+  ]}

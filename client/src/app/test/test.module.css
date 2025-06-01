@@ -1,0 +1,152 @@
+.testContainer {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #0f0f0f;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.testGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.testCard {
+  background: rgba(25, 118, 210, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 12px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testCard:hover {
+  background: #1976d2;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.questionBox {
+  background: #0f0f0f;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.05);
+  margin: 24px 0;
+  padding: 18px 10px;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.optionBtn {
+  background: rgba(25, 118, 210, 0.08);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 14px 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  color: #1976d2;
+}
+.optionBtn.selected,
+.optionBtn:active {
+  background: #1976d2;
+  color: #fff;
+  border: 2px solid #1976d2;
+}
+.optionBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submitBtn {
+  margin-top: 24px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitBtn:hover {
+  background: #1256a3;
+}
+
+.resultBox {
+  margin-top: 32px;
+}
+
+.backBtn {
+  margin-top: 18px;
+  background: #eee;
+  color: #1976d2;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.backBtn:hover {
+  background: #e3f2fd;
+}
+
+.testHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.exitBtn {
+  background: transparent;
+  border: none;
+  color: #1976d2;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: color 0.2s;
+  padding: 0;
+}
+.exitBtn:hover {
+  color: #1256a3;
+}
+
+.progressBox {
+  margin-top: 18px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+.progressLabel {
+  font-size: 0.95em;
+  opacity: 0.8;
+  margin-right: 4px;
+}
+
+.progressPurple { background: #a259f7; color: #fff; }
+.progressGreen { background: #43d17a; color: #fff; }
+.progressRed { background: #e53935; color: #fff; }
+.progressOrange { background: #ff9800; color: #fff; }
+.progressYellow { background: #ffe066; color: #444; }
+.progressGold { background: linear-gradient(90deg, #ffd700 60%, #fffbe6 100%); color: #bfa100; border: 2px solid #ffd700; }
+.progressSilver { background: linear-gradient(90deg, #c0c0c0 60%, #f8f8f8 100%); color: #888; border: 2px solid #c0c0c0; }
+.progressBronze { background: linear-gradient(90deg, #cd7f32 60%, #fff3e0 100%); color: #8d5524; border: 2px solid #cd7f32; }
+
+

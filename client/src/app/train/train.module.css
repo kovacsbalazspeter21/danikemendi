@@ -1,0 +1,497 @@
+.slidebookContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ffff00, #00ffff);
+    background-size: 400% 400%;
+    animation: rgbGlow 8s ease-in-out infinite;
+    padding: 20px;
+}
+
+.slidebook {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+
+@keyframes rgbGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Alternatív RGB pulsing háttér */
+.rgbPulse {
+    background: radial-gradient(circle, rgba(255,0,0,0.3), rgba(0,255,0,0.3), rgba(0,0,255,0.3));
+    animation: rgbPulse 7s ease-in-out infinite alternate;
+}
+
+@keyframes rgbPulse {
+    0% {
+        background: radial-gradient(circle, rgba(255,0,0,0.3), rgba(0,255,0,0.3), rgba(0,0,255,0.3));
+    }
+    33% {
+        background: radial-gradient(circle, rgba(0,255,0,0.3), rgba(0,0,255,0.3), rgba(255,0,0,0.3));
+    }
+    66% {
+        background: radial-gradient(circle, rgba(0,0,255,0.3), rgba(255,0,0,0.3), rgba(0,255,0,0.3));
+    }
+    100% {
+        background: radial-gradient(circle, rgba(255,0,0,0.3), rgba(0,255,0,0.3), rgba(0,0,255,0.3));
+    }
+}
+
+/* RGB border glow a slide-okhoz */
+.slide {
+    width: 600px;
+    height: 400px;
+    background: rgba(20, 25, 35, 0.95);
+    color: rgba(235, 230, 220, 1);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    animation: rgbBorder 7s linear infinite;
+}
+
+@keyframes rgbBorder {
+    0% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    16% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 0, 0.8);
+    }
+    33% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+    66% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 255, 0.8);
+    }
+    83% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+}
+
+
+.slide:hover {
+    transform: rotateY(-5deg) rotateX(5deg);
+}
+
+.slide h2 {
+    font-size: 2.5rem;
+    color: rgba(235, 230, 220, 1);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.slide p {
+    font-size: 1.2rem;
+    color: rgba(235, 230, 220, 0.95);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.slideIndicator {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: rgba(235, 230, 220, 0.95);
+}
+
+.slideHint {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.8rem;
+    color: rgba(235, 230, 220, 0.95);
+    font-style: italic;
+}
+
+.arrowLeft,
+.arrowRight {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.arrowLeft:disabled,
+.arrowRight:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.sections {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 80px;
+    padding: 60px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 100px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tanulási mód stílusok */
+
+.studyModeContainer {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ffff00, #00ffff);
+    background-size: 400% 400%;
+    animation: rgbGlow 3s ease-in-out infinite;
+}
+
+.studyHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.exitButton {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #333;
+}
+
+.exitButton:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.courseProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.courseProgress h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.progressText {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 5px;
+    color: rgba(235, 230, 220, 0.95);
+}
+
+.pageContent {
+    text-align: left;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.pageContent::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pageContent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.pageContent::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.pageContent::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+.keyPoints {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.keyPoints h4 {
+    margin: 0 0 10px 0;
+    color: #667eea;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.keyPoints ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.keyPoints li {
+    margin-bottom: 5px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.codeBlock {
+    margin: 20px 0;
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+}
+
+.codeBlock h4 {
+    margin: 0;
+    padding: 12px 16px;
+    background: #343a40;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.codeBlock pre {
+    margin: 0;
+    padding: 16px;
+    overflow-x: auto;
+    background: #f8f9fa;
+}
+
+.codeBlock code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.startCourseButton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.startCourseButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .slidebook {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .slide {
+        width: 90vw;
+        height: 300px;
+        padding: 30px 20px;
+    }
+    
+    .slide h2 {
+        font-size: 1.8rem;
+    }
+    
+    .slide p {
+        font-size: 1rem;
+    }
+    
+    .arrowLeft,
+    .arrowRight {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .studyHeader {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .exitButton {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .courseProgress h3 {
+        font-size: 1.2rem;
+    }
+
+    .pageContent {
+        max-height: 200px;
+    }
+
+    .codeBlock code {
+        font-size: 0.8rem;
+    }
+
+    .startCourseButton {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+/* Loading animáció stílusok */
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ffff00, #00ffff);
+    background-size: 400% 400%;
+    animation: rgbGlow 3s ease-in-out infinite;
+}
+
+.loadingContent {
+    text-align: center;
+    background: rgba(235, 230, 220, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: rgbBorder 2s linear infinite;
+    min-width: 300px;
+}
+
+.loadingSpinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loadingTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: titleColorCycle 4s ease-in-out infinite;
+}
+
+.progressBar {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    animation: progressGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes progressGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(102, 126, 234, 0.8);
+    }
+}
+
+.progressText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    animation: titleColorCycle 4s ease-in-out infinite;
+}
+

@@ -1,0 +1,130 @@
+{
+  "courseInfo": {
+    "id": 14,
+    "title": "Basic Web Hosting",
+    "description": "This course covers the fundamentals of web hosting, including how to choose a hosting provider, set up a domain, and deploy a website.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+    "id": 1,
+    "title": "Mi az a web hosting?",
+    "content": "A web hosting szolgáltatás lehetővé teszi, hogy a weboldalad elérhető legyen az interneten.\n\n---\n\n## Hogyan működik?\n\n- A weboldalad fájljai egy szerveren vannak tárolva.\n- A szerver folyamatosan online van, így a látogatók bármikor elérhetik az oldaladat.\n- A hosting szolgáltató gondoskodik a szerver működéséről és karbantartásáról.\n\n---\n\n## Összefoglalás\n\n- A web hosting az internetes megjelenés alapja.",
+    "keyPoints": [
+      "Web hosting teszi elérhetővé a weboldalakat az interneten.",
+      "A fájlok tárolása egy folyamatosan online szerveren történik.",
+      "A hosting szolgáltató kezeli a szervereket és a karbantartást."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Típusai a web hostingnak",
+    "content": "Többféle web hosting megoldás létezik, amelyek különböző igényekhez igazodnak.\n\n---\n\n## Leggyakoribb típusok\n\n- **Megosztott hosting (Shared Hosting):** Több felhasználó osztozik egy szerveren.\n- **Virtuális magánszerver (VPS):** Egy fizikai szerver erőforrásai vannak elkülönítve.\n- **Dedikált szerver:** Egy egész szervert csak egy ügyfél használ.\n- **Felhő alapú hosting:** Több szerver erőforrásait használja rugalmasan.\n\n---\n\n## Összefoglalás\n\n- A hosting típus kiválasztása a projekt méretétől és igényeitől függ.",
+    "keyPoints": [
+      "Megosztott hosting olcsó, de erőforrásokat osztanak meg.",
+      "VPS erőforrásokat izolál a többiektől.",
+      "Dedikált szerver teljesen a te szolgálatodban áll.",
+      "Felhő hosting skálázható és rugalmas.",
+      "Különböző igényekhez más-más megoldás ideális."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Domain név és DNS alapok",
+    "content": "A domain név a weboldalad azonosítója az interneten, a DNS pedig a domain és az IP cím közti kapcsolatot kezeli.\n\n---\n\n## Fontos fogalmak\n\n- **Domain név:** pl. example.com\n- **IP cím:** a szerver egyedi címe\n- **DNS (Domain Name System):** lefordítja a domain nevet IP címre\n\n---\n\n## Összefoglalás\n\n- A domain és a DNS nélkülözhetetlenek a weboldalad eléréséhez.",
+    "keyPoints": [
+      "Domain név az oldal internetes címe.",
+      "DNS a domain nevet IP címre fordítja.",
+      "IP cím a szerver hálózati azonosítója.",
+      "DNS szerverek irányítják a forgalmat.",
+      "Domain regisztráció és DNS kezelés külön szolgáltatás lehet."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Hogyan válassz web hosting szolgáltatót?",
+    "content": "Fontos szempontok a megfelelő web hosting szolgáltató kiválasztásához.\n\n---\n\n## Szempontok\n\n- Megbízhatóság és uptime garancia\n- Támogatás (ügyfélszolgálat)\n- Teljesítmény (szerver sebessége)\n- Árazás és díjszabás\n- Könnyű kezelhetőség (pl. cPanel, Plesk)\n\n---\n\n## Összefoglalás\n\n- Olyan szolgáltatót válassz, amely megfelel az igényeidnek és költségvetésednek.",
+    "keyPoints": [
+      "Megbízható, magas uptime értékű szolgáltató.",
+      "Gyors és segítőkész ügyfélszolgálat.",
+      "Megfelelő szerver teljesítmény.",
+      "Átlátható és elfogadható árak.",
+      "Felhasználóbarát kezelőfelület."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "FTP és fájlkezelés a tárhelyen",
+    "content": "Az FTP egy protokoll, amivel fájlokat tölthetsz fel és le a szerverre.\n\n---\n\n## Használat\n\n- FTP kliens program (pl. FileZilla) használata\n- Kapcsolódás a szerverhez FTP felhasználónévvel és jelszóval\n- Fájlok feltöltése, letöltése és törlése\n\n---\n\n## Összefoglalás\n\n- Az FTP az egyik legelterjedtebb módja a fájlkezelésnek webtárhelyeken.",
+    "keyPoints": [
+      "FTP protokoll fájlok átviteléhez.",
+      "Szükséges FTP kliens használata.",
+      "Belépési adatokkal csatlakozás a szerverhez.",
+      "Fájlok feltöltése és módosítása.",
+      "Biztonságos alternatívák: SFTP, FTPS."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "HTTPS és SSL tanúsítványok",
+    "content": "A HTTPS biztonságos kapcsolatot biztosít a weboldalad és a látogatók között.\n\n---\n\n## SSL tanúsítvány\n\n- Titkosítja az adatforgalmat\n- Növeli a bizalmat és a SEO értéket\n- Letölthető ingyenes (Let’s Encrypt) vagy fizetős tanúsítvány\n\n---\n\n## Összefoglalás\n\n- SSL és HTTPS használata alapvető a modern weboldalaknál.",
+    "keyPoints": [
+      "HTTPS titkosított kommunikációt biztosít.",
+      "SSL tanúsítvány szükséges a HTTPS-hez.",
+      "Növeli az oldal biztonságát és hitelességét.",
+      "Let’s Encrypt ingyenes tanúsítványok elérhetők.",
+      "A Google előnyben részesíti a HTTPS oldalakat."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Tárhely kezelőpanelek: cPanel, Plesk, egyebek",
+    "content": "A kezelőpanelek segítik a webtárhely egyszerű kezelését programozói tudás nélkül.\n\n---\n\n## Népszerű panelek\n\n- **cPanel:** legismertebb, könnyen kezelhető\n- **Plesk:** több platform támogatása\n- Egyéb: DirectAdmin, ISPConfig\n\n---\n\n## Mit tudnak?\n\n- Domain és e-mail kezelés\n- FTP felhasználók kezelése\n- Adatbázisok létrehozása\n- Biztonsági beállítások\n\n---\n\n## Összefoglalás\n\n- Ezekkel a panelek segítségével könnyen kezelhető a webtárhely.",
+    "keyPoints": [
+      "cPanel a legnépszerűbb kezelőfelület.",
+      "Plesk multi-platform támogatás.",
+      "Felhasználóbarát adminisztrációs eszközök.",
+      "Domain, FTP, adatbázis és e-mail kezelése.",
+      "Segít a biztonsági beállításokban."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Adatbázisok kezelése a tárhelyen",
+    "content": "Az adatbázisok fontosak dinamikus weboldalakhoz és alkalmazásokhoz.\n\n---\n\n## Leggyakoribb adatbázisok\n\n- MySQL/MariaDB\n- PostgreSQL\n- SQLite (kevésbé gyakori webtárhelyeken)\n\n## Kezelés\n\n- Adatbázis létrehozása kezelőpanelen vagy parancssorból\n- phpMyAdmin vagy hasonló grafikus eszköz használata\n\n---\n\n## Összefoglalás\n\n- Adatbázis nélkül nehéz dinamikus weboldalt vagy webalkalmazást működtetni.",
+    "keyPoints": [
+      "MySQL és PostgreSQL a legelterjedtebb adatbázisok.",
+      "Adatbázisok létrehozása és kezelése webes eszközökkel.",
+      "phpMyAdmin kényelmes grafikus felület MySQL-hez.",
+      "Dinamikus tartalom és felhasználói adatok tárolása.",
+      "Biztonságos hozzáférés és jelszókezelés szükséges."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Tárhely biztonsági alapelvek",
+    "content": "Fontos a webtárhely és weboldal biztonságának megőrzése.\n\n---\n\n## Alapvető lépések\n\n- Erős jelszavak használata\n- Rendszeres frissítések és biztonsági mentések\n- HTTPS használata\n- Tűzfal és támadás elleni védelem\n\n---\n\n## Összefoglalás\n\n- A biztonság nélkülözhetetlen a megbízható weboldalhoz.",
+    "keyPoints": [
+      "Használj erős, egyedi jelszavakat.",
+      "Frissítsd rendszeresen a szervert és a szoftvereket.",
+      "Biztosíts HTTPS kapcsolatot SSL-lel.",
+      "Használj tűzfalat és támadás elleni védelmet.",
+      "Rendszeresen készíts biztonsági mentést."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Hogyan mérd a web hosting teljesítményét?",
+    "content": "A web hosting teljesítménye befolyásolja az oldal gyorsaságát és elérhetőségét.\n\n---\n\n## Mérőeszközök\n\n- Pingdom, GTmetrix, Google PageSpeed Insights\n\n## Mit mérnek?\n\n- Oldal betöltési sebesség\n- Szerver válaszidő\n- Uptime (elérhetőség)\n\n---\n\n## Összefoglalás\n\n- Fontos rendszeresen ellenőrizni, hogy a hosting megfelel-e az elvárásoknak.",
+    "keyPoints": [
+      "Oldal betöltési sebesség kulcsfontosságú.",
+      "Szerver válaszideje hatással van a felhasználói élményre.",
+      "Uptime biztosítja, hogy az oldal mindig elérhető legyen.",
+      "Többféle ingyenes és fizetős mérőeszköz áll rendelkezésre.",
+      "Mérés alapján dönthetsz a szolgáltató váltásáról."
+    ]
+  }
+
+  ]}

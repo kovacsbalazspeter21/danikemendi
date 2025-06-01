@@ -1,0 +1,83 @@
+{
+  "courseInfo": {
+    "id": 9,
+    "title": "Basic Web Performance",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+  "id": 1,
+  "title": "Mi a web teljesítmény és miért fontos?",
+  "content": "A web teljesítmény azt jelenti, hogy egy weboldal mennyire gyorsan töltődik be és válaszol a felhasználói műveletekre.\n\n---\n\n## Miért fontos?\n\n- A gyors weboldalak jobb felhasználói élményt nyújtanak.\n- A lassú oldalak magasabb visszafordulási arányt okoznak.\n- A keresőmotorok is előnyben részesítik a gyors oldalakat.\n\n---\n\n## Hatások\n\n- Növeli a látogatók elégedettségét.\n- Javítja a konverziós arányt.\n\n---\n\n## Összefoglalás\n\n- A web teljesítmény alapvető fontosságú a sikeres weboldalaknál.\n",
+  "keyPoints": [
+    "A web teljesítmény a weboldal sebességét jelenti.",
+    "Gyors oldalak jobb élményt és magasabb megtartást biztosítanak.",
+    "Lassú oldalak negatív hatással vannak a látogatókra.",
+    "A keresők is rangsoroláskor figyelembe veszik a sebességet.",
+    "Javítja a konverziós arányt és elégedettséget."
+  ]
+},
+{
+  "id": 2,
+  "title": "Oldalbetöltési idő mérőszámok (Page Load Metrics)",
+  "content": "Az oldalbetöltési idő mérőszámok segítenek megérteni, hogyan teljesít egy weboldal a felhasználók számára.\n\n---\n\n## Fontos mérőszámok\n\n- **First Contentful Paint (FCP):** az első látható tartalom megjelenése.\n- **Largest Contentful Paint (LCP):** a legnagyobb tartalmi elem betöltődése.\n- **Time to Interactive (TTI):** mikor válik az oldal interaktívvá.\n- **Cumulative Layout Shift (CLS):** vizuális elrendezés elmozdulás.\n\n---\n\n## Miért fontosak?\n\n- Segítenek azonosítani a lassító tényezőket.\n- Javításuk gyorsabb, gördülékenyebb élményt eredményez.\n\n---\n\n## Összefoglalás\n\n- Ezek a mérőszámok kulcsfontosságúak a web teljesítmény optimalizálásához.\n",
+  "keyPoints": [
+    "FCP, LCP, TTI és CLS a legfontosabb web teljesítmény mutatók.",
+    "Ezek mérik az oldal betöltődésének különböző aspektusait.",
+    "Segítenek a teljesítmény problémák azonosításában.",
+    "Javításuk jobb felhasználói élményt biztosít.",
+    "Fontos a rendszeres mérés és elemzés."
+  ]
+},
+{
+  "id": 3,
+  "title": "Kódoptimalizálás (CSS, JavaScript)",
+  "content": "A weboldal kódjának optimalizálása (CSS, JavaScript) csökkenti a fájlméretet és javítja a betöltési sebességet.\n\n---\n\n## Tippek\n\n- Minimalizáljuk a fájlokat (minify).\n- Egyesítsük a CSS és JS fájlokat, ha lehet.\n- Csak a szükséges kódot töltsük be.\n- Használjunk aszinkron és késleltetett betöltést a JavaScriptnél.\n\n---\n\n## Összefoglalás\n\n- Optimalizált kód gyorsabb betöltést és gördülékenyebb működést eredményez.\n",
+  "keyPoints": [
+    "CSS és JS fájlok minifikálása csökkenti a méretet.",
+    "Fájlok egyesítése csökkenti a kérések számát.",
+    "Csak a szükséges kódot használjuk az oldalhoz.",
+    "JavaScript betöltése aszinkron vagy késleltetett módon gyorsít.",
+    "Optimalizált kód jobb teljesítményt biztosít."
+  ]
+},
+{
+  "id": 4,
+  "title": "Képek optimalizálása webre",
+  "content": "A képek optimalizálása elengedhetetlen a gyors weboldalakhoz, mert a képek gyakran a legnagyobb adatforgalmat jelentik.\n\n---\n\n## Hogyan optimalizáljunk?\n\n- Használjunk megfelelő formátumokat (pl. WebP, AVIF).\n- Méretezzük át a képeket a megjelenítési mérethez.\n- Tömörítsük a képeket veszteségmentesen vagy veszteségesen.\n- Használjunk képtöltést késleltetve (lazy loading).\n\n---\n\n## Összefoglalás\n\n- Képek optimalizálásával jelentősen csökkenthetjük az oldal betöltési idejét.\n",
+  "keyPoints": [
+    "A képek gyakran lassítják az oldal betöltődését.",
+    "Használjunk modern, hatékony képfájlformátumokat.",
+    "Fontos a megfelelő méretezés és tömörítés.",
+    "Lazy loading segítségével csak akkor töltődnek be, amikor szükségesek.",
+    "Optimalizált képek gyorsabb weboldalt eredményeznek."
+  ]
+},
+{
+  "id": 5,
+  "title": "Böngésző gyorsítótár (Caching) használata",
+  "content": "A böngésző gyorsítótár segítségével a weboldal statikus elemei (képek, CSS, JS) tárolódnak a felhasználó gépén, így nem kell újra letölteni minden alkalommal.\n\n---\n\n## Előnyök\n\n- Csökkenti a szerver terhelését.\n- Gyorsabb oldalbetöltést eredményez.\n\n---\n\n## Mit cache-eljünk?\n\n- Képek, CSS, JavaScript fájlok.\n- API válaszok (megfelelően).\n\n---\n\n## Összefoglalás\n\n- Caching javítja a felhasználói élményt és csökkenti a hálózati forgalmat.\n",
+  "keyPoints": [
+    "Caching tárolja az erőforrásokat a böngészőben.",
+    "Gyorsabb oldalbetöltést és kevesebb szerverterhelést eredményez.",
+    "Statikus fájlokat és bizonyos dinamikus adatokat cache-eljünk.",
+    "Megfelelő cache szabályokat állítsunk be a szerveren.",
+    "Fontos az időzítések helyes kezelése a cache-ben."
+  ]
+},
+{
+  "id": 6,
+  "title": "Web teljesítmény eszközök és mérés",
+  "content": "Számos eszköz áll rendelkezésre a weboldalak teljesítményének mérésére és javítására.\n\n---\n\n## Népszerű eszközök\n\n- **Google Lighthouse:** átfogó teljesítmény- és SEO elemzés.\n- **PageSpeed Insights:** részletes elemzés és javaslatok.\n- **WebPageTest:** mély mérés több hálózati és böngésző beállítással.\n- **Chrome DevTools:** valós idejű elemzés és profilozás.\n\n---\n\n## Hogyan használjuk?\n\n- Futtassuk rendszeresen a teszteket.\n- Vizsgáljuk meg a javaslatokat és javítsuk a hibákat.\n\n---\n\n## Összefoglalás\n\n- A rendszeres mérés és optimalizálás alapvető a jó web teljesítményhez.\n",
+  "keyPoints": [
+    "Google Lighthouse és PageSpeed Insights a legismertebb eszközök.",
+    "WebPageTest és Chrome DevTools további mélyelemzést adnak.",
+    "Rendszeres mérés segít a problémák felderítésében.",
+    "A javasolt fejlesztések javítják az oldal sebességét.",
+    "Minden weboldal tulajdonosának érdemes használni ezeket."
+  ]
+}
+
+  ]}

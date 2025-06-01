@@ -1,0 +1,432 @@
+{
+  "courseInfo": {
+    "id": 16,
+    "title": "Basic Web Analytics",
+    "description": "This course introduces the basics of web analytics, including how to track website performance, user behavior, and conversion rates using tools like Google Analytics.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+    "id": 1,
+    "title": "Mi az a webanalitika?",
+    "content": "A webanalitika a weboldal látogatóinak és viselkedésüknek a mérése, elemzése és értelmezése. Célja a felhasználói élmény, a marketing és az üzleti teljesítmény javítása.",
+    "keyPoints": [
+      "Webanalitika = adatok gyűjtése és elemzése",
+      "Cél: jobb döntéshozatal és optimalizálás",
+      "Segít megérteni a látogatók viselkedését"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Miért fontos a webanalitika?",
+    "content": "A webanalitika segít nyomon követni az oldal teljesítményét, megérteni a látogatók viselkedését és optimalizálni az online stratégiát.",
+    "keyPoints": [
+      "Javítja a felhasználói élményt",
+      "Segíti a marketing kampányokat",
+      "Döntéshozatalt támogat adatalapon"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Webanalitikai típusok",
+    "content": "Alapvetően kétféle webanalitika létezik: kvantitatív (pl. látogatásszám, konverziók) és kvalitatív (pl. hőtérképek, visszajelzések).",
+    "keyPoints": [
+      "Kvantitatív: számok, statisztikák",
+      "Kvalitatív: felhasználói visszajelzések",
+      "Mindkettő együtt ad teljes képet"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Google Analytics bevezetés",
+    "content": "A Google Analytics a legelterjedtebb webanalitikai eszköz, mely rengeteg adatot szolgáltat az oldallátogatásokról, felhasználókról, forgalmi forrásokról és viselkedésről.",
+    "keyPoints": [
+      "Ingyenes, erőteljes eszköz",
+      "Kód beillesztése a weboldalba",
+      "Adatok gyűjtése automatikusan történik"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Google Analytics 4 (GA4) alapjai",
+    "content": "A GA4 az új generációs analitikai platform, amely eseményalapú adatgyűjtést alkalmaz. Rugalmasabb és több platformon is működik.",
+    "keyPoints": [
+      "Eseményalapú működés",
+      "Jobb adatvédelmi kezelés",
+      "Többplatformos (web, app) támogatás"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "GA4 fiók létrehozása",
+    "content": "A Google Analytics 4 (GA4) fiók létrehozása az első lépés az adatelemzéshez. Látogass el az analytics.google.com weboldalra, és hozz létre egy új fiókot.\n\n---\n\n## Lépések:\n\n1. Jelentkezz be a Google-fiókoddal.\n2. Kattints a „Fiók létrehozása” gombra.\n3. Add meg a fiók nevét és az adatmegosztási beállításokat.\n4. Hozz létre egy új tulajdont (property), majd válaszd ki a GA4-et.\n5. Állítsd be az adatok áramlását (stream) – web, iOS vagy Android.\n\n---\n\n### Fontos tudnivalók:\n\n- A GA4 másképp működik, mint a korábbi Universal Analytics.\n- Az események központi szerepet játszanak az adatgyűjtésben.",
+    "keyPoints": [
+      "A GA4 fiók alapja az adatelemzésnek.",
+      "Fiók, tulajdon és adatstream beállítása szükséges.",
+      "GA4 eseményalapú adatmodellt használ."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "GA4 mérőkód beillesztése",
+    "content": "A mérőkód (measurement ID) segítségével kapcsoljuk össze a weboldalt a GA4 tulajdonnal.\n\n---\n\n## Lépések:\n\n1. Lépj be a GA4 felületre.\n2. Válaszd ki az adott tulajdont.\n3. Menj a „Data Streams” menüpontba.\n4. Kattints a Web streamre, majd másold ki a mérőkódot (pl.: G-XXXXXXXXXX).\n5. Illeszd be ezt a kódot a weboldalad `<head>` szekciójába:\n```html\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n  gtag('config', 'G-XXXXXXXXXX');\n</script>\n```\n\n---\n\n## Tipp:\n\nHasználhatsz Google Tag Manager-t is a kód kezelésére.",
+    "keyPoints": [
+      "A mérőkód összeköti a weboldalt a GA4 rendszerrel.",
+      "A kódot a weboldal `<head>` szakaszába kell beilleszteni.",
+      "Alternatív megoldás a Google Tag Manager használata."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Valós idejű jelentések értelmezése",
+    "content": "A valós idejű (Realtime) riport mutatja, hogy mi történik az oldalon éppen most.\n\n---\n\n## Mit láthatunk?\n\n- Aktív felhasználók száma\n- Oldalak, amiket megtekintenek\n- Földrajzi hely\n- Forrás (pl. Google keresés, közösségi média)\n- Legutóbbi események\n\n---\n\n## Használati célok:\n\n- Ellenőrizhetjük, hogy az adatgyűjtés működik-e\n- Kampányindítás utáni azonnali hatás figyelése\n- Élő események (pl. webinárium) követése",
+    "keyPoints": [
+      "Valós időben láthatjuk az aktív látogatókat.",
+      "Hasznos kampányellenőrzésre és tesztelésre.",
+      "Megmutatja az aktuális oldallátogatásokat és eseményeket."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Felhasználók és események nyomon követése",
+    "content": "A GA4 esemény-alapú rendszert használ. Minden interakció eseményként kerül naplózásra.\n\n---\n\n## Alapértelmezett események:\n\n- `page_view`: oldalmegtekintés\n- `scroll`: görgetés\n- `click`: kattintás\n- `session_start`: munkamenet kezdete\n\n## Felhasználók azonosítása:\n\n- `user_pseudo_id`: automatikus azonosító (cookie)\n- `user_id`: saját rendszerből (pl. bejelentkezés alapján) beállítható\n\n---\n\n## Tipp:\n\nKészíthetsz saját eseményeket is, pl.: `video_play`, `form_submit`.",
+    "keyPoints": [
+      "A GA4 minden interakciót eseményként kezel.",
+      "Alapértelmezett és egyéni eseményeket is használhatunk.",
+      "A felhasználók egyedi azonosítókkal követhetők."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Forgalmi források elemzése",
+    "content": "Megnézhetjük, honnan érkeznek a látogatók az oldalunkra.\n\n---\n\n## Források típusai:\n\n- Közvetlen (direct)\n- Organikus keresés (Google, Bing)\n- Fizetett hirdetések (Google Ads, Facebook Ads)\n- Hivatkozó oldalak (referral)\n- Közösségi média\n\n---\n\n## Jelentés helye:\n\n- Reports > Acquisition > Traffic acquisition\n\n---\n\n## Elemzési cél:\n\n- Megtudhatjuk, mely csatorna hozza a legtöbb konverziót\n- Jobban optimalizálhatjuk marketing kampányainkat",
+    "keyPoints": [
+      "A forgalmi források mutatják, honnan jöttek a látogatók.",
+      "Fontos a marketing teljesítmény mérése szempontjából.",
+      "A Traffic Acquisition riport adja meg ezeket az adatokat."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Oldalmegtekintések és események különbsége",
+    "content": "A GA4-ben az események fontosabbak, mint a klasszikus oldalmegtekintések.\n\n---\n\n## Oldalmegtekintés (`page_view`):\n\n- Minden alkalommal, amikor egy új oldal betöltődik\n\n## Esemény:\n\n- Minden egyéb interakció (pl. gombkattintás, videóindítás)\n\n---\n\n## Különbség:\n\n- Az oldalmegtekintés is egy esemény, de csak az egyik a sok közül\n- A GA4-ben inkább esemény-alapú analitika működik",
+    "keyPoints": [
+      "A GA4 esemény-alapú rendszert használ.",
+      "Minden interakció eseményként jelenik meg.",
+      "Az oldalmegtekintés is csak egy esemény a sok közül."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Bounce rate és session időtartam",
+    "content": "A visszafordulási arány (bounce rate) és a session időtartam két fontos metrika.\n\n---\n\n## Bounce rate:\n\n- Olyan munkamenetek aránya, amikor csak egy oldalt néztek meg, majd kiléptek\n- GA4-ben: engaged session = több mint 10 másodperces látogatás, esemény vagy több oldal\n\n## Session időtartam:\n\n- Átlagos idő, amit egy látogató az oldalon tölt\n\n---\n\n## Értelmezés:\n\n- Magas bounce rate = tartalom nem elég releváns\n- Rövid session idő = kevésbé elkötelezett látogatók",
+    "keyPoints": [
+      "A bounce rate mutatja az egyoldalas látogatásokat.",
+      "A session időtartam jelzi a látogatók elköteleződését.",
+      "GA4-ben az 'engaged session' fogalom váltja ki a klasszikus bounce rate-et."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Konverziók beállítása GA4-ben",
+    "content": "A konverziók céltevékenységek, amiket szeretnénk, hogy a felhasználók elvégezzenek.\n\n---\n\n## Példák:\n\n- Vásárlás\n- Regisztráció\n- Kapcsolati űrlap kitöltése\n\n## Beállítás:\n\n1. Menj az Admin > Events részre\n2. Válassz ki egy eseményt, és kapcsold be a „Mark as conversion” opciót\n\n---\n\n## Tipp:\n\nEgyéni eseményeket is konverzióként jelölhetsz meg",
+    "keyPoints": [
+      "A konverziók mérik a fontos felhasználói célokat.",
+      "GA4-ben eseményekből hozhatunk létre konverziókat.",
+      "Fontos a célok meghatározása az üzleti sikerhez."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Események konfigurálása és testreszabása",
+    "content": "A GA4-ben lehetőség van saját események létrehozására és meglévők módosítására.\n\n---\n\n## Lépések:\n\n1. Admin > Events > Create event\n2. Adj meg nevet, pl.: `form_submit`\n3. Állítsd be a trigger feltételeket (pl. oldalcím, kattintás)\n\n---\n\n## Miért hasznos?\n\n- Mérheted a saját üzleti céljaidat\n- Pontosabb adatokat kapsz\n- Részletesebb riportokat készíthetsz",
+    "keyPoints": [
+      "Saját eseményeket hozhatunk létre GA4-ben.",
+      "Trigger feltételek alapján definiálhatóak.",
+      "Segítik a pontos és célzott adatgyűjtést."
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Célközönségek létrehozása",
+    "content": "A GA4 lehetővé teszi célközönségek (audiences) létrehozását a látogatók szegmentálására.\n\n---\n\n## Példák:\n\n- Minden látogató, aki vásárolt\n- Akik mobilról nézték az oldalt\n- Akik elhagyták a kosarat\n\n## Lépések:\n\n1. Admin > Audiences > New audience\n2. Válassz sablont vagy hozd létre saját szabályaid alapján\n\n---\n\n## Cél:\n\n- Remarketing\n- Személyre szabott élmény\n- Jobb kampánycélzás",
+    "keyPoints": [
+      "A célközönségek szegmentálják a látogatókat.",
+      "GA4-ben részletes feltételekkel hozhatók létre.",
+      "Fontosak a marketing hatékonyság növelésében."
+    ]
+  },
+{
+    "id": 16,
+    "title": "Célközönségek használata kampányokban",
+    "content": "A célközönségeket a Google Ads és más hirdetési platformokon használhatjuk újra célzott kampányokhoz.\n\n---\n\n## Használati esetek:\n\n- Kosárelhagyók remarketingje\n- Korábbi vásárlók újra elérése\n- Mobilhasználók külön kampánya\n\n## Lépések:\n\n1. Kapcsold össze GA4 fiókod a Google Ads-szel\n2. Exportáld az Audience-t a hirdetési fiókba\n3. Használd célzásként a kampány beállításainál",
+    "keyPoints": [
+      "A célközönségek segítenek célzott kampányok létrehozásában.",
+      "GA4 és Google Ads integráció szükséges.",
+      "Remarketing kampányok optimalizálása lehetséges."
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Google Tag Manager alapok",
+    "content": "A Google Tag Manager (GTM) lehetővé teszi, hogy kód írása nélkül kezeljünk mérőkódokat a weboldalon.\n\n---\n\n## Előnyök:\n\n- Központosított címkekezelés\n- Könnyebb frissítés és hibakeresés\n- Verziókövetés\n\n## Alapelemek:\n\n- Tag: kód, amit beillesztesz (pl. GA4)\n- Trigger: mikor fusson le a tag\n- Variable: dinamikus értékek (pl. oldalcím)",
+    "keyPoints": [
+      "A GTM segítségével könnyebben kezelhetők a mérőkódok.",
+      "Tag-eket, triggert és változókat használ.",
+      "Nincs szükség közvetlen kódszerkesztésre."
+    ]
+  },
+  {
+    "id": 18,
+    "title": "GA4 és GTM összekapcsolása",
+    "content": "A GA4 és a GTM kombinálása rugalmasabb méréseket tesz lehetővé.\n\n---\n\n## Lépések:\n\n1. Hozz létre egy GA4 konfigurációs tag-et a GTM-ben\n2. Állíts be egy Page View triggert\n3. Add meg a GA4 Measurement ID-t (G-XXXXXXXXXX)\n4. Publikáld a változásokat\n\n---\n\n## Tipp:\n\nKészíts teszt konténert, mielőtt élesben publikálsz.",
+    "keyPoints": [
+      "A GA4 mérés GTM-en keresztül is működtethető.",
+      "Konfigurációs tag-et és triggert kell beállítani.",
+      "A GTM-es mérés könnyebben karbantartható."
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Eseménykövetés GTM segítségével",
+    "content": "A GTM-ben eseménykövetést állíthatunk be kattintásokra, űrlapokra, görgetésre stb.\n\n---\n\n## Lépések:\n\n1. Aktiváld a beépített Click Variables-t\n2. Készíts új Trigger-t (pl. All Clicks)\n3. Hozz létre egy új GA4 Event Tag-et\n4. Add meg az esemény nevét (pl. `button_click`)\n5. Teszteld a Debug módban\n\n---\n\n## Példák:\n\n- `form_submit`\n- `scroll_75`\n- `outbound_link_click`",
+    "keyPoints": [
+      "A GTM lehetővé teszi részletes eseménykövetést.",
+      "Trigger és tag alapján hozhatók létre események.",
+      "Fontos a tesztelés Debug módban."
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Konverziók mérése GTM segítségével",
+    "content": "A GTM segítségével könnyedén létrehozhatunk konverziós eseményeket és továbbíthatjuk őket a GA4-be.\n\n---\n\n## Példák:\n\n- Vásárlás utáni köszönőoldal megtekintése\n- Űrlapbeküldés\n\n## Lépések:\n\n1. Készíts egy új Trigger-t (pl. Page View - URL contains `/thanks`)\n2. Hozz létre egy új GA4 Event Tag-et (pl. `purchase_complete`)\n3. Állítsd be a konverzióként GA4-ben",
+    "keyPoints": [
+      "A GTM segítségével egyedi konverziós eseményeket hozhatunk létre.",
+      "Trigger és tag beállítás szükséges.",
+      "GA4-ben az esemény konverzióként jelölhető meg."
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Kimenő linkek követése",
+    "content": "Követhetjük, ha a látogató elhagyja az oldalt egy külső linkre kattintva.\n\n---\n\n## Lépések GTM-ben:\n\n1. Aktiváld a Click URL változót\n2. Készíts egy Trigger-t: Click URL nem tartalmazza a saját domain-ed\n3. Hozz létre GA4 Event Tag-et (pl. `outbound_click`)\n\n---\n\n## Használat:\n\n- Affiliate linkek mérése\n- Partneroldalak forgalma",
+    "keyPoints": [
+      "A kimenő linkek követhetők GA4 és GTM segítségével.",
+      "A Click URL alapján lehet triggert létrehozni.",
+      "Fontos affiliate vagy partnerforgalom mérésekor."
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Görgetési mélység követése",
+    "content": "A látogatók olvasási elköteleződését mérhetjük görgetési eseményekkel.\n\n---\n\n## GTM beállítás:\n\n1. Aktiváld a Scroll Depth Trigger-t\n2. Válaszd a 25%, 50%, 75%, 100% opciókat\n3. Hozz létre egy GA4 Event Tag-et (pl. `scroll_75`)\n\n---\n\n## Miért fontos?\n\n- Tartalomhasználat elemzése\n- Hosszú oldalak teljesítménye",
+    "keyPoints": [
+      "A görgetési események mutatják az olvasási mélységet.",
+      "GTM-ben Scroll Trigger és GA4 Event szükséges.",
+      "Segít a tartalom elkötelezettség mérésében."
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Belső keresés mérése",
+    "content": "Ha a weboldalon van keresőmező, követhetjük a keresési kifejezéseket.\n\n---\n\n## GA4 automatikusan érzékeli, ha:\n\n- Az URL tartalmaz `?q=` vagy `?s=` paramétert\n\n## Egyedi beállítás:\n\n1. Menj Admin > Data Streams > Web stream > Enhanced Measurement\n2. Engedélyezd a Site Search mérést\n3. Add meg a keresési paraméter nevét (pl. `search`, `term`)\n\n---\n\n## Eredmény:\n\nA keresési kifejezések megjelennek az eseményeknél (`view_search_results`).",
+    "keyPoints": [
+      "GA4 képes automatikusan követni a belső kereséseket.",
+      "A keresési paramétert meg kell adni, ha nem szabványos.",
+      "A keresési kifejezések elemzése javítja a tartalmat."
+    ]
+  },
+  {
+    "id": 24,
+    "title": "E-kereskedelmi események beállítása",
+    "content": "Az e-kereskedelmi események segítségével mérhetjük a termékek megtekintését, kosárba helyezést, vásárlást stb.\n\n---\n\n## Főbb események:\n\n- `view_item`\n- `add_to_cart`\n- `begin_checkout`\n- `purchase`\n\n## Beállítás:\n\n1. Strukturált JSON objektumokat kell küldeni (pl. termék neve, ár, ID)\n2. Használhatsz GTM-et vagy közvetlen kódot\n\n---\n\n## Tipp:\n\nHasználj Google tag documentation-t a pontos mezőkért.",
+    "keyPoints": [
+      "GA4 támogatja az e-kereskedelmi eseményeket.",
+      "Szükség van strukturált JSON-adatok küldésére.",
+      "Mérhető a vásárlási folyamat minden lépése."
+    ]
+  },
+  {
+    "id": 25,
+    "title": "GA4 riportok testreszabása",
+    "content": "A GA4-ben lehetőség van saját riportok készítésére a jelentések szekcióban.\n\n---\n\n## Lépések:\n\n1. Menj a Reports > Library menüpontra\n2. Hozz létre új riportot vagy szerkeszd a meglévőket\n3. Válaszd ki a metrikákat (pl. engaged sessions, conversions)\n4. Állíts be szűrőket és dimenziókat (pl. ország, eszköztípus)\n\n---\n\n## Cél:\n\n- Csak azokat az adatokat lásd, amik fontosak számodra\n- Jobb üzleti döntések támogatása",
+    "keyPoints": [
+      "A riportok személyre szabhatók a GA4-ben.",
+      "Kiválaszthatók a releváns metrikák és szűrők.",
+      "Segít az adatvezérelt döntéshozatalban."
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Benchmark riportok és versenytárs elemzés",
+    "content": "A Benchmark riportok segítségével összehasonlíthatjuk a saját adatainkat más hasonló weboldalakkal.\n\n---\n\n## Jellemzők:\n\n- Iparág, ország és forgalom mérete alapján\n- Látogatottság, visszafordulási arány, időtartam\n\n## Elérés:\n\nGA4-ben jelenleg nem érhető el natív benchmark, de használhatsz:\n\n- Google Ads összehasonlító statisztikákat\n- Külső eszközöket: SimilarWeb, SEMrush",
+    "keyPoints": [
+      "A benchmark riportok versenytársakhoz viszonyítanak.",
+      "GA4 nem tartalmaz beépített benchmark-ot.",
+      "Külső eszközökkel pótolható (pl. SimilarWeb)."
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Adatvizualizáció Data Studio-val",
+    "content": "A Google Data Studio lehetővé teszi az adatok látványos és testreszabott megjelenítését.\n\n---\n\n## Előnyök:\n\n- Interaktív riportok\n- Valós idejű frissítés\n- Több adatforrás integrálása\n\n## Lépések:\n\n1. Kösd össze GA4 fiókodat Data Studio-val\n2. Válassz diagramokat: táblázat, oszlop, kör, vonal\n3. Készíts dashboard-ot és osszd meg a csapattal",
+    "keyPoints": [
+      "A Data Studio interaktív adatvizualizációs eszköz.",
+      "GA4 adatok vizuális elemzése lehetséges vele.",
+      "Könnyen testreszabható, megosztható riportokat készíthetsz."
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Valós idejű riportok használata",
+    "content": "A GA4 Real-Time riport segítségével azonnal láthatjuk, hogy mi történik az oldalon.\n\n---\n\n## Mire jó?\n\n- Események, konverziók azonnali ellenőrzése\n- Kampány hatásának figyelése élőben\n- Technikai hibák gyors kiszúrása\n\n## Hol találod?\n\n- GA4 bal oldali menü > Real-time",
+    "keyPoints": [
+      "A valós idejű riport élő adatokat mutat.",
+      "Kampányteszteléshez, hibakereséshez hasznos.",
+      "Azonnali esemény- és konverziófigyelés lehetséges."
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Felhasználói elköteleződés elemzése",
+    "content": "Az elköteleződés (engagement) mutatja meg, mennyire aktívak a látogatók az oldalon.\n\n---\n\n## Mutatók:\n\n- Engaged Sessions\n- Engagement Rate\n- Average Engagement Time\n\n## Jelentősége:\n\n- Jobb, mint a régi 'bounce rate'\n- Valós aktivitást mér (pl. legalább 10 másodperc, konverzió, több oldal)",
+    "keyPoints": [
+      "Az elköteleződés a látogatók aktivitását méri.",
+      "Engaged session = aktív látogatás legalább 10 mp-ig.",
+      "Az Engagement Rate pontosabb, mint a bounce rate."
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Felhasználói utak elemzése (User Paths)",
+    "content": "A felhasználói utak (user paths) megmutatják, milyen sorrendben haladnak az oldalon belül a látogatók.\n\n---\n\n## Elérés:\n\n- GA4 > Explore > Path Exploration\n\n## Használat:\n\n1. Válassz kiindulási eseményt (pl. page_view, purchase)\n2. Kövesd, merre mentek tovább a felhasználók\n3. Azonosíts akadásokat, kilépéseket",
+    "keyPoints": [
+      "A felhasználói útmutatás feltárja a viselkedési mintákat.",
+      "Path Exploration segítségével vizsgálható.",
+      "Azonosíthatóak a kilépési pontok és akadályok."
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Használói szegmensek (Segments) létrehozása",
+    "content": "A szegmensek segítségével külön csoportokra bonthatod az adataidat elemzés céljából.\n\n---\n\n## Példák:\n\n- Mobil felhasználók\n- Visszatérő látogatók\n- Vásárlók, akik elhagyták a kosarat\n\n## Lépések:\n\n- GA4 > Explore > + Add Segment\n- Feltételek beállítása: eszköz, esemény, forrás stb.",
+    "keyPoints": [
+      "Szegmensek segítenek célcsoportokat elemezni.",
+      "Egyéni feltételekkel hozhatsz létre új csoportokat.",
+      "Segít megérteni a különböző felhasználói viselkedéseket."
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Összehasonlítások (Comparisons) használata",
+    "content": "Az összehasonlítások segítségével két vagy több felhasználói csoportot hasonlíthatsz össze.\n\n---\n\n## Példa:\n\n- Mobil vs asztali felhasználók\n- Különböző kampányforrásból érkezők\n\n## Elérés:\n\n- GA4 riport oldalon > + Add Comparison\n- Állítsd be a feltételeket (pl. device category)",
+    "keyPoints": [
+      "Összehasonlításokat végezhetsz csoportok között.",
+      "GA4 riportokban gyorsan beállítható.",
+      "Segít megtalálni a különbségeket a célcsoportok között."
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Exportálás Google Sheets-be",
+    "content": "A riportadatokat exportálhatod Google Sheets-be további elemzéshez.\n\n---\n\n## Módszerek:\n\n- Kézi exportálás CSV-be, majd megnyitás Sheets-ben\n- Google Analytics API + Google Sheets Connector\n- Data Studio > Export to Sheets\n\n## Előny:\n\n- Egyéni kalkulációk, kimutatások készítése\n- Könnyű megosztás a csapattal",
+    "keyPoints": [
+      "A riportok exportálhatók Google Sheets-be.",
+      "Használható kézi módszer vagy API.",
+      "További elemzés és prezentáció készíthető."
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Automatikus riportküldés emailben",
+    "content": "A Data Studio-ban vagy más eszközökben automatikusan elküldhetők a riportok.\n\n---\n\n## Beállítás:\n\n- Data Studio: 'Schedule email delivery'\n- Állítsd be gyakoriságot (heti, havi)\n- Add meg a címzetteket\n\n## Használat:\n\n- Ügyfeleknek riport\n- Csapaton belüli heti összefoglaló",
+    "keyPoints": [
+      "A riportokat automatikusan el lehet küldeni emailben.",
+      "Beállítható a gyakoriság és a címzettek köre.",
+      "Kiváló a csapaton belüli vagy ügyfélkommunikációhoz."
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Adattisztítás és botforgalom kiszűrése",
+    "content": "A pontatlan vagy nem emberi forgalmat ki kell szűrni az adatokból.\n\n---\n\n## Tipikus problémák:\n\n- Belső forgalom (pl. te és a kollégák)\n- Botok, spam domain-ek\n\n## Megoldás GA4-ben:\n\n- Admin > Data Streams > More Tagging Settings > Define Internal Traffic\n- Állíts be IP-alapú szűrést\n\n## Tipp:\n\nHasználj `event parameter`-t a saját forgalom jelölésére is (pl. `debug_mode`).",
+    "keyPoints": [
+      "Fontos a tiszta adatgyűjtés érdekében kiszűrni a botokat.",
+      "Belső forgalmat IP alapján lehet szűrni GA4-ben.",
+      "A spam és robotforgalom torzíthatja az elemzéseket."
+    ]
+  },
+   {
+    "id": 36,
+    "title": "Adatok kombinálása több forrásból",
+    "content": "Az adatelemzés gyakran megköveteli, hogy több adatforrást egyesíts.\n\n---\n\n## Példák:\n\n- GA4 + Google Ads\n- GA4 + CRM rendszer\n- GA4 + Facebook Ads\n\n## Eszközök:\n\n- Google Data Studio: több forrás egyesítése\n- BigQuery: összetett adatmodellek létrehozása",
+    "keyPoints": [
+      "Több adatforrás kombinálásával teljesebb képet kapsz.",
+      "Data Studio és BigQuery segíthet ebben.",
+      "GA4 és hirdetési rendszerek adatai gyakran összekapcsolandók."
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Főbb mérőszámok (KPI-k) meghatározása",
+    "content": "A KPI-ok (kulcs teljesítménymutatók) segítenek a célkitűzések mérésében.\n\n---\n\n## Példák:\n\n- Vásárlások száma\n- Kosárelhagyás arány\n- Átlagos oldalon töltött idő\n\n## Jellemzők:\n\n- Célorientált\n- Mérhető és időben követhető\n\n## Tipp:\n\nMinden kampányhoz és oldalhoz rendelj saját KPI-t.",
+    "keyPoints": [
+      "A KPI-ok a sikeresség mérésének alapjai.",
+      "Fontos, hogy mérhetők és célhoz kötöttek legyenek.",
+      "Minden projektnek legyen saját KPI-ja."
+    ]
+  },
+  {
+    "id": 38,
+    "title": "GA4 adatmodell mélyebb megértése",
+    "content": "A GA4 eseményalapú adatmodellje másképp működik, mint a korábbi Universal Analytics.\n\n---\n\n## Alapelvek:\n\n- Nincs külön oldalmegtekintés vagy esemény: minden esemény\n- Minden eseményhez paraméterek kapcsolhatók\n- Felhasználók, események és sessionök logikus kapcsolata\n\n## Haszon:\n\n- Rugalmasabb elemzési lehetőségek\n- Összetett jelentések és szűrések támogatása",
+    "keyPoints": [
+      "GA4 eseményalapú, nem session-központú.",
+      "Minden interakció eseményként van kezelve.",
+      "A paraméterek teszik lehetővé a részletes elemzést."
+    ]
+  },
+  {
+    "id": 39,
+    "title": "GA4 és BigQuery integráció alapjai",
+    "content": "A BigQuery lehetővé teszi, hogy nyers GA4 adatokat SQL-lel elemezz részletesen.\n\n---\n\n## Előnyök:\n\n- Teljes nyers adathozzáférés\n- Nincs mintavételezés\n- Összetett lekérdezések\n\n## Beállítás:\n\n- GA4 Admin > BigQuery Linking\n- Válaszd ki a projektet és az export gyakoriságát (napi / eseményenkénti)",
+    "keyPoints": [
+      "BigQuery használatával teljes GA4 adatot nyerhetsz ki.",
+      "SQL-alapú elemzést tesz lehetővé.",
+      "Nagyvállalati szintű riportolást biztosít."
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Adatvédelmi szempontok webanalitikában",
+    "content": "A jogi és etikai adatkezelés fontos része az analitikának.\n\n---\n\n## Fő szempontok:\n\n- GDPR, ePrivacy betartása\n- Cookie-hoz kötött események engedélykötelesek\n- IP-anonimizálás\n\n## Tipp:\n\nHasználj Consent Management Platformot (pl. Cookiebot, OneTrust), és állítsd be GA4-et úgy, hogy csak hozzájárulás után gyűjtsön adatot.",
+    "keyPoints": [
+      "A webanalitika jogilag szabályozott terület.",
+      "GDPR szerint cookie-kat csak hozzájárulással használhatsz.",
+      "Consent Manager bevezetése ajánlott."
+    ]
+  },
+  {
+    "id": 41,
+    "title": "A/B tesztek eredményeinek elemzése",
+    "content": "Az A/B tesztelés segít eldönteni, melyik verzió működik jobban egy cél elérése érdekében.\n\n---\n\n## Elemzési lépések:\n\n1. Definiáld a célt (pl. vásárlás, kattintás)\n2. Mérd a két verzió teljesítményét\n3. GA4 vagy Google Optimize használata\n\n## Tipp:\n\nStatisztikai szignifikancia fontos: ne vonj le következtetést túl korán.",
+    "keyPoints": [
+      "A/B teszt segít optimalizálni a tartalmat.",
+      "GA4-ben is elemezhető a teszt teljesítménye.",
+      "Fontos a megfelelő tesztidő és minta."
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Haladó riportálási stratégiák",
+    "content": "A haladó riportálás célja az automatizálás, személyre szabás és üzleti döntéstámogatás.\n\n---\n\n## Eszközök és módszerek:\n\n- Data Studio + BigQuery összekötés\n- Időalapú riportolás (pl. heti, havi változások)\n- KPI dashboard külön stakeholder-csoportoknak\n\n## Tipp:\n\nÉpíts riport sablonokat külön célokra: marketing, vezetőség, fejlesztés.",
+    "keyPoints": [
+      "A haladó riportolás automatizál és testreszab.",
+      "BigQuery és Data Studio kombinációja ajánlott.",
+      "Érdemes külön dashboardokat készíteni különböző csapatoknak."
+    ]
+  }
+
+  ]}

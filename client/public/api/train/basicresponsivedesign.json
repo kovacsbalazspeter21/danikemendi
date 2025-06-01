@@ -1,0 +1,79 @@
+{
+  "courseInfo": {
+    "id": 6,
+    "title": "Basic Responsive Design",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+      {
+  "id": 1,
+  "title": "Basic Responsive Design - Bevezetés a reszponzív designba",
+  "content": "A reszponzív webdesign célja, hogy a weboldal minden eszközön jól jelenjen meg, legyen az mobil, tablet vagy nagy monitor.\n\n---\n\n## Mi az a reszponzív webdesign?\n\n- Olyan tervezési módszer, amely lehetővé teszi, hogy egy weboldal rugalmasan alkalmazkodjon a különböző képernyőméretekhez és eszközökhöz.\n- A tartalom és elrendezés dinamikusan változik, hogy a felhasználó számára mindig kényelmes legyen a használat.\n\n---\n\n## Miért fontos a reszponzív design?\n\n- Növeli a látogatók elégedettségét, mert könnyen használható minden eszközön.\n- Javítja a SEO-t, mert a Google előnyben részesíti a mobilbarát oldalakat.\n- Csökkenti a fejlesztési és karbantartási költségeket, mert egyetlen oldal szolgál minden eszközön.\n\n---\n\n## Alapfogalmak\n\n- **Viewport:** A böngésző látható területe, amelyet a weboldal megjelenítéséhez használ.\n- **Breakpoints:** Olyan pontok, ahol az oldal elrendezése változik a képernyő mérete alapján.\n- **Fluid layouts:** Olyan elrendezések, amelyek százalékos vagy rugalmas egységeket használnak, hogy alkalmazkodjanak a képernyő szélességéhez.\n\n---\n\n### Összefoglalás\n\n- A reszponzív design a weboldalak alkalmazkodását jelenti a különböző eszközökhöz.\n- Fontos a jó felhasználói élmény és a keresőoptimalizálás miatt.\n- Alapfogalmak: viewport, breakpoints, fluid layouts.\n",
+  "keyPoints": [
+    "A reszponzív webdesign lehetővé teszi az oldal alkalmazkodását különböző képernyőkhöz.",
+    "Javítja a felhasználói élményt és SEO-t.",
+    "Csökkenti a fejlesztési költségeket egyetlen oldal használatával.",
+    "Fontos fogalmak: viewport, breakpoints, fluid layouts."
+  ]
+},
+{
+  "id": 2,
+  "title": "Viewport meta tag és alapbeállítások",
+  "content": "A viewport meta tag egy HTML elem, amely meghatározza, hogyan jelenjen meg a weboldal a különböző eszközök képernyőjén, különösen mobilon.\n\n---\n\n## Mi a viewport?\n\n- A viewport a böngésző látható területe, ahol a weboldal megjelenik.\n- Mobil eszközökön a viewport alapértelmezett mérete nem a képernyő szélessége, hanem egy nagyobb, úgynevezett 'layout viewport', ami miatt a weboldal kicsinek vagy nem megfelelően skálázottnak tűnhet.\n\n---\n\n## Viewport meta tag használata\n\n- A viewport meta tag segítségével szabályozhatjuk az oldal méretezését és skálázását.\n- A leggyakoribb beállítás:\n\n```html\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n```\n\n- **width=device-width:** Az oldal szélessége igazodik az eszköz képernyőjéhez.\n- **initial-scale=1:** Az oldal kezdeti nagyítása 100%.\n\n---\n\n## További beállítások\n\n- **maximum-scale:** Maximális nagyítás mértéke.\n- **user-scalable:** Megakadályozza vagy engedélyezi a nagyítást (pl. user-scalable=no letiltja).\n\n---\n\n## Miért fontos?\n\n- Nélküle a mobilon a weboldal kinagyított vagy nem olvasható lehet.\n- Biztosítja, hogy a reszponzív CSS szabályok megfelelően működjenek.\n\n---\n\n### Összefoglalás\n\n- A viewport meta tag a reszponzív design alapja mobil eszközökön.\n- Megfelelő beállításával biztosítható, hogy az oldal jól nézzen ki minden képernyőméreten.\n- A legfontosabb beállítás a width=device-width és initial-scale=1.\n",
+  "keyPoints": [
+    "A viewport a böngésző látható területe, ahol a weboldal megjelenik.",
+    "Viewport meta tag szabályozza az oldal méretezését mobil eszközökön.",
+    "Leggyakoribb beállítás: width=device-width, initial-scale=1.",
+    "Fontos a reszponzív CSS megfelelő működéséhez."
+  ]
+},
+{
+  "id": 3,
+  "title": "Média lekérdezések (media queries) alapjai",
+  "content": "A média lekérdezések (media queries) segítségével a weboldal stílusait tudjuk alkalmazkodóvá tenni a különböző eszközök és képernyőméretek szerint.\n\n---\n\n## Mi az a media query?\n\n- Egy CSS szabály, amely csak akkor lép életbe, ha a megadott feltételek teljesülnek.\n- Leggyakrabban képernyő szélességhez kötött szabályokat hozunk létre.\n\n---\n\n## Szintaxis\n\n```css\n@media (feltétel) {\n  /* CSS szabályok */\n}\n```\n\n### Példa\n\n```css\n@media (max-width: 600px) {\n  body {\n    background-color: lightblue;\n  }\n}\n```\n\nEz a szabály csak akkor érvényes, ha a képernyő szélessége 600 pixel vagy kisebb.\n\n---\n\n## Gyakori feltételek\n\n- **max-width:** maximum szélesség (például max-width: 768px)\n- **min-width:** minimum szélesség (például min-width: 1024px)\n- **orientation:** tájolás (portrait vagy landscape)\n\n---\n\n## Mobil első megközelítés\n\n- A CSS alapértelmezett stílusait mobil eszközökre tervezzük.\n- Média lekérdezésekkel kiterjesztjük a stílusokat nagyobb képernyőkre.\n\n---\n\n## Példa\n\n```css\nbody {\n  font-size: 14px;\n}\n\n@media (min-width: 768px) {\n  body {\n    font-size: 18px;\n  }\n}\n```\n\n---\n\n## Összefoglalás\n\n- A media queries teszik lehetővé a reszponzív webdesignt.\n- Segítségével az oldal különböző eszközökön jól néz ki és jól használható.\n- Fontos megérteni a max-width és min-width fogalmát.\n",
+  "keyPoints": [
+    "A media queries feltételek alapján alkalmaznak CSS szabályokat.",
+    "Leggyakoribb feltétel a képernyő szélesség (max-width, min-width).",
+    "Mobil első design: alapból mobilra, majd nagyobb képernyőkre bővítés.",
+    "Segítenek a reszponzív megjelenítésben és használhatóságban."
+  ]
+},
+{
+  "id": 4,
+  "title": "Fluid és rugalmas elrendezések",
+  "content": "A fluid és rugalmas elrendezések célja, hogy a weboldal elemei dinamikusan alkalmazkodjanak a különböző képernyőméretekhez, így biztosítva a jobb felhasználói élményt.\n\n---\n\n## Fluid (folyékony) elrendezések\n\n- Az elemek mérete százalékos arányban van megadva, nem fix pixel értékekkel.\n- Az oldalelemek szélessége a képernyő vagy szülőelem szélességéhez igazodik.\n\n### Példa\n\n```css\n.container {\n  width: 80%;\n  margin: 0 auto;\n}\n```\n\n- Ez azt jelenti, hogy a `.container` mindig a szülőelem 80%-át foglalja el.\n\n---\n\n## Rugalmas (flexible) elrendezések\n\n- Rugalmas méretezés jellemzően a Flexbox vagy Grid technikákon alapul.\n- Az elemek arányosan oszlanak el a rendelkezésre álló térben, alkalmazkodva a képernyőhöz.\n\n### Flexbox példa\n\n```css\n.container {\n  display: flex;\n  flex-wrap: wrap;\n}\n.item {\n  flex: 1 1 200px;\n  margin: 10px;\n}\n```\n\n- Az `.item` elemek legalább 200px szélesek, de rugalmasan nőnek vagy csökkennek.\n\n---\n\n## Miért fontosak?\n\n- Javítják az oldal reszponzivitását és felhasználói élményét.\n- Elkerülik a horizontális görgetést kis képernyőknél.\n- Könnyebb karbantartani és bővíteni az elrendezést.\n\n---\n\n## Összefoglalás\n\n- Fluid elrendezés százalékos méreteket használ, rugalmas elrendezés pedig Flexbox vagy Grid rendszereket.\n- Mindkettő segít az adaptív, reszponzív design kialakításában.\n- A két megközelítés együtt is használható a legjobb eredményért.\n",
+  "keyPoints": [
+    "Fluid elrendezés százalékos szélességet használ.",
+    "Rugalmas elrendezés Flexbox vagy Grid alapú.",
+    "Mindkettő segít az alkalmazkodó, reszponzív designban.",
+    "Elkerüli a horizontális görgetést kis képernyőknél."
+  ]
+},
+{
+  "id": 5,
+  "title": "Flexbox használata reszponzív elrendezéshez",
+  "content": "A Flexbox egy CSS modul, amely egyszerűvé teszi az elemek elrendezését egydimenziós térben, legyen az sor vagy oszlop.\n\n---\n\n## Miért használjuk Flexboxot reszponzív webdesignban?\n\n- Könnyen kezelhető elrendezési modell, ami alkalmazkodik a képernyőmérethez.\n- Az elemek rugalmasan méretezhetők és igazíthatók.\n- Egyszerűen lehet sorokat vagy oszlopokat létrehozni, amelyek átrendeződhetnek kisebb képernyőn.\n\n---\n\n## Alapvető Flexbox tulajdonságok\n\n```css\n.container {\n  display: flex; /* Flex kontextus létrehozása */\n  flex-wrap: wrap; /* Több sor engedélyezése, ha nem fér el egy sorban */\n  justify-content: space-between; /* Elemszélesség igazítása */\n  align-items: center; /* Függőleges igazítás */\n}\n\n.item {\n  flex: 1 1 200px; /* Növekedés, csökkenés, alapszélesség */\n  margin: 10px;\n}\n```\n\n- `flex-wrap: wrap` lehetővé teszi, hogy az elemek több sorba törjenek, ha kevés a hely.\n- `flex: 1 1 200px` azt jelenti, hogy az elem alapból 200px széles, de növekedhet és csökkenhet.\n\n---\n\n## Példa használat\n\n```html\n<div class=\"container\">\n  <div class=\"item\">Elem 1</div>\n  <div class=\"item\">Elem 2</div>\n  <div class=\"item\">Elem 3</div>\n  <div class=\"item\">Elem 4</div>\n</div>\n```\n\n---\n\n## Reszponzív viselkedés\n\n- Kisebb képernyőn az elemek automatikusan sorokra törnek.\n- Az elemek mérete és elrendezése rugalmasan változik.\n\n---\n\n## Összefoglalás\n\n- A Flexbox egyszerű eszköz az adaptív elrendezéshez.\n- Segít a dinamikus, több soros reszponzív design megvalósításában.\n- Érdemes `flex-wrap`-et használni, hogy az elemek ne törjenek szét a képernyőn.\n",
+  "keyPoints": [
+    "Flexbox egydimenziós elrendezést kezel.",
+    "Flex-wrap segít a több soros elrendezésben.",
+    "Flex tulajdonságok rugalmas méretezést biztosítanak.",
+    "Reszponzív designban automatikus törés kisebb képernyőn."
+  ]
+},
+{
+  "id": 6,
+  "title": "Reszponzív tippek és best practice-ek",
+  "content": "A reszponzív webdesign célja, hogy a weboldal minden eszközön jól és használhatóan jelenjen meg. Ehhez fontos néhány bevált gyakorlat és tipp követése.\n\n---\n\n## Legfontosabb tippek\n\n- **Mobil első tervezés (Mobile-first):** Kezdd a tervezést a legkisebb képernyőmérettel, és onnan bővítsd ki nagyobb eszközökre.\n- **Rugalmas grid és flexbox használata:** Használj rugalmas elrendezési technikákat, mint a Flexbox vagy CSS Grid.\n- **Egységként használj relatív mértékegységeket:** (%, em, rem) a fix pixel helyett, így az elemek rugalmasan igazodnak.\n- **Képek optimalizálása:** Használj megfelelő méretű, tömörített és modern formátumokat (pl. WebP).\n- **Navigáció egyszerűsítése:** Mobilon alkalmazz hamburger menüt vagy legördülő navigációt.\n- **Betűméret és érintési célok méretezése:** Ügyelj arra, hogy a szöveg olvasható és az érintési felületek megfelelő méretűek legyenek.\n- **Tesztelés különböző eszközökön:** Mindig ellenőrizd a weboldal működését mobilon, tableten és asztali gépen.\n\n---\n\n## Hibák, amiket kerülj\n\n- Fix szélességek használata (pl. 960px), ami nem skálázódik.\n- Nagy képek mobilon, amelyek lassítják az oldalt.\n- Bonyolult vagy túlzsúfolt navigáció kis kijelzőn.\n- Nem megfelelő kontraszt és olvashatatlan szöveg kisebb kijelzőn.\n\n---\n\n## Összefoglalás\n\n- A reszponzív design a felhasználói élmény javításáról szól minden eszközön.\n- Mobil első megközelítés és rugalmas elrendezések használata kulcsfontosságú.\n- Fontos az optimalizált médiaelemek és könnyen használható navigáció.\n- Rendszeres tesztelés segít elkerülni a tipikus hibákat.\n",
+  "keyPoints": [
+    "Mobil első tervezés segíti a rugalmas designt.",
+    "Flexbox és Grid használata ajánlott rugalmas elrendezéshez.",
+    "Relatív mértékegységekkel jobb skálázódás érhető el.",
+    "Képek optimalizálása javítja a betöltési sebességet.",
+    "Egyszerű, jól használható navigáció mobilon.",
+    "Tesztelés több eszközön alapvető."
+  ]
+}
+
+  ]}

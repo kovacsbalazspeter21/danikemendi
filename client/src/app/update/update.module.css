@@ -1,0 +1,48 @@
+.update-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 28px 22px;
+  background: #f1f7fa;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.update-container h1 {
+  color: #1976d2;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.update-list {
+  list-style: none;
+  padding: 0;
+}
+
+.update-item {
+  background: #e3f2fd;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 18px;
+  text-align: left;
+}
+
+.update-item h2 {
+  margin: 0 0 6px 0;
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+.update-item .date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.update-item p {
+  margin: 0;
+  color: #222;
+  font-size: 1rem;
+}

@@ -1,0 +1,152 @@
+{
+  "courseInfo": {
+    "id": 5,
+    "title": "WEB Design Alapok",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+      "id": 1,
+      "title": "Mi a webdesign?",
+      "content": "A webdesign a weboldalak vizuális és funkcionális tervezése. \n\nEz magában foglalja a weboldal kinézetének (layout, színek, betűtípusok) és használhatóságának megtervezését, hogy a látogatók könnyen és kellemesen tudják használni az oldalt.\n\n---\n\n## Miért fontos a webdesign?\n\n- Az első benyomás számít: a weboldal kinézete befolyásolja, hogy a látogató mennyire bízik meg az oldalban.\n- Használhatóság: egy jól megtervezett oldal könnyen áttekinthető, és segíti a felhasználót a keresett információ megtalálásában.\n- Reszponzivitás: a weboldalnak jól kell működnie különböző eszközökön (mobil, tablet, PC).\n\n---\n\n## A webdesign fő elemei\n\n1. **Elrendezés (Layout):** Hogyan helyezkednek el az elemek az oldalon.\n2. **Színek:** Harmónia és kontraszt a színek között.\n3. **Tipográfia:** Betűtípusok és azok használata.\n4. **Navigáció:** Menü, linkek, amelyek segítik a tájékozódást.\n5. **Képek és grafikák:** Vizuális tartalom, ami kiegészíti a szöveget.\n\n---\n\n### Példa\n\nKépzelj el egy weboldalt, ahol a fejlécben a logo és a menü van, alatta nagy kép vagy banner, majd szöveges tartalom és lábléc. Ez mind része a webdesignnak.\n\n---\n\n## Hasznos eszközök\n\n- Figma, Adobe XD, Sketch – design készítésére\n- Chrome DevTools – meglévő weboldalak elemzésére\n\n---\n\n### Összefoglalás\n\n- A webdesign az, ami a weboldal kinézetét és működését határozza meg.\n- Fontos a látogatók élménye és a könnyű használhatóság.\n- Számos elem összhangja szükséges a jó webdesignhoz.\n",
+      "keyPoints": [
+        "A webdesign a weboldalak vizuális és funkcionális tervezése.",
+        "Fontos az első benyomás és a használhatóság.",
+        "A weboldalnak jól kell működnie különböző eszközökön.",
+        "Fő elemei az elrendezés, színek, tipográfia, navigáció és képek.",
+        "Hasznos design eszközök: Figma, Adobe XD, Sketch."
+      ]
+    },
+    {
+  "id": 2,
+  "title": "HTML alapok",
+  "content": "A HTML (HyperText Markup Language) a weboldalak szerkezetének alapját adja.\n\n---\n\n## Mi az a HTML?\n\n- Egy jelölőnyelv, amely meghatározza, hogy egy weboldalon milyen elemek jelenjenek meg.\n- A böngészők a HTML kódot értelmezik és ennek alapján jelenítik meg az oldalt.\n\n---\n\n## HTML elemek\n\nA HTML elemek úgynevezett tagek között helyezkednek el:\n\n```html\n<p>Ez egy bekezdés.</p>\n<a href=\"https://example.com\">Ez egy link.</a>\n```\n\n- A `<p>` tag egy bekezdést jelöl.\n- Az `<a>` tag egy linket hoz létre.\n\n---\n\n## Alapvető HTML struktúra\n\nEgy egyszerű HTML oldal szerkezete így néz ki:\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Példa oldal</title>\n</head>\n<body>\n  <h1>Üdv a weben!</h1>\n  <p>Ez egy egyszerű HTML oldal.</p>\n</body>\n</html>\n```\n\n- `<html>` az oldal gyökéreleme.\n- `<head>` tartalmazza az oldal metaadatait, például a címét.\n- `<body>` tartalmazza a megjelenő tartalmat.\n\n---\n\n## Hasznos tippek\n\n- Mindig zárd le a tageket!\n- Használj beszédes neveket és megfelelő struktúrát.\n- A HTML csak a szerkezet, a megjelenést a CSS, a működést a JavaScript kezeli.\n\n---\n\n### Összefoglalás\n\n- A HTML a weboldalak építőeleme.\n- Tag-ekből áll, amelyek különböző típusú tartalmakat jelölnek.\n- Egy jól strukturált HTML segíti a keresőoptimalizálást és a felhasználói élményt.\n",
+  "keyPoints": [
+    "A HTML a weboldalak szerkezetének alapja.",
+    "Tag-ek segítségével jelöljük a tartalmi elemeket.",
+    "Minden HTML oldalnak van egy alap szerkezete (html, head, body).",
+    "A HTML csak a szerkezetet határozza meg, nem a megjelenést vagy működést.",
+    "Fontos a helyes szintaxis és a tagek lezárása."
+  ]
+},
+{
+  "id": 3,
+  "title": "CSS alapok",
+  "content": "A CSS (Cascading Style Sheets) a weboldalak megjelenésének szabályozására szolgál.\n\n---\n\n## Mi az a CSS?\n\n- Egy stílusleíró nyelv, amellyel megadhatjuk, hogyan nézzen ki egy weboldal.\n- Segítségével beállíthatjuk a színeket, betűtípusokat, elrendezéseket, méreteket, és még sok mást.\n\n---\n\n## Hogyan használjuk a CSS-t?\n\n1. **Inline stílus:** közvetlenül az adott HTML elemhez írjuk.\n\n```html\n<p style=\"color: red;\">Piros szöveg.</p>\n```\n\n2. **Belső stíluslap:** a `<style>` tagben a HTML dokumentum `<head>` részében.\n\n```html\n<style>\n  p { color: blue; }\n</style>\n```\n\n3. **Külső stíluslap:** külön `.css` fájlban, amit a HTML-ben hívunk meg.\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\">\n```\n\n---\n\n## CSS szelektorok\n\nA szelektor határozza meg, hogy mely elemekre alkalmazzuk a stílust.\n\n- **Elem szelektor:** például `p`, `div` stb.\n- **Osztály szelektor:** `.className`\n- **ID szelektor:** `#idName`\n\nPélda:\n\n```css\np { color: green; }\n.intro { font-weight: bold; }\n#main { background-color: yellow; }\n```\n\n---\n\n## Alapvető tulajdonságok\n\n- `color`: szöveg színe\n- `background-color`: háttérszín\n- `font-size`: betűméret\n- `margin`: külső távolság\n- `padding`: belső távolság\n- `border`: keret\n\n---\n\n## Példa kód\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>CSS alapok példa</title>\n  <style>\n    body {\n      background-color: #f0f0f0;\n      font-family: Arial, sans-serif;\n    }\n    h1 {\n      color: #333;\n    }\n    p.intro {\n      color: #007acc;\n      font-size: 18px;\n    }\n  </style>\n</head>\n<body>\n  <h1>Üdv a CSS világában!</h1>\n  <p class=\"intro\">Ez egy bevezető bekezdés.</p>\n  <p>Ez egy normál bekezdés.</p>\n</body>\n</html>\n```\n\n---\n\n## Összefoglalás\n\n- A CSS a weboldalak megjelenését szabályozza.\n- Többféleképpen alkalmazható: inline, belső, külső.\n- Szelektorokkal választhatjuk ki az elemeket.\n- Alapvető tulajdonságokkal változtathatjuk meg a stílust.\n",
+  "keyPoints": [
+    "A CSS a weboldalak megjelenésének formázására szolgál.",
+    "Használhatjuk inline, belső és külső stíluslapként.",
+    "A szelektorokkal választhatjuk ki, mely elemekre alkalmazzuk a stílusokat.",
+    "Az alapvető tulajdonságok például a szín, betűméret, margó, padding.",
+    "A CSS szabályokkal alakíthatjuk a weboldal kinézetét és elrendezését."
+  ]
+},
+{
+  "id": 4,
+  "title": "Színek és tipográfia",
+  "content": "A színek és a tipográfia alapvető elemei a webdesignnak, melyek nagyban befolyásolják az oldal hangulatát és olvashatóságát.\n\n---\n\n## Színek a CSS-ben\n\n### Színformátumok\n- **Hexadecimális:** `#RRGGBB` vagy rövidítve `#RGB` (pl. `#ff0000` = piros)\n- **RGB:** `rgb(255, 0, 0)` (piros)\n- **RGBA:** `rgba(255, 0, 0, 0.5)` – átlátszóságot is megadhatunk (0-1 között)\n- **HSL:** `hsl(0, 100%, 50%)` (színárnyalat, telítettség, világosság)\n- **Név szerint:** pl. `red`, `blue`, `green`\n\n### Szín használata\n```css\nbody {\n  background-color: #f9f9f9;\n  color: #333333;\n}\n```\n\n---\n\n## Tipográfia a weben\n\n### Betűtípusok (font-family)\n- Választhatunk alapértelmezett betűtípusokat vagy webfontokat (pl. Google Fonts)\n- Példa:\n```css\nbody {\n  font-family: 'Arial', sans-serif;\n}\n```\n\n### Betűméret (font-size)\n- Lehet `px`, `em`, `rem`, `%`\n- Példa:\n```css\np {\n  font-size: 16px;\n}\n```\n\n### Betűstílus és súly\n- `font-weight`: pl. `normal`, `bold`, számok (100-900)\n- `font-style`: pl. `normal`, `italic`\n\n### Sortávolság (line-height)\n- Javítja az olvashatóságot\n- Példa:\n```css\np {\n  line-height: 1.5;\n}\n```\n\n---\n\n## Példa kód\n```html\n<style>\n  body {\n    background-color: #ffffff;\n    color: #222222;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    font-size: 16px;\n    line-height: 1.6;\n  }\n  h1 {\n    color: #005f99;\n    font-weight: 700;\n  }\n  p {\n    font-size: 14px;\n    color: #555555;\n  }\n</style>\n\n<h1>Színek és tipográfia</h1>\n<p>Ez a szöveg példaként szolgál a tipográfia beállításaira és színek használatára.</p>\n```\n\n---\n\n## Összefoglalás\n- A színek sokféle formátumban megadhatók (hex, rgb, rgba, hsl, név).\n- A betűtípus, méret, stílus és sortávolság szabályozza a szöveg megjelenését.\n- A jó tipográfia és színválasztás növeli az oldal olvashatóságát és esztétikáját.",
+  "keyPoints": [
+    "Színek több formátumban használhatók CSS-ben: hex, rgb, rgba, hsl, név.",
+    "Font-family segítségével választhatunk betűtípust.",
+    "Font-size, font-weight, font-style és line-height a szöveg kinézetét szabályozza.",
+    "Jó tipográfia növeli az olvashatóságot és az esztétikát."
+  ]
+},
+{
+  "id": 5,
+  "title": "Layout és elrendezések",
+  "content": "A layout az oldal elrendezésének terve, ami meghatározza, hogyan helyezkednek el az elemek a képernyőn.\n\n---\n\n## Alapvető layout technikák CSS-ben\n\n### Blokkok és inline elemek\n- **Block**: teljes szélességet foglal (pl. `<div>`, `<p>`)\n- **Inline**: csak a tartalom szélességét foglalja (pl. `<span>`, `<a>`)\n\n### Pozícionálás (position)\n- **static** (alapértelmezett)\n- **relative** (eltolás az eredeti helyhez képest)\n- **absolute** (a legközelebbi pozícionált szülőhöz képest)\n- **fixed** (az ablakhoz rögzített)\n\n### Flexbox\n- Egydimenziós elrendezés sorokban vagy oszlopokban\n- Példa:\n```css\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n```\n\n### CSS Grid\n- Kétdimenziós elrendezés sorokkal és oszlopokkal\n- Példa:\n```css\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  gap: 10px;\n}\n```\n\n### Float és clear\n- Régebbi technika lebegő elemekhez\n- Ma inkább Flexbox vagy Grid használatos\n\n---\n\n## Gyakori layout minták\n\n- Fejléc (header), tartalom (main), lábléc (footer)\n- Oldalsáv (sidebar) és fő tartalom\n- Kártyák és rácsok (cards, grids)\n\n---\n\n## Példa kód\n```html\n<style>\n  .container {\n    display: flex;\n    justify-content: space-between;\n    padding: 10px;\n    background-color: #f0f0f0;\n  }\n  .box {\n    background-color: #007acc;\n    color: white;\n    padding: 20px;\n    flex: 1;\n    margin: 5px;\n    text-align: center;\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"box\">Box 1</div>\n  <div class=\"box\">Box 2</div>\n  <div class=\"box\">Box 3</div>\n</div>\n```\n\n---\n\n## Összefoglalás\n- A layout meghatározza az elemek elhelyezkedését a weboldalon.\n- Flexbox és Grid a legmodernebb eszközök az elrendezésekhez.\n- A pozícionálás és float technikák fontosak az összetettebb dizájnokhoz.\n- Jó layout javítja a felhasználói élményt és az oldal áttekinthetőségét.",
+  "keyPoints": [
+    "Layout = elem elhelyezkedés az oldalon.",
+    "Block és inline elemek különböző viselkedése.",
+    "Position: static, relative, absolute, fixed használata.",
+    "Flexbox: egydimenziós, sor/oszlop rendezés.",
+    "Grid: kétdimenziós, sorok és oszlopok.",
+    "Régi float technika, ma főleg Flexbox/Grid.",
+    "Layout minták: header, main, footer, sidebar.",
+    "Jó layout jobb UX-t eredményez."
+  ]
+},
+{
+  "id": 6,
+  "title": "Reszponzív webdesign alapjai",
+  "content": "## Mi az a reszponzív webdesign?\n\nA reszponzív webdesign olyan tervezési megközelítés, amelynek célja, hogy a weboldal tartalma és elrendezése alkalmazkodjon a különböző képernyőméretekhez és eszközökhöz (mobil, tablet, laptop, desktop). Ezáltal minden eszközön optimális felhasználói élményt nyújt.\n\n---\n\n## Miért fontos a reszponzivitás?\n\n- Az internetezők többsége ma már mobileszközön böngészik.\n- A Google rangsorolási algoritmusa előnyben részesíti a mobilbarát oldalakat.\n- A felhasználók igénye, hogy bármilyen eszközön könnyen használható legyen a weboldal.\n- Egyszerűbb karbantartás, hiszen egy oldal kezelése elegendő több eszközre.\n\n---\n\n## Alapelvek\n\n### 1. Rugalmas (fluid) rács\n\nA weboldal elrendezése százalékos vagy relatív mértékegységekkel (%, em, rem, vw, vh) készül, így a tartalom szélessége és magassága a képernyő méretéhez igazodik.\n\n### 2. Rugalmas képek és média\n\nA képek, videók szélessége nem fix, hanem a szülő elem méretéhez igazodik:\n\n```css\nimg {\n  max-width: 100%;\n  height: auto;\n}\n```\n\n### 3. Média lekérdezések (Media Queries)\n\nCSS-ben lehetőség van arra, hogy különböző képernyőméretekhez külön szabályokat adjunk meg:\n\n```css\n/* Alapértelmezett stílusok minden eszközre */\nbody {\n  font-size: 16px;\n}\n\n/* Mobil készülékekhez (max szélesség 600px) */\n@media (max-width: 600px) {\n  body {\n    font-size: 14px;\n  }\n}\n\n/* Tablet készülékekhez (601px - 900px) */\n@media (min-width: 601px) and (max-width: 900px) {\n  body {\n    font-size: 15px;\n  }\n}\n```\n\n---\n\n## Példa: Egyszerű reszponzív layout Flexbox-szal\n\n```html\n<style>\n  .container {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n  }\n\n  .box {\n    flex: 1 1 200px; /* Legalább 200px széles, de rugalmas */\n    background-color: #007acc;\n    color: white;\n    padding: 20px;\n    text-align: center;\n  }\n\n  @media (max-width: 600px) {\n    .container {\n      flex-direction: column;\n    }\n  }\n</style>\n\n<div class=\"container\">\n  <div class=\"box\">Box 1</div>\n  <div class=\"box\">Box 2</div>\n  <div class=\"box\">Box 3</div>\n</div>\n```\n\n---\n\n## Hasznos tippek\n\n- Használj relatív mértékegységeket (`em`, `rem`, `%`, `vw`, `vh`) a fix px helyett.\n- Teszteld az oldalad különböző eszközökön és böngészőkben.\n- Minimalizáld a fix szélességű elemek használatát.\n- A média lekérdezések segítségével változtasd meg a dizájnt, betűméretet, elrendezést a különböző képernyőkhöz igazítva.\n- Gondolj a mobil navigációra (pl. hamburger menü).\n- A reszponzív képekhez használd a `srcset` és `sizes` attribútumokat.\n\n---\n\n## Összefoglalás\n\n- A reszponzív webdesign célja, hogy a weboldal minden eszközön jól jelenjen meg.\n- Rugalmas grid, média lekérdezések és képek a kulcselemei.\n- A Flexbox és CSS Grid nagy segítség a rugalmas elrendezések készítéséhez.\n- Tesztelés és eszközfüggetlen tervezés elengedhetetlen.\n",
+  "keyPoints": [
+    "Reszponzív = alkalmazkodó elrendezés különböző eszközökhöz.",
+    "Fluid grid és rugalmas képek használata.",
+    "Média lekérdezések (Media Queries) alkalmazása.",
+    "Flexbox és Grid a modern reszponzív layoutok alapjai.",
+    "Tesztelj több képernyőméreten.",
+    "Használj relatív mértékegységeket (em, rem, %, vw, vh).",
+    "Mobil navigáció és reszponzív képek fontossága."
+  ]
+},
+{
+  "id": 7,
+  "title": "Tipográfia a weben",
+  "content": "## Mi a tipográfia?\n\nA tipográfia a szöveg megjelenítésének művészete és tudománya, amely magában foglalja a betűtípusok, méretek, színek, sortávolságok és egyéb vizuális elemek kiválasztását és alkalmazását.\n\n---\n\n## Tipográfia alapjai weben\n\n### 1. Betűtípusok (Fonts)\n\n- **Web-safe fontok:** olyan betűtípusok, amelyek szinte minden eszközön elérhetők (pl. Arial, Times New Roman, Verdana).\n- **Webfontok:** külső szolgáltatóktól (pl. Google Fonts) betöltött egyedi betűtípusok.\n\n```css\nbody {\n  font-family: 'Roboto', Arial, sans-serif;\n}\n```\n\n### 2. Betűméret (Font size)\n\n- Használj relatív mértékegységeket (pl. `em`, `rem`) a fix `px` helyett a jobb skálázhatóság érdekében.\n\n```css\np {\n  font-size: 1rem; /* alap betűméret */\n}\nh1 {\n  font-size: 2.5rem; /* nagyobb cím */\n}\n```\n\n### 3. Sortávolság (Line height)\n\n- A megfelelő sortávolság javítja az olvashatóságot.\n\n```css\np {\n  line-height: 1.5;\n}\n```\n\n### 4. Betűszín és kontraszt\n\n- Ügyelj a megfelelő kontrasztra, hogy a szöveg könnyen olvasható legyen.\n- Használhatsz online eszközöket a kontraszt ellenőrzésére.\n\n### 5. Betűstílusok és súlyok\n\n- Használj különböző betűstílusokat (`normal`, `italic`) és vastagságokat (`font-weight`) a hangsúlyozáshoz.\n\n### 6. Szöveg igazítása és térközök\n\n- Használj megfelelő igazítást (`left`, `center`, `right`, `justify`) a szöveg jellegétől függően.\n- Tartsd meg a megfelelő margókat és paddingeket.\n\n---\n\n## Reszponzív tipográfia\n\n- A betűméret és sortávolság igazítása különböző képernyőméretekhez médiakérdések segítségével.\n\n```css\nbody {\n  font-size: 16px;\n}\n\n@media (max-width: 600px) {\n  body {\n    font-size: 14px;\n  }\n}\n```\n\n---\n\n## Példa kód\n\n```html\n<style>\n  body {\n    font-family: 'Open Sans', Arial, sans-serif;\n    font-size: 1rem;\n    line-height: 1.6;\n    color: #333;\n    padding: 20px;\n  }\n\n  h1 {\n    font-size: 2.5rem;\n    font-weight: 700;\n    margin-bottom: 0.5em;\n  }\n\n  p {\n    margin-bottom: 1em;\n  }\n\n  @media (max-width: 600px) {\n    body {\n      font-size: 0.9rem;\n    }\n\n    h1 {\n      font-size: 2rem;\n    }\n  }\n</style>\n\n<h1>Tipográfia a weben</h1>\n<p>Ez a szöveg példa arra, hogyan lehet jól olvasható, esztétikus tipográfiát alkalmazni weboldalakon.</p>\n<p>A megfelelő betűtípus, méret és sortávolság mind hozzájárul a felhasználói élményhez.</p>\n```\n\n---\n\n## Összefoglalás\n\n- A tipográfia alapvető a weboldalak olvashatóságához és stílusához.\n- Válassz megfelelő betűtípust és használj relatív mértékegységeket.\n- Ügyelj a kontrasztra és sortávolságra.\n- A tipográfia legyen reszponzív.\n",
+  "keyPoints": [
+    "Tipográfia = a szöveg megjelenítése és olvashatósága.",
+    "Web-safe és webfontok használata.",
+    "Relatív betűméretek (em, rem) előnyben.",
+    "Megfelelő sortávolság az olvashatóságért.",
+    "Kontraszt fontossága a színek kiválasztásában.",
+    "Reszponzív tipográfia média lekérdezésekkel.",
+    "Betűstílusok és súlyok a hangsúlyozáshoz."
+  ]
+},
+{
+  "id": 8,
+  "title": "Színek és kontraszt",
+  "content": "## Színek szerepe a webdesignban\n\nA színek nemcsak esztétikai elemek, hanem jelentős hatással vannak a használhatóságra, hangulatra és az oldal érthetőségére.\n\n---\n\n## Alapvető színmodellek\n\n- **RGB** (Red, Green, Blue): a képernyőkön használt színmodell.\n- **HEX**: hexadecimális formátum, pl. `#ff0000` (piros).\n- **HSL** (Hue, Saturation, Lightness): könnyebb színmanipulációra.\n\n```css\ncolor: rgb(255, 0, 0);\nbackground-color: #00ff00;\n```\n\n---\n\n## Kontraszt és olvashatóság\n\n### Miért fontos a kontraszt?\n\n- A megfelelő kontraszt biztosítja, hogy a szöveg jól olvasható legyen minden felhasználó számára, beleértve a látássérülteket is.\n- Segíti a vizuális hierarchia kialakítását.\n\n### Kontraszt arány\n\n- A WCAG szabvány szerint legalább 4.5:1 arány kell a szöveg és háttér között normál méretű szöveg esetén.\n- Nagyobb szöveg esetén (pl. címek) az arány 3:1 is elfogadható.\n\n### Kontraszt ellenőrző eszközök\n\n- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)\n- Böngészők beépített eszközei\n\n---\n\n## Színválasztási tippek\n\n- Használj jól harmonizáló színpalettákat.\n- Kerüld a túl élénk, vibráló színkombinációkat, amelyek fárasztják a szemet.\n- A háttér és szöveg színe között legyen elég kontraszt.\n\n---\n\n## Példa kód\n\n```html\n<style>\n  body {\n    background-color: #f5f5f5;\n    color: #222;\n    font-family: Arial, sans-serif;\n    padding: 20px;\n  }\n\n  h1 {\n    color: #0055cc;\n  }\n\n  .highlight {\n    background-color: #ffeb3b;\n    color: #333;\n    padding: 5px;\n  }\n</style>\n\n<h1>Színek és kontraszt a weben</h1>\n<p>A megfelelő kontraszt javítja az olvashatóságot és a felhasználói élményt.</p>\n<p class=\"highlight\">Ez a kiemelt szöveg jól látható sárga háttéren.</p>\n```\n\n---\n\n## Összefoglalás\n\n- A színek erőteljes eszközök a dizájnban, de fontos az olvashatóság biztosítása.\n- Használj megfelelő színmodellt és ellenőrizd a kontrasztot.\n- WCAG szabványokat tartsd szem előtt a hozzáférhetőség érdekében.\n",
+  "keyPoints": [
+    "Színek befolyásolják a hangulatot és használhatóságot.",
+    "RGB, HEX, HSL színmodellek weben.",
+    "Kontraszt arány: legalább 4.5:1 a normál szöveghez.",
+    "Kontraszt ellenőrzése WCAG szabvány alapján.",
+    "Harmonikusan válassz színeket és kerüld a vibrálást.",
+    "Színek növelik a vizuális hierarchiát és érthetőséget."
+  ]
+},
+{
+  "id": 9,
+  "title": "Képek és média kezelése",
+  "content": "## Képek szerepe a weben\n\nA képek és médiaelemek fontosak a vizuális megjelenés és a tartalom gazdagítása szempontjából.\n\n---\n\n## Képtípusok\n\n- **Raster képek:** JPG, PNG, GIF\n  - Jó fotókhoz és részletgazdag képekhez.\n  - PNG támogatja az átlátszóságot.\n- **Vektor képek:** SVG\n  - Skálázhatóak minőségvesztés nélkül.\n  - Ikonokhoz, logókhoz ideálisak.\n\n## Képek beillesztése HTML-ben\n\n- `<img>` elem alapvető használata:\n```html\n<img src=\"kep.jpg\" alt=\"Leírás a képről\" width=\"300\" height=\"200\">\n```\n- Az `alt` attribútum fontos az akadálymentességhez és SEO-hoz.\n\n## Responsive képek\n\n- **srcset** és **sizes** attribútumok használata különböző képméretekhez:\n```html\n<img src=\"kep-small.jpg\"\n     srcset=\"kep-small.jpg 500w, kep-medium.jpg 1000w, kep-large.jpg 1500w\"\n     sizes=\"(max-width: 600px) 480px, 800px\"\n     alt=\"Reszponzív kép példa\">\n```\n- Segít a böngészőnek a megfelelő méretű kép betöltésében eszköz és képernyő alapján.\n\n## Videó és audio beillesztése\n\n- HTML5 `<video>` és `<audio>` elemek:\n```html\n<video controls width=\"600\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  A böngésző nem támogatja a videó elemet.\n</video>\n```\n\n## Média optimalizáció\n\n- Képek tömörítése (pl. TinyPNG, ImageOptim)\n- Formátum választás (pl. WebP modern böngészőkben)\n- Lazy loading: csak akkor töltődik be a kép, amikor a felhasználó látja\n  ```html\n  <img src=\"kep.jpg\" loading=\"lazy\" alt=\"...\">\n  ```\n\n---\n\n## Összefoglalás\n\n- A képek és média elemek fontosak a vizuális élményhez.\n- Használj megfelelő formátumot és méretet.\n- Responsive képekkel és lazy loadinggal optimalizáld a teljesítményt.\n- Ne feledd az alt attribútumot a hozzáférhetőség miatt.\n",
+  "keyPoints": [
+    "Raster (JPG, PNG, GIF) és vektor (SVG) képek különbségei.",
+    "Alt attribútum a képeknél az akadálymentességért.",
+    "Responsive képek srcset és sizes attribútumokkal.",
+    "HTML5 video és audio elemek használata.",
+    "Képek optimalizálása: tömörítés, formátum választás, lazy loading.",
+    "Jobb UX és teljesítmény képek megfelelő kezelésével."
+  ]
+},
+{
+  "id": 10,
+  "title": "Navigációs menük tervezése",
+  "content": "## Miért fontos a navigáció?\n\nA navigáció segíti a felhasználókat abban, hogy könnyen eligazodjanak az oldalon, gyorsan megtalálják a keresett tartalmat.\n\n---\n\n## Navigációs menü típusok\n\n- **Felső (top) menü:** leggyakoribb, az oldal tetején helyezkedik el.\n- **Oldalsáv (sidebar) menü:** különösen hosszabb tartalmak vagy admin felületek esetén használatos.\n- **Hamburger menü:** mobil és reszponzív nézetekhez, ahol helytakarékos megoldás szükséges.\n- **Lábléc (footer) menü:** kiegészítő linkekhez, információkhoz.\n\n---\n\n## HTML struktúra\n\n- Használj `<nav>` elemet a navigáció körül.\n- A menüpontokat listaként (`<ul>`, `<li>`) érdemes szervezni.\n\n```html\n<nav>\n  <ul class=\"nav-menu\">\n    <li><a href=\"#\">Főoldal</a></li>\n    <li><a href=\"#\">Rólunk</a></li>\n    <li><a href=\"#\">Szolgáltatások</a></li>\n    <li><a href=\"#\">Kapcsolat</a></li>\n  </ul>\n</nav>\n```\n\n---\n\n## CSS a menühöz\n\n- Alap elrendezés flexbox segítségével:\n```css\n.nav-menu {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n.nav-menu li {\n  margin-right: 20px;\n}\n.nav-menu li a {\n  text-decoration: none;\n  color: #333;\n  font-weight: 600;\n}\n.nav-menu li a:hover {\n  color: #007acc;\n}\n```\n\n---\n\n## Reszponzív menü\n\n- Mobilon gyakran hamburger menüt használunk.\n- Példa egyszerű hamburger menüre checkbox trükkel:\n\n```html\n<input type=\"checkbox\" id=\"menu-toggle\" />\n<label for=\"menu-toggle\" class=\"menu-icon\">☰</label>\n<nav>\n  <ul class=\"nav-menu\">\n    <li><a href=\"#\">Főoldal</a></li>\n    <li><a href=\"#\">Rólunk</a></li>\n    <li><a href=\"#\">Szolgáltatások</a></li>\n    <li><a href=\"#\">Kapcsolat</a></li>\n  </ul>\n</nav>\n```\n\n```css\n.menu-icon {\n  display: none;\n  font-size: 30px;\n  cursor: pointer;\n}\n@media (max-width: 600px) {\n  .nav-menu {\n    display: none;\n    flex-direction: column;\n  }\n  #menu-toggle:checked + label + nav .nav-menu {\n    display: flex;\n  }\n  .menu-icon {\n    display: block;\n  }\n}\n```\n\n---\n\n## Akadálymentesség\n\n- Gondoskodj megfelelő fókusz állapotról (`:focus`), hogy billentyűzettel is könnyen használható legyen.\n- Használj `aria` attribútumokat, például `aria-expanded` hamburger menünél.\n\n---\n\n## Összefoglalás\n\n- A navigáció alapja a jól strukturált HTML és letisztult CSS.\n- Reszponzív menük segítik a mobil felhasználókat.\n- Akadálymentesség javítja a használhatóságot mindenki számára.\n",
+  "keyPoints": [
+    "Navigáció segíti a felhasználókat az eligazodásban.",
+    "Felső, oldalsáv, hamburger és lábléc menü típusok.",
+    "Navigációhoz `<nav>`, listák használata ajánlott.",
+    "Flexbox-szal egyszerű a menü elrendezése.",
+    "Mobilon hamburger menü a helytakarékosság miatt.",
+    "Akadálymentesség fontos a fókusz és ARIA attribútumok miatt."
+  ]
+},
+{
+  "id": 11,
+  "title": "Alapvető animációk és átmenetek CSS-sel",
+  "content": "## Mi az animáció és az átmenet?\n\n- **Átmenet (transition):** az egyik állapotból a másikba történő sima váltás, pl. szín, méret vagy pozíció változtatásakor.\n- **Animáció (animation):** összetettebb mozgások létrehozása, kulcskockák (keyframes) segítségével.\n\n---\n\n## CSS átmenetek alapjai\n\n- Tulajdonság: `transition`\n- Példa:\n```css\n.button {\n  background-color: blue;\n  transition: background-color 0.3s ease;\n}\n.button:hover {\n  background-color: red;\n}\n```\n\n- Ez azt jelenti, hogy a háttérszín 0.3 másodperc alatt változik át.\n\n---\n\n## Animációk kulcskockákkal (keyframes)\n\n- Definiáljuk a mozgás fázisait a `@keyframes` szabállyal.\n- Példa egy egyszerű elmozdulás:\n```css\n@keyframes moveRight {\n  from { transform: translateX(0); }\n  to { transform: translateX(100px); }\n}\n.box {\n  animation: moveRight 2s infinite alternate;\n}\n```\n\n- `infinite` folyamatos ismétlést jelent, az `alternate` pedig váltakozó irányt.\n\n---\n\n## Gyakran használt animáció tulajdonságok\n\n- `animation-name`: az animáció kulcskockáinak neve.\n- `animation-duration`: időtartam.\n- `animation-timing-function`: sebesség görbe (pl. ease, linear).\n- `animation-delay`: késleltetés.\n- `animation-iteration-count`: ismétlések száma.\n- `animation-direction`: előre/hátra ismétlés.\n\n---\n\n## Példa: gomb animáció\n\n```css\n.button {\n  background-color: #007acc;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\n.button:hover {\n  background-color: #005f99;\n}\n```\n\n---\n\n## Összefoglalás\n\n- Az átmenetek egyszerű állapotváltozások simítására valók.\n- Az animációk komplex mozgások létrehozására alkalmasak.\n- Kulcskockák segítségével pontosan szabályozhatjuk az animáció menetét.\n- Használatuk javítja a felhasználói élményt, ha mértékkel alkalmazzuk.",
+  "keyPoints": [
+    "Átmenet (transition) sima állapotváltozás.",
+    "Animáció (animation) kulcskockákkal vezérelt mozgás.",
+    "@keyframes szabály a mozgás fázisaira.",
+    "Fontos animáció tulajdonságok: duration, timing-function, iteration.",
+    "Gyakori példa: hover effektus gombokon.",
+    "Animációk fokozzák az UX-et, ha nem túlzásba vitték."
+  ]
+}
+  ]}

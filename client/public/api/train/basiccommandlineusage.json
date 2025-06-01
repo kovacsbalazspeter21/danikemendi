@@ -1,0 +1,83 @@
+{
+  "courseInfo": {
+    "id": 13,
+    "title": "Basic Command Line Usage",
+    "description": "This course covers the fundamentals of using the command line interface, including basic commands, file navigation, and system management tasks.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+    "id": 1,
+    "title": "Mi az a parancssor (Command Line)?",
+    "content": "A parancssor egy szöveges felület, ahol parancsokat írunk be a számítógépünk irányításához.\n\n---\n\n## Miért hasznos?\n\n- Gyorsabb, mint grafikus felületen kattintani.\n- Több automatizálási lehetőség.\n- Alapvető eszköz fejlesztőknek és rendszergazdáknak.\n\n---\n\n## Különböző shell-ek\n\n- Windows: CMD, PowerShell\n- macOS/Linux: Bash, Zsh\n\n---\n\n## Összefoglalás\n\n- A parancssor ismerete alapvető készség minden informatikával foglalkozónak.",
+    "keyPoints": [
+      "Szöveges interfész a számítógép vezérléséhez.",
+      "Gyors és hatékony parancsvégrehajtás.",
+      "Windows, macOS, Linux rendszereken eltérő shell-ek.",
+      "Fejlesztők és adminisztrátorok alapvető eszköze.",
+      "Segít automatizálni és kezelni a rendszert."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Alapvető parancsok fájlok és mappák kezelésére",
+    "content": "A fájlok és mappák kezelésének alapjai a parancssorban.\n\n---\n\n## Fontos parancsok\n\n- `ls` / `dir`: listázza a fájlokat és mappákat.\n- `cd <mappa>`: belép egy mappába.\n- `pwd`: aktuális könyvtár megjelenítése.\n- `mkdir <mappa>`: új mappa létrehozása.\n- `rm <fájl>`: fájl törlése.\n- `rmdir <mappa>`: mappa törlése (üresnek kell lennie).\n\n---\n\n## Összefoglalás\n\n- Ezekkel a parancsokkal kezelhetjük a fájlrendszert hatékonyan.",
+    "keyPoints": [
+      "`ls` vagy `dir` fájlok listázására.",
+      "`cd` mappák közötti navigációra.",
+      "`pwd` aktuális könyvtár megjelenítése.",
+      "`mkdir` mappák létrehozásához.",
+      "`rm` és `rmdir` fájlok és mappák törléséhez."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Fájlok olvasása, szerkesztése és másolása",
+    "content": "Ismerd meg, hogyan olvashatod és módosíthatod a fájlokat a parancssorból.\n\n---\n\n## Parancsok\n\n- `cat <fájl>`: fájl tartalmának kiírása.\n- `less <fájl>`: nagyobb fájlok lapozható megtekintése.\n- `nano <fájl>` vagy `vim <fájl>`: egyszerű szerkesztők.\n- `cp <forrás> <cél>`: fájl másolása.\n- `mv <forrás> <cél>`: fájl áthelyezése vagy átnevezése.\n\n---\n\n## Összefoglalás\n\n- Ezekkel a parancsokkal fájlokat kezelhetsz közvetlenül a terminálban.",
+    "keyPoints": [
+      "`cat` fájlok megtekintésére.",
+      "`less` nagy fájlok olvasásához lapozhatóan.",
+      "`nano` és `vim` szövegszerkesztők.",
+      "`cp` fájl másolására.",
+      "`mv` fájl mozgatására vagy átnevezésére."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Folyamatok és programok futtatása",
+    "content": "Hogyan indítsd el és kezeld a folyamatokat a parancssorból?\n\n---\n\n## Parancsok és fogalmak\n\n- Parancs végrehajtása: pl. `node app.js`\n- `&`: háttérben futtatás (pl. `sleep 10 &`)\n- `ps`: futó folyamatok listázása.\n- `kill <PID>`: folyamat leállítása.\n- Ctrl+C: folyamat megszakítása.\n\n---\n\n## Összefoglalás\n\n- A parancssorban közvetlenül irányíthatod a futó programokat.",
+    "keyPoints": [
+      "Parancsok futtatása a shellből.",
+      "`&` háttérben futtatás.",
+      "`ps` folyamatok listázása.",
+      "`kill` folyamat leállítása PID alapján.",
+      "Ctrl+C folyamat megszakítása."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Parancsok láncolása és átirányítások",
+    "content": "Hatékonyabb parancssori használat láncolt parancsokkal és kimenetek átirányításával.\n\n---\n\n## Példák\n\n- `command1 | command2`: az első parancs kimenetét átadja a másodiknak.\n- `command > file.txt`: kimenetet fájlba írja.\n- `command >> file.txt`: kimenetet hozzáfűzi egy fájlhoz.\n- `command < input.txt`: bemenetet fájlból vesz.\n\n---\n\n## Összefoglalás\n\n- Az átirányításokkal és csövekkel komplex munkafolyamatokat is megvalósíthatsz.",
+    "keyPoints": [
+      "Csövek (`|`) parancsok összekapcsolására.",
+      "Kimenet átirányítása (`>` és `>>`).",
+      "Bemenet fájlból (`<`) való olvasása.",
+      "Hatékony parancssori munkavégzés alapja.",
+      "Automatizált munkafolyamatok létrehozása."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Környezeti változók és parancsok testreszabása",
+    "content": "A környezeti változók segítségével személyre szabhatod a parancssori környezeted.\n\n---\n\n## Alapok\n\n- Környezeti változók tárolják az információkat (pl. PATH).\n- `echo $VÁLTOZÓ`: változó értékének kiíratása.\n- `export VÁLTOZÓ=érték`: változó beállítása.\n- Aliask létrehozása: `alias ls='ls --color=auto'`\n\n---\n\n## Összefoglalás\n\n- Környezeti változók és aliasok kényelmesebbé teszik a parancssori munkát.",
+    "keyPoints": [
+      "Környezeti változók beállítása és használata.",
+      "`echo` változó értékének megjelenítéséhez.",
+      "`export` változók létrehozásához vagy módosításához.",
+      "Aliasok gyors parancsokhoz.",
+      "Személyre szabható parancssori környezet."
+    ]
+  }
+  ]}

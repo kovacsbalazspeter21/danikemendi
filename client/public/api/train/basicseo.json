@@ -1,0 +1,83 @@
+{
+  "courseInfo": {
+    "id": 8,
+    "title": "Basic SEO",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+  "id": 1,
+  "title": "Mi az a SEO és miért fontos?",
+  "content": "A SEO (Search Engine Optimization) a weboldalak optimalizálásának folyamata, hogy jobban szerepeljenek a keresőmotorok találati listáján.\n\n---\n\n## Miért fontos a SEO?\n\n- Több látogatót hoz az oldalra.\n- Javítja a weboldal láthatóságát.\n- Segíti a potenciális ügyfelek elérését.\n\n---\n\n## SEO céljai\n\n- Magasabb helyezés a Google és más keresők találatai között.\n- Releváns forgalom növelése.\n- Felhasználói élmény javítása.\n\n---\n\n## Összefoglalás\n\n- A SEO növeli a weboldal látogatottságát és relevanciáját.\n- Fontos minden weboldal tulajdonos számára.\n",
+  "keyPoints": [
+    "A SEO a keresőoptimalizálás folyamata.",
+    "Célja a jobb helyezés a keresőkben.",
+    "Növeli a látogatottságot és a relevanciát.",
+    "Javítja a felhasználói élményt.",
+    "Minden weboldalnak érdemes foglalkozni vele."
+  ]
+},
+{
+  "id": 2,
+  "title": "Kulcsszókutatás alapjai",
+  "content": "A kulcsszókutatás az első lépés a SEO-ban, amely során megtaláljuk azokat a szavakat és kifejezéseket, amiket a célközönség használ a kereséskor.\n\n---\n\n## Miért fontos?\n\n- Segít megérteni a felhasználók igényeit.\n- Alapja a tartalomtervezésnek és optimalizálásnak.\n\n---\n\n## Hogyan csináljuk?\n\n- Használjunk kulcsszótervező eszközöket (pl. Google Keyword Planner, Ubersuggest).\n- Nézzük meg a keresési volumeneket és versenyt.\n- Válasszunk releváns és elérhető kulcsszavakat.\n\n---\n\n## Összefoglalás\n\n- A kulcsszókutatás segíti a tartalom célzását.\n- Érdemes kombinálni magas és alacsony versenyű kulcsszavakat.\n",
+  "keyPoints": [
+    "Kulcsszókutatás az alapja a SEO-nak.",
+    "Megmutatja, mit keresnek a felhasználók.",
+    "Használjunk speciális eszközöket a kutatáshoz.",
+    "Fontos a keresési volumen és verseny figyelembevétele.",
+    "Válasszunk releváns kulcsszavakat."
+  ]
+},
+{
+  "id": 3,
+  "title": "On-page SEO alapjai",
+  "content": "Az on-page SEO a weboldalon belüli elemek optimalizálását jelenti, melyek befolyásolják a keresőmotorok rangsorolását.\n\n---\n\n## Fontos elemek\n\n- **Címcímkék (title tag):** pontos, kulcsszót tartalmazó cím.\n- **Meta leírás (meta description):** rövid összefoglaló a tartalomról.\n- **Fejlécek (H1, H2, H3...):** strukturálják a tartalmat.\n- **URL struktúra:** egyszerű, kulcsszavakat tartalmazó linkek.\n- **Képek alt attribútuma:** leírás a képekhez.\n\n---\n\n## Tippek\n\n- Használjunk kulcsszavakat természetesen.\n- Ne legyen túl hosszú vagy túl rövid a tartalom.\n- Optimalizáljuk a mobilnézetet.\n\n---\n\n## Összefoglalás\n\n- Az on-page SEO segíti a keresők és felhasználók jobb megértését.\n- Minden oldalon figyeljünk a kulcsszavak helyes használatára.\n",
+  "keyPoints": [
+    "On-page SEO a weboldalon belüli optimalizálás.",
+    "Fontos a title tag és meta description megfelelő kitöltése.",
+    "Használjuk a fejléceket a tartalom strukturálására.",
+    "URL-ek legyenek egyszerűek és kulcsszavasak.",
+    "Ne feledkezzünk meg az alt attribútumokról."
+  ]
+},
+{
+  "id": 4,
+  "title": "Technikai SEO alapok",
+  "content": "A technikai SEO a weboldal technikai beállításait és szerkezetét optimalizálja, hogy a keresőmotorok könnyen feltérképezhessék és indexelhessék az oldalt.\n\n---\n\n## Fontos területek\n\n- **Weboldal sebesség:** gyors betöltődés.\n- **Mobilbarát design:** reszponzív megjelenés.\n- **SSL tanúsítvány:** HTTPS protokoll használata.\n- **Robots.txt:** keresőmotorok irányítása.\n- **XML sitemap:** segíti a feltérképezést.\n\n---\n\n## Tippek\n\n- Optimalizáljuk a képeket és a kódot.\n- Ellenőrizzük a hibás linkeket.\n- Használjunk strukturált adatokat.\n\n---\n\n## Összefoglalás\n\n- A technikai SEO nélkülözhetetlen a jó helyezéshez.\n- Gyors, biztonságos és jól strukturált weboldal kell.\n",
+  "keyPoints": [
+    "Technikai SEO a weboldal műszaki optimalizálása.",
+    "Fontos a gyors betöltődés és mobilbarát kialakítás.",
+    "HTTPS használata növeli a biztonságot és rangsorolást.",
+    "Robots.txt és sitemap segítik a keresőket.",
+    "Strukturált adatokkal javítható a megjelenés."
+  ]
+},
+{
+  "id": 5,
+  "title": "Linképítés alapjai",
+  "content": "A linképítés a weboldalra mutató más oldalak linkjeinek (backlinkek) szerzését jelenti, mely segíti a keresőmotorok számára a weboldal hitelességének és rangsorának javítását.\n\n---\n\n## Miért fontos?\n\n- A minőségi backlinkek növelik az oldal hitelességét.\n- Segítenek jobb helyezést elérni a találati listákon.\n\n---\n\n## Hogyan építsünk linkeket?\n\n- Készítsünk értékes, megosztható tartalmat.\n- Kapcsolatépítés más weboldalakkal és bloggerekkel.\n- Kerüljük a spam jellegű linkeket.\n\n---\n\n## Összefoglalás\n\n- Linképítés nélkül nehéz jó helyezést elérni.\n- A minőség fontosabb, mint a mennyiség.\n",
+  "keyPoints": [
+    "Linképítés a backlinkek szerzésének folyamata.",
+    "Minőségi linkek növelik a hitelességet és rangsorolást.",
+    "Értékes tartalomra alapozzuk a linképítést.",
+    "Kerüljük a spam és rossz minőségű linkeket.",
+    "Kapcsolatépítés segíthet a linkek szerzésében."
+  ]
+},
+{
+  "id": 6,
+  "title": "SEO mérés és elemzés",
+  "content": "A SEO hatékonyságát rendszeresen mérni és elemezni kell, hogy tudjuk, mi működik és mit kell fejleszteni.\n\n---\n\n## Fontos mutatók\n\n- Organikus forgalom: hány látogató érkezik keresőből.\n- Kulcsszavak helyezése: mely kulcsszavak hol szerepelnek.\n- Visszafordulási arány (bounce rate).\n- Oldalon töltött idő.\n\n---\n\n## Eszközök\n\n- Google Analytics\n- Google Search Console\n- SEO elemző eszközök (pl. Ahrefs, SEMrush)\n\n---\n\n## Összefoglalás\n\n- Folyamatos mérés és elemzés szükséges a SEO javításához.\n- Használjunk több eszközt a pontos képért.\n",
+  "keyPoints": [
+    "SEO teljesítményét mérni és elemezni kell.",
+    "Fontos mutatók: organikus forgalom, kulcsszavak helyezése, bounce rate.",
+    "Google Analytics és Search Console alapvető eszközök.",
+    "Elemző eszközökkel mélyebb képet kaphatunk.",
+    "Folyamatos fejlesztéshez elengedhetetlen a mérés."
+  ]
+}
+
+  ]}

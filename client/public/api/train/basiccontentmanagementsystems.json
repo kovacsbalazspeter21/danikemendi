@@ -1,0 +1,192 @@
+{
+  "courseInfo": {
+    "id": 15,
+    "title": "Basic Content Management Systems",
+    "description": "This course covers the basics of content management systems, including their features, benefits, and common use cases.",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+     {
+    "id": 1,
+    "title": "Mi az a CMS (Tartalomkezelő rendszer)?",
+    "content": "A CMS (Content Management System) lehetővé teszi, hogy technikai tudás nélkül hozz létre és szerkessz weboldalakat.\n\n---\n\n## Előnyök\n\n- Felhasználóbarát admin felület\n- Tartalom gyors kezelése (szöveg, kép, videó)\n- Beépített funkciók (pl. keresés, űrlapok, galéria)\n\n---\n\n## Példák\n\n- WordPress, Joomla, Drupal\n\n---\n\n## Összefoglalás\n\n- A CMS rendszerek megkönnyítik a weboldalak létrehozását és kezelését.",
+    "keyPoints": [
+      "CMS = Tartalomkezelő rendszer",
+      "Segít weboldalt létrehozni kódolás nélkül",
+      "Admin felületet biztosít",
+      "Tartalom frissítése egyszerű",
+      "Legnépszerűbb CMS: WordPress"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "CMS kontra kézzel kódolt oldalak",
+    "content": "Mi a különbség a CMS használata és a saját fejlesztés között?\n\n---\n\n## Kézzel kódolt oldal:\n\n- Teljes kontroll\n- Több idő, nagyobb technikai tudás\n\n## CMS:\n\n- Gyorsabb fejlesztés\n- Kevesebb technikai háttértudás\n\n---\n\n## Összefoglalás\n\n- CMS ideális, ha gyorsan szeretnél weboldalt készíteni fejlesztő nélkül.",
+    "keyPoints": [
+      "CMS gyorsabb, könnyebb, de korlátozottabb",
+      "Kézzel kódolt oldal teljesen testreszabható",
+      "CMS kisebb technikai tudást igényel",
+      "Fejlesztők gyakran kombinálják a két megközelítést",
+      "CMS ideális céges vagy blog oldalakhoz"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Népszerű CMS-ek bemutatása",
+    "content": "Néhány vezető CMS rendszer:\n\n---\n\n## WordPress\n\n- Legelterjedtebb, könnyen bővíthető\n\n## Joomla\n\n- Komplexebb projektekhez, több beépített funkció\n\n## Drupal\n\n- Nagyon testreszabható, fejlesztői orientált\n\n## Wix, Squarespace\n\n- Felhő alapú CMS-ek kezdőknek\n\n---\n\n## Összefoglalás\n\n- Minden CMS másra jó: válaszd az igényeid alapján.",
+    "keyPoints": [
+      "WordPress: egyszerű, bővíthető",
+      "Joomla: haladó felhasználóknak",
+      "Drupal: fejlesztőknek, nagy projektekhez",
+      "Wix/Squarespace: felhő alapú, vizuális szerkesztők",
+      "A projekt típusa határozza meg a választást"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "WordPress alapok – Telepítés és beállítás",
+    "content": "A WordPress gyorsan telepíthető tárhely szolgáltatókon keresztül.\n\n---\n\n## Telepítés lépései\n\n1. Töltsd le a WordPress-t\n2. Hozz létre adatbázist\n3. Csatold a fájlokat a szerverhez (pl. FTP-vel)\n4. Nyisd meg a böngészőben, és kövesd a telepítőt\n\n---\n\n## Összefoglalás\n\n- A WordPress telepítése egyszerű, akár 5 perc alatt elvégezhető.",
+    "keyPoints": [
+      "WordPress gyorsan telepíthető",
+      "Adatbázis szükséges a működéshez",
+      "Tárhely szolgáltatók kínálnak 1-kattintásos telepítést",
+      "Nyílt forráskódú rendszer",
+      "A világ weboldalainak ~40%-a WordPress-t használ"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "WordPress admin felület használata",
+    "content": "A WordPress admin felületen keresztül irányíthatod az egész weboldalad.\n\n---\n\n## Fő menüpontok:\n\n- Bejegyzések, oldalak\n- Megjelenés (sablonok)\n- Bővítmények\n- Felhasználók\n- Beállítások\n\n---\n\n## Összefoglalás\n\n- Intuitív kezelőfelület, amelyet könnyű megtanulni.",
+    "keyPoints": [
+      "Kezelés egy adminisztrációs felületen keresztül",
+      "Tartalom szerkesztése és hozzáadása pár kattintással",
+      "Bővítményekkel új funkciók",
+      "Sablonokkal gyorsan változtatható megjelenés",
+      "Felhasználói jogosultságok szabályozása"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Sablonok és megjelenés testreszabása",
+    "content": "A CMS-ek sablonjai segítségével könnyen változtathatod meg a weboldal megjelenését.\n\n---\n\n## Sablonok:\n\n- Ingyenes és fizetős lehetőségek\n- Telepítés 1 kattintással\n- Testreszabás (pl. színek, betűtípusok, elrendezés)\n\n---\n\n## Összefoglalás\n\n- A megjelenés gyorsan személyre szabható sablonokkal.",
+    "keyPoints": [
+      "Sablon = weboldal kinézete",
+      "Számos sablon érhető el WordPress-hez és más CMS-ekhez",
+      "Kódolás nélkül testreszabható",
+      "Gyors megjelenés váltás",
+      "Reszponzív sablonokat válassz"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Bővítmények és funkciók hozzáadása",
+    "content": "A bővítmények új funkciókat adnak a weboldaladhoz.\n\n---\n\n## Példák:\n\n- Kapcsolatfelvételi űrlap\n- SEO optimalizálás\n- Webshop funkciók (WooCommerce)\n- Biztonsági kiegészítők\n\n---\n\n## Összefoglalás\n\n- A CMS egyik legnagyobb ereje a bővíthetőség.",
+    "keyPoints": [
+      "Bővítményekkel funkciókat adhatsz az oldalhoz",
+      "Több ezer plugin közül választhatsz",
+      "WooCommerce webshophoz ideális",
+      "Biztonság, SEO, kapcsolati űrlap stb. egyszerűen hozzáadható",
+      "Fontos a frissítés és megbízhatóság"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Tartalom létrehozása és szerkesztése",
+    "content": "CMS-ben egyszerű a bejegyzések és oldalak kezelése.\n\n---\n\n## Bejegyzés vagy oldal?\n\n- Bejegyzés: blog cikk, időrendi tartalom\n- Oldal: állandó tartalom (pl. Rólunk, Kapcsolat)\n\n---\n\n## Editor típusok:\n\n- Klasszikus szerkesztő (WYSIWYG)\n- Blokk alapú szerkesztők (pl. Gutenberg WordPress-ben)\n\n---\n\n## Összefoglalás\n\n- Tartalom létrehozása nem igényel programozást.",
+    "keyPoints": [
+      "Bejegyzések időalapú tartalmakhoz",
+      "Oldalak statikus információkhoz",
+      "Szerkesztés egyszerű vizuális felületen",
+      "Képek, videók beágyazása pár kattintás",
+      "Tartalom gyorsan frissíthető"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Felhasználók kezelése CMS-ben",
+    "content": "A CMS lehetővé teszi több felhasználó kezelését különböző jogosultságokkal.\n\n---\n\n## Szerepkörök (WordPress példa):\n\n- Adminisztrátor\n- Szerkesztő\n- Közreműködő\n- Előfizető\n\n---\n\n## Összefoglalás\n\n- Használhatsz csapatmunkát, miközben szabályozod a hozzáféréseket.",
+    "keyPoints": [
+      "Több felhasználó hozzáadható",
+      "Jogosultságokat szerepkör alapján kezelheted",
+      "Adminisztrátor teljes hozzáféréssel bír",
+      "Szerkesztő publikálhat, közreműködő csak javasolhat",
+      "Biztonságosabb működés nagyobb csapat esetén"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Webáruház létrehozása CMS-sel",
+    "content": "A CMS rendszerek bővítményekkel lehetővé teszik webshop indítását.\n\n---\n\n## WordPress: WooCommerce\n\n- Termékkezelés, kosár, fizetés\n- Szállítási módok, kuponok\n- Bankkártyás fizetés integrálása\n\n---\n\n## Összefoglalás\n\n- Webshop létrehozása néhány lépésben, programozás nélkül.",
+    "keyPoints": [
+      "WooCommerce a legnépszerűbb webshop plugin",
+      "Termékek hozzáadása vizuálisan",
+      "Kosár, fizetés, kupon funkciók beépítve",
+      "Szállítási lehetőségek és adók kezelése",
+      "Több fizetési mód integrálható"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "CMS biztonsági alapok",
+    "content": "CMS esetén különösen fontos a rendszer biztonsága.\n\n---\n\n## Biztonsági lépések:\n\n- Frissítések rendszeresen\n- Erős jelszavak\n- Biztonsági bővítmények (pl. Wordfence)\n- Korlátozott admin hozzáférés\n\n---\n\n## Összefoglalás\n\n- A biztonság érdekében ne hanyagold el a karbantartást.",
+    "keyPoints": [
+      "Frissítsd a CMS-t és bővítményeket",
+      "Erős, egyedi jelszavakat használj",
+      "Telepíts biztonsági plugineket",
+      "Használj 2FA-t (kétlépcsős azonosítás)",
+      "Admin panel elérhetőségének elrejtése ajánlott"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "CMS oldalak biztonsági mentése",
+    "content": "A rendszeres biztonsági mentés kulcsfontosságú adatvesztés esetén.\n\n---\n\n## Lehetőségek:\n\n- Automatikus mentések bővítményekkel\n- Manuális mentés (fájlok + adatbázis)\n- Tárhely szolgáltató biztonsági mentése\n\n---\n\n## Összefoglalás\n\n- Mentés nélkül egy hiba az egész oldal elvesztését jelentheti.",
+    "keyPoints": [
+      "Mentés a teljes oldalról (adatbázis + fájlok)",
+      "Használj automatizált backup plugineket",
+      "Tarts több példányt eltérő helyeken",
+      "Rendszeres mentés beállítása ajánlott",
+      "Tárhely szolgáltató backup lehetőségeit is nézd meg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "CMS weboldal migráció",
+    "content": "CMS oldal költöztetése egyik tárhelyről a másikra vagy domain váltás esetén.\n\n---\n\n## Migráció lépései:\n\n- Fájlok és adatbázis mentése\n- Új tárhelyre másolás\n- Adatbázis importálása\n- Konfiguráció frissítése (pl. wp-config.php, URL csere)\n\n---\n\n## Összefoglalás\n\n- CMS költöztetése összetett lehet, de lépésről lépésre követhető.",
+    "keyPoints": [
+      "Mentés fájlokról és adatbázisról",
+      "Új tárhelyre másolás FTP-vel vagy SFTP-vel",
+      "Adatbázis új importálása phpMyAdminnal",
+      "Konfigurációs fájl szerkesztése szükséges lehet",
+      "Domain váltás esetén URL cserét végezz"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "CMS teljesítmény optimalizálása",
+    "content": "Gyorsabb weboldal = jobb felhasználói élmény és SEO.\n\n---\n\n## Optimalizálási lehetőségek:\n\n- Cache plugin (pl. W3 Total Cache)\n- Képek tömörítése\n- Felesleges bővítmények törlése\n- CDN használata\n\n---\n\n## Összefoglalás\n\n- Optimalizált CMS oldal gyorsabb és hatékonyabb.",
+    "keyPoints": [
+      "Cache plugin gyorsítja a betöltést",
+      "Képek mérete csökkenthető plugin segítségével",
+      "Felesleges bővítményeket törölni kell",
+      "CDN (Content Delivery Network) növeli sebességet",
+      "Minél kevesebb és jobb minőségű bővítmény"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Fejlesztői lehetőségek CMS-ben",
+    "content": "A CMS rendszerek lehetővé teszik a mélyebb testreszabást programozóknak.\n\n---\n\n## WordPress példa:\n\n- Saját sablon készítése (HTML, CSS, PHP)\n- Egyedi bővítmények fejlesztése\n- REST API használata fejlett integrációkhoz\n\n---\n\n## Összefoglalás\n\n- CMS rendszer mögé fejlesztőként is „be lehet nyúlni”.",
+    "keyPoints": [
+      "Saját sablonok és bővítmények készíthetők",
+      "PHP alapú testreszabás WordPress-ben",
+      "Fejlesztők REST API-t is használhatnak",
+      "Haladó funkciók integrálhatók",
+      "CMS nem csak kezdőknek – fejlesztőknek is"
+    ]
+  }
+
+  ]}

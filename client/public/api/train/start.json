@@ -1,0 +1,116 @@
+{
+  "courseInfo": {
+    "id": 1,
+    "title": "Bevezetés a webfejlesztésbe",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+      "id": 1,
+      "title": "Mi a webfejlesztés?",
+      "content": "A webfejlesztés a weboldalak és webalkalmazások létrehozásának művészete és tudománya. Ez egy kreatív és technikai folyamat, amely magában foglalja a tervezést, a kódolást, a tesztelést és a karbantartást.\n\nA modern webfejlesztés három fő pillére:\n• **HTML** - A tartalom szerkezete\n• **CSS** - A megjelenés és design\n• **JavaScript** - Az interaktivitás és funkcionalitás\n\nEzek a technológiák együttműködve alkotják a modern web alapjait.",
+      "image": "/images/webdev-intro.jpg",
+      "codeExample": null,
+      "keyPoints": [
+        "A webfejlesztés kreatív és technikai készségeket igényel",
+        "HTML, CSS és JavaScript a három alapvető technológia",
+        "A webfejlesztés folyamatos tanulást és fejlődést igényel"
+      ],
+      "quiz": {
+        "question": "Melyek a webfejlesztés három fő pillére?",
+        "options": [
+          "HTML, CSS, JavaScript",
+          "PHP, MySQL, Apache",
+          "React, Vue, Angular",
+          "Python, Java, C++"
+        ],
+        "correct": 0
+      }
+    },
+    {
+      "id": 2,
+      "title": "Miért fontos a webfejlesztés?",
+      "content": "A mai digitális világban minden vállalkozásnak, szervezetnek és egyénnek szüksége van online jelenlétre. A webfejlesztés készségek rendkívül keresettek a munkaerőpiacon.\n\n**Miért érdemes webfejlesztést tanulni?**\n• Magas kereslet a munkaerőpiacon\n• Kreatív és változatos munka\n• Távmunka lehetőségek\n• Folyamatos fejlődési lehetőségek\n• Jó fizetés és karrierlehetőségek\n\nA webfejlesztők képesek hatékony, felhasználóbarát és modern weboldalakat készíteni, amelyek milliókat érhetnek el világszerte.",
+      "image": "/images/importance.jpg",
+      "codeExample": null,
+      "keyPoints": [
+        "Minden vállalkozásnak szüksége van online jelenlétre",
+        "Webfejlesztők keresettek a munkaerőpiacon",
+        "Kreatív és jól fizető karrierlehetőség"
+      ],
+      "statistics": [
+        {
+          "label": "Webfejlesztő állások növekedése",
+          "value": "13%",
+          "period": "2020-2030"
+        },
+        {
+          "label": "Átlagfizetés (junior)",
+          "value": "400-600k Ft",
+          "period": "havonta"
+        },
+        {
+          "label": "Távmunka lehetőség",
+          "value": "85%",
+          "period": "pozíciók"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mit fogsz tanulni?",
+      "content": "Ebben a kurzusban lépésről lépésre megtanulod a webfejlesztés alapjait. A gyakorlati projekteken keresztül sajátíthatod el a tudást, és a kurzus végére képes leszel saját weboldalakat készíteni.\n\n**Kurzus tartalma:**\n1. **HTML5** - Weboldalak szerkezete\n2. **CSS3** - Design és megjelenés\n3. **JavaScript** - Interaktivitás és programozás\n4. **Gyakorlati projektek** - Valós alkalmazások\n\nMinden leckéhez tartoznak gyakorlati feladatok, kvízek és projektek, amelyek segítenek elmélyíteni a tudást.",
+      "image": "/images/learning-path.jpg",
+      "codeExample": "// Az első JavaScript kódod\nconsole.log('Hello, World!');\n\n// Változók létrehozása\nconst name = 'Fejlesztő';\nlet age = 25;\n\n// Függvény definiálása\nfunction greet(name) {\n    return `Szia, ${name}! Üdvözöl a webfejlesztés világában!`;\n}\n\n// Függvény hívása\nconsole.log(greet('Anna'));",
+      "keyPoints": [
+        "Gyakorlati megközelítés valós projektekkel",
+        "Lépésről lépésre haladás",
+        "Kvízek és feladatok minden leckéhez"
+      ],
+      "roadmap": [
+        {
+          "week": 1,
+          "topic": "HTML alapok",
+          "description": "Tagek, szerkezet, szemantikus HTML"
+        },
+        {
+          "week": 2,
+          "topic": "CSS alapok",
+          "description": "Szelektorok, box model, layout"
+        },
+        {
+          "week": 3,
+          "topic": "JavaScript alapok",
+          "description": "Változók, függvények, DOM manipuláció"
+        },
+        {
+          "week": 4,
+          "topic": "Projekt",
+          "description": "Saját weboldal készítése"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "type": "documentation",
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "description": "A legteljesebb webfejlesztési dokumentáció"
+    },
+    {
+      "type": "tool",
+      "title": "Visual Studio Code",
+      "url": "https://code.visualstudio.com/",
+      "description": "Ingyenes és népszerű kódszerkesztő"
+    },
+    {
+      "type": "practice",
+      "title": "CodePen",
+      "url": "https://codepen.io/",
+      "description": "Online kód playground"
+    }
+  ]
+}

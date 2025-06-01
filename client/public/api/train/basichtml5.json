@@ -1,0 +1,848 @@
+{
+  "courseInfo": {
+    "id": 2,
+    "title": "HTML5 Alapok",
+    "version": "1.0.0",
+    "author": "Webfejlesztés Akadémia",
+    "lastUpdated": "2024-01-15"
+  },
+  "pages": [
+    {
+      "id": 1,
+      "title": "Mi a HTML?",
+      "content": "A **HTML** (HyperText Markup Language) a weboldalak szerkezetének leírására szolgáló jelölőnyelv. A HTML5 a legújabb verziója, amely számos új elemet és funkcionalitást tartalmaz.\n\n**HTML jellemzői:**\n• Jelölőnyelv (markup language), nem programozási nyelv\n• Tagekkel (tags) dolgozik\n• Hierarchikus szerkezet\n• Böngészők értelmezik és jelenítik meg\n\nA HTML a web gerince - minden weboldal HTML alapokon nyugszik, még akkor is, ha modern keretrendszereket használunk.",
+      "image": "/images/html-structure.jpg",
+      "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Az első HTML oldalam</title>\n</head>\n<body>\n    <h1>Üdvözöl a HTML!</h1>\n    <p>Ez az első bekezdésem HTML-ben.</p>\n    <p>A HTML segítségével strukturált tartalmat hozhatok létre.</p>\n</body>\n</html>",
+      "keyPoints": [
+        "HTML = HyperText Markup Language",
+        "Jelölőnyelv, tagekkel dolgozik",
+        "Minden weboldal alapja"
+      ],
+      "htmlStructure": {
+        "doctype": "Dokumentum típus deklaráció",
+        "html": "Gyökér elem, az egész oldal",
+        "head": "Metaadatok, nem látható tartalom",
+        "body": "Látható tartalom"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Alapvető HTML tagek",
+      "content": "A HTML tagek építőkövei a weboldalaknak. Minden tag egy adott célt szolgál és specifikus tartalmat jelöl.\n\n**Legfontosabb tagek:**\n• **Címsorok**: h1, h2, h3, h4, h5, h6\n• **Bekezdések**: p\n• **Konténerek**: div, span\n• **Linkek**: a\n• **Képek**: img\n• **Listák**: ul, ol, li\n• **Táblázatok**: table, tr, td, th\n\nMinden tag lehet önzáró (mint az img) vagy páros (mint a p).",
+      "image": "/images/html-tags.jpg",
+      "codeExample": "<!-- Címsorok hierarchiája -->\n<h1>Főcím (legfontosabb)</h1>\n<h2>Alcím</h2>\n<h3>Kisebb cím</h3>\n\n<!-- Bekezdések és szövegformázás -->\n<p>Ez egy <strong>fontos</strong> bekezdés.</p>\n<p>Ez egy <em>kiemelt</em> szövegrész.</p>\n\n<!-- Linkek -->\n<a href=\"https://example.com\" target=\"_blank\">Külső link</a>\n<a href=\"#section1\">Belső link</a>\n\n<!-- Képek -->\n<img src=\"kep.jpg\" alt=\"Kép leírása\">",
+      "keyPoints": [
+        "Címsorok: h1-h6",
+        "Bekezdések: p",
+        "Konténerek: div, span",
+        "Linkek: a",
+        "Képek: img",
+        "Listák: ul, ol, li",
+        "Táblázatok: table, tr, td, th"
+      ],
+      "htmlStructure": {
+        "h1-h6": "Címsorok, hierarchikus szerkezet",
+        "p": "Bekezdések",
+        "div, span": "Konténerek, szakaszok",
+        "a": "Linkek, hivatkozások",
+        "img": "Képek, vizuális tartalom",
+        "ul, ol, li": "Listák",
+        "table, tr, td, th": "Táblázatok"
+      }
+    },
+    {
+    "id": 3,
+    "title": "Szemantikus HTML elemek",
+    "content": "A szemantikus HTML elemek segítenek a weboldal szerkezetének és jelentésének egyértelmű megjelenítésében. Segítségükkel a keresőmotorok és a segédeszközök (pl. képernyőolvasók) könnyebben értelmezik a weboldal tartalmát.\n\n**Legfontosabb szemantikus tagek:**\n• **Fejléc**: header\n• **Navigáció**: nav\n• **Fő tartalom**: main\n• **Cikk**: article\n• **Szekció**: section\n• **Kiegészítő tartalom**: aside\n• **Lábléc**: footer\n\nEzek a tagek nem csak esztétikai célt szolgálnak, hanem funkciójuk is van az információ értelmezésében.",
+    "image": "/images/semantic-html.jpg",
+    "codeExample": "<!-- Oldal felépítése szemantikus elemekkel -->\n<header>\n<h1>Weboldal címe</h1>\n</header>\n<nav>\n<ul>\n<li><a href=\"https://example.com\"><!-- Főoldal --></a></li>\n<li><a href=\"https://example.com\" target=\"_blank\"><!-- Kapcsolat --></a></li>\n</ul>\n</nav>\n<h2>Alcím</h2>\n<h3>Kisebb cím</h3>\n\n<!-- Bekezdések és szövegformázás -->\n<p>Ez egy <strong>fontos</strong> bekezdés.</p>\n<p>Ez egy <em>kiemelt</em> szövegrész.</p>\n\n<!-- Linkek -->\n<a href=\"https://example.com\" target=\"_blank\">Külső link</a>\n<a href=\"#section1\">Belső link</a>\n\n<!-- Képek -->\n<img src=\"kep.jpg\" alt=\"Kép leírása\">\n<main>\n<article>\n<h2>Cikk címe</h2>\n<p>A cikk tartalma...</p>\n</article>\n<aside>\n<p>Kiegészítő információ</p>\n</aside>\n</main>\n<footer>\n<p>Elérhetőségek</p>\n<p>© 2025 Minden jog fenntartva.</p>\n</footer>",
+    "keyPoints": [
+        "header: oldal fejléc",
+        "nav: navigációs menü",
+        "main: fő tartalom",
+        "article: önálló tartalmi egység",
+        "section: logikai tartalmi szakasz",
+        "aside: kiegészítő tartalom",
+        "footer: oldal lábléc"
+    ],
+    "htmlStructure": {
+        "header": "Fejléc, pl. logó és cím",
+        "nav": "Navigációs linkek gyűjtőhelye",
+        "main": "Oldal fő tartalma",
+        "article": "Önálló tartalom, cikk",
+        "section": "Logikai egység a tartalomban",
+        "aside": "Kiegészítő információk",
+        "footer": "Lábléc, elérhetőségek, jogi információ"
+    }
+},
+    {
+    "id": 4,
+    "title": "HTML Űrlapok (Forms)",
+    "content": "Az űrlapok segítségével adatokat kérhetünk be a felhasználótól. A HTML űrlapok rendkívül sokoldalúak, és számos típusú bemenetet támogatnak – szöveg, szám, jelszó, választómező, jelölőnégyzet stb.\n\n**Űrlap alap tagek:**\n• **<form>** – az űrlap konténere\n• **<input>** – beviteli mező\n• **<label>** – a mezők címkéje\n• **<textarea>** – több soros szövegbevitel\n• **<select>, <option>** – legördülő lista\n• **<button>** vagy **<input type=\"submit\">** – űrlap elküldése\n\nAz attribútumok, mint például a `name`, `id`, `placeholder`, `required` segítik a funkcionalitást és a hozzáférhetőséget.",    "image": "/images/html-forms.jpg",
+    "codeExample": "<!-- Egyszerű űrlap -->\n<form action=\"/submit\" method=\"post\">\n  <label for=\"name\">Név:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Írd be a neved\" required>\n\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"valami@email.com\" required>\n\n  <label for=\"message\">Üzenet:</label>\n  <textarea id=\"message\" name=\"message\"></textarea>\n\n  <button type=\"submit\">Küldés</button>\n</form>",    
+    "keyPoints": [
+        "form: az űrlap fő konténere",
+        "input: beviteli mezők (text, email, password, checkbox, stb.)",
+        "label: a mező címkéje, segíti a hozzáférhetőséget",
+        "textarea: többsoros szövegmező",
+        "select és option: legördülő menük",
+        "button: interakciók, űrlap beküldése",
+        "required, placeholder, name: mezőfunkciókat segítő attribútumok"
+    ],
+    "htmlStructure": {
+        "form": "Az űrlap konténer eleme",
+        "input": "Egyedi beviteli mező típus",
+        "label": "Címke, amely az inputhoz kapcsolódik",
+        "textarea": "Több soros szövegbevitel",
+        "select": "Legördülő lista választáshoz",
+        "button": "Űrlap elküldése vagy eseményindítás"
+    }
+},
+    {
+  "id": 5,
+  "title": "Multimédia beillesztés",
+  "content": "A HTML lehetőséget nyújt képek, hangok, videók és más multimédiás tartalmak beágyazására.\n\n**Támogatott multimédia elemek:**\n• **Képek**: <img>\n• **Videó**: <video>, <source>\n• **Audió**: <audio>, <source>\n• **Beágyazott weboldal**: <iframe>\n\nA médialejátszók (video, audio) HTML5-ben natívan támogatottak, nem igényelnek külső plugin-t (mint régen a Flash).",
+  "image": "/images/html-multimedia.jpg",
+  "codeExample": "<!-- Kép beillesztése -->\n<img src=\"kutya.jpg\" alt=\"Egy aranyos kutya\" width=\"300\">\n\n<!-- Videó beágyazása -->\n<video controls width=\"400\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  A böngésző nem támogatja a videólejátszást.\n</video>\n\n<!-- Audió beágyazása -->\n<audio controls>\n  <source src=\"hang.mp3\" type=\"audio/mpeg\">\n  A böngésző nem támogatja a hanglejátszást.\n</audio>\n\n<!-- Iframe példa (pl. YouTube videó) -->\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" title=\"YouTube videó\" frameborder=\"0\" allowfullscreen></iframe>",
+  "keyPoints": [
+    "img: kép beillesztése, fontos az alt attribútum",
+    "video: videólejátszó HTML-ben",
+    "audio: hang lejátszása HTML-ben", 
+    "source: több médiaformátum támogatása",
+    "iframe: külső webes tartalom beágyazása (pl. Google Maps, YouTube)"
+  ],
+  "htmlStructure": {
+    "img": "Kép beszúrása az oldalra",
+    "video": "Videólejátszó, a controls attribútum vezérlőket ad",
+    "audio": "Hangfájl lejátszása az oldalon",
+    "source": "Médiaforrás megadása audio/video elemen belül",
+    "iframe": "Másik weboldal beágyazása egy keretbe"
+  }
+},
+    {
+  "id": 6,
+  "title": "Táblázatok használata",
+  "content": "A HTML táblázatok lehetővé teszik adatok strukturált megjelenítését sorokban és oszlopokban.\n\n**Alapelemek:**\n• <table>: a táblázat konténere\n• <tr>: sor (table row)\n• <td>: adatcellák (table data)\n• <th>: fejléc cellák (table header)\n\n**Haladó attribútumok:**\n• colspan – cella egyesítése több oszlopon át\n• rowspan – cella egyesítése több soron át",
+  "image": "/images/html-table.jpg",
+  "codeExample": "<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Név</th>\n      <th>Kor</th>\n      <th>Ország</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Anna</td>\n      <td>24</td>\n      <td>Magyarország</td>\n    </tr>\n    <tr>\n      <td>Béla</td>\n      <td>30</td>\n      <td>Szlovákia</td>\n    </tr>\n  </tbody>\n</table>",
+  "keyPoints": [
+    "table: táblázat kezdete",
+    "tr: sor (row)",
+    "td: adatcella", 
+    "th: fejléc cella, alapból félkövér és középre zárt",
+    "colspan és rowspan: cellák egyesítése"
+  ],
+  "htmlStructure": {
+    "table": "A teljes táblázatot definiálja",
+    "thead": "Fejléc rész",
+    "tbody": "Adat rész",
+    "tr": "Egy táblázatsor",
+    "td": "Egy adatmező cella",
+    "th": "Egy fejléc cella"
+  }  
+},
+{
+  "id": 7,
+  "title": "HTML hozzáférhetőség (Accessibility)",
+  "content": "A webes hozzáférhetőség célja, hogy minden felhasználó – függetlenül képességeitől – teljes értékűen használni tudja a weboldalt.\n\n**Fontos szempontok:**\n• Képekhez használjunk alt attribútumot\n• Label és input párosítása\n• Navigáció logikus és billentyűzettel is használható legyen\n• Használjunk szemantikus HTML-t\n• ARIA attribútumok csak szükség esetén",
+  "image": "/images/html-accessibility.jpg",
+  "codeExample": "<label for=\"email\">Email:</label>\n<input type=\"email\" id=\"email\" name=\"email\" required aria-required=\"true\">\n\n<img src=\"grafikon.png\" alt=\"2024-es bevételi grafikon\">",
+  "keyPoints": [
+    "alt: kép szöveges leírása",
+    "label-for: input mezők párosítása a címkével",
+    "aria-*: segítő attribútumok képernyőolvasók számára",
+    "Szemantikus HTML segíti az akadálymentesítést",
+    "Billentyűzet-navigálhatóság"
+  ],
+  "htmlStructure": {
+    "alt": "Képek leírása képernyőolvasóknak",
+    "label": "Címke, ami segíti a mező megértését",
+    "aria-required": "Kijelöli, hogy a mező kötelező",
+    "role": "Szemantikai szerep – csak ha nincs natív HTML megoldás"
+  }
+},
+  {
+  "id": 8,
+  "title": "SEO alapelvek HTML szinten",
+  "content": "A keresőoptimalizálás (SEO) célja, hogy a weboldal minél előkelőbb helyen szerepeljen a keresőmotorok találati listáján.\n\n**Fontos HTML elemek SEO szempontból:**\n• <title> – oldal címe (fontos a találati listákban)\n• <meta name=\"description\"> – rövid összefoglaló\n• Címsorok helyes hierarchiában (h1-h6)\n• Képekhez alt attribútum\n• Belső linkelés, anchor hivatkozások\n\nA jól strukturált, szemantikus HTML segíti a keresőmotorokat a tartalom megértésében.",
+  "image": "/images/html-seo.jpg",
+  "codeExample": "<head>\n  <title>Prémium Kávék – Webshop</title>\n  <meta name=\"description\" content=\"Vásárolj prémium minőségű kávét házhozszállítással.\">\n</head>\n\n<h1>Főoldal</h1>\n<h2>Termékeink</h2>\n<img src=\"kave.jpg\" alt=\"Kávécsomag eszpresszóval\">",
+  "keyPoints": [
+    "title: megjelenik a Google találati címében",
+    "meta description: rövid összefoglaló az oldalról",
+    "h1-h6: logikus címsorstruktúra",
+    "alt: képek leírása",
+    "belső linkek: segítik a navigációt és indexelést"
+  ],
+  "htmlStructure": {
+    "title": "A böngésző és a keresőmotorok által olvasott cím",
+    "meta description": "Rövid összegzés, amit a Google is felhasználhat",
+    "h1-h6": "Tartalom hierarchiája",
+    "alt": "A képek tartalmának leírása",
+    "a href": "Linkek más oldalakra vagy az oldalon belül"
+  }
+},
+   {
+  "id": 9,
+  "title": "Linkek és navigációs rendszerek",
+  "content": "A weboldalak egyik legfontosabb eleme a navigáció, amely lehetővé teszi a felhasználók számára, hogy könnyen eligazodjanak az oldalon belül vagy más weboldalak között. A linkek használata és a jól megtervezett navigációs rendszer javítja a felhasználói élményt és segíti a keresőmotorokat a weboldal feltérképezésében.\n\n**Linkek fajtái:**\n• Belső linkek: az oldalon belüli navigációt segítik, például menüpontok vagy horgonyszövegek segítségével.\n• Külső linkek: más weboldalakra mutatnak.\n• Horgony linkek: az oldalon belül egy adott szakaszra ugranak.\n\n**Navigációs rendszerek:**\n• Főmenü: általában az oldal tetején vagy oldalán található, főbb tartalmi részek eléréséhez.\n• Lábjegyzet (footer): további információk, kapcsolat, jogi nyilatkozatok.\n• Kenyérmorzsa navigáció (breadcrumb): segít visszakövetni a navigációs útvonalat.\n\nMegfelelő linkelés és navigáció segíti a felhasználókat, hogy gyorsan megtalálják, amit keresnek, valamint optimalizálja az oldal SEO-ját.",
+  "image": "/images/navigation-links.jpg",
+  "codeExample": "<nav>\n  <ul>\n    <li><a href=\"index.html\">Főoldal</a></li>\n    <li><a href=\"termekek.html\">Termékek</a></li>\n    <li><a href=\"kapcsolat.html\">Kapcsolat</a></li>\n  </ul>\n</nav>\n\n<a href=\"#section2\">Ugrás a második szakaszra</a>\n\n<section id=\"section2\">\n  <h2>Második szakasz</h2>\n  <p>Tartalom...</p>\n</section>",
+  "keyPoints": [
+    "Belső linkek: oldalon belüli navigációhoz",
+    "Külső linkek: más oldalak elérése",
+    "Horgony linkek: adott szakaszokra ugrás",
+    "Főmenü és lábjegyzet a legfontosabb navigációs elemek",
+    "Kenyérmorzsa segíti a tájékozódást a mélyebb oldalszerkezetben"
+  ],
+  "htmlStructure": {
+    "nav": "Navigációs menüt jelölő elem",
+    "ul": "Lista, amely a menüpontokat tartalmazza",
+    "li": "Listaelem, egy menüpontot képvisel",
+    "a href": "Link más oldalra, vagy az oldalon belülre",
+    "id": "Horgony az oldalon belüli linkhez"
+  }
+},
+    {
+  "id": 10,
+  "title": "Metaadatok és a head szekció – részletes útmutató",
+  "content": "A HTML dokumentum <head> szekciója kritikus szerepet tölt be a weboldal felépítésében és működésében. Ez az a rész, ahol olyan metaadatokat helyezünk el, amelyek nem jelennek meg közvetlenül a weboldal tartalmaként, de meghatározzák az oldal működését, megjelenését, valamint befolyásolják a keresőmotorok általi indexelést és a felhasználói élményt.\n\n**Miért fontos a head szekció?**\n- Meghatározza az oldal címét, amely a böngésző fülén és a keresők találati listájában jelenik meg.\n- Tartalmazza a karakterkódolást, amely biztosítja a helyes szövegmegjelenítést.\n- Lehetővé teszi a CSS és JavaScript fájlok csatolását, így elkülönítve a megjelenést és működést a tartalomtól.\n- Meghatározza a reszponzív megjelenés beállításait, hogy az oldal mobil eszközökön is jól nézzen ki.\n- Egyes metaadatok segítik a közösségi média megosztásokat és SEO-t.\n\n---\n\n**Fontos elemek részletesen:**\n\n1. **<title>**\nAz oldal címe, amely megjelenik a böngésző fülén és a keresők találati listájában. Egyértelműnek és relevánsnak kell lennie.\n\n2. **<meta charset>**\nA karakterkódolás meghatározása, általában UTF-8-at használunk, ami támogatja a legtöbb nyelvet és speciális karaktert.\n\n3. **<meta name=\"description\">**\nEz egy rövid, maximum 150-160 karakteres összefoglaló az oldal tartalmáról. Keresőmotorok gyakran ezt jelenítik meg a találati listában.\n\n4. **<meta name=\"keywords\">**\nKulcsszavak felsorolása, amelyek segíthetik a keresőoptimalizálást, bár manapság egyre kevésbé számít ez a metaadat.\n\n5. **<meta name=\"viewport\">**\nEz biztosítja, hogy az oldal reszponzívan jelenjen meg különböző eszközökön, például mobiltelefonokon és tableteken.\n\n6. **<link>**\nKülső erőforrások (pl. CSS fájlok, ikonok) csatolására szolgál.\n\n7. **<script>**\nJavaScript fájlok vagy inline kódok elhelyezése, amelyek interaktivitást adnak az oldalnak.\n\n8. **Egyéb metaadatok:**\n- Open Graph meta tag-ek: közösségi média megosztás optimalizálására.\n- Robots meta tag: megmondja a keresőmotoroknak, hogy indexeljék-e az oldalt.\n\n---\n\n**Példa egy részletes head szekcióra:**\n\n```html\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"Prémium minőségű termékek webshopja, gyors házhozszállítással.\">\n  <meta name=\"keywords\" content=\"prémium, webshop, termékek, házhozszállítás\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <meta property=\"og:title\" content=\"Prémium Termékek Webshop\">\n  <meta property=\"og:description\" content=\"Vásárolj nálunk prémium termékeket gyors és megbízható házhozszállítással.\">\n  <meta property=\"og:image\" content=\"/images/og-image.jpg\">\n  <title>Prémium Termékek Webshop</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n  <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">\n  <script src=\"main.js\" defer></script>\n</head>\n```\n\n---\n\n**Legfontosabb tanulságok:**\n\n- A head szekció a weboldal „rejtett vezérlőközpontja”.\n- Metaadatok segítenek a SEO-ban és a felhasználói élmény javításában.\n- Mindig ügyeljünk a helyes karakterkódolásra és reszponzív beállításokra.\n- Külső fájlokat (CSS, JS) érdemes defer vagy async attribútummal betölteni a jobb teljesítmény érdekében.\n\nEz az alapja annak, hogy egy modern, keresőbarát és jól működő weboldalt hozzunk létre.",
+  "image": "/images/html-head-detailed.jpg",
+  "codeExample": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"Prémium minőségű termékek webshopja, gyors házhozszállítással.\">\n  <meta name=\"keywords\" content=\"prémium, webshop, termékek, házhozszállítás\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <meta property=\"og:title\" content=\"Prémium Termékek Webshop\">\n  <meta property=\"og:description\" content=\"Vásárolj nálunk prémium termékeket gyors és megbízható házhozszállítással.\">\n  <meta property=\"og:image\" content=\"/images/og-image.jpg\">\n  <title>Prémium Termékek Webshop</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n  <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">\n  <script src=\"main.js\" defer></script>\n</head>",
+  "keyPoints": [
+    "A <head> szekció metaadatokat és erőforrásokat tartalmaz, nem látható tartalmat.",
+    "A <title> fontos SEO és felhasználói szempontból.",
+    "A <meta charset> biztosítja a helyes karaktermegjelenítést.",
+    "A <meta description> segíti a keresők találati listáját és a felhasználók tájékozódását.",
+    "A viewport meta tag biztosítja a mobilbarát megjelenést.",
+    "Open Graph metaadatok segítik a közösségi média megjelenést.",
+    "A link elemekkel csatoljuk a CSS-t és ikonokat.",
+    "A script elemek JavaScript kódokat töltenek be, amelyet defer vagy async attribútummal érdemes optimalizálni."
+  ],
+  "htmlStructure": {
+    "head": "A dokumentum fejléce, metaadatokat és erőforrásokat tartalmaz",
+    "title": "Az oldal címe, megjelenik a böngésző fülén és keresőkben",
+    "meta charset": "Karakterkódolás beállítása (pl. UTF-8)",
+    "meta description": "Rövid összefoglaló a keresőmotoroknak",
+    "meta keywords": "Kulcsszavak listája, SEO célokra",
+    "meta viewport": "Reszponzív megjelenést szabályozza mobil eszközökön",
+    "meta robots": "Indexelési szabályok keresőrobotok számára",
+    "meta property og:title": "Open Graph cím közösségi médiához",
+    "link rel stylesheet": "Külső CSS fájlok csatolása",
+    "link rel icon": "Weboldal ikonja (favicon)",
+    "script": "JavaScript fájl vagy kód betöltése, optimalizált attribútumokkal"
+  }
+},
+    {
+  "id": 11,
+  "title": "HTML dokumentumstruktúra és validáció – részletes útmutató",
+  "content": "A HTML dokumentum struktúrája alapvető fontosságú a weboldalak helyes működéséhez, megjelenítéséhez és keresőmotorok általi feldolgozásához. Egy jól felépített dokumentum könnyen karbantartható, érthető a fejlesztők számára, és megfelel a webes szabványoknak.\n\n**HTML dokumentum alapjai:**\nMinden HTML dokumentum egy szabványos szerkezetet követ, amely biztosítja a tartalom logikus elrendezését és helyes értelmezését.\n\n---\n\n**Fontos dokumentum elemek:**\n\n1. **<!DOCTYPE html>**\nEz a deklaráció jelzi a böngészőknek, hogy a dokumentum HTML5 szabványnak megfelelő, így megfelelően értelmezik a kódot.\n\n2. **<html> elem**\nA dokumentum gyökéreleme, amely minden többi elemet tartalmaz.\n\n3. **<head> szekció**\nA dokumentum metaadatait, stílusait és szkriptjeit tartalmazza.\n\n4. **<body> szekció**\nA tényleges megjelenő tartalmat tartalmazza: szövegek, képek, linkek, űrlapok stb.\n\n---\n\n**HTML dokumentum minimális szerkezete:**\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Példa oldal</title>\n</head>\n<body>\n  <h1>Üdvözlünk a weboldalon!</h1>\n  <p>Ez egy egyszerű HTML dokumentum példa.</p>\n</body>\n</html>\n```\n\n---\n\n**Miért fontos a dokumentumstruktúra?**\n- A böngészők és keresőmotorok ennek alapján értelmezik az oldalt.\n- A strukturált HTML elősegíti az akadálymentességet (pl. képernyőolvasók számára).\n- A jól strukturált kód könnyen karbantartható és bővíthető.\n\n---\n\n### HTML validáció\n\nA validáció során ellenőrizzük, hogy a HTML kód megfelel-e az érvényes szabványoknak (pl. HTML5). Ez segít elkerülni a hibákat, böngésző kompatibilitási problémákat és javítja a weboldal minőségét.\n\n**Validáció előnyei:**\n- Hibák felismerése és javítása.\n- Jobb keresőoptimalizálás.\n- Megbízhatóbb és egységes megjelenés minden böngészőben.\n\n**Validáló eszközök:**\n- [W3C Markup Validation Service](https://validator.w3.org/)\n- Egyes fejlesztői eszközök beépített validátorai (pl. Visual Studio Code pluginok).\n\n---\n\n**Tipikus validációs hibák:**\n- Hiányzó vagy helytelen DOCTYPE deklaráció.\n- Nem megfelelően zárt HTML tagek.\n- Érvénytelen vagy helytelen attribútumok.\n- Felesleges vagy duplikált elemek.\n\n---\n\n**Helyes dokumentum példa valid HTML5 kóddal:**\n\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Érvényes HTML5 oldal</title>\n</head>\n<body>\n  <header>\n    <h1>Főcím</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Alcím</h2>\n      <p>Ez egy bekezdés egy szekcióban.</p>\n    </section>\n  </main>\n  <footer>\n    <p>Szerzői jog © 2025</p>\n  </footer>\n</body>\n</html>\n```\n\n---\n\n### Tippek a helyes dokumentum felépítéshez\n\n- Mindig használd az érvényes <!DOCTYPE html> deklarációt.\n- Használj nyelvi attribútumot (<html lang=\"hu\">), hogy segítsd a keresőket és olvasókat.\n- Zárd le minden HTML taget megfelelően.\n- Használj szemantikus elemeket (header, main, section, article, footer) a jobb érthetőségért.\n- Kerüld a felesleges div-eket, használj inkább megfelelő HTML5 elemeket.\n- Ellenőrizd rendszeresen a kódot validátorral.\n\n---\n\n### Összefoglaló kulcspontok\n\n- A HTML dokumentum jól strukturált, szabványos elemekből áll.\n- A validáció biztosítja a hibamentes, szabványnak megfelelő kódot.\n- A dokumentum felépítése és validációja fontos a keresőoptimalizálás és felhasználói élmény miatt.\n- Szemantikus elemek használata ajánlott.\n\n---\n\nEz az alapja annak, hogy professzionális és jól működő weboldalakat hozzunk létre.",
+  "image": "/images/html-structure-validation.jpg",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Érvényes HTML5 oldal</title>\n</head>\n<body>\n  <header>\n    <h1>Főcím</h1>\n  </header>\n  <main>\n    <section>\n      <h2>Alcím</h2>\n      <p>Ez egy bekezdés egy szekcióban.</p>\n    </section>\n  </main>\n  <footer>\n    <p>Szerzői jog © 2025</p>\n  </footer>\n</body>\n</html>",
+  "keyPoints": [
+    "<!DOCTYPE html> deklaráció kötelező az érvényes HTML5 dokumentumhoz.",
+    "<html> elem a dokumentum gyökéreleme, lang attribútummal a nyelv megadása fontos.",
+    "<head> szekció tartalmazza a metaadatokat, stílusokat és szkripteket.",
+    "<body> szekció a megjelenő tartalmat tartalmazza.",
+    "Szemantikus HTML5 elemek használata javítja az olvashatóságot és SEO-t.",
+    "HTML validációval ellenőrizhető a szabványosság és hibák kiszűrése.",
+    "Validátor példák: W3C Markup Validation Service.",
+    "A helyes tag lezárás és struktúra alapvető a böngésző kompatibilitás miatt."
+  ],
+  "htmlStructure": {
+    "DOCTYPE": "HTML5 szabvány deklarációja",
+    "html": "A dokumentum gyökéreleme, lang attribútummal a nyelv megadása",
+    "head": "Metaadatok, stílusok, szkriptek helye",
+    "body": "A megjelenő tartalom helye",
+    "header": "Fejléc szekció, általában a főcímekkel",
+    "main": "A fő tartalom területe",
+    "section": "Logikailag elkülönített tartalmi egység",
+    "footer": "Lábléc, pl. szerzői jogi információk"
+  }
+},
+    {
+  "id": 12,
+  "title": "Gyakori HTML attribútumok – részletes útmutató",
+  "content": "A HTML attribútumok lehetővé teszik, hogy kiegészítő információkat adjunk a HTML elemekhez, beállításokat alkalmazzunk, és szabályozzuk a viselkedésüket. Az attribútumok minden HTML elemnél kulcsszerepet játszanak, különösen a használhatóság, akadálymentesség, SEO és a webes interakciók terén.\n\n---\n\n### Az attribútumok alapjai\n\n- Minden attribútum **kulcs=\"érték\"** formában jelenik meg.\n- Az attribútumokat mindig az elem nyitó tagjén belül kell megadni.\n- Több attribútum is megadható egy elemnél, szóközzel elválasztva.\n\nPélda:\n```html\n<a href=\"https://example.com\" target=\"_blank\" title=\"Kattints ide\">Link</a>\n```\n\n---\n\n### Gyakori HTML attribútumok részletesen\n\n#### 1. `id` és `class`\n- **id**: Egyedi azonosító, ami egy HTML elemet azonosít.\n- **class**: Osztálynév, amivel több elem csoportosítható (pl. CSS-hez vagy JavaScript-hez).\n\n```html\n<div id=\"fooldal\" class=\"doboz kiemelt\">...</div>\n```\n\n#### 2. `href` és `target` (linkeknél)\n- **href**: A link célját határozza meg.\n- **target**: Megmondja, hol nyíljon meg a link (`_blank` = új ablak).\n\n```html\n<a href=\"https://example.com\" target=\"_blank\">Külső oldal</a>\n```\n\n#### 3. `src` és `alt` (képeknél)\n- **src**: A kép elérési útja.\n- **alt**: Alternatív szöveg, ami akadálymentesség és SEO szempontból is fontos.\n\n```html\n<img src=\"logo.png\" alt=\"Cég logója\">\n```\n\n#### 4. `title`\n- Tooltipként megjelenő szöveget ad az elemhez.\n\n```html\n<p title=\"További információ\">Szöveg</p>\n```\n\n#### 5. `style`\n- Inline stílusokat ad az elemhez CSS formában.\n\n```html\n<div style=\"color: blue; background-color: yellow;\">Színes doboz</div>\n```\n\n#### 6. `disabled`, `readonly`, `required` (űrlapmezőkhöz)\n- **disabled**: Letiltja az elemet.\n- **readonly**: Csak olvashatóvá teszi.\n- **required**: Kötelező mezővé teszi a beküldéshez.\n\n```html\n<input type=\"text\" value=\"Nem szerkeszthető\" readonly>\n```\n\n#### 7. `name`, `value` (űrlap elemekhez)\n- **name**: A mező neve (pl. beküldéskor).\n- **value**: Az alapértelmezett érték.\n\n```html\n<input type=\"text\" name=\"vezeteknev\" value=\"Kovács\">\n```\n\n#### 8. `type` (input elemeken)\n- Meghatározza az űrlapmező típusát (pl. `text`, `email`, `password`).\n\n```html\n<input type=\"email\" placeholder=\"Email címed\">\n```\n\n#### 9. `placeholder`\n- Helyőrző szöveg, ami akkor látszik, ha nincs beírt érték.\n\n```html\n<input type=\"text\" placeholder=\"Írj ide valamit...\">\n```\n\n#### 10. `lang` (html elemnél)\n- A dokumentum nyelvét jelzi, fontos a keresőmotorok és akadálymentesség miatt.\n\n```html\n<html lang=\"hu\">\n```\n\n---\n\n### Egyéb hasznos attribútumok\n\n| Attribútum | Funkció |\n|-----------|---------|\n| tabindex  | Billentyűzet navigáció sorrendjének meghatározása |\n| aria-*    | Akadálymentességi metaadatok (képernyőolvasókhoz) |\n| data-*    | Egyedi, fejlesztői célú adatok tárolása (JavaScript-hez) |\n| draggable | Meghatározza, hogy egy elem húzható-e vagy sem |\n| hidden    | Az elem rejtve van, de a DOM-ban marad |\n\n```html\n<div data-userid=\"753\" hidden>Rejtett információ</div>\n```\n\n---\n\n### Összefoglaló\n- A HTML attribútumok segítségével szabályozhatod az elemek viselkedését és megjelenését.\n- Egyes attribútumok kötelezőek (pl. `src` képeknél), mások választhatók, de ajánlottak.\n- Személyre szabott adatokat (`data-*`) is tárolhatsz kliensoldali műveletekhez.\n- Az attribútumok kombinálásával interaktívabb, hozzáférhetőbb és professzionálisabb weboldalakat hozhatsz létre.",
+  "image": "/images/html-attributes.jpg",
+  "codeExample": "<a href=\"https://example.com\" target=\"_blank\" title=\"Ugrás a weboldalra\">Kattints ide</a>\n\n<img src=\"logo.png\" alt=\"A cég logója\">\n\n<input type=\"email\" name=\"email\" placeholder=\"Email címed\" required>",
+  "keyPoints": [
+    "Attribútumok kulcs=\"érték\" formában jelennek meg.",
+    "`href`, `src`, `alt`, `title` attribútumok gyakoriak a linkeknél és képeknél.",
+    "Az `id` egyedi elem-azonosító, a `class` csoportosítást tesz lehetővé.",
+    "Űrlapelemeknél fontos a `name`, `value`, `type`, `required`, `readonly`, `disabled`.",
+    "`lang` meghatározza a dokumentum nyelvét (pl. <html lang=\"hu\">).",
+    "A `data-*` attribútumok egyedi adatokat tárolnak JavaScript célokra.",
+    "A `title` attribútum tooltipként jelenik meg az egér fölé húzásakor.",
+    "`tabindex`, `aria-*` és `hidden` attribútumok a hozzáférhetőség javítására szolgálnak."
+  ],
+  "htmlStructure": {
+    "id": "Egyedi azonosító az elemhez",
+    "class": "Elemek csoportosítása stílus vagy JS célokra",
+    "href": "Link céljának meghatározása",
+    "src": "Kép vagy médiaforrás elérési útja",
+    "alt": "Kép leírása, akadálymentességhez",
+    "title": "Tooltipként megjelenő szöveg",
+    "type": "Inputmező típusa (pl. email, text)",
+    "placeholder": "Űrlapmező helyőrző szövege",
+    "required": "Űrlapmező kötelező kitöltése",
+    "data-*": "Egyéni adatok tárolása (JavaScript által olvasható)"
+  }
+},
+    {
+  "id": 13,
+  "title": "Reszponzív HTML alapok – részletes útmutató",
+  "content": "A reszponzív webdesign célja, hogy a weboldal különböző kijelzőméreteken (mobil, tablet, laptop, asztali) is jól olvasható és használható legyen. Ehhez a HTML-ben és CSS-ben is fontos alapelveket kell alkalmazni, de már HTML szinten is sokat tehetünk a mobilbarát megjelenésért.\n\n---\n\n### Mit jelent a reszponzivitás?\nA reszponzív kialakítás azt jelenti, hogy a weboldal tartalma **dinamikusan igazodik** a képernyő méretéhez és orientációjához. Ez különösen fontos, mivel a felhasználók többsége ma már mobilról böngészik.\n\n---\n\n### Alapvető reszponzív HTML technikák\n\n#### 1. **Viewport meta tag használata**\nA legelső és legfontosabb lépés. Ez a beállítás biztosítja, hogy a böngésző ne asztali nézetet próbáljon megjeleníteni mobilon is.\n\n```html\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n```\n\n- `width=device-width`: a megjelenítő eszköz szélességét használja\n- `initial-scale=1.0`: az alap nagyítási szintet állítja be\n\n#### 2. **Rugalmas képek**\nA képek ne legyenek fix méretűek, hanem igazodjanak a szülőelem méretéhez:\n\n```html\n<img src=\"tajkep.jpg\" alt=\"Tájkép\" style=\"max-width: 100%; height: auto;\">\n```\n\n#### 3. **HTML5 szimantikus elemek használata**\nA logikusan tagolt HTML szerkezet segít a tartalom újrarendezésében CSS segítségével:\n\n- `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`\n- Ezek nem csak reszponzívitásban segítenek, hanem a hozzáférhetőségben és SEO-ban is\n\n#### 4. **Mobilbarát menük kialakítása HTML szinten**\nA menürendszert HTML-ben úgy kell felépíteni, hogy CSS vagy JavaScript segítségével könnyen átalakítható legyen.\n\n```html\n<nav>\n  <ul class=\"menu\">\n    <li><a href=\"#\">Főoldal</a></li>\n    <li><a href=\"#\">Szolgáltatások</a></li>\n    <li><a href=\"#\">Kapcsolat</a></li>\n  </ul>\n</nav>\n```\n\nEhhez később hozzáadható hamburger ikon, összehajtható menü stb.\n\n#### 5. **Rácsszerkezetek alapjai HTML-ben**\nMobilbarát struktúrákhoz fontos a HTML-ben logikusan tagolt tartalom, amit később CSS Grid vagy Flexbox segítségével lehet elrendezni.\n\n```html\n<div class=\"sor\">\n  <div class=\"oszlop\">Tartalom 1</div>\n  <div class=\"oszlop\">Tartalom 2</div>\n</div>\n```\n\nEz CSS-sel mobilon egymás alatt, asztalon egymás mellett jeleníthető meg.\n\n---\n\n### Tippek reszponzív HTML írásához\n- Soha ne használj fix `width` értékeket (pl. `width=\"800\"`). Használj százalékos vagy relatív mértékegységeket.\n- Használj HTML5 elemeket a megfelelő struktúrához.\n- Ne hagyd ki a `alt` attribútumokat a képeknél, hogy azok képernyőolvasóval is értelmezhetők legyenek.\n- A táblázatokat, űrlapokat is érdemes mobilra optimalizálva szerkeszteni.\n\n---\n\n### Haladó HTML attribútumok a reszponzívitásban\n\n#### `sizes` és `srcset` – képek optimalizálása különböző képernyőkhöz\n```html\n<img\n  srcset=\"kiskep.jpg 480w, nagykep.jpg 1200w\"\n  sizes=\"(max-width: 600px) 480px, 1200px\"\n  src=\"nagykep.jpg\"\n  alt=\"Illusztráció\">\n```\nEz a beállítás automatikusan betölti az adott képernyőhöz legjobban illeszkedő képet.\n\n---\n\n### Összefoglalás\n- A reszponzív HTML az alapja a mobilbarát weboldalaknak.\n- A legfontosabb elem a `<meta name=\"viewport\">`, amely nélkül a design nem lesz megfelelő mobilon.\n- Képek, layoutok és struktúrák kialakításakor rugalmas megoldásokat kell alkalmazni.\n- A reszponzivitás nem csak CSS, hanem **jól strukturált, logikus HTML** kérdése is.",
+  "image": "/images/html-responsive.jpg",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Mobilbarát Weboldal</title>\n</head>\n<body>\n  <header>\n    <h1>Weboldal címe</h1>\n  </header>\n  <nav>\n    <ul>\n      <li><a href=\"#\">Kezdőlap</a></li>\n      <li><a href=\"#\">Rólunk</a></li>\n    </ul>\n  </nav>\n  <main>\n    <section>\n      <h2>Bemutatkozás</h2>\n      <p>Üdvözlünk mobilon is optimalizált oldalunkon!</p>\n      <img src=\"tajkep.jpg\" alt=\"Tájkép\" style=\"max-width: 100%; height: auto;\">\n    </section>\n  </main>\n</body>\n</html>",
+  "keyPoints": [
+    "A viewport meta tag kötelező reszponzív kialakításhoz",
+    "A képek legyenek rugalmasak: max-width: 100%, height: auto",
+    "Használj HTML5 elemeket: header, nav, section, main stb.",
+    "A navigáció legyen jól strukturált, menüre optimalizálható",
+    "Strukturált HTML = rugalmas CSS layoutokhoz (pl. Flexbox, Grid)",
+    "Kerüld a fix méreteket, preferáld a százalékos vagy relatív méreteket",
+    "A `srcset` és `sizes` attribútumokkal optimalizálhatók a képek kijelzőnként"
+  ],
+  "htmlStructure": {
+    "meta viewport": "A mobil eszköz szélességéhez igazítja a megjelenést",
+    "img (max-width)": "Kép méretezés eszközfüggetlen módon",
+    "section / article / main": "Logikailag tagolt, rugalmas HTML struktúra",
+    "nav ul li a": "Navigációs rendszer, mobilra optimalizálható",
+    "srcset": "Többféle képformátum megadása kijelzőméret szerint"
+  }
+},
+{
+  "id": 14,
+  "title": "HTML és JavaScript integráció alapjai",
+  "content": "A HTML önmagában csak a weboldal szerkezetét és tartalmát határozza meg, de a JavaScript (JS) lehetővé teszi az interaktivitás és a dinamikus viselkedés hozzáadását. Az integráció során a HTML és JavaScript együttműködve működik, hogy a felhasználói élmény gazdagabb és reszponzívabb legyen.\n\n---\n\n### JavaScript beillesztése HTML-be\nA JavaScript kódot háromféleképpen lehet HTML dokumentumba integrálni:\n\n#### 1. **Beágyazott kód (inline)**\nA `script` elemet közvetlenül a HTML dokumentumban helyezzük el.\n```html\n<script>\n  alert('Üdvözlünk az oldalon!');\n</script>\n```\n\n#### 2. **Külső fájl csatolása**\nA `src` attribútummal hivatkozhatunk egy `.js` fájlra.\n```html\n<script src=\"main.js\"></script>\n```\nEz a módszer átláthatóbb, mivel a logika külön fájlba kerül.\n\n#### 3. **Inline eseménykezelés HTML elemen**\nEgy HTML elemben eseményt kezelhetünk közvetlenül.\n```html\n<button onclick=\"alert('Kattintottál!')\">Kattints ide</button>\n```\nEz egyszerű, de nagyobb projekteknél nem ajánlott – jobb a külön JS kód használata.\n\n---\n\n### Mikor fusson a JavaScript?\nA JS kódot a `<body>` végére szokták helyezni, vagy `defer`/`async` attribútumokat alkalmaznak, hogy ne blokkolja az oldal betöltését.\n```html\n<script src=\"script.js\" defer></script>\n```\n- `defer`: csak a HTML betöltődése után fut le\n- `async`: azonnal betölt és futtat, de nem várja meg a DOM-ot\n\n---\n\n### JavaScript és HTML elemek kapcsolata\nA JS kód HTML elemekre hatással lehet, például módosítja a tartalmukat, stílusukat vagy eseményeket kezel.\n\n#### Példa: Tartalom módosítása\n```html\n<p id=\"szoveg\">Eredeti szöveg</p>\n<button onclick=\"document.getElementById('szoveg').innerText = 'Megváltozott szöveg!'\">\n  Módosítsd a szöveget\n</button>\n```\n\n#### Példa: Kattintás esemény kezelése külön fájlban\n```html\n<!-- HTML -->\n<button id=\"gomb\">Kattints rám!</button>\n<script src=\"main.js\"></script>\n```\n```javascript\n// main.js\ndocument.getElementById('gomb').addEventListener('click', function() {\n  alert('Gombra kattintottál!');\n});\n```\n\n---\n\n### Alapvető DOM műveletek\nA JavaScript a DOM (Document Object Model) segítségével manipulálja a HTML elemeket.\n- `document.getElementById()` – elem kiválasztása az ID alapján\n- `element.innerText` vagy `element.innerHTML` – tartalom módosítása\n- `element.style` – stílusváltozások\n- `addEventListener()` – események kezelése programozottan\n\n---\n\n### Gyakori események\n| Esemény neve | Leírás |\n|--------------|--------|\n| `click` | kattintás |\n| `mouseover` | egér fölé visz |\n| `mouseout` | egér elhagyja az elemet |\n| `keydown` | billentyű lenyomása |\n| `submit` | űrlap elküldése |\n\n---\n\n### HTML + JS működés lépései\n1. A HTML felépíti az oldal szerkezetét\n2. A JavaScript betöltődik (általában a végén vagy `defer`-rel)\n3. A JS kód kiválaszt HTML elemeket a DOM-ból\n4. Eseménykezelőket rendel hozzájuk vagy módosítja őket\n\n---\n\n### Tippek a jó integrációhoz\n- Mindig tartsd külön a JS kódot (`.js` fájlban)\n- Használj `addEventListener`-t inline esemény helyett\n- Győződj meg róla, hogy a HTML elemek betöltődtek, mielőtt hivatkozol rájuk\n- Ne írj JS kódot `<head>`-be script nélkül, hacsak nem használod `defer`-rel",
+  "image": "/images/html-js.jpg",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>HTML és JS példa</title>\n  <script defer src=\"script.js\"></script>\n</head>\n<body>\n  <h1 id=\"udvozlet\">Helló, Világ!</h1>\n  <button id=\"valtoztatoGomb\">Módosíts szöveget</button>\n</body>\n</html>\n\n// script.js\ndocument.getElementById('valtoztatoGomb').addEventListener('click', function() {\n  document.getElementById('udvozlet').innerText = 'Szöveg megváltozott!';\n});",
+  "keyPoints": [
+    "A JavaScript segítségével interaktívvá tehető a HTML oldal",
+    "Háromféle módon illeszthető be JS: beágyazott, külső fájl, inline esemény",
+    "A defer és async attribútumok segítik a gyors betöltést",
+    "A DOM lehetővé teszi a HTML elemek módosítását JS kódból",
+    "Az eseménykezelés történhet programozottan vagy inline módon is",
+    "Kezdőknek ajánlott külön fájlban kezelni a JavaScript kódot"
+  ],
+  "htmlStructure": {
+    "script": "A JavaScript kódot tartalmazó vagy hivatkozó elem",
+    "onclick": "Kattintási esemény kezelése HTML elemen belül",
+    "id": "Azonosító, amivel JavaScript elérhet egy adott elemet",
+    "addEventListener": "JavaScript függvény, ami eseményt kezel programozottan",
+    "innerText / innerHTML": "A HTML elem tartalmának módosítása"
+  }
+},
+{
+  "id": 15,
+  "title": "Haladó HTML űrlaptechnika és validáció",
+  "content": "Az űrlapok fontos szerepet játszanak az adatok bekérésében és a felhasználói interakcióban. A modern HTML5 lehetőséget nyújt beépített validációkra, speciális bemeneti típusokra és fejlettebb felhasználói élmény kialakítására.\n\n**HTML5 input típusok:**\n• email – e-mail címek megadása\n• number – számértékekhez\n• date, time, datetime-local – dátum és idő\n• url, tel – webcím vagy telefonszám\n• range, color – csúszka vagy színválasztó\n\n**Validációs attribútumok:**\n• required – kötelező mező\n• minlength, maxlength – karakterhossz szabályozása\n• min, max – numerikus vagy dátumhatárok\n• pattern – RegEx alapú egyedi szabályok\n\n**Egyéb fejlett attribútumok:**\n• autocomplete – böngésző javaslatok engedélyezése\n• readonly – csak olvasható mező\n• disabled – inaktív mező\n• step – lépésköz megadása számnál vagy dátumnál\n• inputmode – bevitel optimalizálása mobileszközön\n\nAz `fieldset`, `legend` elemek segítségével logikailag csoportosíthatjuk az űrlapokat, míg a `novalidate` attribútummal kikapcsolhatjuk a böngésző automatikus validációját (pl. saját JavaScript ellenőrzés esetén).",
+  "image": "/images/html-advanced-forms.jpg",
+  "codeExample": "<form action=\"/submit\" method=\"post\">\n  <fieldset>\n    <legend>Kapcsolatfelvétel</legend>\n    <label for=\"email\">Email cím:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required autocomplete=\"email\">\n\n    <label for=\"age\">Életkor:</label>\n    <input type=\"number\" id=\"age\" name=\"age\" min=\"18\" max=\"99\">\n\n    <label for=\"color\">Kedvenc szín:</label>\n    <input type=\"color\" id=\"color\" name=\"color\">\n\n    <label for=\"message\">Üzenet:</label>\n    <textarea id=\"message\" name=\"message\" minlength=\"10\" maxlength=\"500\" required></textarea>\n\n    <button type=\"submit\">Küldés</button>\n  </fieldset>\n</form>",
+  "keyPoints": [
+    "HTML5 input típusok egyszerűsítik a helyes adatbevitel biztosítását",
+    "Validációs attribútumokkal kliensoldali hibák csökkenthetők",
+    "pattern attribútummal egyedi szabályokat hozhatunk létre",
+    "fieldset és legend javítják a felhasználói élményt és hozzáférhetőséget",
+    "autocomplete és inputmode fokozza a mobilos UX-et"
+  ],
+  "htmlStructure": {
+    "input type": "Különféle adatbeviteli mezők (email, number, date stb.)",
+    "required": "Mező kitöltése kötelező",
+    "pattern": "Szabály alapú karakterellenőrzés (RegEx)",
+    "fieldset / legend": "Mezőcsoportok logikai elkülönítése",
+    "autocomplete": "Beviteli javaslatok engedélyezése a böngésző részéről"
+  }
+},
+{
+  "id": 16,
+  "title": "HTML5 strukturális elemek mélyebben",
+  "content": "A HTML5 bevezetésével számos új szemantikus elem került bevezetésre, amelyek lehetővé teszik a weboldal tartalmának pontosabb szerkezeti felépítését. Ezek az elemek nem csupán formailag osztják részekre az oldalt, hanem segítik a keresőmotorokat, segédeszközöket és a fejlesztőket a kód értelmezésében.\n\n**Fontos strukturális elemek:**\n\n• <header> – az oldal vagy szakasz bevezető tartalma, pl. logó, menü, címsor\n• <nav> – navigációs linkek csoportja (pl. főmenü, oldalsó menü)\n• <main> – az oldal egyedi, központi tartalma (minden dokumentumban csak 1 lehet)\n• <article> – önálló, újrafelhasználható, kontextusfüggetlen tartalom (pl. blogbejegyzés, hír)\n• <section> – tematikus tartalmi egység, címsorral (pl. fejezet, alfejezet)\n• <aside> – kiegészítő tartalom, pl. oldalsáv, megjegyzés, hivatkozások\n• <footer> – záró rész, pl. lábléc, kapcsolati adatok, jogi információk\n\n**Miért fontosak ezek?**\n• Jobb SEO – a keresőmotorok felismerik a különböző tartalmi blokkok szerepét\n• Jobb hozzáférhetőség – képernyőolvasók jobban értik az oldal struktúráját\n• Könnyebb karbantartás és fejlesztés – átláthatóbb, szervezettebb kód\n\n**Különbségek:**\n• <article> akkor hasznos, ha a tartalom máshol is értelmes (pl. RSS-ben)\n• <section> akkor jó, ha tematikusan rendezett egységet akarunk címmel\n• <main> kizárólag egyedi tartalomra (ne tartalmazzon <header> vagy <footer> elemet)",
+  "image": "/images/html5-structure.jpg",
+  "codeExample": "<body>\n  <header>\n    <h1>Digitális Tudásbázis</h1>\n    <nav>\n      <ul>\n        <li><a href=\"/\">Főoldal</a></li>\n        <li><a href=\"/cikkek\">Cikkek</a></li>\n        <li><a href=\"/kapcsolat\">Kapcsolat</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <main>\n    <article>\n      <header>\n        <h2>HTML5 szemantikus elemek</h2>\n        <p>Szerző: Gábor – 2025. június 1.</p>\n      </header>\n      <section>\n        <h3>Mi az a <article>?</h3>\n        <p>Egy önálló, újrafelhasználható tartalomblokk.</p>\n      </section>\n      <section>\n        <h3>Mi az a <section>?</h3>\n        <p>Egy tematikusan elkülönített rész, ami címsort tartalmaz.</p>\n      </section>\n      <footer>\n        <p>Megosztás: <a href=\"#\">Facebook</a> | <a href=\"#\">Twitter</a></p>\n      </footer>\n    </article>\n\n    <aside>\n      <h3>Kapcsolódó bejegyzések</h3>\n      <ul>\n        <li><a href=\"#\">Szemantikus HTML előnyei</a></li>\n        <li><a href=\"#\">SEO és HTML5</a></li>\n      </ul>\n    </aside>\n  </main>\n\n  <footer>\n    <p>&copy; 2025 Digitális Tudásbázis</p>\n  </footer>\n</body>",
+  "keyPoints": [
+    "A szemantikus HTML elemek gépek és emberek számára is értelmezhetőbbé teszik a kódot",
+    "<main> csak egyszer szerepelhet az oldalon",
+    "<article> tartalma más kontextusban is megállja a helyét",
+    "<section> logikus tartalmi egységekhez használatos",
+    "<aside> kiegészítő információkat, oldalsávot tartalmaz"
+  ],
+  "htmlStructure": {
+    "header": "Az oldal vagy szakasz bevezető tartalma",
+    "nav": "Navigációs linkek gyűjteménye",
+    "main": "Az oldal egyedi, központi tartalma",
+    "article": "Önálló, kontextusfüggetlen tartalom",
+    "section": "Tematikus tartalmi egység címmel",
+    "aside": "Kapcsolódó, kiegészítő információk",
+    "footer": "Záró tartalom (lábléc, szerzői jog, kapcsolatok)"
+  }
+},
+{
+  "id": 17,
+  "title": "HTML tárolóelemek és komponenslogika",
+  "content": "A HTML-ben bizonyos tagek nem hordoznak szemantikai jelentést, mégis rendkívül fontosak a tartalom csoportosítása, újrafelhasználhatósága és a komponensalapú fejlesztés szempontjából. Ezeket hívjuk tárolóelemeknek vagy konténereknek.\n\n**Leggyakoribb tárolóelemek:**\n• <div> – általános blokkszintű konténer, stílusozáshoz és csoportosításhoz\n• <span> – soron belüli konténer, inline szövegek stílusozására\n\n**Mikor használjuk őket?**\n• Ha nem áll rendelkezésre megfelelő szemantikus tag\n• Ha csak stilisztikai vagy funkcionális célból csoportosítunk tartalmat\n• Komponensek (pl. kártyák, modulok) építésénél strukturális célból\n\n**Komponenslogika HTML-ben:**\n• Gondolkodjunk újrafelhasználható blokkokban – például egy termékkártya, blogdoboz vagy galériaelem\n• A komponensek elrendezését, viselkedését gyakran CSS és JavaScript vezérli\n• A strukturálás <div> vagy szemantikus wrapper tagekkel történik\n\n**Modern frontend keretrendszerek (React, Vue, Angular)** is komponensalapú szemléletet alkalmaznak, de ez a megközelítés már HTML-ben is hasznos és alkalmazható!",
+  "image": "/images/html-components.jpg",
+  "codeExample": "<div class=\"termekkartya\">\n  <img src=\"kave.jpg\" alt=\"Espresso kávécsomag\">\n  <h2>Espresso Blend</h2>\n  <p>Intenzív, olasz pörkölésű kávé, 250g</p>\n  <button>Kosárba</button>\n</div>\n\n<span class=\"kiemelt\">Ingyenes szállítás 10.000 Ft felett!</span>",
+  "keyPoints": [
+    "<div>: blokkszintű tároló, sokoldalúan alkalmazható",
+    "<span>: inline konténer, leginkább szövegrészekhez",
+    "Komponenslogika: csoportosítsunk újrafelhasználható blokkokat",
+    "Használjunk osztályokat a stílus és viselkedés elkülönítéséhez",
+    "A komponenselvű gondolkodás strukturáltabb és skálázhatóbb HTML-t eredményez"
+  ],
+  "htmlStructure": {
+    "div": "Szerkezeti célú, blokkszintű konténer, gyakran használt komponensekhez",
+    "span": "Soron belüli (inline) tároló, elsősorban stílusozáshoz",
+    "class": "Azonosító csoportosításhoz és stílushoz – komponensrészekhez elengedhetetlen",
+    "component": "Nem HTML tag, hanem logikai egység: újrafelhasználható HTML blokkok felépítése"
+  }
+},
+{
+  "id": 18,
+  "title": "HTML hibakezelés és böngészői viselkedés",
+  "content": "A HTML egyik sajátossága, hogy meglehetősen toleráns a hibákkal szemben – a böngészők gyakran \"kitalálják\", mit szeretett volna a fejlesztő. Ez előnyös, de ugyanakkor veszélyes is, mivel hibás struktúrákhoz és kiszámíthatatlan megjelenítéshez vezethet.\n\n**Gyakori HTML hibák:**\n• Nem zárt tagek (pl. <p>, <li>, <td>)\n• Rossz hierarchia (pl. <div> közvetlenül <ul> alatt)\n• Duplikált attribútumok (pl. kétszer class)\n• Nem megfelelően beágyazott elemek (pl. <a> tag egy másik <a> tagban)\n• Elgépelések (pl. <imng> helyett <img>)\n\n**A böngészők hibajavító viselkedése:**\n• DOM korrekció – a böngésző automatikusan módosíthatja a dokumentumfa szerkezetét\n• Elhagyott tagek pótlása – például automatikusan lezárja a <p> vagy <li> elemeket\n• Hibás attribútumokat figyelmen kívül hagyja vagy átalakítja\n\n**Miért veszélyes a hibás HTML?**\n• Különböző böngészők másképp kezelhetik\n• CSS és JavaScript működése hibássá válhat\n• Rossz felhasználói élmény és accessibility problémák\n• Keresőmotorok nehezebben értik meg a tartalmat\n\n**Ajánlott gyakorlatok:**\n• Mindig validáld a kódot (pl. W3C validator)\n• Tartsd be a HTML szintaxis szabályait\n• Teszteld a weboldalt több böngészőben és képernyőméretben\n• Használj fejlesztői eszközöket (browser devtools, HTML linterek)",
+  "image": "/images/html-errors.jpg",
+  "codeExample": "<!-- Hibás HTML -->\n<ul>\n  <div>Listaelemek:</div>\n  <li>Elem 1\n  <li>Elem 2\n</ul>\n\n<!-- Helyes HTML -->\n<p>Listaelemek:</p>\n<ul>\n  <li>Elem 1</li>\n  <li>Elem 2</li>\n</ul>",
+  "keyPoints": [
+    "A böngészők automatikusan próbálják helyrehozni a hibás HTML-t",
+    "Nem zárt vagy rosszul beágyazott elemek hibákhoz vezetnek",
+    "A strukturális hibák akadályozhatják a stílusok és a szkriptek működését",
+    "A HTML validálása segít kiszűrni a szintaktikai és logikai hibákat",
+    "Minden HTML oldal legyen valid, jól strukturált és szabványos"
+  ],
+  "htmlStructure": {
+    "hibás tag": "Nem létező vagy rosszul megírt HTML tag (pl. <imng>)",
+    "DOM korrekció": "A böngésző automatikusan újrarendezi vagy kiegészíti a DOM szerkezetet",
+    "validátor": "Automatikus eszköz, amely ellenőrzi a HTML szabályosságát (pl. validator.w3.org)",
+    "linter": "Fejlesztőeszköz, ami figyelmeztet a nem ajánlott HTML szintaxisra vagy hibákra"
+  }
+},
+{
+  "id": 19,
+  "title": "HTML és CSS kapcsolata: inline, belső és külső stíluslapok",
+  "content": "A HTML leírja az oldal szerkezetét, míg a CSS (Cascading Style Sheets) felel a megjelenésért. A kettő kombinálásával hozhatunk létre modern, esztétikus és reszponzív weboldalakat.\n\nHárom fő módszer létezik a HTML és CSS összekapcsolására:\n\n**1. Inline (soron belüli) stílus:**\n• Az egyes HTML elemekhez közvetlenül hozzárendelt `style` attribútummal történik\n• Kis projektekhez vagy gyors tesztekhez használható\n• Hátrány: nehézkes karbantartás, sérti a strukturált kódolást\n\n**2. Belső stíluslap (internal CSS):**\n• A `<style>` tag segítségével a HTML dokumentum `<head>` részében helyezkedik el\n• Egyetlen HTML fájlhoz tartozik\n• Előny: áttekinthetőbb, mint az inline stílusok\n• Hátrány: nem újrahasználható más HTML fájlokban\n\n**3. Külső stíluslap (external CSS):**\n• A CSS szabályok egy külön `.css` fájlban helyezkednek el\n• A HTML dokumentum `link` tagjával csatolható\n• Előny: újrahasználható, karbantartható, letölthető cache-ben a böngésző által\n• Ez a modern webfejlesztés ajánlott gyakorlata\n\n**A CSS alkalmazás sorrendje (kaskád elv):**\n• Böngésző alapértelmezett stílusai\n• Külső CSS\n• Belső CSS\n• Inline CSS\n• A specifikusabb szabályok felülírják az általánosabbakat\n\n**Ajánlott gyakorlat:**\n• Használj külső stíluslapot a projektedhez\n• Kerüld az inline stílusokat\n• Tartsd a tartalmat (HTML) és a megjelenést (CSS) szétválasztva",
+  "image": "/images/html-css-linking.jpg",
+  "codeExample": "<!-- Inline CSS -->\n<p style=\"color: red; font-weight: bold;\">Soron belüli stílus</p>\n\n<!-- Belső CSS -->\n<head>\n  <style>\n    p {\n      color: blue;\n      font-style: italic;\n    }\n  </style>\n</head>\n<p>Belső stíluslap alkalmazása</p>\n\n<!-- Külső CSS -->\n<head>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<p>Külső stíluslap</p>",
+  "keyPoints": [
+    "A HTML és a CSS együtt biztosítja a szerkezetet és a megjelenést",
+    "Inline stílus: gyors, de nem ajánlott hosszú távra",
+    "Belső stíluslap: kis projekthez megfelelő",
+    "Külső stíluslap: professzionális, újrahasználható és karbantartható",
+    "A CSS szabályok sorrendje befolyásolja, melyik stílus érvényesül"
+  ],
+  "htmlStructure": {
+    "style attribútum": "Inline stílus közvetlenül az elemhez rendelve",
+    "style tag": "A HTML head részében elhelyezett CSS szabályok",
+    "link rel=\"stylesheet\"": "Külső CSS fájl csatolása a dokumentumhoz",
+    "kaskád": "A CSS szabályok érvényesülésének sorrendje (Cascading Style Sheets)"
+  }
+},
+{
+  "id": 20,
+  "title": "Beágyazott tartalmak: iframe, embed és object",
+  "content": "A weboldalak gyakran tartalmaznak külső vagy multimédiás tartalmakat, amelyek beágyazásához többféle HTML elem áll rendelkezésre. A leggyakrabban használt elemek az <iframe>, <embed> és <object>, amelyek különböző célokra és tartalomtípusokhoz alkalmazhatók.\n\n**1. <iframe> (inline frame):**\n- Egy másik HTML oldal beágyazására szolgál az aktuális dokumentumban.\n- Gyakori alkalmazása például YouTube videók, Google Maps, vagy más weboldalak beillesztése.\n- Fontos biztonsági beállítások, mint például a sandbox attribútum, amivel szabályozhatjuk, mit tehet a beágyazott tartalom.\n\n**2. <embed>:**\n- Általános elem különféle médiafájlok beillesztésére, például PDF, videók, hangok, Flash (régebben).\n- Egyszerűbb használat, nem olyan részletes vezérlés, mint az <object> elemnél.\n\n**3. <object>:**\n- Egy sokoldalú elem, ami képes különféle beágyazott tartalmak, mint médiafájlok, pluginok vagy akár interaktív alkalmazások megjelenítésére.\n- Több attribútuma van, például data (forrás), type (MIME-típus) és width, height.\n\n**Fontos attribútumok:**\n- src vagy data: a beágyazott tartalom URL-je\n- width, height: méretek pixelben vagy százalékban\n- sandbox (<iframe>): biztonsági szabályok megadása\n- allowfullscreen (<iframe>, <embed>, <object>): engedélyezi a teljes képernyős megjelenítést\n\n**Használati példák:**\n- YouTube videó beágyazása <iframe>-pel\n- PDF megjelenítése <embed>-tel\n- Flash vagy Java applet futtatása <object>-tal (utóbbi ma már kevésbé ajánlott)\n\n**Megjegyzések:**\n- <iframe> a leggyakoribb és legbiztonságosabb módszer külső HTML tartalmak beillesztésére\n- <embed> és <object> főleg multimédia és plugin tartalmakhoz\n- Figyeljünk a biztonsági szempontokra és az elavult technológiák elkerülésére.",
+  "image": "/images/html-embedded-content.jpg",
+  "codeExample": "<!-- iframe használata YouTube videóhoz -->\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" title=\"YouTube video\" frameborder=\"0\" allowfullscreen></iframe>\n\n<!-- embed használata PDF megjelenítéséhez -->\n<embed src=\"dokumenum.pdf\" width=\"600\" height=\"500\" type=\"application/pdf\">\n\n<!-- object használata multimédia tartalomhoz -->\n<object data=\"animacio.swf\" width=\"400\" height=\"300\" type=\"application/x-shockwave-flash\">\n  <p>Az animáció megtekintéséhez Flash plugin szükséges.</p>\n</object>",
+  "keyPoints": [
+    "<iframe> HTML oldalak vagy videók beágyazására szolgál, biztonsági beállításokkal",
+    "<embed> általánosabb, főleg médiafájlokhoz használjuk",
+    "<object> sokoldalú elem multimédia és plugin tartalmakhoz",
+    "Mindhárom elemnek megadhatók méret- és forrásattribútumok",
+    "Biztonsági szempontokat mindig tartsuk szem előtt a beágyazott tartalmak esetén"
+  ],
+  "htmlStructure": {
+    "iframe": "Inline frame, egy külső HTML dokumentum beágyazására",
+    "embed": "Egyszerű beágyazó elem médiafájlokhoz",
+    "object": "Sokoldalú beágyazó elem, támogatja többféle tartalmat",
+    "sandbox": "Biztonsági attribútum az <iframe> elemen, korlátozza a beágyazott tartalom jogosultságait",
+    "allowfullscreen": "Engedélyezi a teljes képernyős megjelenítést"
+  }
+},
+{
+  "id": 21,
+  "title": "Linkek haladó használata: e-mail, fájl, horgonylink",
+  "content": "A HTML linkek nemcsak weboldalak közötti navigációra szolgálnak, hanem speciális célokra is használhatók, mint például e-mail címek megnyitása, fájlok letöltése vagy a dokumentum egy adott részére ugrás (horgonylink).\n\n**1. E-mail linkek:**\n- Az `mailto:` protokoll segítségével a linkre kattintva az alapértelmezett e-mail kliens nyílik meg új levél írásához.\n- Szintaxis: `<a href=\"mailto:peldacim@example.com\">Email küldése</a>`\n- Kiegészítő paraméterek is megadhatók, például tárgy (`subject`), másolat (`cc`) és rejtett másolat (`bcc`), pl:\n  `<a href=\"mailto:peldacim@example.com?subject=Érdeklődés&cc=masolat@example.com\">Email küldése</a>`\n\n**2. Fájl letöltése:**\n- A linkekkel közvetlenül fájlokat is elérhetünk, akár letöltésre is késztethetjük a böngészőt.\n- Az `href` attribútumba a fájl elérési útját vagy URL-jét adjuk meg.\n- Az `download` attribútum használatával a böngésző letöltésre kényszeríti a fájlt, nem nyitja meg.\n- Példa: `<a href=\"/files/dokumentum.pdf\" download=\"info.pdf\">PDF letöltése</a>`\n\n**3. Horgonylinkek (Anchor linkek):**\n- Lehetővé teszik, hogy a felhasználó a dokumentum egy adott pontjára ugorjon.\n- Ehhez először egy elemhez az `id` attribútummal definiálunk egy azonosítót.\n- A link `href` attribútuma ezt az azonosítót egy `#` jellel előtagolva tartalmazza.\n- Példa:\n  `<h2 id=\"kapcsolat\">Kapcsolat</h2>`\n  `<a href=\"#kapcsolat\">Ugrás a Kapcsolat szekcióhoz</a>`\n\n**Gyakorlati tippek:**\n- E-mail linkeknél ügyeljünk arra, hogy az e-mail cím ne legyen könnyen lekoppintható spam robotok által (pl. JavaScript vagy képként védeni).\n- Fájloknál mindig adj meg egyértelmű és releváns letöltési nevet az `download` attribútumban.\n- Horgonylinkeknél használj logikus, egyedi azonosítókat, hogy ne legyen ütközés a dokumentumban.\n\nEz a haladó linkkezelési technika fontos eszköz a felhasználói élmény javításához és a weboldalak funkcionalitásának bővítéséhez.",
+  "image": "/images/advanced-links.jpg",
+  "codeExample": "<!-- E-mail link -->\n<a href=\"mailto:info@pelda.hu?subject=Árajánlat\">Írj nekünk e-mailt</a>\n\n<!-- Fájl letöltése -->\n<a href=\"/downloads/termekleiras.pdf\" download=\"Termek_leiras.pdf\">Termékleírás letöltése</a>\n\n<!-- Horgonylink -->\n<h2 id=\"gyik\">Gyakran Ismételt Kérdések</h2>\n<a href=\"#gyik\">Ugrás a GYIK-hez</a>",
+  "keyPoints": [
+    "mailto: protokoll e-mail kliens megnyitásához",
+    "download attribútum fájlok letöltésének kényszerítéséhez",
+    "horgonylinkek a dokumentum adott pontjára ugráshoz",
+    "horgonylinkekhez egyedi id attribútum szükséges",
+    "linkek kiterjesztik a navigációs lehetőségeket és funkciókat"
+  ],
+  "htmlStructure": {
+    "mailto link": "href=\"mailto:cim@example.com?subject=Targy&cc=masolat@example.com\"",
+    "download attribútum": "letöltési név megadása a fájlnak",
+    "horgonylink href": "href=\"#azonosito\" a dokumentum adott részére ugráshoz",
+    "id attribútum": "az adott HTML elem azonosítója a horgonylinkhez"
+  }
+},
+{
+  "id": 22,
+  "title": "Open Graph és közösségi metaadatok",
+  "content": "Az Open Graph protokoll egy olyan szabvány, amely lehetővé teszi, hogy a weboldalak megosszák tartalmaikat a közösségi médiában (például Facebook, LinkedIn, Twitter) gazdag, jól strukturált előnézeti formában. Ezek a metaadatok segítenek, hogy a megosztott linkek látványosabbak és informatívabbak legyenek, növelve ezzel a kattintási arányt és a látogatottságot.\n\n**Alapvető Open Graph metaadatok:**\n- `og:title`: Az oldal címe, amely megjelenik a megosztásban.\n- `og:description`: Rövid összefoglaló vagy leírás a tartalomról.\n- `og:image`: A megosztásnál megjelenő kép URL-je.\n- `og:url`: Az oldal pontos URL-je, ami a megosztás linkjeként szolgál.\n- `og:type`: A tartalom típusa (pl. `website`, `article`, `video.movie`).\n\n**Egyéb hasznos metaadatok:**\n- `og:site_name`: A webhely neve.\n- `og:locale`: Nyelvi beállítás (pl. `hu_HU` magyarhoz).\n\n**Twitter Card metaadatok:**\n- Twitter saját metaadatai, amelyek a tweetekben jelennek meg gazdag előnézetként.\n- `twitter:card`: A kártya típusa (pl. `summary_large_image`).\n- `twitter:title`, `twitter:description`, `twitter:image`: Hasonlóak az Open Graph mezőkhöz.\n\n**Miért fontosak ezek a metaadatok?**\n- Javítják a megosztott linkek megjelenését, vonzóbbá teszik a tartalmat.\n- Növelik a kattintási arányt és a forgalmat.\n- Segítik a közösségi platformokat a tartalom pontos értelmezésében.\n\n**Példa metaadatok a <head> szekcióban:**\n```html\n<meta property=\"og:title\" content=\"Prémium Kávék – Vásárolj online\" />\n<meta property=\"og:description\" content=\"Fedezd fel prémium minőségű kávéinkat, házhozszállítással.\" />\n<meta property=\"og:image\" content=\"https://example.com/images/kave.jpg\" />\n<meta property=\"og:url\" content=\"https://example.com/\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:title\" content=\"Prémium Kávék – Vásárolj online\" />\n<meta name=\"twitter:description\" content=\"Fedezd fel prémium minőségű kávéinkat, házhozszállítással.\" />\n<meta name=\"twitter:image\" content=\"https://example.com/images/kave.jpg\" />\n```\n\n**Tippek:**\n- Mindig adj meg megfelelő méretű és minőségű képet (pl. legalább 1200x630 px az Open Graph-hoz).\n- Teszteld a metaadatokat olyan eszközökkel, mint a Facebook Sharing Debugger vagy Twitter Card Validator.\n- Használj egyedi leírásokat és címeket minden oldalhoz, hogy növeld a SEO-t és a közösségi megosztások hatékonyságát.",
+  "image": "/images/open-graph-meta.jpg",
+  "codeExample": "<head>\n  <meta property=\"og:title\" content=\"Prémium Kávék – Vásárolj online\" />\n  <meta property=\"og:description\" content=\"Fedezd fel prémium minőségű kávéinkat, házhozszállítással.\" />\n  <meta property=\"og:image\" content=\"https://example.com/images/kave.jpg\" />\n  <meta property=\"og:url\" content=\"https://example.com/\" />\n  <meta property=\"og:type\" content=\"website\" />\n\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:title\" content=\"Prémium Kávék – Vásárolj online\" />\n  <meta name=\"twitter:description\" content=\"Fedezd fel prémium minőségű kávéinkat, házhozszállítással.\" />\n  <meta name=\"twitter:image\" content=\"https://example.com/images/kave.jpg\" />\n</head>",
+  "keyPoints": [
+    "Open Graph metaadatok gazdag tartalommegjelenítéshez közösségi médiában",
+    "Fontos elemek: og:title, og:description, og:image, og:url, og:type",
+    "Twitter Card metaadatok hasonló funkcióval a Twitterhez",
+    "Megfelelő képméretek és egyedi tartalmak növelik az elérést",
+    "Tesztelés Facebook és Twitter eszközökkel ajánlott"
+  ],
+  "htmlStructure": {
+    "og:title": "Az oldal vagy tartalom címe, ami megjelenik a megosztásban",
+    "og:description": "Rövid, figyelemfelkeltő leírás a tartalomról",
+    "og:image": "A megosztáskor megjelenő kép URL-je",
+    "og:url": "Az oldal pontos elérési útja",
+    "og:type": "Tartalom típusa (pl. website, article, video.movie)",
+    "twitter:card": "A Twitter kártya típusa (pl. summary, summary_large_image)",
+    "twitter:title": "A Twitteren megjelenő cím",
+    "twitter:description": "A Twitteren megjelenő leírás",
+    "twitter:image": "A Twitter kártyán megjelenő kép URL-je"
+  }
+},
+{
+  "id": 23,
+  "title": "HTML és CSS kapcsolatának alapjai",
+  "content": "A HTML (HyperText Markup Language) a weboldalak szerkezetét és tartalmát határozza meg, míg a CSS (Cascading Style Sheets) a megjelenést és a dizájnt szabályozza. A kettő együtt teszi lehetővé, hogy a weboldalak ne csak informatívak, hanem esztétikailag is vonzóak legyenek.\n\n**Hogyan kapcsolódik a CSS a HTML-hez?**\nA CSS három fő módon alkalmazható egy HTML dokumentumban:\n\n1. **Inline stílusok:** Közvetlenül az adott HTML elem `style` attribútumában.\n```html\n<p style=\"color: red; font-weight: bold;\">Ez egy piros, félkövér szöveg.</p>\n```\n\n2. **Beágyazott (Internal) CSS:** A `<style>` tagben, amelyet a HTML dokumentum `<head>` szekciójában helyezünk el.\n```html\n<head>\n  <style>\n    p { color: blue; font-size: 18px; }\n  </style>\n</head>\n```\n\n3. **Külső CSS fájl:** Egy külön `.css` fájl, amelyet a `<link>` tag segítségével kapcsolunk be.\n```html\n<head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n```\n\n**Miért érdemes külső CSS-t használni?**\n- Könnyebb karbantartás, mert a stílusokat egy helyen kezeljük.\n- Több oldal is használhatja ugyanazt a CSS fájlt, így egységes megjelenést biztosít.\n- Csökkenti a HTML fájl méretét.\n\n**Alapvető CSS szintaxis:**\n```css\nselector {\n  property: value;\n}\n```\nPéldául:\n```css\nh1 {\n  color: darkgreen;\n  text-align: center;\n}\n```\nEz a szabály az összes `<h1>` elemet sötétzöldre színezi és középre igazítja.\n\n**CSS szelektorok típusai:**\n- **Elem szelektor:** Pl. `p`, `h1`, `div` – az adott típusú elemeket célozza.\n- **Osztály szelektor:** Ponttal jelölve, pl. `.kiemelt` – a megadott osztályú elemek.\n- **ID szelektor:** Kettőskereszttel, pl. `#fejlec` – az adott egyedi azonosítójú elem.\n- **Attribútum szelektor:** Pl. `a[href]` – az összes olyan link, amely rendelkezik href attribútummal.\n\n**Fontos CSS alapfogalmak:**\n- **Box modell:** Minden HTML elem egy dobozként viselkedik, amely tartalmazza a tartalmat, belső margót (padding), szegélyt (border) és külső margót (margin).\n- **Öröklődés:** Egyes CSS tulajdonságok öröklődnek a gyermekelemekre (pl. `color`), míg mások nem (pl. `margin`).\n- **Specifikusság:** A CSS szabályokat egyértelmű sorrendben alkalmazza a böngésző, a konkrétabb szelektor felülírhatja az általánosabbat.\n\n**Egyszerű példa HTML és CSS együtt:**\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>CSS alapok</title>\n  <style>\n    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }\n    h1 { color: navy; }\n    p { color: #333; font-size: 16px; }\n    .kiemelt { color: red; font-weight: bold; }\n  </style>\n</head>\n<body>\n  <h1>Üdv a CSS világában</h1>\n  <p>Ez egy alap példa, ahol <span class=\"kiemelt\">kiemelt</span> szöveg is található.</p>\n</body>\n</html>\n```\n\n**Összefoglaló:**\n- A HTML a tartalmat, a CSS a megjelenést szabályozza.\n- Három fő módon kapcsolódik a CSS a HTML-hez: inline, beágyazott és külső fájl.\n- A CSS szelektorok segítségével célzottan lehet stílusokat alkalmazni.\n- A box modell és a specifikusság megértése alapvető a CSS hatékony használatához.\n\n**Hasznos linkek:**\n- [MDN CSS guide](https://developer.mozilla.org/hu/docs/Web/CSS)\n- [W3Schools CSS Tutorial](https://www.w3schools.com/css/)",
+  "image": "/images/html-css-connection.jpg",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>CSS alapok</title>\n  <style>\n    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }\n    h1 { color: navy; }\n    p { color: #333; font-size: 16px; }\n    .kiemelt { color: red; font-weight: bold; }\n  </style>\n</head>\n<body>\n  <h1>Üdv a CSS világában</h1>\n  <p>Ez egy alap példa, ahol <span class=\"kiemelt\">kiemelt</span> szöveg is található.</p>\n</body>\n</html>",
+  "keyPoints": [
+    "HTML a tartalmat, CSS a megjelenést szabályozza",
+    "CSS-t háromféleképpen lehet kapcsolni a HTML-hez: inline, internal, external",
+    "Szelektorok: elem, osztály, ID, attribútum szerint célzás",
+    "Box modell: tartalom, padding, border, margin",
+    "Specifikusság határozza meg a CSS szabályok sorrendjét és érvényesülését"
+  ],
+  "htmlStructure": {
+    "style tag": "Beágyazott CSS szabályokat tartalmaz a head szekcióban",
+    "link tag": "Külső CSS fájl csatolására szolgál",
+    "style attribútum": "Inline CSS közvetlenül az adott elemben",
+    "selector": "A HTML elemek kijelölésére szolgáló szabály",
+    "property": "A CSS tulajdonság neve (pl. color, font-size)",
+    "value": "A CSS tulajdonság értéke (pl. red, 16px)"
+  }
+},
+{
+  "id": 24,
+  "title": "Böngészőtámogatás és HTML fallback technikák",
+  "content": "A weboldalak fejlesztésekor fontos figyelembe venni, hogy a felhasználók különböző böngészőket és eszközöket használnak, amelyek eltérő szinten támogatják a HTML, CSS és JavaScript szabványokat. Ezért elengedhetetlen a böngészőtámogatás és a fallback technikák alkalmazása, hogy a weboldal minden környezetben megfelelően működjön.\n\n**Mi az a fallback?**\nA fallback egy tartalmi vagy funkcionalitási tartalékmegoldás, amely akkor lép életbe, ha a modern technológia vagy elem nem támogatott a felhasználó böngészőjében.\n\n---\n\n### 1. Böngészőtámogatás figyelése\n- Használjunk böngészőtámogatási táblázatokat, például a [Can I Use](https://caniuse.com/) oldalt, hogy megnézzük, mely HTML, CSS vagy JS funkciók milyen böngészőkben elérhetők.\n- Teszteljünk a legelterjedtebb böngészőkön: Chrome, Firefox, Edge, Safari, Opera, és régebbi verzióikon is.\n\n### 2. HTML fallback technikák\n\n#### a) Régebbi elemek használata modern helyett\nHa egy modern elem nem támogatott, helyettesíthető egy hagyományosabb, szélesebb körben támogatott elemmel.\nPélda:\n```html\n<!-- Modern: -->\n<picture>\n  <source srcset=\"kep.webp\" type=\"image/webp\">\n  <img src=\"kep.jpg\" alt=\"Kép leírása\">\n</picture>\n\n<!-- Fallback a <img> tag segítségével -->\n```\n\n#### b) `noscript` elem\nHa JavaScript nem elérhető, a `<noscript>` elem tartalma jelenik meg, így biztosítható az alapfunkcionalitás.\n```html\n<noscript>\n  <p>Kérjük, engedélyezze a JavaScript futtatását a teljes oldal használatához!</p>\n</noscript>\n```\n\n#### c) Alapértelmezett tartalom iframe helyett\nHa egy beágyazott tartalom nem tölt be, helyettesíthetjük egyszerű szöveggel vagy linkkel.\n```html\n<iframe src=\"video.html\">\n  A videó megtekintéséhez kérjük, frissítse a böngészőjét vagy használjon egy modernebbet.\n</iframe>\n```\n\n#### d) HTML5 elemek és polyfill-ek\nPolyfill-ek olyan JavaScript könyvtárak, amelyek modern funkciókat biztosítanak régi böngészők számára.\nPéldául az `html5shiv` támogatja az új HTML5 elemeket Internet Explorer korábbi verzióiban.\n\n### 3. CSS fallback\n\n- Többszörös értékek megadása: ha egy új CSS tulajdonság nem támogatott, a böngésző az első kompatibilis értéket használja.\n```css\nbackground: #000000;\nbackground: linear-gradient(to right, #333, #999);\n```\n\n- @supports szabály: csak ha a böngésző támogatja a CSS tulajdonságot, akkor alkalmazzuk.\n```css\n@supports (display: grid) {\n  .container { display: grid; }\n}\n```\n\n### 4. JavaScript fallback\n\n- Teszteljük, hogy a szükséges funkciók elérhetők-e.\n- Használjunk `try...catch` szerkezetet vagy feltételes ellenőrzéseket.\n\n### 5. Progresszív javítás (Progressive Enhancement)\nAlapfunkciókat biztosítunk minden böngésző számára, majd modern technológiákat adunk hozzá azoknak, akik támogatják őket.\n\n### 6. Böngésző-specifikus CSS és JavaScript\nSzükség esetén használhatunk böngésző-specifikus hackeket vagy feltételeket, de ezt érdemes kerülni a karbantarthatóság érdekében.\n\n---\n\n**Összefoglaló:**\n- Ismerjük meg a célböngészők képességeit.\n- Alkalmazzunk fallback megoldásokat az elérhetőség növelésére.\n- Használjunk polyfill-eket és progresszív javítást.\n- Teszteljünk több böngészőben és eszközön.\n\n**Hasznos linkek:**\n- [Can I Use](https://caniuse.com/)\n- [HTML5shiv](https://github.com/aFarkas/html5shiv)\n- [MDN Browser Compatibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats)\n\n",
+  "image": "/images/browser-compatibility.jpg",
+  "codeExample": "<!-- HTML fallback példa képhez -->\n<picture>\n  <source srcset=\"kep.webp\" type=\"image/webp\">\n  <img src=\"kep.jpg\" alt=\"Kép leírása\">\n</picture>\n\n<!-- JavaScript fallback példa -->\n<noscript>\n  <p>Kérjük, engedélyezze a JavaScript futtatását!</p>\n</noscript>",
+  "keyPoints": [
+    "A böngészők eltérő szinten támogatják a HTML/CSS/JS szabványokat",
+    "Fallback technikák biztosítják a tartalom és funkció elérhetőségét",
+    "Polyfill-ek segítenek régi böngészők támogatásában",
+    "Progresszív javítás: alapfunkció + fejlettebb technológiák",
+    "Tesztelj több böngészőn és eszközön a kompatibilitásért"
+  ],
+  "htmlStructure": {
+    "noscript": "JavaScript letiltása esetén megjelenő tartalom",
+    "picture > source": "Képek formátum specifikus forrásai fallbackgel",
+    "iframe": "Beágyazott tartalom fallback tartalommal",
+    "@supports": "CSS funkció támogatásának feltételes ellenőrzése"
+  }
+},
+{
+  "id": 25,
+  "title": "HTML sablonok és a <template> elem",
+  "content": "A HTML5 egyik hasznos újdonsága a `<template>` elem, amely lehetővé teszi, hogy a dokumentumban előre definiáljunk egy sablont, amely a böngésző által nem kerül megjelenítésre, viszont JavaScript segítségével dinamikusan beilleszthető és felhasználható.\n\n---\n\n### 1. Mi az a `<template>` elem?\n- Egy speciális HTML elem, amely tartalmazhat bármilyen HTML struktúrát (elemeket, szöveget, stb.), de alapból nem renderelődik a DOM-ban.\n- Tartalma inaktív, azaz a benne lévő elemek nem vesznek részt a renderelésben, eseménykezelésben, vagy más DOM műveletekben addig, amíg a JavaScript aktívvá nem teszi őket.\n\n### 2. Mire használható?\n- Dinamikus tartalom generálásra.\n- Ugyanolyan HTML struktúra többszöri újrafelhasználására, például listák, kártyák, elemek ismételt létrehozására.\n- Teljes HTML blokkok előre definiálására, amelyek csak interakció esetén kerülnek be a megjelenő oldalba.\n\n### 3. A `<template>` szerkezete és használata\n```html\n<template id=\"card-template\">\n  <div class=\"card\">\n    <h2></h2>\n    <p></p>\n  </div>\n</template>\n```\n- Az ID segítségével hivatkozhatunk rá JavaScriptből.\n\n### 4. Tartalom klónozása és beszúrása JavaScript segítségével\n```javascript\nconst template = document.getElementById('card-template');\nconst clone = template.content.cloneNode(true);\nclone.querySelector('h2').textContent = 'Cím';\nclone.querySelector('p').textContent = 'Ez egy dinamikusan létrehozott kártya.';\ndocument.body.appendChild(clone);\n```\n- A `template.content` egy DocumentFragment, amely az elemeket tartalmazza.\n- `cloneNode(true)` mély másolatot készít a sablon tartalmáról.\n\n### 5. Előnyök\n- Jobb teljesítmény: nem kell feleslegesen a DOM-ban tartani azokat az elemeket, amelyek nem látszanak.\n- Egyszerű és tiszta kód, könnyebb karbantartás.\n- Segíti a komponens-alapú fejlesztést.\n\n### 6. Fontos tudnivalók\n- A `<template>` tartalma nem kerül megjelenítésre a böngészőben.\n- Lehetőség van benne script, style, vagy bármilyen HTML elem elhelyezésére.\n- A benne lévő elemek nem futtatnak eseményeket addig, amíg a sablon nem kerül be a DOM-ba.\n\n---\n\n**Összefoglaló:**\n- A `<template>` egy hatékony eszköz dinamikus HTML létrehozására.\n- Nem jelenik meg az oldal betöltésekor.\n- JavaScript segítségével klónozható és szúrható be a DOM-ba.\n\n**Hasznos linkek:**\n- [MDN Web Docs – HTMLTemplateElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)\n- [HTML Templates – W3C](https://www.w3.org/TR/html52/single-page.html#the-template-element)\n\n",
+  "image": "/images/html-template-element.png",
+  "codeExample": "<template id=\"item-template\">\n  <li class=\"item\">\n    <strong></strong>: <span></span>\n  </li>\n</template>\n\n<script>\n  const template = document.getElementById('item-template');\n  const clone = template.content.cloneNode(true);\n  clone.querySelector('strong').textContent = 'Feladat';\n  clone.querySelector('span').textContent = 'HTML sablon használata';\n  document.querySelector('ul').appendChild(clone);\n</script>",
+  "keyPoints": [
+    "A <template> elem tartalma nem jelenik meg automatikusan",
+    "JavaScript segítségével lehet klónozni és beszúrni a sablont",
+    "Segít a dinamikus, újrafelhasználható HTML blokkok létrehozásában",
+    "A sablonban lévő elemek nem aktívak, amíg be nem kerülnek a DOM-ba",
+    "Támogatja a tiszta és karbantartható kódot"
+  ],
+  "htmlStructure": {
+    "template": "Sablont tartalmazó elem, nem jelenik meg a megjelenítésben",
+    "template.content": "DocumentFragment a sablon tényleges tartalmával",
+    "cloneNode(true)": "A sablon mély másolata, amely beszúrható a DOM-ba"
+  }
+},
+{
+  "id": 26,
+  "title": "Többnyelvű HTML: nyelv és írásirány kezelése",
+  "content": "A weboldalak egyre gyakrabban többnyelvű tartalmat jelenítenek meg, ezért fontos ismerni a HTML-ben a nyelv- és írásirány kezelésének alapjait.\n\n---\n\n### 1. A nyelv megadása (`lang` attribútum)\n- A `lang` attribútum segíti a böngészőket és segédeszközöket (pl. képernyőolvasók) abban, hogy felismerjék a tartalom nyelvét.\n- Javítja a keresőoptimalizálást (SEO) és a helyes kiejtést a beszédszintetizátoroknál.\n\n**Példa:**\n```html\n<html lang=\"hu\">\n  <body>\n    <p lang=\"en\">This paragraph is in English.</p>\n    <p lang=\"fr\">Ce paragraphe est en français.</p>\n  </body>\n</html>\n```\n- A `lang` attribútum öröklődik, de adott elemhez megadható külön is.\n\n### 2. Írásirány kezelése (`dir` attribútum)\n- Az írásirány fontos a nyelvek helyes megjelenítéséhez, különösen, ha balról jobbra (LTR) vagy jobbról balra (RTL) kell írni.\n- Alapértelmezett érték: `ltr` (balról jobbra)\n- Gyakori RTL nyelvek: arab, héber, perzsa\n\n**Példa:**\n```html\n<p dir=\"rtl\">هذا نص باللغة العربية</p>\n```\n\n### 3. Gyakori írásirány értékek\n- `ltr` – balról jobbra (pl. angol, magyar)\n- `rtl` – jobbról balra (pl. arab, héber)\n- `auto` – a böngésző dönti el, az első karakter alapján\n\n### 4. Gyakorlati tanácsok\n- Mindig a `<html>` vagy `<body>` elemhez érdemes megadni a `lang` és `dir` attribútumokat.\n- Ha a dokumentumban több nyelv szerepel, használj helyi `lang` attribútumokat a megfelelő elemeknél.\n- Írásirány kezelése kritikus többnyelvű, különösen kevert nyelvű tartalmak esetén.\n- Egyes CSS szabályok (pl. text-align) az írásirányhoz igazíthatók.\n\n### 5. További eszközök és megoldások\n- Webalkalmazásokban érdemes figyelembe venni a felhasználó nyelvi beállításait és dinamikusan állítani a `lang` és `dir` attribútumokat.\n- Használhatsz nemzetköziesítési (i18n) könyvtárakat, amelyek támogatják a többnyelvűséget és írásirányt.\n\n---\n\n**Összefoglaló:**\n- A `lang` attribútum nyelvjelzőként szolgál és javítja az akadálymentességet és SEO-t.\n- A `dir` attribútum határozza meg az írásirányt, ami létfontosságú az RTL nyelvek helyes megjelenítéséhez.\n- Többnyelvű weboldalaknál gondoskodni kell a helyes nyelvi és írásirány beállításokról.\n\n**Hasznos linkek:**\n- [MDN: lang attribútum](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)\n- [MDN: dir attribútum](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)\n- [W3C Internationalization (i18n) Practices](https://www.w3.org/International/articles/definitions-lang-tags/)\n",
+  "image": "/images/multilingual-html.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"ar\" dir=\"rtl\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>مثال على HTML متعدد اللغات</title>\n</head>\n<body>\n  <h1>مرحبا بالعالم</h1>\n  <p lang=\"en\" dir=\"ltr\">This paragraph is in English.</p>\n  <p lang=\"hu\" dir=\"ltr\">Ez egy magyar nyelvű bekezdés.</p>\n</body>\n</html>",
+  "keyPoints": [
+    "A lang attribútum segíti a nyelv helyes felismerését",
+    "A dir attribútummal állítható az írásirány (ltr vagy rtl)",
+    "Többnyelvű oldalaknál elemenként megadható a nyelv és írásirány",
+    "Az írásirány helyes kezelése létfontosságú RTL nyelveknél",
+    "Javítja az akadálymentességet és a keresőoptimalizálást"
+  ],
+  "htmlStructure": {
+    "html lang": "A dokumentum fő nyelvének megadása",
+    "dir": "Írásirány beállítása (ltr, rtl, auto)",
+    "elem lang": "Helyi nyelv megadása az adott elemhez",
+    "elem dir": "Helyi írásirány beállítása az adott elemhez"
+  }
+},
+{
+  "id": 27,
+  "title": "HTML és strukturált adatok (schema.org, JSON-LD)",
+  "content": "A strukturált adatok segítségével a weboldal tartalmát gépek (pl. keresőmotorok) számára is érthetővé tesszük. Ez javítja az oldal megjelenését a találati listákban, például gazdag kivonatok (rich snippets) formájában.\n\n---\n\n### 1. Mi az a strukturált adat?\n- Olyan formátumú meta-információ, amely leírja a weboldalon található tartalmak jelentését.\n- Segíti a keresőmotorokat a tartalom jobb megértésében és megjelenítésében.\n\n### 2. Schema.org szabvány\n- A legelterjedtebb strukturált adat séma.\n- Együttműködést jelent a Google, Bing, Yahoo és Yandex között.\n- Több száz típus és tulajdonság definiált: termékek, események, cikkek, cégek, értékelések stb.\n\n### 3. Formátumok a strukturált adatok megadására\n- **Microdata** – HTML attribútumok segítségével integrált adat.\n- **RDFa** – bonyolultabb, részletesebb, főleg szemantikus webben használatos.\n- **JSON-LD** – JavaScript objektumként külön blokként elhelyezett adat, manapság leginkább ajánlott.\n\n### 4. JSON-LD használata\n- Könnyen beilleszthető `<script type=\"application/ld+json\">` tagbe a HTML `<head>` vagy `<body>` részében.\n- Elkülönül a tartalomtól, így nem zavarja a design-t.\n\n### 5. Példa: JSON-LD egy termékhez\n```html\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Product\",\n  \"name\": \"Prémium Kávé\",\n  \"image\": \"https://example.com/images/kave.jpg\",\n  \"description\": \"Kiváló minőségű eszpresszó kávé\",\n  \"sku\": \"12345\",\n  \"offers\": {\n    \"@type\": \"Offer\",\n    \"url\": \"https://example.com/kave\",\n    \"priceCurrency\": \"HUF\",\n    \"price\": \"1990\",\n    \"availability\": \"https://schema.org/InStock\"\n  }\n}\n</script>\n```\n\n### 6. Validálás és tesztelés\n- Használj Google Rich Results Test eszközt vagy Schema Markup Validator-t a hibák kiszűrésére.\n- Fontos, hogy a strukturált adat megfeleljen a weboldalon lévő tényleges tartalomnak.\n\n### 7. Előnyök\n- Kiemeltebb megjelenés a keresőben (pl. értékelések, árak, eseményidőpontok).\n- Nagyobb kattintási arány (CTR).\n- Jobb felhasználói élmény és SEO.\n\n### 8. Gyakorlati tippek\n- Csak releváns adatokat adj meg, ne spamelj strukturált adatokkal.\n- Használj mindig friss, pontos információkat.\n- Tartsd naprakészen az adatokat, különösen árak és elérhetőség esetén.\n\n---\n\n**Összefoglaló:**\n- A strukturált adatok gépek számára teszik érthetővé a weboldal tartalmát.\n- A schema.org és a JSON-LD a legnépszerűbb és legajánlottabb módszerek.\n- Megfelelő használatukkal jobb SEO és látogatói élmény érhető el.\n\n**Hasznos linkek:**\n- [Schema.org](https://schema.org/)\n- [Google Structured Data](https://developers.google.com/search/docs/appearance/structured-data/intro)\n- [Google Rich Results Test](https://search.google.com/test/rich-results)\n- [Schema Markup Validator](https://validator.schema.org/)\n",
+  "image": "/images/json-ld-schema.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Termék oldal - Prémium Kávé</title>\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org/\",\n    \"@type\": \"Product\",\n    \"name\": \"Prémium Kávé\",\n    \"image\": \"https://example.com/images/kave.jpg\",\n    \"description\": \"Kiváló minőségű eszpresszó kávé\",\n    \"sku\": \"12345\",\n    \"offers\": {\n      \"@type\": \"Offer\",\n      \"url\": \"https://example.com/kave\",\n      \"priceCurrency\": \"HUF\",\n      \"price\": \"1990\",\n      \"availability\": \"https://schema.org/InStock\"\n    }\n  }\n  </script>\n</head>\n<body>\n  <h1>Prémium Kávé</h1>\n  <p>Kiváló minőségű eszpresszó kávé elérhető 1990 Ft-ért.</p>\n  <img src=\"images/kave.jpg\" alt=\"Prémium Kávé csomag\">\n</body>\n</html>",
+  "keyPoints": [
+    "Strukturált adatok gépek (pl. keresők) számára értelmezhető formátumú metaadatok",
+    "Schema.org a legelterjedtebb séma, JSON-LD a legnépszerűbb formátum",
+    "JSON-LD script tagben külön blokkban helyezkedik el a HTML-ben",
+    "Javítja a megjelenést a keresőtalálatokban és növeli a kattintási arányt",
+    "Fontos a pontos, releváns és naprakész adat megadása",
+    "Teszteld a strukturált adatokat Google eszközökkel"
+  ],
+  "htmlStructure": {
+    "script type=application/ld+json": "A JSON-LD adatot tartalmazó blokk",
+    "@context": "A schema.org séma kontextusa",
+    "@type": "Az adott tartalom típusa (pl. Product, Event, Article)",
+    "name": "Az elem neve (pl. termék neve)",
+    "description": "Rövid leírás az adott elemről",
+    "offers": "Ajánlatok, ár és elérhetőség adatai"
+  }
+},
+{
+  "id": 28,
+  "title": "Webkomponensek alapjai HTML szempontból",
+  "content": "A webkomponensek (Web Components) egy modern webfejlesztési technológia, amely lehetővé teszi új, újrafelhasználható, kapszulázott HTML elemek létrehozását. Ezáltal modulárisabbá, karbantarthatóbbá válik a weboldalak és alkalmazások fejlesztése.\n\n---\n\n### 1. Mi az a webkomponens?\n- Olyan egyedi HTML elem, amely saját HTML-t, CSS-t és JavaScriptet tartalmaz.\n- Elkülönül a környező dokumentumtól, így nem ütközik más elemekkel.\n\n### 2. A webkomponensek fő részei\n- **Custom Elements** – Saját HTML tagek definiálása JavaScript segítségével.\n- **Shadow DOM** – Elkülönített DOM fa, amely izolálja a komponens belső struktúráját és stílusait.\n- **HTML Templates** – Újrahasználható HTML szerkezet, amely csak akkor kerül megjelenítésre, ha szükséges.\n\n### 3. Custom Elements\n- Egyéni HTML elemek definiálása a `class` és a `customElements.define()` segítségével.\n- Példa:\n```javascript\nclass MyElement extends HTMLElement {\n  constructor() {\n    super();\n    this.innerHTML = `<p>Ez egy egyedi elem!</p>`;\n  }\n}\ncustomElements.define('my-element', MyElement);\n```\n- Ezután a `<my-element></my-element>` használható a HTML-ben.\n\n### 4. Shadow DOM\n- Elkülöníti a komponens DOM-ját a fő dokumentumtól.\n- Biztosítja, hogy a stílusok és események ne ütközzenek más elemekkel.\n- Példa:\n```javascript\nclass ShadowElement extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({mode: 'open'});\n    shadow.innerHTML = `<style>p { color: blue; }</style><p>Shadow DOM szöveg</p>`;\n  }\n}\ncustomElements.define('shadow-element', ShadowElement);\n```\n\n### 5. HTML Templates\n- `<template>` elem tartalmazza a HTML sablont, amely nem kerül azonnal megjelenítésre.\n- Lehetővé teszi új elemek létrehozását JavaScript segítségével.\n- Példa:\n```html\n<template id=\"my-template\">\n  <style>p { color: red; }</style>\n  <p>Template szöveg</p>\n</template>\n```\n\n### 6. Hogyan használjuk együtt a három technológiát?\n- Egyedi elemet hozunk létre, ami a template tartalmát shadow DOM-ban rendereli.\n\n### 7. Előnyök\n- Újrafelhasználható, izolált komponensek.\n- Könnyebb karbantartás és tesztelés.\n- Modulárisabb felépítés.\n- Jobb együttműködés nagyobb projekteknél.\n\n### 8. Böngészőtámogatás\n- A legtöbb modern böngésző támogatja a Web Components technológiát.\n- Régebbi böngészőkhöz polyfill-ek használata ajánlott.\n\n---\n\n**Összefoglaló:**\n- A Webkomponensek segítenek új, kapszulázott HTML elemek készítésében.\n- Fő elemei: Custom Elements, Shadow DOM, Template.\n- Használatuk elősegíti a modern, moduláris webfejlesztést.\n\n**Hasznos linkek:**\n- [MDN Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)\n- [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)\n- [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)\n- [HTML Templates](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)\n",
+  "image": "/images/web-components.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Webkomponens példa</title>\n</head>\n<body>\n  <my-element></my-element>\n  <shadow-element></shadow-element>\n\n  <template id=\"my-template\">\n    <style>p { color: green; }</style>\n    <p>Ez egy template-ből származó szöveg.</p>\n  </template>\n\n  <script>\n    class MyElement extends HTMLElement {\n      constructor() {\n        super();\n        this.innerHTML = `<p>Ez egy egyedi elem!</p>`;\n      }\n    }\n    customElements.define('my-element', MyElement);\n\n    class ShadowElement extends HTMLElement {\n      constructor() {\n        super();\n        const shadow = this.attachShadow({mode: 'open'});\n        shadow.innerHTML = `<style>p { color: blue; }</style><p>Shadow DOM szöveg</p>`;\n      }\n    }\n    customElements.define('shadow-element', ShadowElement);\n\n    // Template használata\n    const template = document.getElementById('my-template');\n    const clone = template.content.cloneNode(true);\n    document.body.appendChild(clone);\n  </script>\n</body>\n</html>",
+  "keyPoints": [
+    "Webkomponensek újrafelhasználható, kapszulázott HTML elemek",
+    "Három fő technológia: Custom Elements, Shadow DOM, HTML Templates",
+    "Custom Elements: egyedi HTML tag-ek JavaScript osztályként",
+    "Shadow DOM: elkülönített DOM és stílusok a komponenseknek",
+    "HTML Templates: előre definiált HTML szerkezet újrafelhasználásra",
+    "Növeli a webfejlesztés modularitását és karbantarthatóságát",
+    "Több modern böngésző támogatja, polyfill-ekkel régebbiek is kezelhetők"
+  ],
+  "htmlStructure": {
+    "customElements.define()": "Egyedi HTML elem regisztrálása JavaScript osztállyal",
+    "class extends HTMLElement": "Egyedi HTML elem osztály definíciója",
+    "this.attachShadow({mode: 'open'})": "Shadow DOM létrehozása és csatolása",
+    "<template>": "HTML sablon, amely nem jelenik meg automatikusan",
+    "template.content.cloneNode(true)": "A sablon klónozása és beillesztése a DOM-ba"
+  }
+},
+{
+  "id": 29,
+  "title": "Printelhető HTML szerkezet",
+  "content": "A printelhető HTML szerkezet kialakítása nagyon fontos, ha szeretnénk, hogy a weboldal tartalma nyomtatásra is jól nézzen ki, és könnyen olvasható legyen papíron. A nyomtatásra szánt tartalom szerkesztése során figyelembe kell venni, hogy a képernyőn megjelenő elemek és stílusok nem mindig működnek jól papíron.\n\n---\n\n### 1. Miért fontos a printelhető szerkezet?\n- A felhasználók gyakran szeretnék a weboldal tartalmát nyomtatni (pl. cikkek, számlák, útmutatók).\n- A nyomtatási verzió optimalizálása javítja a felhasználói élményt és profibb megjelenést biztosít.\n\n### 2. Printeléshez kapcsolódó HTML és CSS elemek\n- **Separate print stylesheet:** Külön CSS fájl vagy @media print blokk a nyomtatási stílusokhoz.\n- **Rejtett elemek:** Bizonyos elemek (pl. navigáció, bannerek, reklámok) elrejthetők nyomtatáskor.\n- **Oldaltörés kezelése:** `page-break-before`, `page-break-after`, `page-break-inside` tulajdonságokkal.\n\n### 3. Külön CSS nyomtatási szabályok (@media print)\n```css\n@media print {\n  body {\n    font-family: serif;\n    color: black;\n    background: white;\n  }\n  nav, .no-print, .advertisement {\n    display: none !important;\n  }\n  .page-break {\n    page-break-before: always;\n  }\n}\n```\n\n### 4. HTML szerkezeti tippek nyomtatáshoz\n- Használjunk logikus, szemantikus elemeket (pl. `<article>`, `<section>`, `<header>`, `<footer>`), így a tartalom könnyebben áttekinthető.\n- Képek esetén használjunk alacsony felbontású, nyomtatásra optimalizált verziókat, vagy elrejthetjük a felesleges dekorációkat.\n- Kerüljük a túl sűrű tartalmi elemeket, hogy a nyomtatott oldal ne legyen zsúfolt.\n\n### 5. Példa egy egyszerű printelhető oldal szerkezetre\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Nyomtatható oldal példa</title>\n  <style>\n    @media print {\n      nav, .footer, .no-print {\n        display: none;\n      }\n      body {\n        font-family: \"Times New Roman\", serif;\n        color: #000;\n        background: #fff;\n      }\n      .page-break {\n        page-break-before: always;\n      }\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Cikk címe</h1>\n    <nav class=\"no-print\">\n      <ul>\n        <li><a href=\"#\">Főoldal</a></li>\n        <li><a href=\"#\">Kapcsolat</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <article>\n    <section>\n      <h2>Bevezető</h2>\n      <p>Ez egy bevezető szöveg, ami nyomtatáskor is olvasható marad.</p>\n    </section>\n\n    <section>\n      <h2>Tartalom</h2>\n      <p>Részletes információk a témáról...</p>\n    </section>\n\n    <div class=\"page-break\"></div>\n\n    <section>\n      <h2>Összefoglalás</h2>\n      <p>Fontos pontok és összegzés a nyomtatott változathoz.</p>\n    </section>\n  </article>\n\n  <footer class=\"footer no-print\">\n    <p>© 2025 Weboldal neve</p>\n  </footer>\n</body>\n</html>\n```\n\n### 6. Tippek a jobb printéléshez\n- Használjunk egységes betűtípust és méretet nyomtatáshoz.\n- Minimalizáljuk a háttérszíneket, mert sok nyomtató nem kezeli jól.\n- Teszteljük különböző böngészőkben és nyomtatókban.\n\n---\n\n**Összefoglalás:**\n- A printelhető HTML szerkezet megkönnyíti a weboldalak nyomtatását.\n- A @media print CSS segítségével személyre szabhatjuk a nyomtatási megjelenést.\n- A nem szükséges elemek elrejtése és az oldaltörések kezelése javítja a nyomtatási élményt.\n\n**Hasznos linkek:**\n- [MDN @media print](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/print)\n- [CSS Page Breaks](https://developer.mozilla.org/en-US/docs/Web/CSS/page-break-before)\n- [Printing best practices](https://developers.google.com/web/fundamentals/design-and-ux/printer-friendly)\n",
+  "image": "/images/printable-html-structure.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Nyomtatható oldal példa</title>\n  <style>\n    @media print {\n      nav, .footer, .no-print {\n        display: none;\n      }\n      body {\n        font-family: \"Times New Roman\", serif;\n        color: #000;\n        background: #fff;\n      }\n      .page-break {\n        page-break-before: always;\n      }\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <h1>Cikk címe</h1>\n    <nav class=\"no-print\">\n      <ul>\n        <li><a href=\"#\">Főoldal</a></li>\n        <li><a href=\"#\">Kapcsolat</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <article>\n    <section>\n      <h2>Bevezető</h2>\n      <p>Ez egy bevezető szöveg, ami nyomtatáskor is olvasható marad.</p>\n    </section>\n\n    <section>\n      <h2>Tartalom</h2>\n      <p>Részletes információk a témáról...</p>\n    </section>\n\n    <div class=\"page-break\"></div>\n\n    <section>\n      <h2>Összefoglalás</h2>\n      <p>Fontos pontok és összegzés a nyomtatott változathoz.</p>\n    </section>\n  </article>\n\n  <footer class=\"footer no-print\">\n    <p>© 2025 Weboldal neve</p>\n  </footer>\n</body>\n</html>",
+  "keyPoints": [
+    "A printelhető HTML szerkezet a nyomtatási élményt javítja",
+    "@media print segítségével testreszabható a megjelenés nyomtatáskor",
+    "Nem releváns elemek (pl. navigáció, reklám) elrejthetők printkor",
+    "Oldaltörések kezelése a page-break CSS tulajdonságokkal",
+    "Szemantikus HTML használata a logikus tartalomstruktúrához",
+    "Egységes betűtípus és háttérszínek nyomtatáshoz optimalizálva",
+    "Tesztelés különböző böngészőkben és nyomtatókban ajánlott"
+  ],
+  "htmlStructure": {
+    "@media print": "A CSS-ben definiált szabályok, amelyek csak nyomtatáskor érvényesülnek",
+    "display: none": "Az elemek elrejtése nyomtatási nézetben",
+    "page-break-before / page-break-after": "Oldaltörések meghatározása a nyomtatásban",
+    "<header>, <article>, <section>, <footer>": "Szemantikus elemek a logikus és áttekinthető tartalomhoz",
+    "class=\"no-print\"": "Egyedi osztály az elemek elrejtéséhez print nézetben"
+  }
+},
+{
+  "id": 30,
+  "title": "Formázható HTML e-mailek készítése",
+  "content": "A HTML e-mailek létrehozása speciális megközelítést igényel, mert az e-mail kliensek sokféle, eltérő szabványokat és CSS támogatást használnak. Ezért a formázás során különös figyelmet kell fordítani a kompatibilitásra és a helyes megjelenésre.\n\n---\n\n### 1. Miért különleges a HTML e-mail?\n- Az e-mail kliensek (Gmail, Outlook, Apple Mail stb.) eltérően kezelik a HTML-t és CSS-t.\n- Korlátozott CSS támogatás: sok kliens nem támogat külső stíluslapokat vagy bizonyos CSS tulajdonságokat.\n- Inline CSS használata ajánlott a biztos megjelenésért.\n\n### 2. Alapvető szabályok a HTML e-mailekhez\n- Használjunk **táblázat alapú elrendezést**, mert az a legkompatibilisebb.\n- Kerüljük a modern CSS tulajdonságokat és JavaScriptet.\n- Mindig adjunk meg **alt attribútumot** a képekhez.\n- Használjunk **egyszerű, inline CSS-t** (stílusokat közvetlenül az elemekre).\n- Ügyeljünk a fix szélességre (általában 600px körül).\n\n### 3. Példa egy egyszerű formázott HTML e-mailre\n```html\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Üdvözlő e-mail</title>\n</head>\n<body style=\"margin:0; padding:0;\">\n  <table width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"center\" style=\"border:1px solid #cccccc;\">\n    <tr>\n      <td align=\"center\" bgcolor=\"#70bbd9\" style=\"padding: 40px 0 30px 0;\">\n        <img src=\"https://example.com/logo.png\" alt=\"Cég logója\" width=\"200\" style=\"display: block;\" />\n      </td>\n    </tr>\n    <tr>\n      <td bgcolor=\"#ffffff\" style=\"padding: 40px 30px 40px 30px;\">\n        <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n          <tr>\n            <td style=\"color: #153643; font-family: Arial, sans-serif; font-size: 24px;\">\n              <b>Kedves Ügyfelünk!</b>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;\">\n              Köszönjük, hogy velünk tartasz. Ez egy példa egy jól formázott HTML e-mailre.\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <a href=\"https://example.com\" style=\"background-color: #ee4c50; color: white; padding: 10px 20px; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; border-radius: 5px; display: inline-block;\">Látogasd meg weboldalunkat</a>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n    <tr>\n      <td bgcolor=\"#ee4c50\" style=\"padding: 30px 30px 30px 30px;\">\n        <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n          <tr>\n            <td style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;\" align=\"center\">\n              © 2025 Cég neve. Minden jog fenntartva.\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>\n```\n\n### 4. Fontosabb technikák és tippek\n- **Tesztelés:** Több e-mail kliensben ellenőrizzük a megjelenést (pl. Litmus, Email on Acid).\n- **Képek hosztolása:** Mindig HTTPS-el érhető el a kép, és adjunk meg alternatív szöveget.\n- **Tartalom egységesítése:** Ügyeljünk az egységes betűtípusokra és színekre.\n- **Mobilbarát kialakítás:** Használjunk media queryket és rugalmas méreteket a mobil megjelenéshez.\n\n### 5. Milyen CSS tulajdonságokat kerüljünk?\n- Ne használjunk JavaScriptet, vagy komplex interaktív elemeket.\n- Kerüljük a külső CSS fájlokat.\n- Minimális vagy semmilyen támogatást nem kapnak a CSS3 animációk, transzformációk.\n\n---\n\n**Összefoglalás:**\n- A HTML e-mailek készítésekor a kompatibilitás az elsődleges cél.\n- Inline CSS és táblázat-alapú elrendezés használata szükséges.\n- Teszteljük a különböző klienseket és böngészőket.\n\n**Hasznos linkek:**\n- [Campaign Monitor: Email HTML Guide](https://www.campaignmonitor.com/resources/guides/html-email/)\n- [MDN Email design basics](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Email_testing)\n- [Litmus Testing tool](https://litmus.com/)\n",
+  "image": "/images/html-email-example.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Üdvözlő e-mail</title>\n</head>\n<body style=\"margin:0; padding:0;\">\n  <table width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" align=\"center\" style=\"border:1px solid #cccccc;\">\n    <tr>\n      <td align=\"center\" bgcolor=\"#70bbd9\" style=\"padding: 40px 0 30px 0;\">\n        <img src=\"https://example.com/logo.png\" alt=\"Cég logója\" width=\"200\" style=\"display: block;\" />\n      </td>\n    </tr>\n    <tr>\n      <td bgcolor=\"#ffffff\" style=\"padding: 40px 30px 40px 30px;\">\n        <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n          <tr>\n            <td style=\"color: #153643; font-family: Arial, sans-serif; font-size: 24px;\">\n              <b>Kedves Ügyfelünk!</b>\n            </td>\n          </tr>\n          <tr>\n            <td style=\"padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;\">\n              Köszönjük, hogy velünk tartasz. Ez egy példa egy jól formázott HTML e-mailre.\n            </td>\n          </tr>\n          <tr>\n            <td>\n              <a href=\"https://example.com\" style=\"background-color: #ee4c50; color: white; padding: 10px 20px; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; border-radius: 5px; display: inline-block;\">Látogasd meg weboldalunkat</a>\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n    <tr>\n      <td bgcolor=\"#ee4c50\" style=\"padding: 30px 30px 30px 30px;\">\n        <table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">\n          <tr>\n            <td style=\"color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;\" align=\"center\">\n              © 2025 Cég neve. Minden jog fenntartva.\n            </td>\n          </tr>\n        </table>\n      </td>\n    </tr>\n  </table>\n</body>\n</html>",
+  "keyPoints": [
+    "HTML e-maileknél a kompatibilitás a legfontosabb szempont",
+    "Táblázat alapú elrendezés és inline CSS használata ajánlott",
+    "Képekhez mindig adjunk alt attribútumot",
+    "Kerüljük a külső CSS fájlokat és JavaScriptet",
+    "Mobilbarát kialakítás media querykkel lehetséges",
+    "Teszteljünk különböző e-mail klienseken (Gmail, Outlook, Apple Mail stb.)"
+  ],
+  "htmlStructure": {
+    "email": "A HTML e-mail szerkezete, amely táblázatokból és inline stílusokból áll",
+    "table": "Táblázat alapú elrendezés a kompatibilitás érdekében",
+    "td": "Táblázat cellák, amelyek tartalmazzák a különböző elemeket",
+    "img": "Képek, amelyekhez alt attribútumot adunk a leíráshoz",
+    "inline CSS": "Stílusok közvetlenül az elemekre alkalmazva a biztos megjelenésért", 
+    "a": "Hivatkozások, amelyek gombként is működhetnek a kattintásra",
+    "bgcolor": "Háttérszín beállítása a táblázat cellákhoz"
+  }
+},
+{
+  "id": 31,
+  "title": "HTML és PWA kezdő kapcsolat",
+  "content": "A Progressive Web App (PWA) technológia lehetővé teszi, hogy a webalkalmazások natív app-szerű élményt nyújtsanak, például offline működést, gyors betöltődést és telepíthetőséget. A PWA alapjai szorosan kapcsolódnak a HTML-hez és a modern webes technológiákhoz.\n\n---\n\n### 1. Mi az a PWA?\n- Webalkalmazás, amelyet böngészőben futtatunk, de natív app-élményt kínál.\n- Telepíthető a felhasználó eszközére, ikonnal a kezdőképernyőn.\n- Offline használatot támogat, gyors és megbízható.\n\n### 2. PWA alapvető összetevői\n- **Manifest fájl:** JSON formátumú leíró fájl, ami megadja az app nevét, ikonjait, színét és telepítési paramétereit.\n- **Service Worker:** Egy speciális JavaScript fájl, ami képes kezelni a hálózati kéréseket, cache-elni az adatokat, így offline módot biztosít.\n- **HTTPS:** A PWA csak biztonságos környezetben működik, azaz HTTPS protokoll alatt.\n\n### 3. HTML szerepe a PWA-ban\n- A PWA manifest fájlt az HTML <head> részében kell linkelni:\n\n```html\n<link rel=\"manifest\" href=\"manifest.json\">\n```\n\n- Fontos a meta tagok használata a mobilbarát megjelenéshez:\n\n```html\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"theme-color\" content=\"#317EFB\">\n```\n\n- A HTML struktúra legyen reszponzív és jól szervezett, hogy az app minden eszközön jól nézzen ki.\n\n### 4. Példa manifest.json fájlra\n```json\n{\n  \"name\": \"Prémium Webalkalmazás\",\n  \"short_name\": \"PrémiumApp\",\n  \"start_url\": \"/index.html\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#ffffff\",\n  \"theme_color\": \"#317EFB\",\n  \"icons\": [\n    {\n      \"src\": \"icons/icon-192x192.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\"\n    },\n    {\n      \"src\": \"icons/icon-512x512.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\"\n    }\n  ]\n}\n```\n\n### 5. Service Worker alapjai\n- A service worker egy háttérben futó JavaScript, amely kezeli a hálózati kéréseket és cache-elést.\n- Regisztrálása a HTML vagy JavaScript fájlban történik:\n\n```javascript\nif ('serviceWorker' in navigator) {\n  navigator.serviceWorker.register('/service-worker.js')\n    .then(function(registration) {\n      console.log('Service Worker regisztrálva:', registration);\n    })\n    .catch(function(error) {\n      console.log('Service Worker regisztráció sikertelen:', error);\n    });\n}\n```\n\n### 6. Miért fontos a HTTPS?\n- A service worker csak biztonságos környezetben működik.\n- A HTTPS védi az adatokat és biztonságosabbá teszi a webalkalmazást.\n\n### 7. Miért használjunk PWA-t?\n- Javított felhasználói élmény, gyors betöltődés.\n- Offline elérés.\n- Könnyű telepítés asztali és mobil eszközökre.\n\n### 8. HTML és PWA összefoglalás\n- A HTML a PWA gerince, itt történik a manifest fájl beillesztése és a service worker regisztrációja.\n- A reszponzív, jól strukturált HTML biztosítja a megfelelő megjelenést.\n- Meta tagok segítik a platform-specifikus megjelenést (pl. témaszín).\n\n---\n\n**Fontosabb kulcspontok:**\n- Manifest fájl linkelése HTML-ben\n- Service worker regisztráció JavaScriptből\n- HTTPS protokoll használata\n- Mobilbarát, reszponzív HTML szerkezet\n\n**Hasznos linkek:**\n- [Google Developers: Progressive Web Apps](https://web.dev/progressive-web-apps/)\n- [MDN Service Worker Guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)\n- [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)\n",
+  "image": "/images/pwa-overview.png",
+  "codeExample": "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta name=\"theme-color\" content=\"#317EFB\">\n  <title>Prémium PWA</title>\n  <link rel=\"manifest\" href=\"manifest.json\">\n</head>\n<body>\n  <h1>Üdvözlünk a Progressive Web App-ban!</h1>\n  <p>Ez egy egyszerű PWA kezdő példa.</p>\n  <script>\n    if ('serviceWorker' in navigator) {\n      navigator.serviceWorker.register('/service-worker.js')\n        .then(function(registration) {\n          console.log('Service Worker regisztrálva:', registration);\n        })\n        .catch(function(error) {\n          console.log('Service Worker regisztráció sikertelen:', error);\n        });\n    }\n  </script>\n</body>\n</html>",
+  "keyPoints": [
+    "A PWA natív app-szerű élményt nyújt a weben",
+    "Manifest fájlt HTML <head> részében kell linkelni",
+    "Service Worker biztosítja az offline működést és gyorsítást",
+    "HTTPS kötelező a Service Worker használathoz",
+    "Reszponzív HTML alapok elengedhetetlenek",
+    "Meta tagok segítik a megjelenést és színbeállításokat"
+  ],
+  "htmlStructure": {
+    "manifest link": "A manifest.json fájl beillesztése a HTML head szekciójába",
+    "meta viewport": "Mobilbarát megjelenés érdekében szükséges",
+    "meta theme-color": "A böngésző és eszköz színét beállítja a PWA-nak",
+    "service worker regisztráció": "JavaScript kód, amely aktiválja a service worker-t",
+    "strukturált HTML": "Reszponzív és jól szervezett tartalom az alkalmazás megjelenéséhez"
+  }
+},
+{
+  "id": 32,
+  "title": "HTML tesztelés és hibakeresés eszközök",
+  "content": "A HTML kód helyes működésének és megjelenésének biztosítása érdekében elengedhetetlen a megfelelő tesztelés és hibakeresés. Ez a lecke bemutatja a legfontosabb eszközöket és módszereket, amelyek segítségével hatékonyan ellenőrizheted és javíthatod a HTML dokumentumaidat.\n\n---\n\n### 1. HTML validáció\n- A validáció során ellenőrizzük, hogy a HTML kód megfelel-e az adott szabványoknak (pl. HTML5).\n- Segít megtalálni a hibás vagy nem szabványos tageket, attribútumokat.\n- Legnépszerűbb eszközök:\n  - **W3C Markup Validation Service**: https://validator.w3.org/\n  - **Nu Html Checker (v.Nu)**: https://validator.w3.org/nu/\n\n### 2. Böngésző fejlesztői eszközök (DevTools)\n- Minden modern böngésző tartalmaz beépített fejlesztői eszközöket (Chrome, Firefox, Edge, Safari).\n- Funkciók:\n  - HTML elemek vizsgálata és módosítása élőben.\n  - CSS stílusok és JavaScript hibák követése.\n  - Konzol a hibák és figyelmeztetések megjelenítéséhez.\n  - Hálózati forgalom ellenőrzése.\n\n### 3. Lintelők (HTML linters)\n- Automatikusan elemzik a kódot és figyelmeztetnek a potenciális hibákra, nem megfelelő stílusokra.\n- Népszerű eszközök:\n  - **HTMLHint**: https://htmlhint.com/\n  - Integrálható szerkesztőkbe és CI folyamatokba.\n\n### 4. Automatikus tesztelés és böngésző-kompatibilitás\n- Eszközök a különböző böngészők és eszközök közötti kompatibilitás ellenőrzésére:\n  - **BrowserStack**\n  - **Sauce Labs**\n- Ezek segítenek megtalálni a megjelenítési vagy funkcióbeli eltéréseket.\n\n### 5. Accessibility (hozzáférhetőség) tesztelés\n- HTML kód hozzáférhetőségének ellenőrzése fontos a fogyatékkal élő felhasználók számára.\n- Eszközök:\n  - **axe DevTools** (Chrome és Firefox kiegészítő)\n  - **WAVE** (Web Accessibility Evaluation Tool)\n\n### 6. Böngésző konzol hibák és figyelmeztetések\n- Fontos figyelni a böngésző konzoljában megjelenő hibákra, mert sokszor HTML vagy JavaScript problémára utalnak.\n\n### 7. Tippek hatékony hibakereséshez\n- Kód részek izolálása és tesztelése lépésről lépésre.\n- Verziókövető rendszerek (pl. Git) használata a változások nyomon követésére.\n- Kommentárok ideiglenes kikapcsolása, hogy megtaláld a hibás részt.\n\n---\n\n**Fontosabb kulcspontok:**\n- Mindig validáld a HTML kódot szabványellenőrző eszközökkel\n- Használd a böngészők fejlesztői eszközeit a gyors hibakereséshez\n- Lintelők segítenek a kód minőségének fenntartásában\n- Teszteld az alkalmazásodat több böngészőn és eszközön\n- Ne feledkezz meg a hozzáférhetőségi szempontokról sem\n\n**Hasznos linkek:**\n- [W3C Validator](https://validator.w3.org/)\n- [HTMLHint](https://htmlhint.com/)\n- [axe DevTools](https://www.deque.com/axe/)\n- [BrowserStack](https://www.browserstack.com/)\n",
+  "image": "/images/html-testing-tools.png",
+  "codeExample": "<!-- Példa HTML validációhoz -->\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>HTML teszt példa</title>\n</head>\n<body>\n  <h1>Üdvözlet!</h1>\n  <p>Ez egy egyszerű HTML oldal teszteléshez.</p>\n</body>\n</html>\n\n<!-- A fenti kódot érdemes átnézni W3C Validator segítségével -->",
+  "keyPoints": [
+    "HTML validálás szabványellenőrzőkkel alapvető lépés",
+    "Böngésző fejlesztői eszközök segítik a hibák gyors megtalálását és javítását",
+    "Lintelők automatikusan jeleznek kódminőségi problémákat",
+    "Böngészőkompatibilitás tesztelése több platformon javítja a felhasználói élményt",
+    "Hozzáférhetőségi teszteléssel szélesebb közönség érhető el",
+    "Konzolban megjelenő hibák és figyelmeztetések mindig figyelmet igényelnek"
+  ],
+  "htmlStructure": {
+    "valid HTML": "A dokumentum legyen szabványos és jól strukturált, hogy a validátor elfogadja",
+    "meta charset": "Megfelelő karakterkódolás beállítása a helyes megjelenéshez",
+    "title": "Az oldal címe a böngészőfülön és a találatokban",
+    "console": "Böngésző konzol hibák figyelése a fejlesztés során",
+    "lint szabályok": "Kódminőség fenntartásához használt szabályok"
+  }
+},
+{
+  "id": 33,
+  "title": "HTML és Web Accessibility (WAI-ARIA részletesen)",
+  "content": "A webes akadálymentesség (Accessibility) célja, hogy minden felhasználó, beleértve a fogyatékkal élőket is, problémamentesen hozzáférhessen a weboldalak tartalmához és funkcióihoz.\n\n**WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications)** egy szabvány, amely segíti a dinamikus tartalmak és összetett UI komponensek elérhetővé tételét.\n\n**Fontos WAI-ARIA attribútumok:**\n• role – az elem funkcióját definiálja (pl. button, navigation, alert)\n• aria-label – alternatív szöveg az elemeknek\n• aria-labelledby – hivatkozás egy másik elemre, amely azonosítja\n• aria-describedby – további magyarázó szöveg megadása\n• aria-hidden – megmondja a segédeszközöknek, hogy figyelmen kívül hagyják az elemet\n• aria-live – dinamikus változások bejelentése a képernyőolvasóknak\n\n**Példák:**\n```html\n<nav role=\"navigation\" aria-label=\"Főoldali menü\">\n  <ul>\n    <li><a href=\"#home\">Kezdőlap</a></li>\n    <li><a href=\"#about\">Rólunk</a></li>\n  </ul>\n</nav>\n<button aria-label=\"Bezárás\">×</button>\n```\n\nAz ARIA használata nem helyettesíti a szemantikus HTML-t, hanem kiegészíti azt, különösen dinamikus és egyedi komponensek esetén.\n\n**Tippek a jobb akadálymentességhez:**\n• Használj mindig szemantikus HTML elemeket\n• Az interaktív elemek legyenek billentyűzettel is kezelhetők\n• Rendszeresen tesztelj képernyőolvasókkal\n• Ne használj felesleges aria-attritbútumokat, ha nincs rájuk szükség\n\nAz akadálymentes weboldalak mindenki számára jobb használhatóságot jelentenek, ezért érdemes ezt a témát komolyan venni.",
+  "image": "/images/wai-aria-accessibility.jpg",
+  "codeExample": "<nav role=\"navigation\" aria-label=\"Főoldali menü\">\n  <ul>\n    <li><a href=\"#home\">Kezdőlap</a></li>\n    <li><a href=\"#about\">Rólunk</a></li>\n  </ul>\n</nav>\n<button aria-label=\"Bezárás\">×</button>",
+  "keyPoints": [
+    "role attribútum: az elem funkciójának definiálása",
+    "aria-label és aria-labelledby: alternatív azonosítók megadása",
+    "aria-describedby: további magyarázó szöveg",
+    "aria-hidden: elem elrejtése a segédeszközök elől",
+    "aria-live: dinamikus tartalom változások bejelentése"
+  ],
+  "htmlStructure": {
+    "role": "Az elem funkcióját definiálja (pl. button, navigation, alert)",
+    "aria-label": "Az elem alternatív szöveges azonosítója",
+    "aria-labelledby": "Másik elem azonosítója, amely az elem címkéje",
+    "aria-describedby": "Másik elem azonosítója, amely további leírást ad",
+    "aria-hidden": "Megmondja, hogy a segédeszközök ne vegyék figyelembe",
+    "aria-live": "Dinamikus tartalom változások bejelentése a képernyőolvasóknak"
+  }
+},
+{
+  "id": 34,
+  "title": "HTML5 újítások és elavult elemek",
+  "content": "A HTML5 a HTML szabvány jelentős frissítése, amely új elemeket és funkciókat hozott, miközben számos elavult, elhagyott elemet eltávolított vagy lecserélt.\n\n**Fontos HTML5 újdonságok:**\n• Új szemantikus elemek: <header>, <footer>, <article>, <section>, <nav>, <aside>\n• Médiaelemek: <audio>, <video>, <source>\n• Beépített űrlap validáció és új input típusok: email, url, date, number, range, color stb.\n• Canvas és SVG integráció a grafikákhoz\n• Drag and Drop API, Web Storage, Geolocation, Web Workers és sok más API támogatása\n\n**Elavult (deprecated) elemek és attribútumok HTML5-ben:**\n• <font>, <center>, <big>, <strike>, <tt>, <u> – használatuk nem javasolt, helyett CSS-t használjunk\n• <frame>, <frameset> – keretek helyett iframe és CSS alapú layoutok ajánlottak\n• attribútumok, mint az align, bgcolor, border – CSS segítségével oldjuk meg\n\n**Példák:**\n```html\n<header>\n  <h1>Honlap címe</h1>\n  <nav>\n    <ul>\n      <li><a href=\"#\">Főoldal</a></li>\n      <li><a href=\"#\">Kapcsolat</a></li>\n    </ul>\n  </nav>\n</header>\n\n<video controls>\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  A böngésződ nem támogatja a videó elemet.\n</video>\n```\n\n**Tippek:**\n• Mindig használj HTML5 szemantikus elemeket a jobb olvashatóság és SEO érdekében\n• Kerüld az elavult elemek használatát, helyette CSS-t alkalmazz\n• Használj modern input típusokat az űrlapokban a jobb felhasználói élményért és validációért\n\nAz újítások lehetővé teszik a modernebb, rugalmasabb és akadálymentesebb weboldalak készítését.",
+  "image": "/images/html5-new-old.jpg",
+  "codeExample": "<header>\n  <h1>Honlap címe</h1>\n  <nav>\n    <ul>\n      <li><a href=\"#\">Főoldal</a></li>\n      <li><a href=\"#\">Kapcsolat</a></li>\n    </ul>\n  </nav>\n</header>\n\n<video controls>\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  A böngésződ nem támogatja a videó elemet.\n</video>",
+  "keyPoints": [
+    "HTML5 új szemantikus elemek: header, footer, article, section, nav, aside",
+    "Új médiaelemek: audio, video, source",
+    "Beépített űrlap validáció és új input típusok",
+    "Elavult elemek kerülése: font, center, strike, u, frame, frameset",
+    "CSS használata a megjelenítéshez, nem az elavult attribútumok"
+  ],
+  "htmlStructure": {
+    "header, footer, article, section, nav, aside": "Új szemantikus elemek a HTML5-ben",
+    "audio, video, source": "Multimédia elemek a beépített támogatáshoz",
+    "input type=email, url, date, number": "Új input típusok az űrlapokhoz",
+    "font, center, strike, u": "Elavult elemek, kerüld a használatukat",
+    "align, bgcolor, border attribútumok": "Elavult, CSS-sel helyettesítendők"
+  }
+},
+{
+  "id": 35,
+  "title": "HTML integráció REST API-kkal és AJAX használata",
+  "content": "A modern webalkalmazások gyakran kommunikálnak szerverekkel REST API-kon keresztül, hogy dinamikusan töltsenek be adatokat, anélkül, hogy újratöltenék az egész oldalt.\n\n**REST API alapok:**\n• REST (Representational State Transfer) egy architektúra-stílus, amely HTTP metódusokat (GET, POST, PUT, DELETE) használ az erőforrások kezelésére.\n• Az API válasz általában JSON formátumú adatokat tartalmaz.\n\n**AJAX (Asynchronous JavaScript and XML):**\nLehetővé teszi az aszinkron adatlekérést JavaScript segítségével, így az oldal nem töltődik újra a frissítéskor.\n\n**Fetch API:**\nAz XMLHttpRequest modern alternatívája, egyszerűbb és ígéreteken (Promises) alapul.\n\n**Példa Fetch API használatra:**\n```javascript\nfetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => {\n    console.log(data);\n    document.getElementById('output').textContent = JSON.stringify(data);\n  })\n  .catch(error => console.error('Hiba történt:', error));\n```\n\n**HTML és JavaScript együtt:**\n```html\n<div id=\"output\">Adatok betöltése...</div>\n<button id=\"loadBtn\">Adatok lekérése</button>\n<script>\n  document.getElementById('loadBtn').addEventListener('click', () => {\n    fetch('https://api.example.com/data')\n      .then(response => response.json())\n      .then(data => {\n        document.getElementById('output').textContent = JSON.stringify(data);\n      })\n      .catch(err => {\n        document.getElementById('output').textContent = 'Hiba az adatok lekérésekor';\n      });\n  });\n</script>\n```\n\n**Fontos megjegyzések:**\n• Az API-k használatához gyakran szükséges CORS engedélyezés a szerveren.\n• Biztonsági szempontból a hitelesítés (pl. tokenek) kezelése kritikus.\n• Aszinkron programozási minták ismerete előnyös (Promises, async/await).\n\nA REST API-k és AJAX segítségével interaktív, dinamikus weboldalak hozhatók létre, amelyek jó felhasználói élményt nyújtanak.",
+  "image": "/images/ajax-restapi.jpg",
+  "codeExample": "<div id=\"output\">Adatok betöltése...</div>\n<button id=\"loadBtn\">Adatok lekérése</button>\n<script>\n  document.getElementById('loadBtn').addEventListener('click', () => {\n    fetch('https://api.example.com/data')\n      .then(response => response.json())\n      .then(data => {\n        document.getElementById('output').textContent = JSON.stringify(data);\n      })\n      .catch(err => {\n        document.getElementById('output').textContent = 'Hiba az adatok lekérésekor';\n      });\n  });\n</script>",
+  "keyPoints": [
+    "REST API: HTTP metódusok használata az adatok kezelésére",
+    "AJAX: aszinkron adatlekérés JavaScript segítségével",
+    "Fetch API: modern, egyszerűbb AJAX alternatíva",
+    "CORS: szerver oldali engedélyezés szükséges a biztonságos hozzáféréshez",
+    "Hitelesítés és biztonság fontos REST API használatkor"
+  ],
+  "htmlStructure": {
+    "div id=\"output\"": "Az adatok megjelenítésére szolgáló konténer",
+    "button id=\"loadBtn\"": "Adatlekérés indító gomb",
+    "script": "Fetch API hívás és adatkezelés JavaScriptben"
+  }
+},
+{
+  "id": 36,
+  "title": "Web Components mélyebben – Shadow DOM, Custom Elements",
+  "content": "A Web Components egy modern webes technológia, amely lehetővé teszi új, újrafelhasználható HTML elemek létrehozását, elkülönítve a stílusokat és a viselkedést.\n\n**Fő részei:**\n1. **Custom Elements:** Egyedi HTML elemek létrehozása JavaScript segítségével.\n2. **Shadow DOM:** Elkülönített DOM-fa, amely elkülöníti a komponens stílusait és szerkezetét az oldal többi részétől.\n3. **HTML Templates:** Újrahasználható HTML szerkezetek definiálása, amelyek később beilleszthetők.\n\n**Shadow DOM:**\n- Lehetővé teszi, hogy a komponens saját, izolált DOM-ot tartalmazzon.\n- A stílusok nem szivárognak ki, és nem hatnak a külső DOM-ra.\n\n**Példa Custom Element és Shadow DOM használatára:**\n```javascript\nclass MyButton extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({ mode: 'open' });\n    shadow.innerHTML = `\n      <style>\n        button { background-color: #007BFF; color: white; border: none; padding: 10px 20px; cursor: pointer; }\n        button:hover { background-color: #0056b3; }\n      </style>\n      <button><slot>Alap gomb</slot></button>\n    `;\n  }\n}\ncustomElements.define('my-button', MyButton);\n```\n\n**HTML használat:**\n```html\n<my-button>Kattints rám!</my-button>\n```\n\n**Előnyök:**\n- Újrafelhasználhatóság\n- Stílusok és viselkedés izolálása\n- Komponens alapú fejlesztés támogatása natív módon\n\n**Fontos megjegyzések:**\n- Böngészőtámogatás jó, de régebbi böngészőkben polifillek szükségesek\n- A Web Components integrálható bármilyen frontend keretrendszerrel\n\nA Web Components segíti a moduláris, karbantartható és skálázható webalkalmazások fejlesztését.",
+  "image": "/images/web-components-shadow-dom.jpg",
+  "codeExample": "class MyButton extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({ mode: 'open' });\n    shadow.innerHTML = `\n      <style>\n        button { background-color: #007BFF; color: white; border: none; padding: 10px 20px; cursor: pointer; }\n        button:hover { background-color: #0056b3; }\n      </style>\n      <button><slot>Alap gomb</slot></button>\n    `;\n  }\n}\ncustomElements.define('my-button', MyButton);",
+  "keyPoints": [
+    "Custom Elements: saját HTML elemek definiálása JavaScriptben",
+    "Shadow DOM: elkülönített DOM és stílusok egy komponensen belül",
+    "HTML Templates: újrahasználható HTML szerkezetek definiálása",
+    "Stílusok izolálása megakadályozza a szivárgást és ütközéseket",
+    "Böngészőtámogatás és polifillek a kompatibilitásért"
+  ],
+  "htmlStructure": {
+    "custom element (pl. <my-button>)": "Egyedi HTML elem, amely a Web Component része",
+    "attachShadow({mode:'open'})": "Shadow DOM létrehozása a komponens izolációjához",
+    "shadow.innerHTML": "A komponens HTML és CSS szerkezete a Shadow DOM-ban",
+    "<slot>": "Helyőrző a komponens belső tartalmának behelyettesítéséhez"
+  }
+},
+{
+  "id": 37,
+  "title": "SEO továbbfejlesztett technikák – strukturált adatok és mikroformátumok",
+  "content": "A keresőoptimalizálás (SEO) nem csak a jól megírt tartalmon és a megfelelő HTML szerkezeten múlik, hanem a weboldal gépi értelmezhetőségén is. A strukturált adatok és mikroformátumok segítségével a keresőmotorok pontosabb információkat kapnak a tartalomról, ami jobb megjelenést eredményezhet a találati listákban.\n\n**Strukturált adatok:**\n- Olyan szabványos formátumok, amelyekkel leírhatjuk az oldal tartalmát gépi olvasható módon.\n- Leggyakoribb formátumok: JSON-LD, Microdata, RDFa.\n- Példák: események, termékek, értékelések, cikkek leírása.\n\n**JSON-LD:**\n- A Google által preferált megoldás.\n- JavaScript kódrészlet formájában illesztjük be a <head> vagy <body> részbe.\n\n**Példa JSON-LD struktúrára egy eseményhez:**\n```json\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Event\",\n  \"name\": \"Koncert a Duna-parton\",\n  \"startDate\": \"2025-07-15T20:00\",\n  \"location\": {\n    \"@type\": \"Place\",\n    \"name\": \"Budapesti Szabadtéri Színpad\",\n    \"address\": \"Budapest, Duna-part\"\n  },\n  \"image\": \"https://example.com/image.jpg\",\n  \"description\": \"Nyári koncertsorozat a Duna-parton\",\n  \"offers\": {\n    \"@type\": \"Offer\",\n    \"price\": \"3500\",\n    \"priceCurrency\": \"HUF\",\n    \"availability\": \"https://schema.org/InStock\"\n  }\n}\n```\n\n**Mikroformátumok (Microformats):**\n- HTML attribútumokkal ellátott speciális osztálynevek (class), amelyek strukturált adatokat adnak.\n- Példa: hCard, hCalendar, hReview.\n\n**Előnyök:**\n- Keresőmotorok jobban megértik az oldalt.\n- Rich snippetek (pl. csillagértékelések, eseményidőpontok) jelennek meg a keresési találatok között.\n- Javítja a kattintási arányt (CTR).\n\n**Ajánlott eszközök:**\n- Google Structured Data Testing Tool\n- Rich Results Test\n- Schema.org dokumentáció\n\nAz alaposan implementált strukturált adatok jelentős SEO előnyt jelentenek, és segítenek a weboldal láthatóságának növelésében.",
+  "image": "/images/seo-structured-data.jpg",
+  "codeExample": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Event\",\n  \"name\": \"Koncert a Duna-parton\",\n  \"startDate\": \"2025-07-15T20:00\",\n  \"location\": {\n    \"@type\": \"Place\",\n    \"name\": \"Budapesti Szabadtéri Színpad\",\n    \"address\": \"Budapest, Duna-part\"\n  },\n  \"image\": \"https://example.com/image.jpg\",\n  \"description\": \"Nyári koncertsorozat a Duna-parton\",\n  \"offers\": {\n    \"@type\": \"Offer\",\n    \"price\": \"3500\",\n    \"priceCurrency\": \"HUF\",\n    \"availability\": \"https://schema.org/InStock\"\n  }\n}\n</script>",
+  "keyPoints": [
+    "Strukturált adatok segítik a keresőmotorokat a tartalom jobb megértésében",
+    "JSON-LD a legelterjedtebb és Google által preferált formátum",
+    "Mikroformátumok HTML attribútumokkal adnak strukturált információt",
+    "Rich snippetek megjelenítése növeli a kattintási arányt",
+    "Google eszközök segítségével validálható a strukturált adat"
+  ],
+  "htmlStructure": {
+    "<script type=\"application/ld+json\">": "JSON-LD formátumú strukturált adat beágyazása",
+    "class=\"h-card\" vagy hasonló": "Mikroformátumok használata HTML elemeknél",
+    "meta adatok": "SEO szempontból fontos további információk"
+  }
+},
+{
+  "id": 38,
+  "title": "HTML és böngésző biztonság",
+  "content": "A webfejlesztés egyik kritikus területe a biztonság, különösen a HTML és a böngészők viszonya. A nem megfelelően kezelt HTML kód és felhasználói inputok könnyen sebezhetőségekhez vezethetnek, mint például XSS (Cross-Site Scripting) támadások.\n\n**Legfontosabb biztonsági kihívások:**\n\n- **XSS (Cross-Site Scripting):**\n  A támadó rosszindulatú JavaScript kódot juttat be egy weboldalba, amit más felhasználók böngészője futtat.\n\n- **CSRF (Cross-Site Request Forgery):**\n  Egy támadó a felhasználó nevében küld el kéretlen kéréseket egy másik weboldalra.\n\n- **Clickjacking:**\n  Egy láthatatlan rétegen keresztül a támadó kattintásokat csal ki a felhasználóból.\n\n**HTML és biztonság:**\n- Soha ne bízzunk a felhasználói inputban, mindig végezzünk szerver- és kliensoldali validációt.\n- Használjunk **Content Security Policy (CSP)** fejléceket, amelyek korlátozzák, hogy honnan töltődhetnek be szkriptek, képek, stílusok.\n- Kerüljük az inline JavaScript és CSS használatát.\n- Biztosítsuk a megfelelő **escape-elést** minden dinamikusan beillesztett tartalom esetén (pl. HTML entitások).\n\n**Fontos HTML attribútumok biztonsági szempontból:**\n- **rel=\"noopener noreferrer\"** külső linkeknél, hogy megakadályozzuk a reverse tabnapping támadást.\n- **sandbox** attribútum az iframe elemeknél a beágyazott tartalom korlátozására.\n\n**Példa CSP fejlécre (szerver oldalon beállítandó):**\n```\nContent-Security-Policy: default-src 'self'; script-src 'self' https://apis.example.com; style-src 'self' 'unsafe-inline'; img-src *; frame-src 'none';\n```\n\n**Általános javaslatok:**\n- Mindig frissítsük a böngészőt és könyvtárakat.\n- Használjunk HTTPS protokollt az adatbiztonság érdekében.\n- Vizsgáljuk meg a weboldalunkat biztonsági eszközökkel (pl. OWASP ZAP, Burp Suite).\n\nAz alapos biztonsági megközelítés elengedhetetlen a megbízható és felhasználóbarát weboldalak fejlesztéséhez.",
+  "image": "/images/html-security.jpg",
+  "codeExample": "<a href=\"https://external-site.com\" target=\"_blank\" rel=\"noopener noreferrer\">Biztonságos külső link</a>\n\n<iframe src=\"https://trusted-site.com\" sandbox=\"allow-scripts allow-same-origin\"></iframe>",
+  "keyPoints": [
+    "XSS támadások elkerülése megfelelő escape-eléssel és input validációval",
+    "Content Security Policy (CSP) használata a betöltött tartalmak korlátozására",
+    "rel=\"noopener noreferrer\" használata külső linkeken a biztonság növelésére",
+    "sandbox attribútum iframe-eknél a beágyazott tartalom korlátozásához",
+    "HTTPS és biztonsági eszközök használata alapkövetelmény"
+  ],
+  "htmlStructure": {
+    "<a href=\"...\" rel=\"noopener noreferrer\">": "Biztonságos külső link megadása",
+    "<iframe sandbox=\"...\">": "Beágyazott tartalom biztonsági korlátozása",
+    "Content Security Policy": "Szerver oldali fejlécek beállítása a biztonság növelésére",
+    "escape-elés": "Dinamikusan beillesztett tartalom biztonságos kezelése",
+    "input validáció": "Felhasználói inputok ellenőrzése és szűrése a biztonság érdekében",
+    "meta adatok": "SEO szempontból fontos további információk"
+  }
+}
+  ]}

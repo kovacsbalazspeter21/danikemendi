@@ -1,0 +1,58 @@
+.projekt-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.projekt-container h1 {
+  color: #1976d2;
+  margin-bottom: 28px;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.projekt-list {
+  list-style: none;
+  padding: 0;
+}
+
+.projekt-item {
+  background: #e3f2fd;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 18px;
+  text-align: left;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.projekt-item.selected {
+  border: 2px solid #1976d2;
+  background: #e1f5fe;
+}
+
+.projekt-item h2 {
+  margin: 0 0 8px 0;
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+.projekt-item p {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.projekt-details {
+  margin-top: 14px;
+  color: #222;
+  background: #f7fafd;
+  border-radius: 6px;
+  padding: 12px;
+}
