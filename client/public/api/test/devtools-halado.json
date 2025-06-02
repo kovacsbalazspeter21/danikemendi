@@ -1,0 +1,259 @@
+[
+    {
+  "id": 20,
+  "title": "DevTools Haladó Teszt",
+  "questions": [
+    {
+      "question": "Hogyan lehet hálózati forgalmat szimulálni lassabb kapcsolat esetén?",
+      "options": [
+        "Network fül → Throttling beállítása",
+        "Console → simulate('slow')",
+        "Elements → Connection mód",
+        "Sources → Delay script"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet figyelni, ha egy DOM elem attribútuma megváltozik?",
+      "options": [
+        "Elements → jobb klikk → Break on → Attribute modifications",
+        "Console → watchAttributes()",
+        "Network → DOM Changes",
+        "Sources → DOM Observe"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan állíthatsz be conditional breakpoint-ot?",
+      "options": [
+        "Kattints jobb gombbal a sorszámra → Add conditional breakpoint",
+        "Console → condition('x > 5')",
+        "Elements → Breakpoint condition",
+        "Application → Breakpoint logic"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszközzel lehet JavaScript memóriaszivárgást azonosítani?",
+      "options": [
+        "Memory → Heap snapshot",
+        "Network → Clear cache",
+        "Elements → Clean DOM",
+        "Application → Reset Storage"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál az Event Listener Breakpoint?",
+      "options": [
+        "Megállítja a kódot, ha egy adott esemény történik",
+        "Megszünteti a listenert",
+        "Bekapcsolja az események naplózását",
+        "Folyamatosan futtatja az eseményt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a sárga háromszög az Elements panelen egy elemnél?",
+      "options": [
+        "Konzolhiba vagy figyelmeztetés az elemhez kapcsolódóan",
+        "Stílus hiánya",
+        "Hiányzó záró tag",
+        "Az elem nincs renderelve"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'Blackbox script' funkció célja?",
+      "options": [
+        "Kihagyja a kiválasztott szkripteket a hibakeresésből",
+        "Sötét témát alkalmaz",
+        "Titkosítja a szkriptet",
+        "Láthatatlanná teszi a forrást"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet CSS animációkat elemezni?",
+      "options": [
+        "Performance → Record → Replay",
+        "Network → Animations",
+        "Console → debugAnimations()",
+        "Elements → CSS Tracking"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál az `$0` változó a Console panelen?",
+      "options": [
+        "Az éppen kijelölt DOM elemre hivatkozik",
+        "Az első console.log érték",
+        "Nullára állított változó",
+        "Memória címet jelez"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik funkció segít API válaszokat újrajátszani vagy módosítani?",
+      "options": [
+        "Network → Replay XHR",
+        "Console → simulateRequest()",
+        "Sources → XHR Runner",
+        "Application → Request Override"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hol lehet auditálni a PWA (Progressive Web App) megfelelést?",
+      "options": [
+        "Lighthouse panel",
+        "Network panel",
+        "Elements panel",
+        "Sources panel"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit lehet tenni a Coverage panelen?",
+      "options": [
+        "Megtekinteni a kihasznált és kihasználatlan CSS/JS kódot",
+        "Mérni a betöltési időt",
+        "Szkript lefutását leállítani",
+        "Stílusokat exportálni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik DevTools panel képes long taskokat (hosszú futású műveleteket) azonosítani?",
+      "options": [
+        "Performance",
+        "Application",
+        "Memory",
+        "Elements"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet live expression-t használni a Console panelen?",
+      "options": [
+        "Console → Add Live Expression",
+        "Elements → Live Tracker",
+        "Network → Real-Time",
+        "Sources → Watch Variables"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet emulálni különböző geolokációkat?",
+      "options": [
+        "Sensors fül → Geolocation beállítás",
+        "Console → setLocation()",
+        "Elements → GPS",
+        "Sources → Emulate Location"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'JS Profiler' használata?",
+      "options": [
+        "Funkciók futási idejének mérése és teljesítményprofil készítése",
+        "JavaScript fájlok minimalizálása",
+        "Szerverprofil betöltése",
+        "Konzolfigyelés beállítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha `debugger;` sort írsz a kódba?",
+      "options": [
+        "A kód megáll, mintha breakpoint lenne",
+        "Törli a változókat",
+        "Továbbítja a logokat",
+        "Kiírja a stack trace-t"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a DOM breakpoint: 'Node removal'?",
+      "options": [
+        "Megáll a kód, amikor egy elem törlésre kerül a DOM-ból",
+        "Eltávolítja a node-ot",
+        "Duplikálja az elemet",
+        "Eltünteti vizuálisan"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz használható IndexedDB tartalom megtekintésére?",
+      "options": [
+        "Application → IndexedDB",
+        "Sources → Database",
+        "Elements → Data Viewer",
+        "Console → dbView()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet websocket kommunikációt nyomon követni?",
+      "options": [
+        "Network → WS fül",
+        "Application → Messages",
+        "Console → watchSocket()",
+        "Elements → WS Tracker"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik panel mutatja meg, mely fájlok be vannak cache-elve?",
+      "options": [
+        "Application → Cache Storage",
+        "Elements → Cached",
+        "Console → showCache()",
+        "Network → All"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a 'step over' debug opció?",
+      "options": [
+        "Lép a következő sorra anélkül, hogy belépne a függvénybe",
+        "Belép a függvény belsejébe",
+        "Kilép az aktuális függvényből",
+        "Újraindítja a scriptet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen DevTools funkcióval mérhető konkrét user interakció hatása?",
+      "options": [
+        "Performance → Interaction recording",
+        "Console → clickBenchmark()",
+        "Elements → Live input",
+        "Sources → Input Timeline"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hol lehet header manipulációkat tesztelni?",
+      "options": [
+        "Network → jobb klikk → Edit and Resend",
+        "Console → headers.set()",
+        "Elements → header editor",
+        "Application → Modify headers"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen módszerrel lehet CSS változókat (custom properties) nyomon követni?",
+      "options": [
+        "Elements → Computed → --változók",
+        "Console → getCSSVars()",
+        "Application → Styles panel",
+        "Network → CSS tracking"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

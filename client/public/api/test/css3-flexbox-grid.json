@@ -1,0 +1,259 @@
+[
+    {
+    "id": 4,
+    "title": "CSS3 Flexbox és Grid Teszt",
+    "questions": [
+    {
+      "question": "Mi a Flexbox fő célja?",
+      "options": [
+        "Rugalmas elrendezés biztosítása a tengelyek mentén",
+        "Szövegformázás",
+        "Átlátszóság beállítása",
+        "Színek megadása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'display: flex;' hatása egy elemre?",
+      "options": [
+        "A gyermekelemek rugalmas elrendezést kapnak",
+        "Az elem eltűnik",
+        "Az elem lebegni kezd",
+        "Az elem rácssá válik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a flexbox alapértelmezett fő tengelyének iránya?",
+      "options": [
+        "Vízszintes (balról jobbra)",
+        "Függőleges (felülről lefelé)",
+        "Átlós",
+        "Jobbról balra"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonság állítja be a gyermekelemek főtengely menti igazítását?",
+      "options": [
+        "justify-content",
+        "align-items",
+        "flex-direction",
+        "align-self"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál az 'align-items: center;' beállítás?",
+      "options": [
+        "A keresztirányban középre helyezi az elemeket",
+        "Balra igazítja az elemeket",
+        "Fő tengely mentén középre igazít",
+        "Elosztja az elemeket a térben"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'flex-direction: column;' hatása?",
+      "options": [
+        "A fő tengely függőlegessé válik",
+        "Eltünteti a sorokat",
+        "Megfordítja az elemeket",
+        "Jobbról balra rendezi az elemeket"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik érték engedi a sorok törését Flexboxban?",
+      "options": [
+        "flex-wrap: wrap;",
+        "flex-break: true;",
+        "flex-line: new;",
+        "wrap-content: on;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'flex: 1' egy elemre?",
+      "options": [
+        "Az elem a maradék helyet arányosan elfoglalja",
+        "Középre kerül",
+        "Rejtetté válik",
+        "Kijelöli első elemnek"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a 'justify-content: space-between;'?",
+      "options": [
+        "A gyermekelemeket két szélső ponton, közte egyenletesen osztja el",
+        "Mindet balra rendezi",
+        "Középre rendezi őket",
+        "Rácsszerűen rendezi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik nem érvényes 'align-items' érték?",
+      "options": [
+        "side",
+        "center",
+        "flex-start",
+        "stretch"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a CSS Grid fő célja?",
+      "options": [
+        "Kétdimenziós elrendezés kezelése (sorok és oszlopok)",
+        "Átlátszóság beállítása",
+        "Háttérkép elhelyezése",
+        "Betűméret beállítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'display: grid;' hatása egy elemre?",
+      "options": [
+        "Rács konténerré alakítja",
+        "Eltünteti az elemet",
+        "Kép pozícionálást állít be",
+        "Átlátszóvá teszi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonsággal adhatunk meg oszlopokat Grid-ben?",
+      "options": [
+        "grid-template-columns",
+        "grid-columns",
+        "grid-size",
+        "column-repeat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent: grid-template-columns: repeat(3, 1fr);?",
+      "options": [
+        "3 egyenlő oszlop létrehozása",
+        "3-szor megismétli az egész gridet",
+        "1 pixel oszlopot készít",
+        "Nincs hatása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az 'fr' egység jelentése?",
+      "options": [
+        "A rendelkezésre álló tér arányos része",
+        "Fix pixel méret",
+        "Betűméret",
+        "Százalékos szélesség"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik a következő beállítással: grid-template-rows: 100px auto 1fr?",
+      "options": [
+        "Három sor, első fix 100px, második automatikus, harmadik maradék helyet foglalja",
+        "Három oszlop készül",
+        "Az összes sor fix méretű lesz",
+        "Nem lesz látható rács"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan tudsz egy elemnek több oszlopot lefedni Grid-ben?",
+      "options": [
+        "grid-column: span 2;",
+        "column-count: 2;",
+        "grid-extend: 2;",
+        "grid-row: double;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik parancs hoz létre 4 sorból és 4 oszlopból álló rácsot?",
+      "options": [
+        "grid-template: repeat(4, 1fr) / repeat(4, 1fr);",
+        "grid: auto;",
+        "grid-area: 4x4;",
+        "display: flex-grid;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a 'place-items: center;'?",
+      "options": [
+        "A rács minden elemét középre igazítja sorban és oszlopban is",
+        "Csak vízszintesen igazítja",
+        "Bal felső sarokba helyezi",
+        "Eltünteti az elemeket"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a 'grid-gap' vagy 'gap' tulajdonság?",
+      "options": [
+        "Távolságot hoz létre a rács elemei között",
+        "Árnyékot ad a mezőknek",
+        "Átlátszóságot állít be",
+        "Eltávolítja a margókat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha a 'grid-auto-flow: column;' értéket kap?",
+      "options": [
+        "Az elemek oszlopirányban töltik fel a rácsot",
+        "Eltűnnek az elemek",
+        "Flex elrendezéssé válik",
+        "Nem lesz hatása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a Flexbox és Grid között?",
+      "options": [
+        "Flexbox egydimenziós, Grid kétdimenziós elrendezés",
+        "Flexbox lassabb",
+        "Grid nem használható modern böngészőkben",
+        "Nincs különbség"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik kulcsszó nem használható 'justify-content' értékként Grid-ben?",
+      "options": [
+        "around",
+        "start",
+        "center",
+        "end"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'minmax(100px, 1fr)' jelentése Grid-ben?",
+      "options": [
+        "Az oszlop minimum 100px, maximum a maradék hely arányos része",
+        "Mindig 100px marad",
+        "Fix méretű mező",
+        "Betűméret állítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'grid-area' célja?",
+      "options": [
+        "Egy elem helyének megadása a rácson belül",
+        "Szöveg pozicionálása",
+        "Háttér beállítása",
+        "Flexbox váltása"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

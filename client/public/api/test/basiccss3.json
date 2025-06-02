@@ -1,48 +1,259 @@
 [
   {
-    "id": 2,
-    "title": "Basic CSS3 Teszt",
-    "questions": [
-      {
-        "question": "Hogyan importálsz egy külső CSS fájlt HTML-be?",
-        "options": [
-          "<link rel=\"stylesheet\" href=\"style.css\">",
-          "<style src=\"style.css\">",
-          "<css href=\"style.css\">",
-          "<import css=\"style.css\">"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Melyik a helyes CSS szintaxis egy elem színének pirosra állításához?",
-        "options": [
-          "color = red;",
-          "color: red;",
-          "text-color: red;",
-          "font-color: red;"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Melyik CSS property-vel állíthatod be egy elem háttérszínét?",
-        "options": [
-          "background-color",
-          "color-background",
-          "bgcolor",
-          "backgroundstyle"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Melyik választás adja meg a betűméretet 20 pixelesre?",
-        "options": [
-          "font-size: 20px;",
-          "text-size: 20px;",
-          "font: 20px;",
-          "size: 20px;"
-        ],
-        "answer": 0
-      }
-    ]
-  }
+  "id": 2,
+  "title": "Basic CSS3 Teszt",
+  "questions": [
+    {
+      "question": "Milyen szintaxis használható CSS3-ban egy elem színének beállítására?",
+      "options": [
+        "color: red;",
+        "font-color: red;",
+        "text-color: red;",
+        "style: color=red;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet egy elemet középre igazítani vízszintesen?",
+      "options": [
+        "margin: 0 auto;",
+        "text-align: center;",
+        "padding: auto;",
+        "position: center;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik kulcsszó használható egy CSS átmenet indításához?",
+      "options": [
+        "transition",
+        "animate",
+        "change",
+        "effect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség az 'em' és a 'rem' egységek között?",
+      "options": [
+        "'em' a szülő elem méretére épül, 'rem' a root elemére",
+        "Mindkettő ugyanaz",
+        "'rem' csak táblázatokban működik",
+        "'em' csak fejlécekhez való"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonság felel a betűméret beállításáért?",
+      "options": [
+        "font-size",
+        "text-size",
+        "font",
+        "size"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet egy elem átlátszóságát szabályozni?",
+      "options": [
+        "opacity",
+        "alpha",
+        "visibility",
+        "transparent"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonság határozza meg a háttérkép ismétlődését?",
+      "options": [
+        "background-repeat",
+        "background-style",
+        "repeat-mode",
+        "image-loop"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire való a 'z-index' tulajdonság?",
+      "options": [
+        "Az elemek rétegsorrendjét szabályozza",
+        "Szöveg színezésére",
+        "Átlátszóság beállítására",
+        "Animáció sebességére"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet egy elemet kör alakúvá alakítani?",
+      "options": [
+        "border-radius: 50%;",
+        "shape: circle;",
+        "transform: circle();",
+        "border-shape: round;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a flexbox fő célja?",
+      "options": [
+        "Rugalmas elrendezések létrehozása",
+        "Színek kezelése",
+        "Betűtípusok alkalmazása",
+        "Navigáció animálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a helyes szintaxis egy osztály kiválasztására CSS-ben?",
+      "options": [
+        ".classname",
+        "#classname",
+        "classname",
+        "*classname"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha a 'display: none;' tulajdonságot alkalmazzuk egy elemre?",
+      "options": [
+        "Az elem eltűnik, és nem foglal helyet",
+        "Az elem átlátszó lesz",
+        "Az elem elhalványul",
+        "Az elem háttérképét törli"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik mértékegység a százalékos szélesség meghatározására?",
+      "options": [
+        "%",
+        "px",
+        "vh",
+        "em"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonság határozza meg a külső margót?",
+      "options": [
+        "margin",
+        "padding",
+        "spacing",
+        "border-margin"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja a 'box-shadow' tulajdonságnak?",
+      "options": [
+        "Árnyék hozzáadása egy elemhez",
+        "Keret formázása",
+        "Háttérkép ismétlése",
+        "Átlátszóság növelése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik állítás igaz a 'hover' pseudo-class-ra?",
+      "options": [
+        "Egy elemre való rámutatáskor aktiválódik",
+        "A kiválasztott szöveget formázza",
+        "Csak JavaScript-tel használható",
+        "Mobilon nem működik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a 'media query' CSS-ben?",
+      "options": [
+        "Reszponzív megjelenés kialakítására",
+        "Képek megjelenítésére",
+        "Adatok lekérdezésére",
+        "Videó beillesztésére"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet félkövér betűstílust beállítani CSS-ben?",
+      "options": [
+        "font-weight: bold;",
+        "font-style: bold;",
+        "text-weight: strong;",
+        "style: bold;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik kulcsszóval lehet egy animáció végtelen ismétlődését beállítani?",
+      "options": [
+        "infinite",
+        "forever",
+        "repeat-all",
+        "loop"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik tulajdonság felel a belső margóért (tartalom és keret között)?",
+      "options": [
+        "padding",
+        "margin",
+        "border-spacing",
+        "gap"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS3 tulajdonsággal állítható be egy elem forgatása?",
+      "options": [
+        "transform: rotate();",
+        "rotate: degrees();",
+        "animation-rotate",
+        "rotate-transform"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha a 'position: absolute;' van beállítva?",
+      "options": [
+        "Az elem a legközelebbi pozicionált őséhez viszonyítva helyezkedik el",
+        "Az elem középre kerül",
+        "Az elem átlátszó lesz",
+        "Az elem a képernyő aljára kerül"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire jó a 'transition' tulajdonság?",
+      "options": [
+        "Simított változások animálására",
+        "Elemek törlésére",
+        "Tartalom cseréjére",
+        "Képek méretezésére"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az alapértelmezett 'position' érték egy HTML elemre?",
+      "options": [
+        "static",
+        "relative",
+        "absolute",
+        "fixed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS3 modul teszi lehetővé többoszlopos szöveg létrehozását?",
+      "options": [
+        "columns",
+        "grid",
+        "flexbox",
+        "table-layout"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
 ]

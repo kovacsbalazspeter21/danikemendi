@@ -1,0 +1,224 @@
+[
+    {
+  "id": 7,
+  "title": "Webdesign: Színek és Tipográfia Teszt",
+  "questions": [
+    {
+      "question": "Melyik színkód formátum érvényes CSS-ben?",
+      "options": ["#FF5733", "rgb[255,87,51]", "255-87-51", "color(FF5733)"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'hex' színkód?",
+      "options": [
+        "Egy 16-os számrendszerű színkód pl. #FF0000",
+        "Egy RGB színkód",
+        "Egy CSS osztály",
+        "Egy JavaScript változó"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'sans-serif' betűtípus család?",
+      "options": [
+        "Talpatlan betűtípusok",
+        "Talpas betűtípusok",
+        "Dekoratív betűtípusok",
+        "Kézzel írott stílus"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire való a `font-family` CSS tulajdonság?",
+      "options": [
+        "A betűtípus beállítására",
+        "A háttérkép módosítására",
+        "A gomb színének megadására",
+        "Az elem méretének beállítására"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 'web-safe' betűtípus?",
+      "options": [
+        "Olyan betűtípus, ami minden rendszerben elérhető",
+        "Olyan, amit csak modern böngészők ismernek",
+        "Csak SVG grafikához használható",
+        "Csak mobilon használható"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `color: #FFFFFF;` beállítás?",
+      "options": ["Fehér színű szöveg", "Fekete színű szöveg", "Átlátszó szöveg", "Szürke háttér"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a komplementer színpár?",
+      "options": [
+        "Két szín, amelyek ellentétesek a színkörön",
+        "Két hasonló szín",
+        "Szürke és fehér",
+        "A fekete és a piros"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a kontraszt a webdesignban?",
+      "options": [
+        "Eltérő vizuális elemek kiemelése",
+        "Betűméret növelése",
+        "Margin csökkentése",
+        "HTML szintek közötti különbség"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `font-weight` CSS tulajdonság célja?",
+      "options": [
+        "Betű vastagságának meghatározása",
+        "Szöveg elhelyezése",
+        "Szegély színe",
+        "Hivatkozás beállítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik betűtípus tartozik a 'serif' családba?",
+      "options": ["Times New Roman", "Arial", "Verdana", "Tahoma"],
+      "answer": 0
+    },
+    {
+      "question": "Milyen mértékegység használható betűmérethez CSS-ben?",
+      "options": ["px, em, rem, %", "kg, cm, m, s", "rgb, hex, hsl", "top, left, right, bottom"],
+      "answer": 0
+    },
+    {
+      "question": "Milyen hatással van a `line-height` beállítása?",
+      "options": [
+        "A sorok közötti távolságot növeli",
+        "A betűk közti távolságot csökkenti",
+        "A betűk méretét növeli",
+        "A szöveget átszínezi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `letter-spacing` funkciója?",
+      "options": [
+        "A betűk közti térközt állítja be",
+        "A bekezdések számát",
+        "A háttér árnyalatát",
+        "Az elem pozícióját"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a `text-transform: uppercase;`?",
+      "options": [
+        "A szöveget nagybetűssé alakítja",
+        "Aláhúzza a szöveget",
+        "Átlátszóvá teszi a szöveget",
+        "Nagyítja az elemet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `font-style: italic;` CSS-ben?",
+      "options": [
+        "Dőlt betűstílus",
+        "Félkövér szöveg",
+        "Aláhúzott szöveg",
+        "Háttérszín megadása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `text-align: justify;`?",
+      "options": [
+        "A szöveg igazítása mindkét oldalhoz",
+        "A szöveg középre igazítása",
+        "Balra igazított szöveg",
+        "Jobbra igazított szöveg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM tartozik a színmegadás módjai közé?",
+      "options": ["text-align", "hex", "rgb", "hsl"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'monospace' betűtípus család?",
+      "options": [
+        "Azonos szélességű karakterek",
+        "Modern díszítő betűk",
+        "Grafikus ikon betűk",
+        "Különleges szimbólumok"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az 'opacitás'?",
+      "options": [
+        "Az elem átlátszósága",
+        "Betűméret",
+        "Keretvastagság",
+        "Szöveg igazítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen értéket vesz fel az `opacity` tulajdonság?",
+      "options": ["0 és 1 között", "0 és 100 között", "Csak true vagy false", "Csak % értékeket"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik kombináció jó kontrasztú szöveg-háttér pár?",
+      "options": [
+        "Fekete szöveg fehér háttéren",
+        "Világoskék szöveg fehér háttéren",
+        "Sárga szöveg fehér háttéren",
+        "Piros szöveg rózsaszín háttéren"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'brand color' a webdesignban?",
+      "options": [
+        "A márka azonosító színe",
+        "A fejléc háttere",
+        "A háttérkép színe",
+        "A linkek hover színe"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az 'accessibility' szempont a színek használatakor?",
+      "options": [
+        "Jól olvasható kontraszt minden felhasználó számára",
+        "A színek divatossága",
+        "Kizárólag piros és kék használata",
+        "Csak SVG képekkel működik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az 'em' mértékegység alapja?",
+      "options": [
+        "A szülőelem betűmérete",
+        "A képernyő pixelszélessége",
+        "A viewport mérete",
+        "Az oldal címe"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS tulajdonság határozza meg a háttér színét?",
+      "options": ["background-color", "font-color", "text-style", "outline-color"],
+      "answer": 0
+    }
+  ]
+}
+
+]

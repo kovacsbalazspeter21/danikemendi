@@ -1,0 +1,149 @@
+[
+    {
+  "id": 5,
+  "title": "Basic JavaScript Teszt",
+  "questions": [
+    {
+      "question": "Melyik a helyes változó deklarálás JavaScript-ben?",
+      "options": ["var nev;", "define nev;", "v nev;", "variable nev;"],
+      "answer": 0
+    },
+    {
+      "question": "Mit ír ki: console.log(typeof 42);",
+      "options": ["number", "string", "boolean", "undefined"],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet kommentet írni JavaScript-ben?",
+      "options": ["// komment", "# komment", "<!-- komment -->", "** komment"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az eredménye: 5 + '5'?",
+      "options": ["'55'", "10", "NaN", "undefined"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik operátor használható egyenlőség vizsgálathoz típuskényszerítéssel?",
+      "options": ["==", "===", "=", "!="],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'NaN' jelentése JavaScript-ben?",
+      "options": ["Not a Number", "New and Null", "No assigned Name", "Negative and Null"],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a 'let' kulcsszó?",
+      "options": ["Blokkszintű változó deklarálása", "Függvény létrehozása", "Objektum másolás", "Modul importálás"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM primitív adattípus JavaScript-ben?",
+      "options": ["object", "number", "boolean", "string"],
+      "answer": 0
+    },
+    {
+      "question": "Mit ír ki: typeof null?",
+      "options": ["object", "null", "undefined", "boolean"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az 'undefined' érték?",
+      "options": ["A változónak nincs értéke", "Hibás változó", "Nullával egyenlő", "Függvényhibát jelez"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM érvényes ciklus JavaScript-ben?",
+      "options": ["repeat", "for", "while", "do...while"],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a 'break' kulcsszó egy ciklusban?",
+      "options": ["Kilép a ciklusból", "Folytatja a következő iterációval", "Törli a ciklust", "Várakozik"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'const' kulcsszó?",
+      "options": ["Állandó értékű változót hoz létre", "Globális változó", "Belső függvény", "Fájl konstansait importálja"],
+      "answer": 0
+    },
+    {
+      "question": "Mit ír ki: Boolean(0)?",
+      "options": ["false", "true", "0", "undefined"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik metódussal lehet lekerekíteni egy számot lefelé?",
+      "options": ["Math.floor()", "Math.round()", "Math.ceil()", "Math.min()"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a '==' és a '===' között?",
+      "options": ["'===' típusra is vizsgál", "'==' szigorúbb", "Nincs különbség", "'===' csak számra jó"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM logikai operátor JavaScript-ben?",
+      "options": ["%%", "&&", "||", "!"],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a 'typeof' operátor?",
+      "options": ["Változó típusának lekérdezésére", "Változó értékének módosítására", "Tömb létrehozására", "Függvényhívásra"],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet függvényt deklarálni JavaScript-ben?",
+      "options": [
+        "function nev() {}",
+        "define nev()",
+        "func nev = () => {}",
+        "make function nev()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM tömbmetódus?",
+      "options": ["map", "filter", "reduce", "loop"],
+      "answer": 3
+    },
+    {
+      "question": "Mit ad vissza az Array.isArray([1,2,3])?",
+      "options": ["true", "false", "undefined", "NaN"],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a 'push()' metódus?",
+      "options": [
+        "Elemet ad a tömb végéhez",
+        "Elemet töröl a tömb elejéről",
+        "Rendez egy tömböt",
+        "Lekérdezi az első elemet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM érvényes változónév JavaScript-ben?",
+      "options": ["2var", "_nev", "valtozoNev", "$ar"],
+      "answer": 0
+    },
+    {
+      "question": "Mi lesz a typeof undefined változóra?",
+      "options": ["undefined", "null", "object", "boolean"],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a return kulcsszó egy függvényben?",
+      "options": [
+        "Visszaadja a függvény eredményét",
+        "Függvényt kiír a konzolra",
+        "Megszakítja a ciklust",
+        "Törli a változókat"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

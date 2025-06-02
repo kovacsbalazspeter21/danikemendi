@@ -1,0 +1,249 @@
+[
+    {
+  "id": 13,
+  "title": "SEO Alapok Teszt",
+  "questions": [
+    {
+      "question": "Mit jelent a SEO rövidítés?",
+      "options": [
+        "Search Engine Optimization",
+        "Social Engagement Operation",
+        "Systematic Error Output",
+        "Secure Email Order"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a SEO célja?",
+      "options": [
+        "Az organikus (nem fizetett) találatokban való jobb helyezés elérése a keresőkben",
+        "Több fizetett hirdetés megjelenítése",
+        "Csak a weboldal dizájn javítása",
+        "Az oldalon lévő képek számának növelése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik elem fontos a SEO szempontjából a HTML-ben?",
+      "options": [
+        "<title> tag",
+        "<div> tag",
+        "<script> tag",
+        "<style> tag"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'meta description'?",
+      "options": [
+        "Egy rövid leírás, amely megjelenik a kereső találati listában az oldal címe alatt",
+        "Egy képfájl neve",
+        "Egy videó formátum",
+        "A weboldal háttérszíne"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az az 'alt' attribútum és miért fontos SEO-ban?",
+      "options": [
+        "Leíró szöveg a képekhez, amely segíti a keresőmotorokat és a látássérülteket",
+        "Képek méretének beállítása",
+        "Videók lejátszási sebessége",
+        "Link színezése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy weboldal mobilbarát?",
+      "options": [
+        "Az oldal jól jelenik meg és jól használható mobil eszközökön",
+        "Csak asztali gépen működik",
+        "Csak nagy képernyőn működik",
+        "Nem tartalmaz képeket"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a robots.txt fájl célja?",
+      "options": [
+        "Megmondja a keresőrobotoknak, hogy mely oldalakat indexelhetnek vagy nem",
+        "Fájlok mentése a szerveren",
+        "A weboldal betöltési sebességének növelése",
+        "Az oldal háttérképének beállítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a kulcsszó (keyword) a SEO-ban?",
+      "options": [
+        "Az a szó vagy kifejezés, amelyre egy weboldalt szeretnénk rangsorolni a keresőkben",
+        "Egy weboldal címe",
+        "Egy weboldal URL-je",
+        "Egy képfájl neve"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik URL szerkezet előnyösebb SEO szempontból?",
+      "options": [
+        "https://pelda.hu/kategoria/termek",
+        "https://pelda.hu/page?id=123",
+        "https://pelda.hu/?ref=abc",
+        "https://pelda.hu/index.html"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a backlink jelentése?",
+      "options": [
+        "Más weboldalról mutató link az Ön weboldalára",
+        "Az oldal belső menüpontja",
+        "Egy képfájl neve",
+        "Egy weboldal aloldala"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a sitemap.xml fájl?",
+      "options": [
+        "Egy fájl, amely tartalmazza a weboldal összes oldalának listáját a keresőrobotok számára",
+        "Egy képfájl az oldalon",
+        "Egy stíluslap fájl",
+        "Egy JavaScript fájl"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a gyors betöltési idő SEO szempontból?",
+      "options": [
+        "Mert a keresőmotorok jobban értékelik a gyorsan betöltődő oldalakat",
+        "Csak a dizájn miatt",
+        "Nem számít a betöltési sebesség",
+        "Csak a mobil eszközökön fontos"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'canonical URL' használata?",
+      "options": [
+        "Megakadályozza a duplikált tartalom miatt bekövetkező büntetést a keresőknél",
+        "Megváltoztatja az oldal színét",
+        "Megnöveli a képek méretét",
+        "Nem releváns SEO szempontból"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a 'noindex' és a 'nofollow' meta tag között?",
+      "options": [
+        "'noindex' megakadályozza az oldal indexelését, 'nofollow' megakadályozza a linkek követését",
+        "'noindex' tiltja a linkeket, 'nofollow' tiltja az indexelést",
+        "Mindkettő tiltja a képek megjelenítését",
+        "Mindkettő a CSS része"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'title tag' szerepe a SEO-ban?",
+      "options": [
+        "Az oldal címét jeleníti meg a keresőtalálatok között és a böngésző fülön",
+        "Egy kép neve",
+        "Egy CSS osztály neve",
+        "Nem fontos SEO szempontból"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a szerepe az SSL tanúsítványnak SEO szempontból?",
+      "options": [
+        "Biztonságos kapcsolatot biztosít és pozitívan befolyásolja a rangsorolást",
+        "Csak az oldal dizájnját befolyásolja",
+        "Nem releváns SEO szempontból",
+        "Lassítja az oldalt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'rich snippet'?",
+      "options": [
+        "Kiegészítő információ a keresőtalálatokban, mint pl. értékelés vagy esemény időpontja",
+        "Egy HTML elem",
+        "Egy képfájl típusa",
+        "Egy stíluslap"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentősége az 'H1' címkének a SEO-ban?",
+      "options": [
+        "A főcímként jelöli meg az oldal legfontosabb tartalmát a keresők számára",
+        "Egy kép neve",
+        "Egy CSS osztály neve",
+        "Nem fontos SEO szempontból"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal 'crawlable' a keresőrobotok számára?",
+      "options": [
+        "Az oldal tartalma könnyen bejárható és feltérképezhető a keresőrobotok által",
+        "Az oldal le van tiltva",
+        "Az oldal nem tartalmaz szöveget",
+        "Az oldal csak mobilon jelenik meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'bounce rate' a weboldal analitikában?",
+      "options": [
+        "Azoknak a látogatóknak az aránya, akik az oldal megtekintése után azonnal elhagyják azt",
+        "Az oldal betöltési ideje",
+        "Az oldal megjelenítési sebessége",
+        "Az oldalon lévő képek száma"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'long-tail keyword'?",
+      "options": [
+        "Hosszabb, specifikusabb keresőszavak, amelyek kevésbé versenyképesek, de célzottabbak",
+        "Rövid és általános kulcsszavak",
+        "Egy kép neve",
+        "Egy videó formátuma"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'white hat SEO'?",
+      "options": [
+        "Legális, keresőmotorok által elfogadott optimalizálási technikák",
+        "Feketelistás SEO technikák",
+        "Spam linképítés",
+        "Hamis tartalom készítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy weboldal 'indexált' a keresőkben?",
+      "options": [
+        "Az oldal tartalmát a keresőmotorok eltárolták és megjelenítik a találati listában",
+        "Az oldal nem elérhető",
+        "Az oldal csak mobilon jelenik meg",
+        "Az oldal csak képeket tartalmaz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'duplicate content' és miért problémás SEO-ban?",
+      "options": [
+        "Többszörös, azonos vagy nagyon hasonló tartalom egy vagy több weboldalon, ami ronthatja a rangsorolást",
+        "Képek elhelyezése az oldalon",
+        "Videók beágyazása",
+        "Új aloldalak létrehozása"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

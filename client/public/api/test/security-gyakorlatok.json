@@ -1,0 +1,259 @@
+[
+    {
+  "id": 18,
+  "title": "Security Gyakorlat Teszt",
+  "questions": [
+    {
+      "question": "Mit jelent a 'legkisebb jogosultság elve' (Principle of Least Privilege)?",
+      "options": [
+        "Minden felhasználó csak a legszükségesebb jogosultságokat kapja",
+        "Mindenki admin jogosultságot kap",
+        "Nincs jelszavas védelem",
+        "Minden erőforrás nyilvános"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszközt használják gyakran webes biztonsági tesztelésre?",
+      "options": [
+        "OWASP ZAP",
+        "Photoshop",
+        "Figma",
+        "Premiere Pro"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja a biztonsági auditnak?",
+      "options": [
+        "A rendszer sebezhetőségeinek felmérése",
+        "Grafikai elemek tesztelése",
+        "Webdesign sablonok összehasonlítása",
+        "Betűtípus kiválasztása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit NEM szabad tartalmaznia egy konfigurációs fájlnak?",
+      "options": [
+        "Hardkódolt jelszavakat",
+        "Környezeti változókat",
+        "Csatlakozási URI-kat",
+        "API végpontokat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja a tűzfalnak?",
+      "options": [
+        "Hálózati forgalom szabályozása és szűrése",
+        "Weboldalak gyorsabb betöltése",
+        "Betűtípusok mentése",
+        "Képek feldolgozása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit kell tenni, ha biztonsági rést találunk?",
+      "options": [
+        "Jelenteni a fejlesztőknek vagy üzemeltetőknek",
+        "Kipostolni közösségi médiára",
+        "Eladni dark weben",
+        "Semmit"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a logolás és naplózás?",
+      "options": [
+        "Biztonsági események visszakövethetősége érdekében",
+        "Fájlok tömörítése céljából",
+        "Betűtípus figyelés miatt",
+        "Képek manipulálása miatt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'patch management'?",
+      "options": [
+        "Szoftverfrissítések kezelése és alkalmazása",
+        "Weblap sablonok módosítása",
+        "Webdesign mentése",
+        "CSS hibák javítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a biztonsági mentés (backup)?",
+      "options": [
+        "Az adatok rendszeres másolatának elkészítése",
+        "Weboldal gyorsítása",
+        "Webhely sötét módra állítása",
+        "Csak a CSS fájlok másolása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet megvédeni az admin felületet?",
+      "options": [
+        "IP szűrés, 2FA és jelszavas védelem",
+        "Nyilvánossá tétel",
+        "Iframe használata",
+        "Képek beszúrása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM ajánlott gyakorlat?",
+      "options": [
+        "Jelszavak sima szövegként való tárolása",
+        "Hash-elés használata",
+        "HTTPS alkalmazása",
+        "2FA engedélyezése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért hasznosak a környezeti változók?",
+      "options": [
+        "Érzékeny adatok (pl. API kulcsok) elrejtésére",
+        "Gyorsabb CSS betöltésére",
+        "Grafikai megjelenítéshez",
+        "Videó beágyazásához"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM segíti elő a biztonságot?",
+      "options": [
+        "JavaScript eval() használata",
+        "Input validálása",
+        "CSP fejléc használata",
+        "HTTPS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja az audit naplóknak?",
+      "options": [
+        "Rendszeresemények rögzítése biztonsági szempontból",
+        "Képek listázása",
+        "CSS szabályok logolása",
+        "Betűtípusok verziózása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tegyél, ha egy könyvtárban felfedezel egy ismert sebezhetőséget?",
+      "options": [
+        "Frissítsd a könyvtárat a legújabb verzióra",
+        "Hagyd változatlanul",
+        "Kommenteld ki a használatát",
+        "Töröld a projektet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a session hijacking?",
+      "options": [
+        "A felhasználói munkamenet eltérítése",
+        "Képek átnevezése",
+        "Weblap színezése",
+        "Formázási szabályok másolása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik nem biztonsági beállítás?",
+      "options": [
+        "border-radius",
+        "CORS szabály",
+        "Secure cookie",
+        "CSP fejléc"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a `.env` fájl?",
+      "options": [
+        "Érzékeny konfigurációs adatok tárolására",
+        "Képformátum definiálására",
+        "CSS szabályok mentésére",
+        "Favicon beállítására"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik gyakorlati lépés NEM növeli az alkalmazás biztonságát?",
+      "options": [
+        "Kód formázása színekkel",
+        "Token alapú hitelesítés",
+        "HTTPS használata",
+        "Bemeneti adatok ellenőrzése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az 'input sanitization'?",
+      "options": [
+        "Felhasználói bevitt adatok tisztítása káros elemek eltávolításával",
+        "Adatok CSS formázása",
+        "Képek skálázása",
+        "Szöveg elrendezése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen fájlt NE tárolj Git-ben nyilvánosan?",
+      "options": [
+        ".env",
+        ".html",
+        "style.css",
+        "robots.txt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik a biztonságos jelszó példája?",
+      "options": [
+        "hT#8kP!aL9",
+        "admin",
+        "123456",
+        "password"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja a rate limiting-nek?",
+      "options": [
+        "Túl sok kérelem elleni védekezés (pl. brute force)",
+        "Képek betöltési idejének korlátozása",
+        "CSS szabályok számának limitálása",
+        "Felhasználók számának növelése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az 'audit trail'?",
+      "options": [
+        "Olyan nyilvántartás, amely rögzíti, ki mit tett a rendszerben",
+        "Képek sorrendje",
+        "CSS fájlok import sorrendje",
+        "Betűméret lekérdezés"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a CORS?",
+      "options": [
+        "Különböző domainek közötti erőforrás-megosztás szabályozása",
+        "Képek átméretezése",
+        "Stíluslap cache-elése",
+        "HTML meta beállítás"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

@@ -1,0 +1,259 @@
+[
+    {
+  "id": 14,
+  "title": "SEO Technikai Teszt",
+  "questions": [
+    {
+      "question": "Mi az a technikai SEO?",
+      "options": [
+        "A weboldal technikai elemeinek optimalizálása a keresőmotorok számára",
+        "Csak a tartalom írása kulcsszavakkal",
+        "A közösségi média kampányok kezelése",
+        "Csak képek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentősége az oldal betöltési sebességének?",
+      "options": [
+        "Gyorsabb oldal pozitívan befolyásolja a SEO rangsorolást",
+        "Csak a dizájnt befolyásolja",
+        "Nincs hatása",
+        "Csak mobilon számít"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'crawl budget'?",
+      "options": [
+        "Az a mennyiségű URL, amelyet a keresőrobot bejárhat egy adott idő alatt",
+        "A hirdetések költségkerete",
+        "A látogatók költsége",
+        "A webfejlesztés költsége"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a szerepe a robots.txt fájlnak?",
+      "options": [
+        "Meghatározza, mely URL-eket indexelhetnek a keresőrobotok",
+        "Képek méretét határozza meg",
+        "Stílusokat tartalmaz",
+        "Adatbázis kapcsolatokat kezel"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a canonical tag?",
+      "options": [
+        "Segít jelezni az eredeti, preferált URL-t duplikált tartalom esetén",
+        "Egy képaláírás",
+        "Egy JavaScript függvény",
+        "Egy alt attribútum"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 404-es hiba?",
+      "options": [
+        "A keresett oldal nem található",
+        "A szerver túlterhelt",
+        "Tartalom duplikált",
+        "A weblap lassú"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen státuszkód jelzi az oldal végleges átirányítását?",
+      "options": [
+        "301",
+        "404",
+        "500",
+        "200"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a sitemap.xml fájl?",
+      "options": [
+        "A weboldal struktúráját tartalmazza a keresőrobotok számára",
+        "Egy JavaScript könyvtár",
+        "Egy CSS fájl",
+        "Egy képfájl"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az AMP technológia célja?",
+      "options": [
+        "Mobil oldalak gyorsított betöltése",
+        "Videók lejátszása",
+        "Stíluslap cseréje",
+        "Képek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a HTTPS SEO szempontból?",
+      "options": [
+        "Biztonságos kapcsolatot biztosít és rangsorolási előnyt nyújt",
+        "Csak a vásárlások miatt fontos",
+        "Nincs hatása",
+        "Lassítja az oldalt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal 'indexable'?",
+      "options": [
+        "A keresőrobot képes indexelni az oldalt",
+        "Az oldal jelszóval védett",
+        "Az oldal betöltése lassú",
+        "Az oldal kizárólag belső használatra készült"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a strukturált adat (schema markup) szerepe?",
+      "options": [
+        "További kontextust ad a keresőrobotoknak a tartalomhoz",
+        "Betűtípusokat definiál",
+        "Színtémát változtat",
+        "A CSS fájl része"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen eszközt használhatunk a webhely indexelhetőségének ellenőrzésére?",
+      "options": [
+        "Google Search Console",
+        "Photoshop",
+        "Visual Studio Code",
+        "MS Word"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a hreflang attribútum?",
+      "options": [
+        "Segít többnyelvű oldalaknál jelezni a nyelvet és régiót",
+        "Kép magasságát állítja be",
+        "Linkek megjelenését szabályozza",
+        "Képek átlátszóságát állítja"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen hatással lehet a túl sok 301-es átirányítás egymás után?",
+      "options": [
+        "Lassítja a feltérképezést és rontja a rangsorolást",
+        "Gyorsítja az oldalt",
+        "Semmilyen hatása nincs",
+        "Csak mobilon jelentkezik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a 200-as HTTP státuszkód jelentése?",
+      "options": [
+        "Az oldal sikeresen betöltődött",
+        "Hiba történt",
+        "Átirányítás történt",
+        "Az oldal nem található"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz segít technikai SEO hibák feltárásában?",
+      "options": [
+        "Screaming Frog SEO Spider",
+        "Adobe Premiere",
+        "Google Docs",
+        "MS Excel"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a renderelési késleltetés (render-blocking resources)?",
+      "options": [
+        "Azok az erőforrások (pl. JS/CSS), amelyek akadályozzák az oldal gyors megjelenését",
+        "Gyorsítótár törlése",
+        "Képek letöltési ideje",
+        "Hibás videóhivatkozások"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a lazy loading?",
+      "options": [
+        "Tartalmak (pl. képek) csak akkor töltődnek be, amikor láthatóvá válnak",
+        "A weboldal lassabbá tétele",
+        "Automatikus frissítés",
+        "CSS animáció"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a Core Web Vitals?",
+      "options": [
+        "A Google által használt metrikák az oldal élményének mérésére",
+        "Egy új JavaScript könyvtár",
+        "Mobil app keretrendszer",
+        "Személyes adatvédelmi beállítás"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha egy oldalon sok a duplikált tartalom?",
+      "options": [
+        "Rosszabb rangsorolást érhet el a keresőkben",
+        "Több látogatót hoz",
+        "Gyorsabban betölt",
+        "Semmilyen hatása nincs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a JavaScript SEO szempontból?",
+      "options": [
+        "A keresőmotorok képessége a JS által generált tartalmak beolvasására és indexelésére",
+        "Kód, amely csak adminoknak jelenik meg",
+        "Nem befolyásolja a SEO-t",
+        "Statisztikai elemzésre szolgál"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire utal a 'mobile-first indexing'?",
+      "options": [
+        "A Google a mobilverziót használja elsődlegesen az indexeléshez",
+        "Csak mobil oldalak léteznek",
+        "A mobil verzió nem számít",
+        "Csak desktopra érvényes SEO szabály"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'crawl error'?",
+      "options": [
+        "A keresőrobot nem tudja elérni vagy feldolgozni az oldalt",
+        "Egy kép nem töltődik be",
+        "Hibás CSS",
+        "Túl sok látogató az oldalon"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos az URL-ek tisztasága technikai SEO szempontból?",
+      "options": [
+        "Jobban értelmezhető a keresők és a felhasználók számára is",
+        "A dizájnt javítja",
+        "A CSS fájl méretét csökkenti",
+        "Semmilyen hatása nincs"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

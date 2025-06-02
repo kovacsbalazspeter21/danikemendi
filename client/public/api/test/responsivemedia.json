@@ -1,0 +1,258 @@
+[
+    {
+        "id": 10,
+        "title": "Responsive Média Teszt",
+        "questions": [
+            {
+            "question": "Mi a célja a responsive médiának webfejlesztés során?",
+            "options": [
+                "A médiaelemek (képek, videók) méretének alkalmazkodása a különböző képernyőméretekhez",
+                "Csak nagy felbontású képek megjelenítése",
+                "A média automatikus elrejtése",
+                "Hangos lejátszás indítása mobilon"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Melyik CSS beállítás teszi reszponzívvá a képet?",
+            "options": [
+                "max-width: 100%; height: auto;",
+                "position: fixed;",
+                "margin: auto;",
+                "z-index: 0;"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi az a `srcset` attribútum a `<img>` elemben?",
+            "options": [
+                "Lehetővé teszi több kép verzió megadását különböző felbontásokhoz",
+                "Kép alternatív címe",
+                "Kép betöltésének gyorsítása",
+                "A kép árnyéka"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent az `object-fit: cover;` használata képeknél?",
+            "options": [
+                "A kép megtartja arányait és kitölti a konténert",
+                "A kép torzul",
+                "A kép a bal felső sarokhoz igazodik",
+                "A kép teljesen kitakarja a szöveget"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi a célja a `<picture>` HTML elemnek?",
+            "options": [
+                "Különböző képek megjelenítése különböző eszközökre",
+                "Kép körbevágása",
+                "Kép automatikus elforgatása",
+                "Kép indexelése"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent a `media` attribútum a `<source>` elemben?",
+            "options": [
+                "Media query alapján kiválasztja a megfelelő forrást",
+                "Médiafájl formátuma",
+                "Hang beállítás",
+                "Média betöltési időzítés"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Melyik HTML elem használható responsive videó beágyazására?",
+            "options": [
+                "<video>",
+                "<media>",
+                "<img>",
+                "<audio>"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Miért fontos az `aspect-ratio` tulajdonság a responsive médiában?",
+            "options": [
+                "Megőrzi a kép vagy videó arányait",
+                "Átszínezi a videót",
+                "Hangosítja a tartalmat",
+                "Mozgathatóvá teszi az elemet"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Hogyan lehet egy beágyazott YouTube videót reszponzívvá tenni?",
+            "options": [
+                "Egy arányt megtartó, pozicionált wrapper div használatával",
+                "Egyszerűen `<iframe>` beágyazással",
+                "A videó letöltésével",
+                "A video HTML elem törlésével"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent az `auto` érték a `height` vagy `width` esetén?",
+            "options": [
+                "Automatikusan igazodik a tartalomhoz",
+                "Teljes képernyőt kitölt",
+                "Nem jelenik meg",
+                "Vízjel jelenik meg"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mire szolgál az `alt` attribútum a képeknél?",
+            "options": [
+                "Alternatív szöveg megjelenítése, ha a kép nem töltődik be",
+                "Kép szűrésére szolgál",
+                "Színek szabályozására",
+                "Betűméret beállítása"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit csinál a `controls` attribútum a `<video>` vagy `<audio>` elemben?",
+            "options": [
+                "Megjeleníti a lejátszás vezérlőit",
+                "Elrejti a tartalmat",
+                "Sötétíti a képernyőt",
+                "Hangalapú vezérlést aktivál"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi történik, ha nem használunk responsive képeket?",
+            "options": [
+                "Lassabb betöltés és rossz felhasználói élmény lehet",
+                "Gyorsabb lesz a weboldal",
+                "Automatikusan optimalizálja magát",
+                "Szebb lesz a design"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi az a `lazy loading` technika képeknél?",
+            "options": [
+                "Csak akkor tölti be a képeket, ha azok láthatóvá válnak",
+                "Képek mindig betöltődnek az oldal tetején",
+                "Képek elforgatása",
+                "A képek indexelése"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi a helyes szintaxis a `srcset` attribútumnál?",
+            "options": [
+                "<img src=\"kép.jpg\" srcset=\"kép2x.jpg 2x, kép3x.jpg 3x\">",
+                "<img source=\"kép2x.jpg 2x\">",
+                "<img responsive=\"true\">",
+                "<image data=\"responsive\">"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent a `sizes` attribútum a `<img>` esetén?",
+            "options": [
+                "A kép különböző méreteit adja meg adott nézetekhez",
+                "A kép formátuma",
+                "A kép betöltési sorrendje",
+                "Színprofil beállítása"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Melyik médiaformátum nem támogatott videónál HTML5-ben?",
+            "options": [
+                ".flv",
+                ".mp4",
+                ".webm",
+                ".ogg"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit tesz lehetővé a `media query` képekre alkalmazva?",
+            "options": [
+                "Különböző képek megjelenítését különböző képernyőméreteknél",
+                "Animációk hozzáadását a képekhez",
+                "Kép árnyékolását",
+                "Képek átméretezésének tiltását"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi történik, ha egy kép túl nagy a konténerhez képest, és nincs reszponzívra állítva?",
+            "options": [
+                "Kilóg a konténerből és torzíthatja az oldalt",
+                "Automatikusan átméreteződik",
+                "Nem jelenik meg",
+                "Színes keretet kap"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Melyik egység segít abban, hogy a kép a képernyő méretéhez igazodjon?",
+            "options": [
+                "% (százalék)",
+                "px (pixel)",
+                "cm (centiméter)",
+                "pt (pont)"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi az a `responsive iframe`?",
+            "options": [
+                "Egy olyan beágyazott elem, amely mérete alkalmazkodik a képernyőhöz",
+                "Egy mozgó keret",
+                "Egy fix méretű táblázat",
+                "Egy statikus képhelyettesítő"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent az `autoplay` attribútum egy videóban?",
+            "options": [
+                "Automatikusan elindítja a lejátszást betöltéskor",
+                "A videó nagyobb lesz",
+                "A hang automatikusan növekszik",
+                "Nem jeleníti meg a vezérlőket"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mi a `poster` attribútum szerepe a `<video>` elemnél?",
+            "options": [
+                "Előnézeti képet állít be a videóhoz",
+                "Kép helyettesítés hanghoz",
+                "Háttérszín beállítása",
+                "Hang automatikus leállítása"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Mit jelent a `loop` attribútum a videónál?",
+            "options": [
+                "A videó folyamatosan ismétlődik",
+                "A videó csak egyszer játszódik le",
+                "A videó hangját elnémítja",
+                "A videó méretét növeli"
+            ],
+            "answer": 0
+            },
+            {
+            "question": "Hogyan lehet optimalizálni a képek betöltését mobil eszközökön?",
+            "options": [
+                "Kisebb felbontású képek használatával és `srcset` attribútum alkalmazásával",
+                "Nagyobb felbontású képek használatával",
+                "Képek elrejtésével",
+                "Képek animálásával"
+            ],
+            "answer": 0
+            }
+        ]
+    }
+]

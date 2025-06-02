@@ -1,0 +1,258 @@
+[
+    {
+    "id": 3,
+    "title": "HTML5 Űrlapok és Szerkezet Teszt",
+    "questions": [
+        {
+        "question": "Melyik HTML5 elem használható egy űrlap létrehozására?",
+        "options": [
+            "<form>",
+            "<input>",
+            "<submit>",
+            "<button>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi a célja az <input> elem 'type' attribútumának?",
+        "options": [
+            "Meghatározza az adatbevitel típusát",
+            "Beállítja az alapértelmezett értéket",
+            "Stílusokat alkalmaz",
+            "Átirányít egy másik oldalra"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik input típus engedélyezi az e-mail cím ellenőrzését kliensoldalon?",
+        "options": [
+            "type=\"email\"",
+            "type=\"text\"",
+            "type=\"validate\"",
+            "type=\"url\""
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik elem használható több soros szöveg bevitelére?",
+        "options": [
+            "<textarea>",
+            "<textbox>",
+            "<input type='text'>",
+            "<multiline>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi az <fieldset> elem szerepe?",
+        "options": [
+            "Űrlapmezők csoportosítása vizuálisan és logikailag",
+            "Űrlap elküldése",
+            "Űrlap validálása",
+            "Gomb létrehozása"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik attribútum szükséges az űrlap elküldésének céljának megadásához?",
+        "options": [
+            "action",
+            "method",
+            "target",
+            "submit"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi az <label> elem funkciója?",
+        "options": [
+            "Leírás nyújtása egy input mezőhöz",
+            "Szöveg formázása",
+            "Gomb megjelenítése",
+            "Form adat küldése"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi a célja a 'required' attribútumnak?",
+        "options": [
+            "A mező kitöltése kötelező",
+            "Az űrlap stílusának beállítása",
+            "Elrejti a mezőt",
+            "Hozzáfűz egy figyelmeztetést"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik HTML5 típus használható dátumválasztásra?",
+        "options": [
+            "type=\"date\"",
+            "type=\"calendar\"",
+            "type=\"datetime\"",
+            "type=\"timepicker\""
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Hogyan rendelhető egy <label> egy adott mezőhöz?",
+        "options": [
+            "A 'for' attribútum és az input 'id' segítségével",
+            "A 'name' attribútum alapján",
+            "Egymás mellé helyezéssel",
+            "A mező típusának alapján"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi a <legend> szerepe?",
+        "options": [
+            "Cím adása egy fieldset csoportnak",
+            "Űrlap mezők helykitöltése",
+            "Navigáció biztosítása",
+            "Elválasztó létrehozása"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik 'type' érték használható jelszó mező létrehozásához?",
+        "options": [
+            "password",
+            "secret",
+            "text-hidden",
+            "secure"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi az 'autocomplete' attribútum célja?",
+        "options": [
+            "Előzményekből javaslatokat ad megadáskor",
+            "Automatikus mezőkitöltés",
+            "Mező validálása",
+            "Szöveg formázása"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik HTML5 szerkezeti elem jelöli a fő tartalmat?",
+        "options": [
+            "<main>",
+            "<section>",
+            "<body>",
+            "<article>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik elem használható navigációs linkek csoportosítására?",
+        "options": [
+            "<nav>",
+            "<aside>",
+            "<menu>",
+            "<footer>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi a szerepe a <section> elemnek?",
+        "options": [
+            "Tematikus tartalomcsoportokat hoz létre",
+            "Alcímek megjelenítése",
+            "Linkek listázása",
+            "Lábléc készítése"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik szerkezeti elem helyettesíti a régi <div id=\"header\"> elemet?",
+        "options": [
+            "<header>",
+            "<head>",
+            "<title>",
+            "<meta>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik elem a HTML dokumentum lábléce?",
+        "options": [
+            "<footer>",
+            "<bottom>",
+            "<end>",
+            "<section>"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mit jelöl az <article> HTML5 elem?",
+        "options": [
+            "Önálló, újrafelhasználható tartalmat",
+            "Külső forrásból származó adatokat",
+            "Navigációs linkeket",
+            "Formok fejlécét"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik HTML5 input típus hasznos egy fájl feltöltéséhez?",
+        "options": [
+            "type=\"file\"",
+            "type=\"upload\"",
+            "type=\"media\"",
+            "type=\"document\""
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mit csinál az <input type=\"number\"> mező?",
+        "options": [
+            "Csak számokat enged beírni",
+            "Oszlopokat hoz létre",
+            "Stílusokat alkalmaz",
+            "Sorszámokat ad a mezőknek"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi az előnye a <datalist> elemnek?",
+        "options": [
+            "Legördülő javaslatokat kínál egy input mezőhöz",
+            "Form validációt biztosít",
+            "Mezők törlésére használható",
+            "Stíluslapot ad meg"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Mi történik, ha az űrlapban nem adunk meg 'method' attribútumot?",
+        "options": [
+            "Alapértelmezés szerint GET metódust használ",
+            "Az űrlap nem működik",
+            "POST lesz az alapértelmezett",
+            "Az űrlap újratölti az oldalt"
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik input típus alkalmazható csúszka létrehozására?",
+        "options": [
+            "type=\"range\"",
+            "type=\"slider\"",
+            "type=\"scroll\"",
+            "type=\"number\""
+        ],
+        "answer": 0
+        },
+        {
+        "question": "Melyik HTML5 attribútum ír le egy mezőt segítő szöveggel?",
+        "options": [
+            "placeholder",
+            "helper",
+            "title",
+            "value"
+        ],
+        "answer": 0
+        }
+    ]
+    }
+]

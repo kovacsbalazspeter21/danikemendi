@@ -1,0 +1,199 @@
+[
+    {
+  "id": 6,
+  "title": "JavaScript: Függvények és Objektumok Teszt",
+  "questions": [
+    {
+      "question": "Hogyan definiálsz hagyományos függvényt JavaScript-ben?",
+      "options": ["function nev() {}", "func nev {}", "define nev() {}", "fn nev() => {}"],
+      "answer": 0
+    },
+    {
+      "question": "Mit ad vissza egy függvény, ha nincs benne return utasítás?",
+      "options": ["undefined", "null", "false", "NaN"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az arrow function szintaxisa?",
+      "options": ["const nev = () => {}", "arrow function nev {}", "function => nev() {}", "fn -> () {}"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a function declaration és function expression között?",
+      "options": [
+        "Declaration-t fel lehet hoist-olni",
+        "Expression gyorsabb",
+        "Declaration csak async lehet",
+        "Nincs különbség"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az objektum szintaxisa?",
+      "options": [
+        "{ kulcs: 'érték' }",
+        "[ kulcs: 'érték' ]",
+        "<kulcs=érték>",
+        "(kulcs='érték')"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan hívsz meg egy függvényt?",
+      "options": ["nev()", "nev[]", "nev{}", "nev<>"],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan érsz el egy objektum tulajdonságot pont operátorral?",
+      "options": ["obj.tulajdonsag", "obj[tulajdonsag]", "obj->tulajdonsag", "obj::tulajdonsag"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'this' kulcsszó egy metódusban?",
+      "options": [
+        "Az objektumra hivatkozik, amely a metódust tartalmazza",
+        "Mindig az ablak objektum",
+        "A globális változóra hivatkozik",
+        "Az előző objektum értéke"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM érvényes mód függvény létrehozására?",
+      "options": ["new Function()", "function nev() {}", "const x = function() {}", "func nev = {}"],
+      "answer": 3
+    },
+    {
+      "question": "Mit csinál az objektumon a hasOwnProperty() metódus?",
+      "options": [
+        "Megvizsgálja, hogy a tulajdonság sajátja-e az objektumnak",
+        "Lekérdezi az értéket",
+        "Törli a tulajdonságot",
+        "Létrehoz egy új objektumot"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet egy objektumot klónozni (sekély másolat)?",
+      "options": [
+        "Object.assign({}, obj)",
+        "obj.clone()",
+        "new Object(obj)",
+        "copy(obj)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az 'arguments' objektum egy hagyományos függvényben?",
+      "options": [
+        "Az összes átadott paraméter tömbszerű objektuma",
+        "Csak az első paraméter",
+        "Csak név nélküli függvényeknél érhető el",
+        "A visszatérési érték tárolója"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha egy függvényt paraméter nélkül hívunk meg, de az elvárna paramétert?",
+      "options": ["Az érték undefined lesz", "Hiba történik", "Null lesz az érték", "A böngésző bezáródik"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a metódus?",
+      "options": [
+        "Egy objektumon belüli függvény",
+        "Egy új típus",
+        "Csak aszinkron függvény lehet",
+        "HTML elem eseménye"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit ír ki: typeof function() {}?",
+      "options": ["function", "object", "string", "undefined"],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan adsz hozzá új tulajdonságot egy objektumhoz?",
+      "options": [
+        "obj.ujTulajdonsag = 'érték';",
+        "obj->ujTulajdonsag = 'érték';",
+        "obj:add('ujTulajdonsag');",
+        "set obj.ujTulajdonsag = 'érték';"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan törölsz egy tulajdonságot egy objektumból?",
+      "options": ["delete obj.kulcs;", "obj.remove(kulcs);", "unset obj.kulcs;", "obj.kulcs = null;"],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a return kulcsszó egy függvényben?",
+      "options": [
+        "Visszaad egy értéket",
+        "Kilép az egész programból",
+        "Kilistázza a változókat",
+        "Kinyomtat a képernyőre"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik kulcsszó NEM használható változó deklarálására?",
+      "options": ["static", "let", "const", "var"],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet JSON-t objektummá konvertálni?",
+      "options": ["JSON.parse(jsonSzoveg)", "JSON.stringify(jsonSzoveg)", "toObject(jsonSzoveg)", "decode(jsonSzoveg)"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a JSON és az Object között?",
+      "options": [
+        "JSON szöveges formátum, az Object élő struktúra",
+        "Nincs különbség",
+        "Object lassabb",
+        "JSON csak számokat tárolhat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik metódussal lehet lekérni az objektum kulcsait?",
+      "options": ["Object.keys(obj)", "obj.getKeys()", "keys(obj)", "obj.list()"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'callback' függvény?",
+      "options": [
+        "Olyan függvény, amit egy másik függvény paraméterként kap meg",
+        "Visszahívja a főfüggvényt",
+        "Globális változó",
+        "Tömbmetódus típusa"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet metódust létrehozni egy objektumban?",
+      "options": [
+        "nev: function() {}",
+        "method nev() {}",
+        "nev() => {}",
+        "function: nev()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet több objektumot egyesíteni egybe?",
+      "options": [
+        "Object.assign(cel, forras1, forras2)",
+        "merge(obj1, obj2)",
+        "obj1 + obj2",
+        "append(obj1, obj2)"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

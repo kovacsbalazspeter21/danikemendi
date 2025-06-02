@@ -1,0 +1,254 @@
+[
+    {
+  "id": 9,
+  "title": "Responsive Design Alapok Teszt",
+  "questions": [
+    {
+      "question": "Mi a responsive design fő célja?",
+      "options": [
+        "A weboldal megjelenésének optimalizálása minden eszközön",
+        "Csak mobilra optimalizált oldalak készítése",
+        "Minél több szín használata",
+        "Kódolási hibák elkerülése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTML meta tag szükséges a responsive designhoz?",
+      "options": [
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+        "<meta charset=\"responsive\">",
+        "<meta device=\"mobile-first\">",
+        "<meta layout=\"auto\">"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz lehetővé a media query?",
+      "options": [
+        "Különböző stíluslapok alkalmazását különböző képernyőméretekhez",
+        "JavaScript futtatását",
+        "Oldalak közötti navigációt",
+        "Háttérképek animálását"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `mobile-first` megközelítés?",
+      "options": [
+        "Először mobilra tervezünk, majd bővítjük nagyobb kijelzőkre",
+        "Először asztali nézetet készítünk",
+        "Csak mobilos weboldalt készítünk",
+        "Mobilbarát betűk használata"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik egységet ajánlott használni responsive méretekhez?",
+      "options": ["%", "px", "cm", "pt"],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha nem használunk responsive technikákat?",
+      "options": [
+        "Az oldal torzulhat kisebb képernyőkön",
+        "Gyorsabb lesz a betöltés",
+        "Könnyebben optimalizálható lesz",
+        "Minden eszközön egyforma lesz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik media query szintaxis helyes?",
+      "options": [
+        "@media (max-width: 768px) { ... }",
+        "@media width < 768px { ... }",
+        "@responsive 768 { ... }",
+        "@media-device 768px { ... }"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire való a `max-width` használata CSS-ben?",
+      "options": [
+        "Responsive mérethatárok beállítására",
+        "Maximális betűméret beállítására",
+        "Színek korlátozására",
+        "Navigáció letiltására"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `width: 100%;` beállítás?",
+      "options": [
+        "Az elem mindig a szülőelem teljes szélességét fogja kitölteni",
+        "Az elem rejtve lesz",
+        "Az elem fix méretű lesz",
+        "A szöveg nagyobb lesz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `rem` egység a CSS-ben?",
+      "options": [
+        "A root elem betűméretéhez viszonyított egység",
+        "A képernyő szélességének százaléka",
+        "Egy relatív méret mobilon",
+        "A betűk dőlésszöge"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszközön tesztelhető a responsive design?",
+      "options": [
+        "Fejlesztői eszközökkel (DevTools)",
+        "Notepad++",
+        "FTP kliensben",
+        "Böngésző címsorában"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a break point?",
+      "options": [
+        "Az a képernyőméret, ahol az elrendezés megváltozik",
+        "Egy elem margin értéke",
+        "A JavaScript lefagyása",
+        "A mobilos menü aktiválása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a `flex-wrap: wrap;` Flexboxban?",
+      "options": [
+        "Új sorba töri az elemeket kisebb képernyőn",
+        "Balra igazítja a tartalmat",
+        "Megállítja az animációkat",
+        "Rögzíti a tartalom méretét"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a reszponzív képek használata?",
+      "options": [
+        "Kisebb adatforgalmat és jobb megjelenést biztosítanak",
+        "Gyorsabban fut a JavaScript",
+        "Az animációk simábbak lesznek",
+        "Kevesebb HTML kód szükséges"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS tulajdonság teszi rugalmasan méretezhetővé a képet?",
+      "options": [
+        "max-width: 100%; height: auto;",
+        "display: block;",
+        "position: fixed;",
+        "float: left;"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a hamburger menü?",
+      "options": [
+        "Mobilon használt rejtett menüikon",
+        "Menü háttérszíne",
+        "Asztali navigáció típusa",
+        "Menüsor animációja"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a viewport?",
+      "options": [
+        "Az a terület, amely a képernyőn látható",
+        "A kép formátuma",
+        "A JavaScript eseményfigyelője",
+        "Az oldal fő tartalma"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `object-fit: cover;` képeknél?",
+      "options": [
+        "A kép kitölti a konténert, de megtartja az arányokat",
+        "Eltünteti a képet",
+        "A kép középre kerül",
+        "A kép szöveggé alakul"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a responsive design a felhasználói élmény szempontjából?",
+      "options": [
+        "Mert minden eszközön jól használható weboldalt biztosít",
+        "Mert így mindig színesebb lesz a dizájn",
+        "Mert elkerülhető a programozás",
+        "Mert több JavaScript kódot lehet futtatni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az `orientation` a media query-ben?",
+      "options": [
+        "A képernyő álló vagy fekvő helyzetét",
+        "A betűméret mértékét",
+        "A menü elrendezését",
+        "A szövegirányt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik nem egy ajánlott reszponzív design technika?",
+      "options": [
+        "Fix pixel alapú layout",
+        "Procent alapú szélesség",
+        "Rugalmas képek",
+        "Media query"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `vw` és `vh` egységek jelentése?",
+      "options": [
+        "A viewport szélességének/magasságának százalékai",
+        "Virtuális szegélyek",
+        "Színek árnyalatai",
+        "Betűtípus mérete"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja a grid rendszernek responsive designban?",
+      "options": [
+        "Rácsalapú elrendezés, ami könnyen testreszabható",
+        "Minden szöveget dőltre állít",
+        "Animálja a navigációt",
+        "Elrejti a menüt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `container` osztály a reszponzív keretrendszerekben (pl. Bootstrap)?",
+      "options": [
+        "Egy központi keretet ad a tartalomhoz, különböző szélességgel",
+        "Csak gombokat tartalmaz",
+        "Képeket tölt le",
+        "Navigációt rejt el"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a `display: none;` mobil eszközön egy elemre alkalmazva?",
+      "options": [
+        "Elrejti az elemet az adott nézetben",
+        "Automatikusan áthelyezi",
+        "Átszínezi a tartalmat",
+        "Mobilnézetben rögzíti"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

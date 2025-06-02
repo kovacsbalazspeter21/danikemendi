@@ -1,0 +1,259 @@
+[
+    {
+  "id": 19,
+  "title": "DevTools Áttekintés Teszt",
+  "questions": [
+    {
+      "question": "Melyik billentyűparanccsal nyitható meg a DevTools a legtöbb böngészőben?",
+      "options": [
+        "F12",
+        "Ctrl + S",
+        "Alt + D",
+        "Ctrl + P"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik DevTools panelen vizsgálhatók a HTML és CSS elemek?",
+      "options": [
+        "Elements",
+        "Console",
+        "Network",
+        "Performance"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit mutat a Console panel?",
+      "options": [
+        "JavaScript hibák, logok",
+        "Képek metaadatai",
+        "CSS szabályok",
+        "HTML szerkezet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet valós időben módosítani egy elem stílusát a DevTools-ban?",
+      "options": [
+        "Az Elements panelen a style rész módosításával",
+        "A Console panelen",
+        "A Sources panelen",
+        "A Network panelen"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik DevTools panel mutatja a letöltött fájlokat és válaszidejüket?",
+      "options": [
+        "Network",
+        "Sources",
+        "Application",
+        "Elements"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik panel használható JavaScript kód lépésenkénti hibakereséséhez?",
+      "options": [
+        "Sources",
+        "Network",
+        "Console",
+        "Application"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet breakpoint-ot beállítani JavaScript fájlban?",
+      "options": [
+        "Sources panelen kattintással a sorszámra",
+        "Elements panelen",
+        "Console log begépelésével",
+        "Network fül frissítésével"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a Lighthouse eszköz?",
+      "options": [
+        "Weboldal teljesítményének, SEO-jának és hozzáférhetőségének elemzésére",
+        "HTML szerkesztésre",
+        "Képek konvertálására",
+        "Kód színezésére"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik fülön található a localStorage és sessionStorage tartalma?",
+      "options": [
+        "Application",
+        "Console",
+        "Elements",
+        "Network"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 404 státuszkód a Network panelen?",
+      "options": [
+        "Az erőforrás nem található",
+        "A kérés sikeres volt",
+        "A hozzáférés megtagadva",
+        "A kapcsolat időtúllépett"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a piros szín egy hálózati kérésnél a Network panelen?",
+      "options": [
+        "A kérés hibával tért vissza",
+        "A kérés gyors volt",
+        "A kérés képfájlt töltött le",
+        "A kérés titkosítva volt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit lehet tenni a Console panelen a `console.log()` segítségével?",
+      "options": [
+        "Ki lehet írni változók értékét",
+        "El lehet menteni fájlokat",
+        "Módosítani lehet CSS-t",
+        "Képeket lehet rajzolni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz használható mobil nézet szimulálására?",
+      "options": [
+        "Device toolbar az Elements panelen",
+        "Sources panel",
+        "Performance monitor",
+        "Console debugger"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent, ha egy CSS szabály áthúzott a Styles részben?",
+      "options": [
+        "Felül van írva másik szabállyal",
+        "Érvényes, de nem használható",
+        "Szintaktikai hiba van benne",
+        "A böngésző nem támogatja"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet törölni a localStorage tartalmát DevTools-ban?",
+      "options": [
+        "Application panel → localStorage → jobb klikk → Clear",
+        "Console → deleteStorage()",
+        "Elements → clear cache",
+        "Network panelen keresztül"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelez a 'Preserve log' opció a Network panelen?",
+      "options": [
+        "A napló nem törlődik újratöltéskor",
+        "Letölti a logokat",
+        "Megállítja a hálózati kéréseket",
+        "Képek logját emeli ki"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan ellenőrizhető a reszponzív dizájn DevTools segítségével?",
+      "options": [
+        "Device toolbar méretezésével",
+        "Console parancs beírásával",
+        "Network limitálásával",
+        "JavaScript debug móddal"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hol található a cookie-k tartalma a DevTools-ban?",
+      "options": [
+        "Application panel",
+        "Elements panel",
+        "Console panel",
+        "Performance panel"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a `Disable cache` opció a Network panelen?",
+      "options": [
+        "Letiltja a gyorsítótárat frissítéskor",
+        "Képernyőmentést készít",
+        "Bekapcsolja a Lighthouse-t",
+        "Eltávolítja a JavaScript-et"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik panel segít a memóriahasználat vizsgálatában?",
+      "options": [
+        "Performance vagy Memory",
+        "Network",
+        "Console",
+        "Sources"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit mutat a 'Call Stack' a Sources panelen?",
+      "options": [
+        "Függvényhívások sorrendjét",
+        "CSS fájlok betöltését",
+        "Képek betöltési idejét",
+        "Adatbázis kapcsolatokat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan lehet konzolparancsokkal DOM-elemet kiválasztani?",
+      "options": [
+        "document.querySelector()",
+        "console.pick()",
+        "DOM.getElement()",
+        "select.element()"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelenít meg a 'Timeline' a Performance panelen?",
+      "options": [
+        "A weboldal betöltési eseményeit és teljesítményét",
+        "A weboldal stíluslapjait",
+        "A JavaScript változókat",
+        "A session cookie-kat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik fülön lehet exportálni a Lighthouse audit eredményeit?",
+      "options": [
+        "Lighthouse → Export",
+        "Console → Save",
+        "Network → Report",
+        "Elements → Download"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan figyelhető meg egy változó értékének változása valós időben?",
+      "options": [
+        "Watch kifejezéssel a Sources panelen",
+        "Console.clear() hívással",
+        "Network újratöltéssel",
+        "Application panel szűrésével"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

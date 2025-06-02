@@ -1,0 +1,208 @@
+[
+    {
+  "id": 15,
+  "title": "Web Teljesítmény Optimalizálás Teszt",
+  "questions": [
+    {
+      "question": "Mi a legfontosabb oka a webes teljesítmény optimalizálásának?",
+      "options": [
+        "Gyorsabb betöltés, jobb felhasználói élmény és SEO",
+        "Jobb színek megjelenítése",
+        "Több tartalom megjelenítése",
+        "Hosszabb oldalbetöltési idő"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a minifikálás?",
+      "options": [
+        "A kód felesleges szóközeinek, megjegyzéseinek eltávolítása",
+        "A képek színezése",
+        "Videók tömörítése",
+        "Egy fájl megduplázása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a Gzip tömörítés?",
+      "options": [
+        "Egy fájltömörítési módszer, ami csökkenti a fájlméretet átvitel előtt",
+        "Egy képformátum",
+        "Egy adatbázis típus",
+        "Egy JavaScript függvény"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a cache-elés?",
+      "options": [
+        "A gyakran használt adatok ideiglenes tárolása gyorsabb elérés érdekében",
+        "Új képek letöltése",
+        "Adatok törlése",
+        "Mobiladat használat"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a CDN (Content Delivery Network)?",
+      "options": [
+        "Földrajzilag elosztott szerverek hálózata a gyorsabb tartalomszolgáltatásért",
+        "Egy adatbázis",
+        "Egy SEO eszköz",
+        "Egy HTML könyvtár"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a lazy loading?",
+      "options": [
+        "A képek és más elemek csak akkor töltődnek be, ha megjelennek a képernyőn",
+        "A weboldal betöltési késleltetése",
+        "Hirdetések elrejtése",
+        "CSS effektek alkalmazása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a Lighthouse eszköz célja?",
+      "options": [
+        "Weboldalak teljesítményének, hozzáférhetőségének és SEO-jának elemzése",
+        "Szövegfordítás",
+        "Grafikák rajzolása",
+        "Adatok biztonsági mentése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelentenek a Core Web Vitals mutatók?",
+      "options": [
+        "Google által használt kulcsfontosságú teljesítménymutatók",
+        "A böngésző frissítései",
+        "Keresési kulcsszavak",
+        "Képméret szabályok"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az LCP (Largest Contentful Paint)?",
+      "options": [
+        "A fő tartalom megjelenésének ideje",
+        "A teljes oldal betöltési ideje",
+        "A háttérzene elindulása",
+        "Az oldal scrollozási ideje"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan csökkenthetjük az LCP értékét?",
+      "options": [
+        "Gyors tárhely, kisebb képek és prioritást élvező betöltés alkalmazásával",
+        "Több script betöltésével",
+        "Animációk növelésével",
+        "Kevesebb tartalommal"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a TBT (Total Blocking Time)?",
+      "options": [
+        "Az az idő, amikor az oldal nem válaszol a felhasználói műveletekre",
+        "A lap teljes betöltési ideje",
+        "Az oldal frissítési gyakorisága",
+        "A képek betöltési ideje"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan segíthet a font-display: swap?",
+      "options": [
+        "Gyorsabb szövegmegjelenést tesz lehetővé betűtípus letöltése közben",
+        "Csak a betűtípus méretét változtatja",
+        "Csak képeket tölt be",
+        "Megduplázza a CSS fájlt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tehetünk a nem használt CSS csökkentéséért?",
+      "options": [
+        "Használhatunk eszközöket, mint a PurgeCSS vagy UnCSS",
+        "Új CSS fájlokat adunk hozzá",
+        "Betöltünk minden lehetséges stílust",
+        "Csak inline CSS-t használunk"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a defer attribútum szerepe a script-eknél?",
+      "options": [
+        "A JavaScript betöltését a HTML feldolgozás utánra halasztja",
+        "Kikapcsolja a scriptet",
+        "Megduplázza a kódot",
+        "Eltávolítja a scriptet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség az async és a defer között?",
+      "options": [
+        "Az async azonnal, a defer sorrendben, DOM után futtatja a scriptet",
+        "Mindkettő ugyanaz",
+        "Defer gyorsabb",
+        "Async csak képekre vonatkozik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az elsődleges célja a képek optimalizálásának?",
+      "options": [
+        "Gyorsabb betöltési idő és kisebb adatforgalom",
+        "Jobb minőség elérése",
+        "Több szín megjelenítése",
+        "Képek szűrése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik képformátum modern és tömörített?",
+      "options": [
+        "WebP",
+        "BMP",
+        "TIFF",
+        "GIF"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a critical CSS?",
+      "options": [
+        "Az azonnal szükséges stílusok betöltése az első renderhez",
+        "Egy CSS hiba",
+        "Egy stíluslap neve",
+        "Nem használt CSS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért hasznos a HTTP/2?",
+      "options": [
+        "Párhuzamos betöltést és gyorsabb adatátvitelt biztosít",
+        "Lassítja az adatcserét",
+        "Csak képekhez használható",
+        "Egy új JavaScript verzió"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a preload célja a link elemben?",
+      "options": [
+        "Előzetesen betölt bizonyos erőforrásokat a gyorsabb elérésért",
+        "Törli az erőforrásokat",
+        "Késlelteti a betöltést",
+        "Csak képeket tölt be"
+      ],
+      "answer": 0
+    }
+]}
+
+]

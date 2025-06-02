@@ -1,0 +1,249 @@
+[
+    {
+  "id": 11,
+  "title": "Web akadálymentesség alapok Teszt",
+  "questions": [
+    {
+      "question": "Mi a web akadálymentesség célja?",
+      "options": [
+        "Hogy a weboldalak mindenki számára hozzáférhetőek legyenek, beleértve a fogyatékkal élőket is",
+        "Csak a gyorsabb betöltést szolgálja",
+        "Csak a mobilbarát megjelenést jelenti",
+        "A színes design javítását"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az ALT attribútum egy képnél?",
+      "options": [
+        "Alternatív szöveget ad meg a kép helyett a képernyőolvasók és ha a kép nem jelenik meg",
+        "A kép animációját vezérli",
+        "A kép méretét állítja be",
+        "A kép színét határozza meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a megfelelő HTML címkék (pl. `<h1>`, `<nav>`) használata az akadálymentességben?",
+      "options": [
+        "Segítenek a képernyőolvasóknak a tartalom szerkezetének megértésében",
+        "Csak a SEO miatt fontosak",
+        "Csak a design miatt használjuk",
+        "Nem számít a használatuk"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a WCAG?",
+      "options": [
+        "Web Content Accessibility Guidelines - irányelvek a web akadálymentességhez",
+        "Web Code Automation Guide",
+        "Website Content Audit Guide",
+        "Web Color Accessibility Guide"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen jelentősége van a kontrasztos színek használatának az akadálymentességben?",
+      "options": [
+        "Segíti a gyengén látókat a tartalom olvasásában",
+        "Csak esztétikai okokból fontos",
+        "Csak nyomtatásban számít",
+        "Nem fontos"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható az ARIA attribútumok weboldalon?",
+      "options": [
+        "További információt adnak a segítő technológiáknak a weboldal elemeiről",
+        "Csak a képek méretét változtatják meg",
+        "Automatikus animációt tesznek lehetővé",
+        "Hangot adnak a weboldalhoz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy weboldal billentyűzettel is használható?",
+      "options": [
+        "Hogy a weboldalt lehet navigálni és használni csak billentyűzettel, egér nélkül",
+        "Csak egérrel működik jól",
+        "Csak érintőképernyőn használható",
+        "A billentyűzetet nem lehet használni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentősége a fókusz kezelése az akadálymentes weboldalon?",
+      "options": [
+        "Megkönnyíti a billentyűzettel történő navigációt",
+        "Csak szép design elemet jelent",
+        "Eltávolítja a linkeket",
+        "Automatikusan kikapcsolja a képernyőolvasót"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a képernyőolvasó?",
+      "options": [
+        "Olyan segítő technológia, amely a képernyőn lévő szöveget hanggá alakítja",
+        "Egy képernyővédő program",
+        "Egy képnézegető alkalmazás",
+        "Egy böngésző kiegészítő"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik elem segíti a siket vagy nagyothalló felhasználókat videók esetén?",
+      "options": [
+        "Feliratozás (captions)",
+        "ALT szöveg",
+        "ARIA-label",
+        "Videó mérete"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen szerepe van a megfelelő nyelv beállításának (`<html lang='hu'>`) az akadálymentességben?",
+      "options": [
+        "Segíti a képernyőolvasókat a helyes kiejtésben",
+        "Csak a SEO miatt fontos",
+        "Csak a böngésző betűtípusát változtatja meg",
+        "Nincs jelentősége"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy weboldal legyen időben hozzáférhető (pl. időzített tartalom)?",
+      "options": [
+        "Legyen lehetőség időzítés nélküli vagy hosszabb idő alatt elolvasni a tartalmat",
+        "Csak egy percig legyen elérhető a tartalom",
+        "Automatikusan törlődjön a tartalom",
+        "Csak este jelenjen meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'skip to content' link egy akadálymentes oldalon?",
+      "options": [
+        "Lehetővé teszi a fő tartalom gyors elérését billentyűzettel",
+        "Egy rejtett reklám link",
+        "Automatikusan betölti az összes képet",
+        "Kikapcsolja az oldal stílusát"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a megfelelő form elemek címkézése (`<label>`) az akadálymentességben?",
+      "options": [
+        "Megkönnyíti a űrlapok használatát képernyőolvasóval",
+        "Csak a kinézet miatt fontos",
+        "Nem szükséges, ha van placeholder",
+        "Csak a mobilos használat miatt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal legyen reszponzív az akadálymentesség szempontjából?",
+      "options": [
+        "Az oldal jól használható legyen különböző eszközökön és képernyőméreteken",
+        "Csak asztali gépen jelenjen meg",
+        "Csak mobileszközön működjön",
+        "Ne használjon képeket"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen szerepet játszik a fókusz láthatósága az akadálymentességben?",
+      "options": [
+        "Segíti a billentyűzetes navigációt, hogy látható legyen, hol van a fókusz",
+        "Csak dekorációs elem",
+        "Eltakarja a tartalmat",
+        "Csökkenti a weboldal sebességét"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az az 'accessible name' egy HTML elemen?",
+      "options": [
+        "A képernyőolvasó által felolvasott név vagy címke az elemhez",
+        "Az elem CSS osztálya",
+        "Az elem azonosítója",
+        "Az elem mérete"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy weboldal legyen percepcióbarát (perceivable)?",
+      "options": [
+        "Az információ és komponensek a felhasználó számára érzékelhetőek legyenek",
+        "Csak a képek legyenek színesek",
+        "Ne legyenek szöveges elemek",
+        "Csak videókat tartalmazzon"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a megfelelő kontrasztarány legalább 4.5:1 a szöveg és háttér között?",
+      "options": [
+        "Az olvashatóság és láthatóság miatt gyengén látók számára",
+        "Csak a nyomtatás miatt",
+        "Csak az animációkhoz szükséges",
+        "Nem fontos"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a `tabindex` attribútum?",
+      "options": [
+        "Meghatározza az elemek billentyűzetes fókuszálásának sorrendjét",
+        "Kép méretét állítja be",
+        "Hang beállítására szolgál",
+        "Láthatóságot állít"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal legyen operábilis (operable)?",
+      "options": [
+        "Az oldal minden funkciója elérhető legyen billentyűzettel és más eszközökkel",
+        "Csak egérrel működik",
+        "Csak hanggal vezérelhető",
+        "Ne legyen interaktív"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az az 'aria-live' attribútum szerepe?",
+      "options": [
+        "Dinamikusan frissülő tartalmak hangos jelzésére a képernyőolvasók számára",
+        "Kép betöltésének gyorsítása",
+        "Automatikus stílusváltás",
+        "Hang beállítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal legyen érthető (understandable)?",
+      "options": [
+        "Az információ és használat egyértelmű legyen minden felhasználó számára",
+        "Csak a fejlesztőknek legyen érthető",
+        "Csak angolul legyen",
+        "Ne tartalmazzon szöveget"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen formátumú alternatív tartalmat kell biztosítani videókhoz akadálymentesség esetén?",
+      "options": [
+        "Feliratok, leíró szövegek vagy hangos leírások",
+        "Csak képek",
+        "Csak linkek",
+        "Csak GIF animáció"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

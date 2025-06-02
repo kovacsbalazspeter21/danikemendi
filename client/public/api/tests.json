@@ -8,5 +8,95 @@
     "id": 2,
     "title": "Basic CSS3 Teszt",
     "file": "./test/basiccss3.json"
+  },
+  {
+    "id": 3,
+    "title": "HTML5 ürlapok és Szerkezet Teszt",
+    "file": "./test/html5-urlapok.json"
+  },
+  {
+    "id": 4,
+    "title": "CSS3 Flexbox, és Grid Teszt",
+    "file": "./test/css3-flexbox-grid.json"
+  },
+  {
+    "id": 5,
+    "title": "Basic JavaScript Teszt",
+    "file": "./test/basicjs.json"
+  },
+  {
+    "id": 6,
+    "title": "JavaScript: Függvények és Objektumok Teszt",
+    "file": "./test/fuggvenyek-objektumok.json"
+  },
+  {
+    "id": 7,
+    "title": "Webdesign: Színek és Tipográfia Teszt",
+    "file": "./test/webdesign-szinek-tipografia.json"
+  },
+  {
+    "id": 8,
+    "title": "Webdesign: Layout teszt",
+    "file": "./test/webdesign-layout.json"
+  },
+  {
+    "id": 9,
+    "title": "Basic Responsive Design teszt",
+    "file": "./test/basicresponsive.json"
+  },
+  {
+    "id": 10,
+    "title": "Responsive Media teszt",
+    "file": "./test/responsivemedia.json"
+  },
+  {
+    "id": 11,
+    "title": "Basic Accessibility teszt",
+    "file": "./test/basicaccessibility.json"
+  },
+  {
+    "id": 12,
+    "title": "Accessibility Navigation teszt",
+    "file": "./test/accessibility-navigation.json"
+  },
+  {
+    "id": 13,
+    "title": "Basic SEO teszt",
+    "file": "./test/basicseo.json"
+  },
+  {
+    "id": 14,
+    "title": "SEO Technikai teszt",
+    "file": "./test/seotechnique.json"
+  },
+  {
+    "id": 15,
+    "title": "Web Teljesitmény Optimalizálás teszt",
+    "file": "./test/webperformance-optimalizales.json"
+  },
+  {
+    "id": 16,
+    "title": "Web Teljesitmény Mérés teszt",
+    "file": "./test/webperformance-meres.json"
+  },
+  {
+    "id": 17,
+    "title": "Basic Security teszt",
+    "file": "./test/basicsecurity.json"
+  },
+  {
+    "id": 18,
+    "title": "Web Biztonsági Gyakorlatok teszt",
+    "file": "./test/security-gyakorlatok.json"
+  },
+  {
+    "id": 19,
+    "title": "DevTools áttekintés teszt",
+    "file": "./test/devtools-attekintes.json"
+  },
+  {
+    "id": 20,
+    "title": "DevTools Haladó teszt",
+    "file": "./test/devtools-halado.json"
   }
 ]

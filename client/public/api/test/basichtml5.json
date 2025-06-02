@@ -1,38 +1,259 @@
 [
   {
-    "id": 1,
-    "title": "Basic HTML5 Teszt",
-    "questions": [
-      {
-        "question": "Mi a helyes HTML5 doctype deklaráció?",
-        "options": [
-          "<!DOCTYPE html>",
-          "<DOCTYPE html>",
-          "<html5>",
-          "<!HTML5>"
-        ],
-        "answer": 0
-      },
-      {
-        "question": "Melyik HTML elem használható címsor létrehozására?",
-        "options": [
-          "<head>",
-          "<h1>",
-          "<title>",
-          "<meta>"
-        ],
-        "answer": 1
-      },
-      {
-        "question": "Melyik elem felelős egy bekezdésért?",
-        "options": [
-          "<div>",
-          "<section>",
-          "<p>",
-          "<span>"
-        ],
-        "answer": 2
-      }
-    ]
-  }
+  "id": 1,
+  "title": "Basic HTML5 Teszt",
+  "questions": [
+    {
+      "question": "Mi a helyes HTML5 doctype deklaráció?",
+      "options": [
+        "<!DOCTYPE html>",
+        "<DOCTYPE html>",
+        "<html5>",
+        "<!HTML5>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTML elem felel meg a fő tartalom szakasz kijelölésére?",
+      "options": [
+        "<section>",
+        "<main>",
+        "<article>",
+        "<div>"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Melyik elem használható navigációs linkek csoportosítására?",
+      "options": [
+        "<nav>",
+        "<ul>",
+        "<div>",
+        "<menu>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a <article> elem célja?",
+      "options": [
+        "Reklámok megjelenítése",
+        "Önálló tartalmi egységek kijelölése",
+        "Oldal láblécének megjelenítése",
+        "Navigációs linkek tárolása"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Melyik HTML5 elem alkalmas hangfájl beillesztésére?",
+      "options": [
+        "<audio>",
+        "<sound>",
+        "<mp3>",
+        "<media>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik attribútum teszi lehetővé a videók automatikus lejátszását?",
+      "options": [
+        "autoplay",
+        "loop",
+        "controls",
+        "start"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a <canvas> elem célja?",
+      "options": [
+        "Űrlapmezők megjelenítése",
+        "Interaktív grafika megjelenítése JavaScript segítségével",
+        "Hang lejátszása",
+        "Kép galéria megjelenítése"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Melyik elem szolgál egy lábléc megjelenítésére?",
+      "options": [
+        "<footer>",
+        "<bottom>",
+        "<end>",
+        "<section>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az új HTML5 űrlapelem a dátum kiválasztásához?",
+      "options": [
+        "<input type=\"date\">",
+        "<input type=\"calendar\">",
+        "<dateinput>",
+        "<datepicker>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelöl a <mark> HTML5 elem?",
+      "options": [
+        "Kiemel egy szöveget",
+        "Aláhúz egy szöveget",
+        "Megjegyzést fűz hozzá",
+        "Linket tartalmaz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik elem NEM új a HTML5-ben?",
+      "options": [
+        "<div>",
+        "<section>",
+        "<article>",
+        "<header>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a szerepe a <progress> elemnek?",
+      "options": [
+        "Szöveg formázása",
+        "Űrlap küldése",
+        "Folyamat állapotának megjelenítése",
+        "Weboldal navigációja"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Mi a helyes módja a videó beágyazásának HTML5-ben?",
+      "options": [
+        "<video src=\"video.mp4\" controls></video>",
+        "<media src=\"video.mp4\">",
+        "<movie src=\"video.mp4\">",
+        "<vid src=\"video.mp4\">"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik elem használható egy cím fejlécének kijelölésére?",
+      "options": [
+        "<header>",
+        "<head>",
+        "<top>",
+        "<start>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az <aside> elem célja?",
+      "options": [
+        "Lábléc kijelölése",
+        "Fő tartalom meghatározása",
+        "Kiegészítő tartalom, pl. oldalsáv kijelölése",
+        "Szkript beillesztése"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Milyen típusú input mező használható e-mail cím megadására?",
+      "options": [
+        "<input type=\"email\">",
+        "<input type=\"text\">",
+        "<input type=\"mail\">",
+        "<input type=\"address\">"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha nem adunk meg <meta charset=\"UTF-8\"> sort?",
+      "options": [
+        "A karakterek hibásan jelenhetnek meg",
+        "Semmi nem változik",
+        "A böngésző bezáródik",
+        "Gyorsabban tölt az oldal"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a HTML5-ben az <time> elem feladata?",
+      "options": [
+        "Az időjárás kijelzése",
+        "Egy időpont vagy időtartam megjelölése",
+        "Óra beillesztése",
+        "Futási idő mérés"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Melyik attribútum szükséges a <input type=\"number\"> mezőhöz határérték beállításához?",
+      "options": [
+        "min és max",
+        "value",
+        "range",
+        "limit"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTML elem szolgál szöveges tartalom bekezdésre?",
+      "options": [
+        "<p>",
+        "<text>",
+        "<section>",
+        "<span>"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTML5 funkció segíti az offline működést?",
+      "options": [
+        "Web Storage",
+        "Localhost",
+        "Cookie",
+        "Session"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség a <b> és a <strong> között?",
+      "options": [
+        "Semmi különbség",
+        "<b> csak formáz, <strong> szemantikus jelentést is hordoz",
+        "<b> új HTML5 elem",
+        "<strong> csak IE-ben működik"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Melyik attribútum határozza meg, hogy egy mező kötelező?",
+      "options": [
+        "required",
+        "mandatory",
+        "validate",
+        "checked"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használható a <datalist> elem?",
+      "options": [
+        "Javasolt értékek listázására beviteli mezőhöz",
+        "Adatok mentésére",
+        "Grafikon rajzolására",
+        "Időzített eseményekhez"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a szerepe a <meta name=\"viewport\"> tageknek?",
+      "options": [
+        "Reszponzív viselkedés beállítása mobil eszközökre",
+        "Cím beállítása",
+        "Metaadat mentése",
+        "Stíluslap linkelése"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
 ]

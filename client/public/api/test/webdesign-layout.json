@@ -1,0 +1,236 @@
+{
+  "id": 8,
+  "title": "Webdesign: Layout Teszt",
+  "questions": [
+    {
+      "question": "Mi a layout szerepe a webdesignban?",
+      "options": [
+        "Az oldal elemeinek elrendezése",
+        "A színek kiválasztása",
+        "A képek minőségének javítása",
+        "A betűk stílusának meghatározása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS tulajdonság határozza meg az elem pozícióját?",
+      "options": ["position", "layout", "float", "align"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `position: absolute;`?",
+      "options": [
+        "Az elem a legközelebbi pozícionált őséhez viszonyítva helyezkedik el",
+        "Az elem mindig középre kerül",
+        "Az elem az oldal tetejére ugrik",
+        "Az elem nem jelenik meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik nem layout technika?",
+      "options": ["canvas", "flexbox", "grid", "float"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `display: flex;`?",
+      "options": [
+        "Rugalmas elrendezést biztosít a gyermekelemek között",
+        "Elrejti az elemet",
+        "Pozícionálja az elemet balra",
+        "Növeli az elem méretét"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire jó a `display: grid;` CSS tulajdonság?",
+      "options": [
+        "Rács alapú elrendezést hoz létre",
+        "Szöveget formáz",
+        "Színezi az elemeket",
+        "Képet jelenít meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik CSS érték teszi a konténert blokk szintűvé?",
+      "options": ["display: block", "position: block", "float: left", "inline-block"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `z-index` szerepe?",
+      "options": [
+        "Elemek egymásra helyezésének sorrendjét szabályozza",
+        "Betűtípust választ",
+        "Háttérképet állít be",
+        "Mobilmenüt nyit meg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha `overflow: hidden;` van beállítva?",
+      "options": [
+        "A kilógó tartalom elrejtésre kerül",
+        "Az elem eltűnik",
+        "A szöveg középre kerül",
+        "A háttér kép átméreteződik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `float` tulajdonság fő célja?",
+      "options": [
+        "Elemek lebegtetése balra vagy jobbra",
+        "Szöveg formázása",
+        "Színek keverése",
+        "Animáció futtatása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `clear: both;` beállítás?",
+      "options": [
+        "Megszünteti a lebegtetés hatását",
+        "Eltávolítja a margókat",
+        "Középre igazítja az elemet",
+        "Átlátszóvá teszi a hátteret"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a responsive layout?",
+      "options": [
+        "Olyan elrendezés, ami alkalmazkodik a képernyőmérethez",
+        "Csak mobilra optimalizált oldal",
+        "Fix méretű oldalszerkezet",
+        "Nyomtatási elrendezés"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a media query?",
+      "options": [
+        "Különböző stílusok alkalmazása eltérő képernyőméretekre",
+        "Képek betöltése háttérként",
+        "Videók beágyazása",
+        "Kódolási hiba javítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `flex-direction: row;`?",
+      "options": [
+        "Gyermekelemek vízszintesen helyezkednek el",
+        "Gyermekelemek függőlegesen rendeződnek",
+        "Az elem görgethető lesz",
+        "A rács két oszlopra oszlik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `justify-content: space-between;`?",
+      "options": [
+        "Elemek közötti tér egyenletes elosztása",
+        "Elemek középre igazítása",
+        "Elemek balra zárása",
+        "Elemek egymás fölé helyezése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `grid-template-columns: 1fr 2fr;`?",
+      "options": [
+        "Két oszlopot hoz létre, második kétszer olyan széles",
+        "Két oszlop, azonos méretben",
+        "Két sort hoz létre",
+        "Eltünteti az egyik oszlopot"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik layout tulajdonság helyezi középre az elemet Flexboxban?",
+      "options": ["justify-content: center;", "align-content: start;", "flex-wrap: nowrap;", "gap: 0;"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a `container` gyakori szerepe CSS-ben?",
+      "options": [
+        "Oldaltartalom keretezése és igazítása",
+        "Gomb megjelenítése",
+        "JavaScript futtatása",
+        "Képek forgatása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a `max-width: 1200px;` beállítás?",
+      "options": [
+        "Az elem legnagyobb szélessége 1200px lehet",
+        "Az elem minimum szélessége",
+        "A betűméret lesz 1200px",
+        "1200 képpont hosszúságú animáció"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a különbség az `inline` és `block` elemek között?",
+      "options": [
+        "A block elemek teljes szélességet foglalnak, az inline nem",
+        "Az inline elemek nagyobbak",
+        "A block elemek nem látszanak",
+        "Az inline mindig lebeg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a `display: none;`?",
+      "options": [
+        "Elrejti az elemet a DOM-ból",
+        "Megváltoztatja a betűtípust",
+        "Középre igazítja az elemet",
+        "Átlátszóvá teszi az elemet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire használjuk a `gap` tulajdonságot?",
+      "options": [
+        "Réseket hoz létre flex vagy grid elemek között",
+        "Eltávolítja a margókat",
+        "Átméretezi a képeket",
+        "Nagyítja a szöveget"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'sticky' pozíció?",
+      "options": [
+        "Elem az oldal görgetése során egy ponton rögzül",
+        "Mindig fixen marad a képernyőn",
+        "Az elem eltűnik",
+        "A háttérhez tapad"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a `min-height` tulajdonság?",
+      "options": [
+        "Beállítja az elem minimális magasságát",
+        "Maximális szélességet ad meg",
+        "Az elem pozícióját módosítja",
+        "Átlátszóságot állít be"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit csinál a `align-items: center;` Flexboxban?",
+      "options": [
+        "Függőlegesen középre igazítja a gyermekelemeket",
+        "Vízszintesen balra rendezi őket",
+        "Eltünteti a tartalmat",
+        "Hátteret cserél"
+      ],
+      "answer": 0
+    }
+  ]
+}

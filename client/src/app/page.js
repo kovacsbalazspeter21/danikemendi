@@ -7,6 +7,42 @@ import { useState } from "react";
 
 // Feltételezve, hogy a komponensek külön oldalként vannak route-olva (pl. /train, /test, stb.)
 
+// ...existing code...
+
+function HamburgerMenu() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        left: 24,
+        bottom: 24,
+        zIndex: 1000,
+      }}
+    >
+      <button
+        className={`${styles.hamburgerBtn} ${open ? styles.hamburgerOpen : ""}`}
+        onClick={() => setOpen((prev) => !prev)}
+        aria-label="Menü megnyitása"
+      >
+        <span className={styles.hamburgerIcon}>
+          <span className={styles.top}></span>
+          <span className={styles.bottom}></span>
+        </span>
+      </button>
+      {/* Menü tartalom */}
+      {open && (
+        <div className={styles.hamburgerMenuBox}>
+          <Link href="/ai" className={styles.hamburgerMenuLink}>
+            <Image src="/ai.svg" alt="AI" width={28} height={28} style={{ opacity: 0.8 }} />
+            AI Asszisztens
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
 
 const modules = [
   {
@@ -44,12 +80,6 @@ const modules = [
     href: "/profile",
     icon: "/profile.svg",
     desc: "Személyes adatok, beállítások."
-  },
-  {
-    name: "AI Asszisztens",
-    href: "/ai",
-    icon: "/ai.svg",
-    desc: "Intelligens segítő minden kérdésedre."
   }
 ];
 
@@ -80,19 +110,11 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
+      <HamburgerMenu />
       <main className={styles.main}>
         <h1 style={{ margin: "32px 0 24px 0", textAlign: "center" }}>
           Tanulási Platform Modulok
         </h1>
-
-         {/* AI teszt gomb */}
-        <button onClick={testAI} style={{ marginBottom: "20px", padding: "10px 20px" }}>
-          AI Teszt
-        </button>
-        {aiResponse && (
-          <div style={{ marginBottom: "20px", padding: "10px", background: "#f0f0f0" }}>
-            AI válasz: {aiResponse}
-          </div>)}
         <div
           style={{
             display: "grid",

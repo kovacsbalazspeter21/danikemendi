@@ -1,0 +1,178 @@
+[
+    {
+  "id": 16,
+  "title": "Web Teljesítmény Mérés Teszt",
+  "questions": [
+    {
+      "question": "Melyik eszköz nyújt részletes elemzést a weboldal teljesítményéről, hozzáférhetőségéről és SEO-járól?",
+      "options": ["Google Lighthouse", "Photoshop", "WordPress", "Google Maps"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a Core Web Vitals célja?",
+      "options": [
+        "A felhasználói élmény kulcsfontosságú teljesítménymutatóinak mérése",
+        "Képek automatikus optimalizálása",
+        "Tartalom szövegformázása",
+        "Felhasználói űrlapok létrehozása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az LCP (Largest Contentful Paint) jelentése?",
+      "options": [
+        "A legnagyobb tartalom megjelenési ideje",
+        "Az oldal teljes szélessége",
+        "A legnagyobb fájlméret",
+        "A teljes HTML hossz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik Core Web Vitals metrika méri a válaszidőt a felhasználói interakciókra?",
+      "options": ["FID", "LCP", "CLS", "DOM"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a CLS (Cumulative Layout Shift)?",
+      "options": [
+        "Az oldal elrendezésének váratlan elmozdulásait méri",
+        "A weboldal színsémáját méri",
+        "A betűtípus méretét számítja",
+        "A hirdetések mennyiségét követi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik böngésző beépített fejlesztői eszköze tartalmaz teljesítménymérő eszközöket?",
+      "options": ["Chrome DevTools", "Safari Reader Mode", "Firefox Pocket", "Opera Turbo"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a Time to First Byte (TTFB)?",
+      "options": [
+        "A szerver válaszának megérkezési ideje a kérés után",
+        "A HTML mérete",
+        "A betűk mérete",
+        "A cookie lejárati ideje"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik mutatót lehet mérni a Chrome DevTools Performance paneljén?",
+      "options": ["Main Thread blokkolás", "Felhasználói jelszavak", "CSS színek", "Képek nevei"],
+      "answer": 0
+    },
+    {
+      "question": "Melyik a Core Web Vitals három fő mutatója?",
+      "options": [
+        "LCP, FID, CLS",
+        "SEO, UX, UI",
+        "HTML, CSS, JS",
+        "CDN, DNS, HTTP"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik Google eszköz méri a weboldal élményét valódi felhasználókon alapulva?",
+      "options": ["Chrome User Experience Report", "Google Drive", "Page Builder", "Firebase"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a szerepe a PageSpeed Insights eszköznek?",
+      "options": [
+        "Elemzi a weboldal teljesítményét és javaslatokat ad a javításra",
+        "Leképezi a weboldalt",
+        "Hirdetéseket kezel",
+        "Fájlokat tárol"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz mutat valós felhasználói teljesítményadatokat?",
+      "options": ["CrUX", "HTML Validator", "CSS Grid Generator", "Java Debugger"],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az Interaction to Next Paint (INP)?",
+      "options": [
+        "Méri az interakció és a következő vizuális változás közti időt",
+        "A képek méretét számolja",
+        "A JavaScript méretét csökkenti",
+        "A tipográfia kontrasztját vizsgálja"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen mértékegységben mérjük a LCP, FID, CLS értékeket?",
+      "options": ["Másodperc vagy milliszekundum", "Pixel", "Byte", "Kép/másodperc"],
+      "answer": 0
+    },
+    {
+      "question": "Mi okozhat magas CLS értéket?",
+      "options": [
+        "Képek vagy hirdetések késői betöltése méretmegadás nélkül",
+        "Gyors szerver",
+        "Alacsony képfelbontás",
+        "Minimális CSS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hogyan segíthet a WebPageTest eszköz?",
+      "options": [
+        "Weboldal teljesítményének mélyreható, vizuális elemzése",
+        "Képek konvertálása",
+        "HTML validálása",
+        "Betűtípusok keresése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszközt használjuk gyakran mobil teljesítmény teszthez?",
+      "options": ["Lighthouse", "Google Maps", "YouTube Studio", "Gmail"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a Web Vitals kiterjesztés célja a Chrome böngészőben?",
+      "options": [
+        "Valós idejű mérések megjelenítése az aktuális oldalról",
+        "Képek szerkesztése",
+        "Oldal elforgatása",
+        "Cookie mentés"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha magas az FID érték?",
+      "options": [
+        "A felhasználó késleltetve érzékeli az interakciókra adott válaszokat",
+        "Gyorsabban tölt be az oldal",
+        "Jobban néz ki a betűtípus",
+        "Szebb lesz a dizájn"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit mér a 'Main Thread blocking time'?",
+      "options": [
+        "A főszál mennyi ideig volt foglalt, nem reagált",
+        "Hányszor történt kattintás",
+        "Az oldal látogatottságát",
+        "A Google indexelési idejét"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz segít a weboldal betöltési idejének optimalizálásában?",
+      "options": [
+        "Google PageSpeed Insights",
+        "Adobe Photoshop",
+        "Microsoft Word",
+        "Slack"
+        ],
+        "answer": 0
+    }
+]}
+
+]

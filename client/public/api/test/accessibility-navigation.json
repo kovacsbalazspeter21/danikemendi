@@ -1,0 +1,239 @@
+[
+    {
+  "id": 12,
+  "title": "Accessibility Navigation Teszt",
+  "questions": [
+    {
+      "question": "Mit jelent az, hogy egy weboldal navigációja akadálymentes?",
+      "options": [
+        "Hogy minden felhasználó, köztük a fogyatékkal élők is könnyen tudják használni a navigációs elemeket",
+        "Csak a mobilos navigáció legyen egyszerű",
+        "Csak a menü animációk legyenek látványosak",
+        "Csak az egérrel való navigáció legyen lehetséges"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a billentyűzettel történő navigáció az akadálymentességben?",
+      "options": [
+        "Mert sok felhasználó nem tud vagy nem használ egeret, például látássérültek",
+        "Csak a gyorsaság miatt fontos",
+        "Csak a dizájn miatt kell megvalósítani",
+        "Nem fontos, ha van egér"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'skip to content' link?",
+      "options": [
+        "Egy link, amely lehetővé teszi a fő tartalom gyors elérését az oldal tetejéről, megkerülve a navigációt",
+        "Egy rejtett reklám link",
+        "Egy link, ami eltávolítja a menüt",
+        "Egy link, ami új ablakot nyit"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen szerepe van az ARIA menü szerepkörének (`role='menu'`) a navigációban?",
+      "options": [
+        "Segíti a segítő technológiákat, hogy felismerjék és kezeljék a menüelemeket",
+        "Csak a stílusokat állítja be",
+        "Automatikusan megjeleníti a menüt",
+        "Nincs jelentősége"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen attribútumok segítenek a navigációs elemek fókuszálásában?",
+      "options": [
+        "`tabindex` és `aria-current`",
+        "`src` és `alt`",
+        "`href` és `title`",
+        "`style` és `class`"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz lehetővé az `aria-expanded` attribútum egy legördülő menü esetén?",
+      "options": [
+        "Jelzi, hogy a menü nyitott vagy zárt állapotban van",
+        "Állítja a menü színét",
+        "Kattintás nélkül bezárja a menüt",
+        "Megváltoztatja a menü helyét"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentősége annak, hogy a navigáció logikus és lineáris legyen billentyűzet használatakor?",
+      "options": [
+        "Megkönnyíti a felhasználók számára a tartalom elérését és megértését",
+        "Csak a dizájn miatt fontos",
+        "Nem szükséges, ha van egér",
+        "Csak mobilon számít"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy a navigáció legyen 'responsive'?",
+      "options": [
+        "Az oldal navigációja alkalmazkodik különböző képernyőméretekhez és eszközökhöz",
+        "Csak asztali gépen működik",
+        "Csak mobilon működik",
+        "Nem tartalmaz menüt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire szolgál a `nav` HTML elem?",
+      "options": [
+        "A weboldal fő navigációs területét jelöli meg strukturálisan",
+        "Egy képet jelenít meg",
+        "Egy videót indít el",
+        "Stílusokat ad az oldalnak"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'focus visible' CSS pszeudo-osztály navigációban?",
+      "options": [
+        "Megjeleníti a fókusz jelzését, amikor az elem billentyűzettel fókuszált",
+        "Eltakarja a fókuszjelzést",
+        "Megváltoztatja a háttér színét automatikusan",
+        "Elrejti az elemet"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'tabindex' érték 0 jelentése?",
+      "options": [
+        "Az elem fókuszálható a normál tabulációs sorrendben",
+        "Az elem nem fókuszálható",
+        "Az elem mindig az első fókuszpont lesz",
+        "Az elem el van rejtve"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi történik, ha egy navigációs elem `tabindex` értéke -1?",
+      "options": [
+        "Az elem nem fókuszálható billentyűzettel, de scriptből még elérhető",
+        "Az elem elsődleges fókuszpont lesz",
+        "Az elem láthatatlan lesz",
+        "Az elem mindig megjelenik a képernyőn"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos az, hogy a menüelemek legyenek jól megkülönböztethetőek és láthatóak fókuszáláskor?",
+      "options": [
+        "Mert így a felhasználók tudják, hogy éppen melyik elem aktív vagy fókuszban van",
+        "Csak a dizájn miatt",
+        "Csak mobilon fontos",
+        "Nem fontos"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'landmark' szerep az ARIA specifikációban?",
+      "options": [
+        "Egy jelentős terület az oldalon, például a navigáció vagy a fő tartalom",
+        "Egy animáció típusa",
+        "Egy képes reklám helye",
+        "Egy böngésző plugin"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen elemek lehetnek ARIA landmark szerepkörök?",
+      "options": [
+        "`navigation`, `main`, `banner`, `complementary`, `contentinfo`",
+        "`img`, `video`, `audio`",
+        "`div`, `span`, `p`",
+        "`header`, `footer` csak"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a 'focus trap' navigációban?",
+      "options": [
+        "Amikor a fókusz egy meghatározott tartományban marad, pl. egy modális ablakban",
+        "Amikor a fókusz eltűnik az oldalról",
+        "Amikor az oldal automatikusan görget",
+        "Amikor a fókusz ugrál"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen módon lehet segíteni a képernyőolvasókat a navigációban?",
+      "options": [
+        "Átlátható struktúrával, ARIA attribútumokkal és jól tagolt HTML elemekkel",
+        "Csak képekkel",
+        "Csak hanggal",
+        "Nem lehet segíteni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy link 'descriptive' a navigációban?",
+      "options": [
+        "A link szövege egyértelműen leírja, hogy hova vezet vagy mit csinál",
+        "A link színe piros",
+        "A link animált",
+        "A link nem kattintható"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a 'focus outline' és miért fontos az akadálymentes navigációban?",
+      "options": [
+        "A fókuszált elem körüli látható keret, amely segít a fókusz helyének megjelölésében",
+        "Egy animáció az oldalon",
+        "A link színe",
+        "Az oldal háttérképe"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Milyen szerepet játszik a HTML `<a>` elem az akadálymentes navigációban?",
+      "options": [
+        "Kapcsolódási pontot biztosít más oldalak vagy oldalelemek között, fókuszálható és aktiválható billentyűzettel",
+        "Csak képek megjelenítésére szolgál",
+        "Csak formázásra használjuk",
+        "Nem fontos"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy navigáció legyen 'predictable' az akadálymentesség szempontjából?",
+      "options": [
+        "Az interakciók és navigáció viselkedése konzisztens és kiszámítható a felhasználók számára",
+        "Véletlenszerűen változik",
+        "Csak mobilon működik",
+        "Csak asztali gépen működik"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik eszköz nem segíti az akadálymentes navigációt?",
+      "options": [
+        "Olyan oldalak, amik kizárólag egérrel használhatók",
+        "Billentyűzetes navigáció",
+        "Képernyőolvasók",
+        "ARIA attribútumok"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a navigáció egyszerűsége és következetessége?",
+      "options": [
+        "Mert így könnyebben használható minden felhasználó számára, különösen azoknak, akik segítő technológiákat használnak",
+        "Csak a dizájn miatt fontos",
+        "Csak fejlesztőknek fontos",
+        "Nem fontos"
+      ],
+      "answer": 0
+    }
+  ]
+}
+
+]

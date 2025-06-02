@@ -1,0 +1,388 @@
+[
+    {
+  "id": 17,
+  "title": "Basic Security Teszt",
+  "questions": [
+    {
+      "question": "Mi a célja az HTTPS protokollnak?",
+      "options": [
+        "Titkosított kommunikáció biztosítása a kliens és a szerver között",
+        "Weboldalak gyorsabb betöltése",
+        "Weboldalak cache-elése",
+        "Grafikus elemek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentése a 'phishing' kifejezésnek?",
+      "options": [
+        "Adathalász támadás, mely személyes információkat próbál megszerezni",
+        "Adatbázis mentése",
+        "Tűzfal beállítása",
+        "Jelszavak erősítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelszóhash-elés célja?",
+      "options": [
+        "A jelszavak biztonságos tárolása adatbázisban",
+        "A jelszavak rövidítése",
+        "A jelszavak gyorsabb elküldése",
+        "A jelszavak vizuális megjelenítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM egy gyakori biztonsági fenyegetés?",
+      "options": ["HTML markup", "XSS", "CSRF", "SQL injection"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az XSS támadás célja?",
+      "options": [
+        "Kártékony szkriptek futtatása a felhasználó böngészőjében",
+        "SQL lekérdezés optimalizálása",
+        "Képek betöltésének gyorsítása",
+        "Betűtípusok cseréje"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a CSRF támadás?",
+      "options": [
+        "Kereszt-oldali kéréshamisítás",
+        "Tartalomstílus formázása",
+        "Képek automatikus generálása",
+        "Funkcionális tesztelés"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTTP fejléc növeli a biztonságot?",
+      "options": [
+        "Content-Security-Policy",
+        "Accept-Language",
+        "User-Agent",
+        "Cache-Control"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az SQL Injection?",
+      "options": [
+        "Olyan támadás, amely SQL parancsokat injektál a bemeneti mezőkbe",
+        "Egy képformátum",
+        "Kódolási módszer CSS-ben",
+        "Biztonságos jelszó generálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire való a kétlépcsős azonosítás (2FA)?",
+      "options": [
+        "Extra biztonsági réteg hozzáadása a bejelentkezéshez",
+        "Weboldalak betöltési idejének csökkentése",
+        "Felhasználók törlése",
+        "Képek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a CAPTCHA célja?",
+      "options": [
+        "Megkülönböztetni a valódi felhasználót a botoktól",
+        "Képek betöltésének gyorsítása",
+        "Hálózati kapcsolatok elemzése",
+        "CSS hibák javítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal 'secure cookie'-t használ?",
+      "options": [
+        "Csak HTTPS kapcsolaton keresztül küldhető el a cookie",
+        "A cookie bármilyen protokollon elküldhető",
+        "A cookie grafikus formátum",
+        "A cookie-t csak szerver oldalon lehet létrehozni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a bemeneti adatok validálása?",
+      "options": [
+        "Megakadályozza a rosszindulatú kódok futását",
+        "Szebb lesz a design",
+        "Gyorsabb a betöltés",
+        "Kisebb fájlméretet eredményez"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a brute force támadás?",
+      "options": [
+        "Jelszavak automatikus kipróbálása sok variációval",
+        "Felhasználói felület szimulációja",
+        "Oldalak SEO elemzése",
+        "Képek tömörítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a `Content-Security-Policy` fejléc?",
+      "options": [
+        "Meghatározza, hogy honnan engedélyezett tartalom betöltése",
+        "Gyorsítótárat állít be",
+        "HTML fájl méretét korlátozza",
+        "Felhasználó IP címét naplózza"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik jelszó a legerősebb?",
+      "options": [
+        "9sT!eP@2#rL",
+        "12345678",
+        "password1",
+        "abcdefg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a rendszeres szoftverfrissítés?",
+      "options": [
+        "Biztonsági hibák javítása miatt",
+        "Szebb dizájnért",
+        "Több reklám megjelenítéséhez",
+        "Alacsonyabb felbontásért"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM jó gyakorlat a jelszavak kezelésére?",
+      "options": [
+        "Jelszavak tárolása sima szövegként",
+        "Hash-elés",
+        "Sózott hash használata",
+        "Erős jelszószabályok"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik algoritmust használják gyakran jelszó hash-eléshez?",
+      "options": ["bcrypt", "MD1", "SHA0", "plainText"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a legjobb módszer az XSS megelőzésére?",
+      "options": [
+        "Kimeneti adatok escape-elése",
+        "Képek optimalizálása",
+        "Sötét mód használata",
+        "Zeneszámok beágyazása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az SSL tanúsítvány?",
+      "options": [
+        "Biztosítja a weboldal hitelességét és titkosított kapcsolatot",
+        "Egy képformátum",
+        "Egy programozási nyelv",
+        "Egy adatbázis típus"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a célja az HTTPS protokollnak?",
+      "options": [
+        "Titkosított kommunikáció biztosítása a kliens és a szerver között",
+        "Weboldalak gyorsabb betöltése",
+        "Weboldalak cache-elése",
+        "Grafikus elemek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelentése a 'phishing' kifejezésnek?",
+      "options": [
+        "Adathalász támadás, mely személyes információkat próbál megszerezni",
+        "Adatbázis mentése",
+        "Tűzfal beállítása",
+        "Jelszavak erősítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi a jelszóhash-elés célja?",
+      "options": [
+        "A jelszavak biztonságos tárolása adatbázisban",
+        "A jelszavak rövidítése",
+        "A jelszavak gyorsabb elküldése",
+        "A jelszavak vizuális megjelenítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM egy gyakori biztonsági fenyegetés?",
+      "options": ["HTML markup", "XSS", "CSRF", "SQL injection"],
+      "answer": 0
+    },
+    {
+      "question": "Mi az XSS támadás célja?",
+      "options": [
+        "Kártékony szkriptek futtatása a felhasználó böngészőjében",
+        "SQL lekérdezés optimalizálása",
+        "Képek betöltésének gyorsítása",
+        "Betűtípusok cseréje"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a CSRF támadás?",
+      "options": [
+        "Kereszt-oldali kéréshamisítás",
+        "Tartalomstílus formázása",
+        "Képek automatikus generálása",
+        "Funkcionális tesztelés"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik HTTP fejléc növeli a biztonságot?",
+      "options": [
+        "Content-Security-Policy",
+        "Accept-Language",
+        "User-Agent",
+        "Cache-Control"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az SQL Injection?",
+      "options": [
+        "Olyan támadás, amely SQL parancsokat injektál a bemeneti mezőkbe",
+        "Egy képformátum",
+        "Kódolási módszer CSS-ben",
+        "Biztonságos jelszó generálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mire való a kétlépcsős azonosítás (2FA)?",
+      "options": [
+        "Extra biztonsági réteg hozzáadása a bejelentkezéshez",
+        "Weboldalak betöltési idejének csökkentése",
+        "Felhasználók törlése",
+        "Képek optimalizálása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mi az a CAPTCHA célja?",
+      "options": [
+        "Megkülönböztetni a valódi felhasználót a botoktól",
+        "Képek betöltésének gyorsítása",
+        "Hálózati kapcsolatok elemzése",
+        "CSS hibák javítása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az, hogy egy oldal 'secure cookie'-t használ?",
+      "options": [
+        "Csak HTTPS kapcsolaton keresztül küldhető el a cookie",
+        "A cookie bármilyen protokollon elküldhető",
+        "A cookie grafikus formátum",
+        "A cookie-t csak szerver oldalon lehet létrehozni"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a bemeneti adatok validálása?",
+      "options": [
+        "Megakadályozza a rosszindulatú kódok futását",
+        "Szebb lesz a design",
+        "Gyorsabb a betöltés",
+        "Kisebb fájlméretet eredményez"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent a brute force támadás?",
+      "options": [
+        "Jelszavak automatikus kipróbálása sok variációval",
+        "Felhasználói felület szimulációja",
+        "Oldalak SEO elemzése",
+        "Képek tömörítése"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit tesz a `Content-Security-Policy` fejléc?",
+      "options": [
+        "Meghatározza, hogy honnan engedélyezett tartalom betöltése",
+        "Gyorsítótárat állít be",
+        "HTML fájl méretét korlátozza",
+        "Felhasználó IP címét naplózza"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik jelszó a legerősebb?",
+      "options": [
+        "9sT!eP@2#rL",
+        "12345678",
+        "password1",
+        "abcdefg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Miért fontos a rendszeres szoftverfrissítés?",
+      "options": [
+        "Biztonsági hibák javítása miatt",
+        "Szebb dizájnért",
+        "Több reklám megjelenítéséhez",
+        "Alacsonyabb felbontásért"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik NEM jó gyakorlat a jelszavak kezelésére?",
+      "options": [
+        "Jelszavak tárolása sima szövegként",
+        "Hash-elés",
+        "Sózott hash használata",
+        "Erős jelszószabályok"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Melyik algoritmust használják gyakran jelszó hash-eléshez?",
+      "options": ["bcrypt", "MD1", "SHA0", "plainText"],
+      "answer": 0
+    },
+    {
+      "question": "Mi a legjobb módszer az XSS megelőzésére?",
+      "options": [
+        "Kimeneti adatok escape-elése",
+        "Képek optimalizálása",
+        "Sötét mód használata",
+        "Zeneszámok beágyazása"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mit jelent az SSL tanúsítvány?",
+      "options": [
+        "Biztosítja a weboldal hitelességét és titkosított kapcsolatot",
+        "Egy képformátum",
+        "Egy programozási nyelv",
+        "Egy adatbázis típus"
+      ],
+        "answer": 0
+    }
+  ]
+    }
+  ]
